@@ -37,12 +37,12 @@
                         <input type="password" name="password" id="password" placeholder="Jelszó">
                         <?=form_error('password','<div class="error">','</div>')?>
                     </div>
-                    <!--<div class="mb-3">
+                    <div class="mb-3">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" name="rememberME" class="custom-control-input" id="cb1" name="">
                             <label class="custom-control-label" for="cb1">Jegyezzen meg</label>
                         </div>
-                    </div>-->
+                    </div>
                     <div class="mb-3">
                         <button type="submit" class="btn btn-block text-uppercase">
                             BELÉPÉS

@@ -539,4 +539,4 @@ $config['proxy_ips'] = '';
 
 
 $config['javascript_location'] = './assets/js/';
-$config['csrf_exclude_uris'] = array('lostpassword/reset/6630c6c0197a7');
+$config['csrf_exclude_uris'] = array('Rest/setState');

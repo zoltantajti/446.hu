@@ -13,4 +13,4 @@ $autoload['config'] = array();
 
 $autoload['language'] = array();
 
-$autoload['model'] = array('Sess','Db','Banns','Logs','Seo','Navbar','User','Registration','GeoCoding','Encryption','Email','Msg');
+$autoload['model'] = array('Sess','Cookie','Db','Banns','Logs','Seo','Navbar','User','Registration','GeoCoding','Encryption','Email','Msg');

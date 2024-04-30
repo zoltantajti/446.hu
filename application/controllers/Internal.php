@@ -9,9 +9,13 @@ class Internal extends CI_Controller {
 
     public function index() {
         $this->User->checkLogin();
+
+        $this->load->view($this->thm . 'frame', $this->data);
     }
 
     public function login() {
+        $this->User->isLoggedIn();
+        if($this->Cookie->has('remember_user') && $this->Cookie->has('remember_id')){ $this->User->autoLogin(); };        
         $this->form_validation->set_rules('username', 'Felhasználónév vagy hívójel', 'required|trim');
         $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]');
         if($this->form_validation->run() == FALSE){
@@ -21,9 +25,11 @@ class Internal extends CI_Controller {
         }
     }
     public function logout(){
+        $this->User->checkLogin();
         $this->User->doLogout();
     }
     public function lostpassword($method = "clear", $hash = null){
+        $this->User->isLoggedIn();
         if($method == "clear"){
             $this->form_validation->set_rules('email', 'E-mail cím', 'required|trim|valid_email');
             if($this->form_validation->run() == FALSE){
@@ -49,6 +55,7 @@ class Internal extends CI_Controller {
         }
     }
     public function register($step = 1) {
+        $this->User->isLoggedIn();
         if($step == 1){
             $this->form_validation->set_rules('callsign', 'Hívójel', 'required|trim|is_unique[users.callsign]|callback_nmhh_check');
             $this->form_validation->set_rules('opname', 'Operátor név', 'required|trim|is_unique[users.opname]');
@@ -117,6 +124,7 @@ class Internal extends CI_Controller {
         }
     }
     public function activate($hash) {
+        $this->User->isLoggedIn();
         if($this->db->select('id')->from('users')->where('hash', $hash)->count_all_results() == 1){
             if($this->db->select('id')->from('users')->where('hash', $hash)->where('expired >=', date("Y-m-d H:i:s"))->count_all_results() == 1){
                 if($this->db->select('id')->from('users')->where('hash', $hash)->where('active',0)->where('expired >=', date("Y-m-d H:i:s"))->count_all_results() == 1){
@@ -145,5 +153,25 @@ class Internal extends CI_Controller {
             unset($_SESSION['registration']['nmhh']);
             return true;
         }
+    }
+
+
+    public function terkep(){
+        $this->data['page'] = $this->thm . 'pages/map';
+        $this->data['css'] = '
+<link rel="stylesheet" media="screen" href="./assets/js/leaflet/leaflet.css" />
+<link rel="stylesheet" media="screen" href="./assets/js/leaflet/extra-markers/css/leaflet.extra-markers.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+        ';
+        $this->data['js'] = '
+<script src="./assets/js/leaflet/leaflet.js"></script>
+<script src="./assets/js/leaflet_providers/leaflet-providers.js"></script>
+<script src="./assets/js/map/Maidenhead.js"></script>
+<script src="./assets/js/leaflet/extra-markers/js/leaflet.extra-markers.js"></script>
+<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+<script src="https://cdn.tiny.cloud/1/ihuzhtbtyuzbwks4d8nuyl9bmu1uq25scfmxd8gjgmmqc5qz/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+<script type="module" src="./assets/js/map/index.js?ref=internal"></script>';
+        $this->load->view($this->thm . 'frame', $this->data);
     }
 }

@@ -9,18 +9,27 @@ class User extends CI_Model {
             redirect('internal/login');
         };
     }
-
+    public function isLoggedIn(){
+        if($this->Sess->has("user") || $this->Sess->getSub("user","login") == true){
+            redirect('internal');
+        };
+    }
+    public function autoLogin()
+    {
+        $id = $this->Cookie->get('remember_id');
+        $cs = $this->Cookie->get('remember_user');
+        $user = $this->db->select('id,callsign,opName,name,perm')->from('users')->where('id', $id)->where('callsign', $cs)->get()->result_array()[0];
+        $user['loginIP'] = $_SERVER['REMOTE_ADDR'];
+        $user['loginDate'] = date("Y-m-d H:i:s");
+        $_SESSION['user'] = $user;
+        $_SESSION['user']['login'] = true;
+        $this->Db->update("users", array("loginIP"=>$user['loginIP'], "loginDate" => $user['loginDate']), array("id" => $id));
+        $this->Logs->make("Login:Success", "Felhasználó belépett: {$user['opName']}, {$user['loginIP']} IP címről {$user['loginDate']}");
+        redirect('internal');
+    }
     public function doLogin($p){
         $user = $p['username'];
         $password = $this->Encryption->hash($p['password']);
-        
-        $success = $this->db
-            ->select('id')->from('users')
-            
-            ->where('password', $password)
-            ->where('active', 1)
-            ->where('perm >= ', 1)
-            ->count_all_results();
         if($this->userIsExists($user)){
             if($this->passwordCheck($user,$password)){
                 if($this->userIsActive($user)){
@@ -35,6 +44,11 @@ class User extends CI_Model {
                         $_SESSION['user']['login'] = true;
                         $this->Db->update("users", array("loginIP"=>$user['loginIP'], "loginDate" => $user['loginDate']), array("id" => $user['id']));
                         $this->Logs->make("Login:Success", "Felhasználó belépett: {$user['opName']}, {$user['loginIP']} IP címről {$user['loginDate']}");
+
+                        if(@$p['rememberME'] == "on"){
+                            $this->Cookie->set('remember_user', $user['callsign']);
+                            $this->Cookie->set('remember_id', $user['id']);
+                        };
                         redirect('internal');
                     }else{
                         $this->Logs->make("Login:Fail:Blocked", "Sikertelen belépés: {$user} - {$p['password']} adatokkal {$_SERVER['REMOTE_ADDR']} IP címről! Korlátozott felhasználó!");
@@ -59,6 +73,10 @@ class User extends CI_Model {
     }
     public function doLogout()
     {
+        if($this->Cookie->has('remember_id') && $this->Cookie->has('remember_user')){
+            $this->Cookie->rem('remember_id');
+            $this->Cookie->rem('remember_user');
+        }
         unset($_SESSION['user']);
         redirect('internal/login');
     }

@@ -5,6 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['internal'] = 'Internal/index';
 $route['register/(:num)'] = 'Internal/register/$1';
 
+/*Rest*/
+$route['Rest/(:any)'] = 'Rest/$1';
+
 /*Public segment*/
 $route['public/terkep'] = 'Map/publicMap';
 $route['default_controller'] = 'Pub';

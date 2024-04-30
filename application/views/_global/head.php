@@ -32,9 +32,11 @@
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="stylesheet" media="screen" type="text/css" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" media="screen" type="text/css" href="./assets/css/fa.all.min.pro.css" />
+    <?=@$css?>
     <link rel="stylesheet" media="screen" type="text/css" href="./assets/css/446style.css" />
     
+
     <title><?=(@$meta['name'] != "") ? $meta['name'] . " - " : ""?>446.HU</title>
 
 </head>
-<body class="d-flex h-100">
+<body class="" <?=(uri_string() == "public/terkep") ? 'style="padding-top: 3.5rem;"' : ''?>>

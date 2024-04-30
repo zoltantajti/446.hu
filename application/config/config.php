@@ -464,8 +464,8 @@ $config['global_xss_filtering'] = TRUE;
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
 $config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'csrf_test_name';
-$config['csrf_cookie_name'] = 'csrf_cookie_name';
+$config['csrf_token_name'] = 'csrf';
+$config['csrf_cookie_name'] = 'c_csrf';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();
@@ -539,4 +539,4 @@ $config['proxy_ips'] = '';
 
 
 $config['javascript_location'] = './assets/js/';
-$config['csrf_exclude_uris'] = array('rest/[a-z0-9]+', 'login', 'register', 'lostpw', 'changepw', 'profile', 'new-log');
+$config['csrf_exclude_uris'] = array('lostpassword/reset/6630c6c0197a7');

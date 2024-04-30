@@ -1,8 +1,9 @@
 <?php
 $this->load->view('_global/head');
-$this->load->view('_global/navbar');
-
-if(uri_string() != "" || uri_string() != "index"){
+if(uri_string() != "" && uri_string() != "index"){
+    $this->load->view('_global/navbar');
+};
+if(uri_string() == "" || uri_string() == "index"){
     $this->load->view('_global/hero');
 };
 

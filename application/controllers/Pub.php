@@ -16,6 +16,8 @@ class Pub extends CI_Controller{
             ));
         };
         $this->data['thm'] = $this->thm;
+        $this->data['css'] = "";
+        $this->data["js"] = "";
     }
     private function render($page, $data){
         $this->load->view($this->thm . $page, $data);

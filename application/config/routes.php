@@ -1,7 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['(:any)'] = 'Pub/index';
+/*Internal segment*/
+$route['internal'] = 'Internal/index';
+$route['register/(:num)'] = 'Internal/register/$1';
+
+/*Public segment*/
+$route['public/terkep'] = 'Map/publicMap';
 $route['default_controller'] = 'Pub';
 
 $route['404_override'] = '';

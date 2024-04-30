@@ -1,6 +1,13 @@
+#hero{
+    height: 100vh !important;
+}
 .hero-lookup{
     background-image: url('../images/hero.jpg');
     background-size: 100% 100%;
+}
+.no-flex{
+    display:block !important;
+    widtH: auto !important;
 }
 .cover-container {
     max-width: 42em;
@@ -22,4 +29,49 @@
 .nav-masthead .active {
     color: #fff;
     border-bottom-color: #fff;
+}
+#map{
+    height: calc(100vh - 56px);
+    min-height: calc(100vh - 56px) !important;
+    
+}
+#customContextMenu {
+    display: none;
+    position: absolute;
+    background-color: #212529;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* A menüt mindig a térkép felett jelenítjük meg */
+}
+.btn-custom-info, .fc-button-primary{
+    background-color: var(--linkColor) !important;
+    border: 1px solid var(--linkColor);
+    color: #fff;
+    transition: ease-in-out all 0.2s;
+}
+.btn-custom-info:hover, .fc-button-primary:hover{
+    background-color: var(--linkHColor);
+    border: 1px solid var(--linkHColor);
+    color: #fff;
+}
+
+.jsfy{ text-align: justify;}
+
+.title{
+    font-weight: bold;
+    border-bottom: .25rem solid rgba(255, 255, 255, .25);
+    width: 100%;
+    margin-bottom: 25px;
+}
+.counter-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #000;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.counter{
+    font-size: 32px;
 }

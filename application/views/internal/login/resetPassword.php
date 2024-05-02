@@ -26,7 +26,7 @@
                 </h4>
                 <?php if($form){ ?>
                 <form class="form-box px-3" method="POST" action="" autocomplete="off">
-                    <?=$this->Msg->print()?>                    
+                    <?=$this->Msg->get()?>                    
                     <input type="hidden" name="<?=$this->security->get_csrf_token_name()?>" value="<?=$this->security->get_csrf_hash()?>" />
                     <div class="form-input">
                         <span><i class="fa fa-key"></i></span>

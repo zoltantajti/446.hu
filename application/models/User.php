@@ -192,10 +192,10 @@ class User extends CI_Model {
     public function getPermName(){
         $return = "";
         switch($this->perm){
-            case UserPerm::User: case 1: $return = "Felhasználó"; break;
-            case UserPerm::Writer: case 2: $return = "Tartalomfeltöltő"; break;
-            case UserPerm::Admin: case 3: $return = "Adminisztrátor"; break;
-            case UserPerm::SYSADMIN: case 99: $return = "Rendszergazda"; break;
+            case 1: $return = "Felhasználó"; break;
+            case 2: $return = "Tartalomfeltöltő"; break;
+            case 3: $return = "Adminisztrátor"; break;
+            case 99: $return = "Rendszergazda"; break;
         };
         return $return;
     }
@@ -207,11 +207,4 @@ class User extends CI_Model {
             case "99": return "Rendszergazda"; break;
         }
     }
-}
-
-enum UserPerm: int {
-    case User = 1;
-    case Writer = 2;
-    case Admin = 3;
-    case SYSADMIN = 99;
 }

@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <?=$this->Msg->print(); ?>
+                <?=$this->Msg->get(); ?>
                 <table class="table">
                     <thead>
                         <tr>

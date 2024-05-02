@@ -48,6 +48,12 @@
             <li><hr class="nav-item"><div class="dropdown-divider"></div></li>
             <?php }; ?>
             <?php if($this->User->hasPerm(99)){ ?>
+                <li class="nav-item">
+                <a href="admin/visitors" class="nav-link" aria-current="page">
+                    <i class="fa-solid fa-eye"></i>
+                    <span class="nav-item-name">Látogatók</span>
+                </a>
+            </li>
             <li class="nav-item">
                 <a href="admin/logs" class="nav-link" aria-current="page">
                     <i class="fa-solid fa-file"></i>

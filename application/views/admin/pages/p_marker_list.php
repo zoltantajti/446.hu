@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <?=$this->Msg->print(); ?>
+                <?=$this->Msg->get(); ?>
                 <div class="input-group mb-3">
                     <input type="text" name="filter" id="filter" class="form-control" value="<?=$filter?>">
                     <button type="button" id="markerFilterButton" class="btn btn-info"><i class="fa fa-fw fa-search"></i></button>

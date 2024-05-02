@@ -56,7 +56,7 @@ class Visitor extends CI_Model {
     }
 
     /*ADMIN*/
-    public function list(){
+    public function getList(){
         return $this->db->select('ipaddr,visits,lastVisit')->from('visitors')->order_by('lastVisit','DESC')->get()->result_array();
     }
     public function get($ip){

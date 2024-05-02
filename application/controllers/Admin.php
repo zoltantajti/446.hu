@@ -132,7 +132,7 @@ class Admin extends CI_Controller {
                 'page'=>'logs_list',
                 'sidebar'=>true,
                 'filtered'=>false,
-                'data' => $this->Logs->list(array("all",""))
+                'data' => $this->Logs->getList(array("all",""))
             ));
         }elseif($filter == "id"){
             $this->data = array_merge($this->data, array(
@@ -376,6 +376,31 @@ class Admin extends CI_Controller {
             }
         }elseif($f == "delete" && $id != 1){
             $this->News->delete($id);
+        }
+    }
+
+    /*Visitors*/
+    public function visitors($f = "list", $id = -1)
+    {
+        $this->User->checkLogin();
+        if($f == "list" && $id == -1){
+            $this->data = array_merge($this->data, array(
+                'page'=>'visitor_list',
+                'sidebar'=>true,
+                'data' => $this->Visitor->getList()
+            ));
+            $this->load->view($this->thm . '/index', $this->data);
+        }elseif($f == "open" && $id != -1){
+            $this->data = array_merge($this->data, array(
+                'page'=>'visitor_details',
+                'sidebar'=>true,
+                'data' => $this->Visitor->get($id)
+            ));
+            $this->load->view($this->thm . '/index', $this->data);
+        }elseif($f == "bann" && $id != -1){
+            $this->Banns->add($id);
+        }elseif($f == "unbann" && $id != -1){
+            $this->Banns->remove($id);
         }
     }
 }

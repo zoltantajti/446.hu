@@ -248,7 +248,8 @@ class Internal extends CI_Controller {
         $this->data['page'] = $this->thm . "pages/news";
 		$this->load->view($this->thm . 'frame', $this->data);
     }
-    public function new($alias){
+    
+	public function newDetail($alias){
         $this->User->checkLogin();
         $rows = $this->db->select('*')->from('news')->where('alias',$alias)->get()->result_array();
 		$this->data['event'] = $rows[0];

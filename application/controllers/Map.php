@@ -19,7 +19,7 @@ class Map extends CI_Controller {
 		<script src="./assets/js/leaflet/extra-markers/js/leaflet.extra-markers.js"></script>
 		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
 		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
-		<script src="https://cdn.tiny.cloud/1/ihuzhtbtyuzbwks4d8nuyl9bmu1uq25scfmxd8gjgmmqc5qz/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+		<script src="./assets/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
 		<script type="module" src="./assets/js/map/index.js?ref=public"></script>';
         $this->load->view($this->thm . 'map/index', $this->data);
     }

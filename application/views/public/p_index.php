@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid counter-container">
+    <!--<div class="container-fluid counter-container">
         <div class="row">
             <div class="col-md-3 text-center"> 
                 <i class="fa fa-4x fa-fw fa-walkie-talkie"></i>
@@ -40,7 +40,7 @@
                 <div class="counter">45</div>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="container">
         <div class="row">
             <div class="col-md-12">

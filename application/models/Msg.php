@@ -8,7 +8,7 @@ class Msg extends CI_Model {
         $this->Sess->set("msg", array('msg'=>$msg,'class'=>$class));        
     }
 
-    public function print(){
+    public function get(){
         if($this->Sess->has("msg")){
             $msg = str_replace(array("{msg}","{class}"), array($this->Sess->get("msg")['msg'],$this->Sess->get("msg")['class']), $this->pattern);
             $this->Sess->rem("msg");

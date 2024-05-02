@@ -10,7 +10,7 @@ class Logs extends CI_Model {
         $this->db->insert('logs', $data);
     }
 
-    public function list($cond){
+    public function getList($cond){
         if($cond[0] == "all"){
             return $this->db->select('*')->from('logs')->order_by('date','DESC')->get()->result_array();
         }else{

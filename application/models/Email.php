@@ -39,4 +39,41 @@ class Email extends CI_Model {
         };
         return $msg;
     }
+
+    /*Admin segment*/
+    public function getList(){ return $this->db->select('id,name')->from('emails')->get()->result_array(); }
+    public function add()
+    {
+        $p = $this->input->post();
+        $data = array(
+            "name" => $p['name'],
+            "alias" => $p['alias'],
+            "subject" => $p['subject'],
+            "content" => $p['content']
+        );
+        $this->db->insert("emails", $data);
+        $this->Msg->set("Sikeres hozzáadás!");
+        $this->Logs->make("EMAIL::Create", $this->User->getName() . " létrehozott egy E-mail szöveget!");
+        redirect("admin/emails/list");
+    }
+    public function update($id){
+        $p = $this->input->post();
+        $data = array(
+            "name" => $p['name'],
+            "alias" => $p['alias'],
+            "subject" => $p['subject'],
+            "content" => $p['content']
+        );
+        $this->db->set($data)->where('id',$id)->update('emails');
+        $this->Msg->set("Sikeres módosítás!");
+        $this->Logs->make("EMAIL::Modify", $this->User->getName() . " módosította a ".$data['name']." E-mail szöveget!");
+        redirect("admin/emails/list");
+    }
+    public function delete($id){
+        $sor = $this->db->select('*')->where('id',$id)->from('emails')->get()->result_array();
+        $this->db->where('id',$id)->delete('emails');
+        $this->Logs->make("DB::Delete", $this->User->getName() . " törölte az alábbi sort: Tábla: E-mails, ID:" . $id . ", Tartalom: " . json_encode($sor[0]));
+        $this->Msg->set("Sikeres törlés!");
+        redirect("admin/emails/list");
+    }
 }

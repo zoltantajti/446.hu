@@ -1,0 +1,89 @@
+*{
+    border-radius: 0px !important;
+}
+html, body {
+    height: 100%;
+    min-height: -webkit-fill-available;
+}
+.form-signin {
+    max-width: 320px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 330px;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.error{
+    color: #ff0000;    
+}
+.error:last-child{
+    padding-bottom: 5px;
+}
+
+main {
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.nav-item .nav-link{
+    color: #fff;
+}
+.nav-item:hover .nav-link{
+    background-color: var(--bs-info-bg-subtle);
+    color: var(--bs-info-text-emphasis);
+}
+
+/*ImageManagerModal*/
+.image-manager-modal-dialog{
+    width: 90% !important;
+    margin: auto;
+}
+.image-manager-modal-dialog .modal-content .modal-body{
+    min-height: 80vh;
+}
+.image-manager-image-button{
+    cursor: pointer;
+}
+.image-manager-thumb-image{
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+}
+.image-selected{
+    border: 5px solid #06969b;
+}
+.image-manager-info-frame{
+    border-left: 1px solid rgba(0,0,0,0.5) !important;
+    height: 80vh;
+}
+.text-right{
+    text-align: right !important;
+}
+.mobile{display:none;}
+.desktop{display:block;}
+
+@media(max-width:830px){
+    .desktop{display:none;}
+    .mobile{display:block;}
+    .col-lg-2{max-width: 75px !important;}
+    .dropdown-divider{ max-width: 50px !important; }
+    .nav-item-name{display:none !important;}
+}

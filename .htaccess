@@ -12,3 +12,14 @@
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin: "*"
 </IfModule>
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType image/jpeg "acces plus 1 year"
+	ExpiresByType image/jpg "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType image/webp "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+</IfModule>

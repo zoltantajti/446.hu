@@ -28,15 +28,15 @@
     <meta property="twitter:title" content="<?=($this->Seo->get('name',@$meta['name']) != null) ? $this->Seo->get('name') . " - " : ""?>446.hu" />
     <meta property="twitter:description" content="<?=($this->Seo->get('description',@$meta['description']) != null) ? $this->Seo->get('description') : ""?>" />
     <meta property="twitter:image" content="<?=site_url()?>assets/images/446logo.png" />
-
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
-    <link rel="stylesheet" media="screen" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="canonical" href="<?=base_url()?>" />
+	<link rel="stylesheet" media="screen" type="text/css" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" media="screen" type="text/css" href="./assets/css/fa.all.min.pro.css" />
     <?=@$css?>
     <link rel="stylesheet" media="screen" type="text/css" href="./assets/css/446style.css" />
-    
-
-    <title><?=(@$meta['name'] != "") ? $meta['name'] . " - " : ""?>446.HU</title>
-
+    <title><?=(@$meta['name'] != "") ? $meta['name'] . " - " : ""?>446.HU - A Magyar PMR Csoport</title>
+	<script type="application/ld+json">{"@context": "http://schema.org","@type": "Website","name": "446.HU - A Magyar PMR Csoport"}; </script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSB0GJYLGN"></script> 
+	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-NSB0GJYLGN'); </script>
 </head>
 <body class="" <?=(uri_string() == "public/terkep") ? 'style="padding-top: 3.5rem;"' : ''?>>

@@ -14,6 +14,11 @@ $route['internal/page/(:any)'] = 'Internal/page/$1';
 /*Rest*/
 $route['Rest/(:any)'] = 'Rest/$1';
 
+/*Admin*/
+$route['admin/users/list'] = 'Admin/users/list/-1';
+$route['admin/users/(inactivate|activate)/(:num)'] = 'Admin/users/$1/$2';
+$route['admin/users/(:any)'] = 'Admin/users/list/-1/$1';
+
 /*Public segment*/
 $route['public/terkep'] = 'Map/publicMap';
 $route['default_controller'] = 'Pub';

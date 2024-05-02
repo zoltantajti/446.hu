@@ -14,6 +14,29 @@ class User extends CI_Model {
             redirect('internal');
         };
     }
+    public function hasPerm($need){
+        if($this->Sess->getSub('user','perm') >= $need){
+            return true;
+        }else{
+            return false;
+        };
+    }
+    public function hasAccess($need){
+        if($this->Sess->has("user") && $this->Sess->getSub("user","login") == true)
+        {
+            if($this->Sess->getSub('user','perm') >= $need){
+                return true;
+            }else{
+                redirect('internal');
+            }
+        }else redirect('internal/login');
+    }
+    public function getName() {
+        return $this->Sess->getSub('user','opName');
+    }
+    public function getFName() {
+        return $this->Sess->getSub('user','name');
+    }
     public function autoLogin()
     {
         $id = $this->Cookie->get('remember_id');
@@ -141,4 +164,47 @@ class User extends CI_Model {
         return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('opName',$user)->or_where('email',$user)
                     ->where('perm >=', 1)->count_all_results() == 1 ? true : false;
     }
+
+    /*Admin*/
+    public function getToken(){
+        return $this->Sess->get('__id');
+    }
+    public function getList($filter = null){
+        $select = $this->db->select('id,callsign,opName,name,perm,active')->from('users');
+        if($filter != null){
+            $select->like('callsign',$filter)
+                ->or_like('opName', $filter)
+                ->or_like('email', $filter)
+                ->or_like('name', $filter);
+        }
+        return $select->get()->result_array();
+        
+        
+        //return $this->db->select('id,callsign,opName,name,perm,active')->from('users')->get()->result_array();
+    }
+    public function getPermName(){
+        $return = "";
+        switch($this->perm){
+            case UserPerm::User: case 1: $return = "Felhasználó"; break;
+            case UserPerm::Writer: case 2: $return = "Tartalomfeltöltő"; break;
+            case UserPerm::Admin: case 3: $return = "Adminisztrátor"; break;
+            case UserPerm::SYSADMIN: case 99: $return = "Rendszergazda"; break;
+        };
+        return $return;
+    }
+    public function getPermById($id){
+        switch($id){
+            case "1": return "Felhasználó"; break;
+            case "2": return "Tartalomfeltöltő"; break;
+            case "3": return "Adminisztrátor"; break;
+            case "99": return "Rendszergazda"; break;
+        }
+    }
+}
+
+enum UserPerm: int {
+    case User = 1;
+    case Writer = 2;
+    case Admin = 3;
+    case SYSADMIN = 99;
 }

@@ -10,12 +10,15 @@
                 </div>
             </header>
             <main class="px-3 text-center ">
-                <img src="./assets/images/446logo.png" />
+                <img src="./assets/images/446logo.png" alt="446logo"/>
                 <p class="lead"></p>
                 <p class="lead"></p>
             </main>
             <footer class="mt-auto text-center text-white-50">
-                <p>Minden jog fenntartve &copy; 2024. <a class="text-white" href="<?=base_url()?>">446.hu</a></p>
+                <p>Minden jog fenntartve &copy; 2024. <a class="text-white" href="<?=base_url()?>">446.hu</a></p> 
+				<a href="https://www.facebook.com/groups/446pmrhukozosseg" class="text-white" target="_blank">
+                    <i class="fab fa-fw fa-facebook-square"></i> 
+                </a>
             </footer>
         </div>
     </div>

@@ -27,6 +27,12 @@
                     <span class="nav-item-name">E-mailek</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="admin/markers/list" class="nav-link" aria-current="page">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <span class="nav-item-name">Markerek</span>
+                </a>
+            </li>
             <li><hr class="nav-item"><div class="dropdown-divider"></div></li>
             <?php }; ?>
             <?php if($this->User->hasPerm(99)){ ?>

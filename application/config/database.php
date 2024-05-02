@@ -4,12 +4,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+$acc = array();
+if($_SERVER['HTTP_HOST'] == "localhost"){
+	$acc['host'] = "localhost";
+	$acc['user'] = "root";
+	$acc['pass'] = "";
+	$acc['db'] = '446PontHu';
+}else{
+	$acc['host'] = "mysql.clanweb.hu";
+	$acc['user'] = "clanwebh_amatorradio";
+	$acc['pass'] = "Kyocera1995#%";
+	$acc['db'] = 'clanwebh_446ponthu';
+}
+
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => '446PontHu',
+	'hostname' => $acc['host'],
+	'username' => $acc['user'],
+	'password' => $acc['pass'],
+	'database' => $acc['db'],
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

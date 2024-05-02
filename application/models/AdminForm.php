@@ -12,13 +12,17 @@ class AdminForm extends CI_Model {
         foreach($dataSet as $k=>$v){
             $param = $this->db->select('*')->from('options')->where('_key', $v->name)->get()->result()[0];
             $html .= '<div class="mb-3">';
-            $html .= $this->label($v->name,$param->_value,$param->_hint);
+            if($param->_fieldParam != "hidden"){
+                $html .= $this->label($v->name,$param->_value,$param->_hint);
+            };
             switch($param->_fieldParam){
                 case "text": $html .= $this->text($v->name, @$values[$v->name], $param->_args); break;
                 case "password": $html .= $this->password($v->name, @$values[$v->name], $param->_args); break;
                 case "select": $html .= $this->select($v->name,$param->_fieldSource,$param->_args,@$values[$v->name]); break;
                 case "imagemanager": $html .= $this->imageManager($v->name, @$values[$v->name]); break;
                 case "textarea": $html .= $this->textarea($v->name, @$values[$v->name]); break;
+                case "location": $html .= $this->location($v->name, @$values[$v->name]); break;
+                case "hidden": $html .= $this->hidden($v->name, @$values[$v->name]); break;
             }
             $html .= '</div>';
         }
@@ -61,6 +65,17 @@ class AdminForm extends CI_Model {
         $html = '<textarea class="form-control" '.$args.' id="'.$id.'" name="'.$id.'">'.$value.'</textarea>';
         $html.= '<script src="./assets/js/tinymce/tinymce.min.js"></script>';
         $html.= '<script src="./assets/js/tinymce/index.js"></script>';
+        return $html;
+    }
+    private function hidden($id, $value = ""){
+        $html = '<input type="hidden" name="'.$id.'" id="'.$id.'" value="'.$value.'" />';
+        return $html;
+    }
+    private function location($id, $value = "", $args = ""){
+        $html = '<div class="input-group mb-3">';
+        $html .= '<input '.$args.' type="text" class="form-control" id="'.$id.'" name="'.$id.'" value="'.$value.'">';
+        $html .= '<button class="btn btn-outline-secondary" type="button" id="'.$id.'_button"><i class="fa fa-fw fa-search"></i></button>';
+        $html.= '</div>';
         return $html;
     }
     /*Image manager*/

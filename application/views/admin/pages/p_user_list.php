@@ -44,8 +44,7 @@
                                 <?php }else{ ?>
                                 <a href="admin/users/activate/<?=$item['id']?>"><i class="fa-solid fa-check"></i></a>
                                 <?php }; ?>
-                                <!--<a href="admin/users/edit/<?=$item['id']?>"><i class="fa-solid fa-user-pen"></i></a>&nbsp;&nbsp;
-                                <a href="javascript:;" onClick="if(confirm('A törlés visszavonhatatlan! Valóban végre szeretnéd hajtani?')){document.location.assign('admin/users/delete/<?=$item['id']?>');};"><i class="fa-solid fa-user-times error"></i></a>-->
+                                <a href="javascript:;" onClick="if(confirm('A törlés visszavonhatatlan! Valóban végre szeretnéd hajtani?')){document.location.assign('admin/users/delete/<?=$item['id']?>');};"><i class="fa-solid fa-user-times error"></i></a>
                             </td>
                         </tr>
                     <?php }; ?>

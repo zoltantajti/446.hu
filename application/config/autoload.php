@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $autoload['packages'] = array();
 
-$autoload['libraries'] = array('session','encryption','form_validation','parser','email','image_lib','javascript', 'javascript/jquery','pagination','table','trackback','typography','user_agent','xmlrpc');
+$autoload['libraries'] = array('session','encryption','form_validation','parser','email','image_lib','javascript','pagination','table','trackback','typography','user_agent','xmlrpc');
 
 $autoload['drivers'] = array();
 
@@ -13,4 +13,4 @@ $autoload['config'] = array();
 
 $autoload['language'] = array();
 
-$autoload['model'] = array('Misc','Sess','Cookie','Db','Banns','Logs','Seo','Navbar','User','Registration','GeoCoding','Encryption','Email','Msg','Visitor','Page','AdminForm');
+$autoload['model'] = array('Misc','Sess','Cookie','Db','Banns','Logs','Seo','Navbar','User','Registration','GeoCoding','Encryption','Email','Msg','Visitor','Page','AdminForm', 'Markers');

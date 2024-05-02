@@ -37,8 +37,6 @@
         </div>
     </div>
     <div class="toast-container p-3 top-0 end-0" id="toastPlacement" data-original-class="toast-container p-3"></div>
-    <script src="https://cdn.socket.io/4.7.4/socket.io.js"></script>
-    <script src="./assets/js/push/node_modules/push.js/bin/push.js"></script>
     <script id="adminjs" src="./assets/js/446admin.js?token=<?=$this->User->getToken()?>"></script>
 </body>
 </html>

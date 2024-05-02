@@ -1,0 +1,66 @@
+<?php
+class Markers extends CI_Model
+{
+    public function __construct(){ parent::__construct(); }
+
+    public function getList($filter = null){
+        $result = $this->db->select('id,type,title')->from('markers');
+        if($filter != null){
+            if($filter == "papagáj" || $filter == "papi" || $filter == "parrot"){
+                $result->where('type', 'parrot');
+            }elseif($filter == "mobil" || $filter == "kézi"){
+                $result->where('type', 'mobile_radio');
+            }elseif($filter == "desktop" || $filter == "asztali" || $filter == "fix"){
+                $result->where('type', 'desktop_radio');
+            }else{
+                $result->like('title', $filter);
+                $result->or_like('description', $filter);
+                $result->or_like('place', $filter);
+            };
+        };
+        return $result->get()->result_array();
+    }
+
+    public function add($p){
+        $p['created_at'] = date("Y-m-d H:i:s");
+        $p['created_user'] = $this->Sess->getChain('id','user');
+        unset($p['submit']);
+        $this->Db->insert("markers", $p);
+        $this->Logs->make("MARKER::Create", $this->Sess->getChain('name','user') . " létrehozta " . $p['title'] . " markert.");
+        $this->Msg->set("Sikeres létrehozás!");
+        redirect('admin/markers');
+    }
+    public function edit($p){
+        $old = $this->db->select('*')->from('markers')->where('id', $p['id'])->get()->result_array()[0];
+        $p['modified_at'] = date("Y-m-d H:i:s");
+        $p['modified_user'] = $this->Sess->getChain('id', 'user');
+        unset($p['submit']);
+        $this->Db->update("markers", $p, array("id" => $p['id']));
+        $this->Logs->make("MARKER::Update", $this->Sess->getChain('name','user') . " módosította a " . $p['title'] . " markert.<br/>Régi adatok: " . json_encode($old));
+        $this->Msg->set("Sikeres módosítás!");
+        redirect('admin/markers');
+    }
+    public function delete($id){
+        $old = $this->db->select('*')->from('markers')->where('id', $id)->get()->result_array()[0];
+        $this->Db->delete("markers", array("id" => $id));
+        $this->Logs->make("MARKER::Delete", $this->Sess->getChain('name','user') . " törölte a " . $old['title'] . " markert.<br/>Adatok: " . json_encode($old));
+        $this->Msg->set("Sikeres törlés!");
+        redirect('admin/markers');
+    }
+
+    public function getType($type){
+        return Types::get($type);
+    }
+}
+
+class Types {
+    const parrot = 'Papagáj';
+    const mobile_radio = 'Mobil rádió';
+    const desktop_radio = 'Fix állomás';
+    const station = 'Amatőr átjátszó';
+    const unkown = 'Ismeretlen';
+
+    public static function get($type){
+        return constant('self::' . $type);
+    }
+}

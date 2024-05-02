@@ -187,13 +187,83 @@ class Admin extends CI_Controller {
         }elseif($f == "inactivate" && $id != -1){
             $this->Db->update("users",array("active" => 0),array("id" => $id));
             $this->Logs->make("USER::Inactivate",$this->Sess->getChain('user','name') . " inaktiválta #" . $id . " felhasználót");
-            $this->Msg->set("Sikeres létrehozás!");
+            $this->Msg->set("Sikeres inaktiválás!");
             redirect('admin/users');
         }elseif($f == "activate" && $id != -1){
             $this->Db->update("users",array("active" => 1),array("id" => $id));
             $this->Logs->make("USER::Activate",$this->Sess->getChain('user','name') . " aktiválta #" . $id . " felhasználót");
-            $this->Msg->set("Sikeres létrehozás!");
+            $this->Msg->set("Sikeres aktiválás!");
             redirect('admin/users');
+        }elseif($f == "delete" && $id != -1){
+            $this->User->delete($id);
+        }
+    }
+
+    public function markers($f = "list", $id = -1, $filter = null){
+        $this->User->checkLogin();
+        if($f == "list" && $id == -1){
+            $this->data = array_merge($this->data, array(
+                'page'=>'marker_list',
+                'data' => $this->Markers->getList(($filter != null) ? urldecode($filter) : null),
+                'filter' => ($filter != null) ? urldecode($filter) : null
+            ));
+            $this->load->view($this->thm . '/index', $this->data);
+        }elseif($f == "new" && $id == -1){
+            $this->data = array_merge($this->data, array(
+                'page'=>'form',
+                'sidebar'=>true,
+                'title' => 'Új marker létrehozása',
+                'data' => array(
+                    'db' => 'markers',
+                    'method' => 'POST',
+                    'action' => '',
+                    'btnText' => 'Mentés'
+                )
+            ));
+            $this->form_validation->set_rules("lat", "Hosszúság", "trim|required|is_unique[markers.lat]");
+            $this->form_validation->set_rules("lon", "Szélesség", "trim|required|is_unique[markers.lon]");
+            $this->form_validation->set_rules("type", "Típus", "trim|required");
+            $this->form_validation->set_rules("title", "Szélesség", "trim|required|is_unique[markers.title]");
+            $this->form_validation->set_rules("description", "Szélesség", "trim|required");
+            $this->form_validation->set_rules("active", "Szélesség", "trim");
+            $this->form_validation->set_rules("parrotState", "Szélesség", "trim");
+            $this->form_validation->set_rules("parrotRadius", "Szélesség", "trim");
+            $this->form_validation->set_rules("place", "Szélesség", "trim");
+
+            if(!$this->form_validation->run()){
+                $this->load->view($this->thm . '/index', $this->data);
+            }else{
+                $this->Markers->add($this->input->post());
+            }
+        }elseif($f == "edit" && $id != -1){
+            $this->data = array_merge($this->data, array(
+                'page'=>'form',
+                'sidebar'=>true,
+                'title' => 'Marker módosítása',
+                'data' => array(
+                    'db' => 'markers',
+                    'method' => 'POST',
+                    'action' => '',
+                    'btnText' => 'Mentés'
+                )
+            ));
+            $this->data['values'] = $this->db->select('*')->from('markers')->where('id', $id)->get()->result_array()[0];
+            $this->form_validation->set_rules("lat", "Hosszúság", "trim|required");
+            $this->form_validation->set_rules("lon", "Szélesség", "trim|required");
+            $this->form_validation->set_rules("type", "Típus", "trim|required");
+            $this->form_validation->set_rules("title", "Szélesség", "trim|required");
+            $this->form_validation->set_rules("description", "Szélesség", "trim|required");
+            $this->form_validation->set_rules("active", "Szélesség", "trim");
+            $this->form_validation->set_rules("parrotState", "Szélesség", "trim");
+            $this->form_validation->set_rules("parrotRadius", "Szélesség", "trim");
+            $this->form_validation->set_rules("place", "Szélesség", "trim");
+            if(!$this->form_validation->run()){
+                $this->load->view($this->thm . '/index', $this->data);
+            }else{
+                $this->Markers->edit($this->input->post());
+            }
+        }elseif($f == "delete" && $id != -1){
+            $this->Markers->delete($id);
         }
     }
 }

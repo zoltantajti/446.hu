@@ -178,9 +178,13 @@ class User extends CI_Model {
                 ->or_like('name', $filter);
         }
         return $select->get()->result_array();
-        
-        
-        //return $this->db->select('id,callsign,opName,name,perm,active')->from('users')->get()->result_array();
+    }
+    public function delete($id){
+        $sor = $this->db->select('*')->where('id',$id)->from('users')->get()->result_array();
+        $this->db->where('id',$id)->delete('users');
+        $this->Logs->make("USER::Delete", $this->User->getName() . " törölte az alábbi felhasználót: ID:" . $id . ", Felhasználói adatok: " . json_encode($sor[0]));
+        $this->Msg->set("Sikeres törlés!");
+        redirect("admin/users");
     }
     public function getPermName(){
         $return = "";

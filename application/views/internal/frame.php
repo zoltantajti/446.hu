@@ -28,6 +28,24 @@
                         <?=$this->Navbar->getInternal()?>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+<?php
+    $notif = ($this->Notifications->collectNotificatable() > 0) ? true : false;
+
+?>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link" <?=($notif) ? 'href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"' : 'href="javascript:;" title="Nincs új értesítés"'?>>
+                                <i class="fa-solid fa-bell">
+                                    <?php if($notif){ ?>
+                                    <span class="position-absolute top-10 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                        <?=$this->Notifications->collectNotificatable()?>
+                                    </span>
+                                    <?php }; ?>
+                                </i>
+                            </a>
+                            <ul class="dropdown-menu notifications-menu">
+                                <?php foreach($this->Notifications->getAllNotification() as $notif){ echo($this->Notifications->showNotif($notif)); }; ?>
+                            </ul>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa fa-fw fa-user"></i> <?=$this->Sess->getChain('callsign','user'); ?>
@@ -55,6 +73,7 @@
     </footer>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/446script.js"></script>
     <?=@$js?>
 </body>
 </html>

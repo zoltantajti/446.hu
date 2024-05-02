@@ -271,4 +271,60 @@ class Internal extends CI_Controller {
         }
     }
     
+    public function qso($f = "add", $id = -1){
+        if($f == "add" && $id == -1){
+            $this->data['page'] = $this->thm . "pages/qso_add";
+            $this->form_validation->set_rules('date', 'Dátum', 'trim|required');
+            $this->form_validation->set_rules('time', 'Idő', 'trim|required');
+            $this->form_validation->set_rules('freq', 'Frekvencia', 'trim|required');
+            $this->form_validation->set_rules('ctcs', 'CTCS', 'trim|required');
+            $this->form_validation->set_rules('dcs', 'DCS', 'trim|required');
+            $this->form_validation->set_rules('my_callsign', 'Hívójelem', 'trim|required');
+            $this->form_validation->set_rules('my_qth', 'QTH lokátor kódom', 'trim|required');
+            $this->form_validation->set_rules('suffix', 'Típus', 'trim|required');
+            $this->form_validation->set_rules('rem_callsign', 'Ellenállomás hívójele', 'trim|required');
+            $this->form_validation->set_rules('rem_qth', 'Ellenállomás QTH kódja', 'trim|required');
+            $this->form_validation->set_rules('rem_opname', 'Ellenállomás Operátora', 'trim|required');
+            $this->form_validation->set_rules('mode', 'Hívás módja', 'trim|required');
+            $this->form_validation->set_rules('parrot_name', 'Papagáj neve', 'trim');
+            $this->form_validation->set_rules('comment', 'Megjegyzés', 'trim');
+            $this->form_validation->set_rules('distance', 'Távolság', 'trim|required');
+            $this->form_validation->set_rules('myPos', 'GPS koordinátáim', 'trim|required');
+            $this->form_validation->set_rules('remPos', 'Ellenállomás GPS korrdinátái', 'trim|required');
+
+            if(!$this->form_validation->run()){
+                $this->load->view($this->thm . "frame", $this->data);
+            }else{
+                $this->Qso->add();
+            }
+        }elseif($f == "list" && $id == -1){
+            $this->data['page'] = $this->thm . "pages/qso_list";
+            $this->data['qso'] = $this->Qso->getList();
+            $this->load->view($this->thm . "frame", $this->data);
+        }elseif($f == "allow" && $id != -1){
+            $this->Db->update("qso", array("verified"=>1, "verifiedAt"=>date("Y-m-d H:i:s"), "status" => "approved"), array("id" => $id));
+            $this->Msg->set("Sikeresen elfogadtad a QSO-t!", "success");
+            redirect("internal/qso/list");
+        }elseif($f == "deny" && $id != -1){
+            $this->Db->update("qso", array("verified"=>1, "verifiedAt"=>date("Y-m-d H:i:s"), "status" => "denied"), array("id" => $id));
+            $this->Msg->set("Sikeresen elutasítottad a QSO-t!", "success");
+            redirect("internal/qso/list");
+        }elseif($f == "map" && $id == -1){
+            $this->data['page'] = $this->thm . "pages/qso_map";
+            $this->data['css'] = '<link rel="stylesheet" media="screen" href="./assets/js/leaflet/leaflet.css" />
+        <link rel="stylesheet" media="screen" href="./assets/js/leaflet/extra-markers/css/leaflet.extra-markers.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+        ';
+        $this->data['js'] = '<script src="./assets/js/leaflet/leaflet.js"></script>
+		<script src="./assets/js/leaflet_providers/leaflet-providers.js"></script>
+		<script src="./assets/js/map/Maidenhead.js"></script>
+		<script src="./assets/js/leaflet/extra-markers/js/leaflet.extra-markers.js"></script>
+		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+		<script src="./assets/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+		<script type="module" src="./assets/js/map/qso.js"></script>';
+            $this->load->view($this->thm . "frame", $this->data);
+        }
+        
+    }
 }

@@ -10,6 +10,14 @@ class Rest {
         });
     }
 
+    getQSOs = function() {
+        return new Promise(function(resolve,reject){
+            $.getJSON("Rest/getQSOs", function(data){
+                resolve(data);
+            });
+        });
+    }
+
     getEvents = function() {
         return new Promise(function(resolve, reject){
             $.getJSON("Rest/getMapEvents", function(data){

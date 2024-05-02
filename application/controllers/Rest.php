@@ -9,7 +9,18 @@ class Rest extends CI_Controller
 			die("A biztonsági házirend tiltja, hogy megtekintsd az oldalt!");
 		};
     }
-    
+    public function getQSOs()
+    {
+        $qso = $this->db
+                    ->select('*')
+                    ->from('qso')
+                    ->where('my_callsign', $this->Sess->getChain("callsign","user"))
+                    ->or_where('rem_callsign', $this->Sess->getChain("callsign","user"))
+                    ->where('verified',1)->where('status','approved')->or_where('status','pending')
+                    ->get()
+                    ->result_array();
+        echo(json_encode($qso));
+    }
     public function getMapMarkers()
     {
         $markers = $this->db->select('*')->from('markers')->where('active',1)->get()->result_array();

@@ -55,3 +55,30 @@ main > .container, main > .container-fluid {
     padding-bottom: 20px;
     max-width: 320px;
 }
+.address-nth-1{
+    border-bottom-left-radius: 0px !important;
+}
+.address-nth-4{
+    border-bottom-right-radius: 0px !important;
+}
+.address-nth-5{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.address-nth-7{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.address-nth-8{
+    border-top-left-radius: 0px !important;
+}
+.address-nth-9{
+    border-top-right-radius: 0px !important;
+}
+
+.hidden{display:none;}
+
+.notifications-menu{
+    left: -60px !important;
+    padding: 15px;
+}

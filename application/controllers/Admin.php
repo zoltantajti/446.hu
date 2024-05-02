@@ -266,4 +266,116 @@ class Admin extends CI_Controller {
             $this->Markers->delete($id);
         }
     }
+
+    /*Events*/
+    public function events($f = "list", $id = -1){
+        $this->User->checkLogin();
+        if($f == "list" && $id == -1){
+            $this->data['page'] = "event_list";
+            $this->data["data"] = $this->Events->getList();
+            $this->load->view($this->thm . '/index', $this->data);
+        }elseif($f == "new" && $id == -1){
+            $this->data['page'] = "form";
+            $this->data['title'] = "Új oldal létrehozása";
+            $this->data['data'] = array(
+                'db' => 'events',
+                'method' => 'POST',
+                'action' => '',
+                'btnText' => 'Mentés'
+            );
+            $this->form_validation->set_rules("title", "Cím", "trim|required");
+            $this->form_validation->set_rules("seoLink", "SEO url", "trim|required|is_unique[events.seoLink]");
+            $this->form_validation->set_rules("image", "Kép", "trim|required");
+            $this->form_validation->set_rules("shortDesc", "Rövid leírás", "trim|required");
+            $this->form_validation->set_rules("description", "Leírás", "trim|required");
+            $this->form_validation->set_rules("eventStart", "Kezdő dátum", "trim|required");
+            $this->form_validation->set_rules("eventEnd", "Vége dátum", "trim");
+            $this->form_validation->set_rules("place", "Helyszín", "trim|required");
+            if($this->form_validation->run()){
+                $this->Events->add();
+            }else{
+                $this->load->view($this->thm . '/index', $this->data);
+            };
+        }elseif($f == "edit" && $id != -1){
+            $this->data['page'] = "form";
+            $this->data['title'] = "Esemény módosítása";
+            $this->data['data'] = array(
+                'db' => 'events',
+                'method' => 'POST',
+                'action' => '',
+                'btnText' => 'Módosítás'
+            );
+            $this->data['values'] = $this->db->select('*')->from('events')->where('id', $id)->get()->result_array()[0];
+
+            $this->form_validation->set_rules("title", "Cím", "trim|required");
+            $this->form_validation->set_rules("seoLink", "SEO url", "trim|required");
+            $this->form_validation->set_rules("image", "Kép", "trim|required");
+            $this->form_validation->set_rules("shortDesc", "Rövid leírás", "trim|required");
+            $this->form_validation->set_rules("description", "Leírás", "trim|required");
+            $this->form_validation->set_rules("eventStart", "Kezdő dátum", "trim|required");
+            $this->form_validation->set_rules("eventEnd", "Vége dátum", "trim");
+            $this->form_validation->set_rules("place", "Helyszín", "trim|required");
+            if($this->form_validation->run()){
+                $this->Events->update($id);
+            }else{
+                $this->load->view($this->thm . '/index', $this->data);
+            }
+        }elseif($f == "delete" && $id != 1){
+            $this->Events->delete($id);
+        }
+    }
+
+    /*News*/
+    public function news($f = "list", $id = -1){
+        $this->User->checkLogin();
+        if($f == "list" && $id == -1){
+            $this->data['page'] = "news_list";
+            $this->data["data"] = $this->News->getList();
+            $this->load->view($this->thm . '/index', $this->data);
+        }elseif($f == "new" && $id == -1){
+            $this->data['page'] = "form";
+            $this->data['title'] = "Új hír létrehozása";
+            $this->data['data'] = array(
+                'db' => 'news',
+                'method' => 'POST',
+                'action' => '',
+                'btnText' => 'Mentés'
+            );
+            $this->form_validation->set_rules("title", "Cím", "trim|required");
+            $this->form_validation->set_rules("alias", "SEO url", "trim|required|is_unique[events.seoLink]");
+            $this->form_validation->set_rules("image", "Kép", "trim|required");
+            $this->form_validation->set_rules("short", "Rövid leírás", "trim|required");
+            $this->form_validation->set_rules("content", "Leírás", "trim|required");
+            $this->form_validation->set_rules("isPublic", "Kezdő dátum", "trim|required");
+            if($this->form_validation->run()){
+                $this->News->add();
+            }else{
+                $this->load->view($this->thm . '/index', $this->data);
+            };
+        }elseif($f == "edit" && $id != -1){
+            $this->data['page'] = "form";
+            $this->data['title'] = "Hír módosítása";
+            $this->data['data'] = array(
+                'db' => 'news',
+                'method' => 'POST',
+                'action' => '',
+                'btnText' => 'Módosítás'
+            );
+            $this->data['values'] = $this->db->select('*')->from('news')->where('id', $id)->get()->result_array()[0];
+
+            $this->form_validation->set_rules("title", "Cím", "trim|required");
+            $this->form_validation->set_rules("alias", "SEO url", "trim|required");
+            $this->form_validation->set_rules("image", "Kép", "trim|required");
+            $this->form_validation->set_rules("short", "Rövid leírás", "trim|required");
+            $this->form_validation->set_rules("content", "Leírás", "trim|required");
+            $this->form_validation->set_rules("isPublic", "Kezdő dátum", "trim|required");
+            if($this->form_validation->run()){
+                $this->News->update($id);
+            }else{
+                $this->load->view($this->thm . '/index', $this->data);
+            }
+        }elseif($f == "delete" && $id != 1){
+            $this->News->delete($id);
+        }
+    }
 }

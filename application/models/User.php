@@ -9,6 +9,9 @@ class User extends CI_Model {
             redirect('internal/login');
         };
     }
+    public function hasLoggedIn(){
+        return $this->Sess->getSub("login","user");
+    }
     public function isLoggedIn(){
         if($this->Sess->has("user") || $this->Sess->getSub("user","login") == true){
             redirect('internal');

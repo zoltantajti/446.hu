@@ -18,6 +18,18 @@
                     <span class="nav-item-name">Oldalak</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="admin/events/list" class="nav-link" aria-current="page">
+                    <i class="fa-solid fa-calendar-alt"></i>
+                    <span class="nav-item-name">Események</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="admin/news/list" class="nav-link" aria-current="page">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span class="nav-item-name">Hírek</span>
+                </a>
+            </li>
             <li><hr class="nav-item"><div class="dropdown-divider"></div></li>
             <?php }; ?>
             <?php if($this->User->hasPerm(3)){ ?>

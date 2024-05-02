@@ -4,7 +4,7 @@ tinymce.init({
 	menubar: false,
 	plugins: `accordion advlist anchor autolink code fullscreen image link lists media quickbars table visualblocks preview template`,
 	toolbar: `fullscreen code | template | blocks | bold italic underline | alignleft aligncentre alignright alignjustify | indent outdent | image media | link | numlist bullist | visualblocks | preview`,
-	content_css: '../../../assets/css/bootstrap.min.css,../../../assets/css/suncity.css',
+	content_css: '../../../assets/css/bootstrap.min.css',
     content_css_cors: true,
 	image_class_list: [
 		{title: 'Left', value: ''},

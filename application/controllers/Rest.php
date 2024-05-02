@@ -57,8 +57,53 @@ class Rest extends CI_Controller
         echo(json_encode($events));
     }
 
+    /*Imagemanager*/
+    public function getFolder()
+    {
+        $f = scandir("./assets/uploads");
+		$files = array();
+		foreach($f as $k=>$v){
+			if($v != "." && $v != ".." && $v != ".htaccess"){
+				array_push($files, $v);
+			};
+		};
+		echo(json_encode($files));
+    }
+    public function uploadFile(){
+        error_reporting(0);
+            $folder = "./assets/uploads/";
+            $errors = array();
+            $allowed = ["jpg","jpeg","png","gif","webp"];
+            $name = $_FILES['file']['name'];
+            $size = $_FILES['file']['size'];
+            $tmp = $_FILES['file']['tmp_name'];
+            $ext = end(explode(".", $name));
+            
+            $uPath = $folder . basename($name);
+            if(!in_array(strtolower($ext), $allowed)){
+                echo(json_encode(array('success' => false, 'msg' => "Az $ext nem engedélyezett!")));
+                exit();
+            };
+            if($size > 1250000){
+                echo(json_encode(array('success' => false, 'msg' => "Az engedélyezett fájlméret 12 Mb!")));
+                exit();
+            };
 
-
+            $didUpload = move_uploaded_file($tmp, $uPath);
+            if($didUpload){
+                echo(json_encode(array('success' => true, 'msg' => "A fájl sikeresen feltöltve!", 'data' => $name)));
+                exit();
+            }else{
+                echo(json_encode(array('success' => false, 'msg' => "Valami hiba történt!")));
+                exit();
+            };
+    }
+    public function removeFile(){
+        error_reporting(0);
+        $p = $this->input->post();
+        unlink($p['path']);
+        echo(json_encode(array("success" => true)));
+    }
     /*CRONS*/
     public function updateCSBook()
     {

@@ -44,7 +44,8 @@ class Rest extends CI_Controller
         $p = $this->input->post();
         $p['active'] = 0;
         $p['created_at'] = date("Y-m-d H:i:s");
-        $p['created_user'] = $_SESSION['user']['userID'];
+        $p['created_user'] = $_SESSION['user']['id'];
+        $p['authorized'] = 0;
         $p['parrotState'] = 1;
         $p['parrotRadius'] = 10;
         $this->Db->insert("markers", $p);

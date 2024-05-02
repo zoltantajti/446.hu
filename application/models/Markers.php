@@ -3,8 +3,19 @@ class Markers extends CI_Model
 {
     public function __construct(){ parent::__construct(); }
 
+    public function getNew(){
+        $result = $this->db->select('id,type,title')->from('markers')->where('authorized',0);
+        return $result->get()->result_array();
+    }
+    public function countNew(){
+        return $this->db->select('id')->from('markers')->where('authorized',0)->count_all_results();
+    }
+    public function countAll(){
+        return $this->db->select('id')->from('markers')->count_all_results();
+    }
+
     public function getList($filter = null){
-        $result = $this->db->select('id,type,title')->from('markers');
+        $result = $this->db->select('id,type,title')->from('markers')->where('authorized',1);
         if($filter != null){
             if($filter == "papagáj" || $filter == "papi" || $filter == "parrot"){
                 $result->where('type', 'parrot');
@@ -45,6 +56,13 @@ class Markers extends CI_Model
         $this->Db->delete("markers", array("id" => $id));
         $this->Logs->make("MARKER::Delete", $this->Sess->getChain('name','user') . " törölte a " . $old['title'] . " markert.<br/>Adatok: " . json_encode($old));
         $this->Msg->set("Sikeres törlés!");
+        redirect('admin/markers');
+    }
+    public function allow($id){
+        $old = $this->db->select('*')->from('markers')->where('id', $id)->get()->result_array()[0];
+        $this->Db->update("markers", array("authorized" => 1, "active" => 1), array("id" => $id));
+        $this->Logs->make("MARKER::Allow", $this->Sess->getChain('name','user') . " jóváhagyta a " . $old['title'] . " markert.<br/>Adatok: " . json_encode($old));
+        $this->Msg->set("Sikeres jóváhagyás!");
         redirect('admin/markers');
     }
 

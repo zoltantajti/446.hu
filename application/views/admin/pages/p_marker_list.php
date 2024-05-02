@@ -27,7 +27,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php foreach($data as $key=>$item){ ?>
+                    <?php foreach($this->Markers->getNew() as $key=>$item){ ?>
+                        <tr>
+                            <td class="table-danger"><?=$item['id']?></td>
+                            <td class="table-danger"><?=$this->Markers->getType($item['type'])?></td>
+                            <td class="table-danger"><?=$item['title']?></td>
+                            <td class="table-danger">
+                                <a href="admin/markers/edit/<?=$item['id']?>"><i class="fa-solid fa-pen"></i></a>&nbsp;&nbsp;
+                                <a href="admin/markers/allow/<?=$item['id']?>"><i class="fa fa-fw fa-check"></i></a>&nbsp;&nbsp;                                
+                                <a href="javascript:;" onClick="if(confirm('A törlés visszavonhatatlan! Valóban végre szeretnéd hajtani?')){document.location.assign('admin/markers/delete/<?=$item['id']?>');};"><i class="fa-solid fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    <?php }; foreach($data as $key=>$item){ ?>
                         <tr>
                             <td><?=$item['id']?></td>
                             <td><?=$this->Markers->getType($item['type'])?></td>

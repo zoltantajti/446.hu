@@ -50863,3 +50863,5435 @@ INFO - 2024-05-02 17:51:36 --> CSRF cookie sent
 INFO - 2024-05-02 17:51:36 --> Input Class Initialized
 INFO - 2024-05-02 17:51:36 --> Language Class Initialized
 ERROR - 2024-05-02 17:51:36 --> 404 Page Not Found: Internal/log
+INFO - 2024-05-02 17:53:32 --> Config Class Initialized
+INFO - 2024-05-02 17:53:32 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:53:32 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:53:32 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:53:32 --> URI Class Initialized
+INFO - 2024-05-02 17:53:32 --> Router Class Initialized
+INFO - 2024-05-02 17:53:32 --> Output Class Initialized
+INFO - 2024-05-02 17:53:32 --> Security Class Initialized
+DEBUG - 2024-05-02 17:53:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:53:32 --> CSRF cookie sent
+INFO - 2024-05-02 17:53:32 --> Input Class Initialized
+INFO - 2024-05-02 17:53:32 --> Language Class Initialized
+INFO - 2024-05-02 17:53:32 --> Loader Class Initialized
+INFO - 2024-05-02 17:53:32 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:53:32 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:53:32 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:53:32 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:53:32 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:53:32 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:53:32 --> Encryption Class Initialized
+INFO - 2024-05-02 17:53:32 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:53:32 --> Parser Class Initialized
+INFO - 2024-05-02 17:53:32 --> Email Class Initialized
+INFO - 2024-05-02 17:53:32 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:53:32 --> Jquery Class Initialized
+INFO - 2024-05-02 17:53:32 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:53:32 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:53:32 --> Pagination Class Initialized
+INFO - 2024-05-02 17:53:32 --> Table Class Initialized
+INFO - 2024-05-02 17:53:32 --> Trackback Class Initialized
+INFO - 2024-05-02 17:53:32 --> User Agent Class Initialized
+INFO - 2024-05-02 17:53:32 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:53:32 --> Model "Misc" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Sess" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:53:32 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:53:32 --> Model "Db" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Banns" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Logs" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Seo" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:53:32 --> Model "User" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Registration" initialized
+INFO - 2024-05-02 17:53:32 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Email" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Msg" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Page" initialized
+INFO - 2024-05-02 17:53:32 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Markers" initialized
+INFO - 2024-05-02 17:53:32 --> Model "Events" initialized
+INFO - 2024-05-02 17:53:32 --> Model "News" initialized
+INFO - 2024-05-02 17:53:32 --> Controller Class Initialized
+INFO - 2024-05-02 17:53:32 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/main.php
+INFO - 2024-05-02 17:53:32 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 17:53:32 --> Final output sent to browser
+DEBUG - 2024-05-02 17:53:32 --> Total execution time: 0.0699
+INFO - 2024-05-02 17:53:33 --> Config Class Initialized
+INFO - 2024-05-02 17:53:33 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:53:33 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:53:33 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:53:33 --> URI Class Initialized
+INFO - 2024-05-02 17:53:33 --> Router Class Initialized
+INFO - 2024-05-02 17:53:33 --> Output Class Initialized
+INFO - 2024-05-02 17:53:33 --> Security Class Initialized
+DEBUG - 2024-05-02 17:53:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:53:33 --> CSRF cookie sent
+INFO - 2024-05-02 17:53:33 --> Input Class Initialized
+INFO - 2024-05-02 17:53:33 --> Language Class Initialized
+INFO - 2024-05-02 17:53:33 --> Loader Class Initialized
+INFO - 2024-05-02 17:53:33 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:53:33 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:53:33 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:53:33 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:53:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:53:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:53:33 --> Encryption Class Initialized
+INFO - 2024-05-02 17:53:33 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:53:33 --> Parser Class Initialized
+INFO - 2024-05-02 17:53:33 --> Email Class Initialized
+INFO - 2024-05-02 17:53:33 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:53:33 --> Jquery Class Initialized
+INFO - 2024-05-02 17:53:33 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:53:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:53:33 --> Pagination Class Initialized
+INFO - 2024-05-02 17:53:33 --> Table Class Initialized
+INFO - 2024-05-02 17:53:33 --> Trackback Class Initialized
+INFO - 2024-05-02 17:53:33 --> User Agent Class Initialized
+INFO - 2024-05-02 17:53:33 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:53:33 --> Model "Misc" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Sess" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:53:33 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:53:33 --> Model "Db" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Banns" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Logs" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Seo" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:53:33 --> Model "User" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Registration" initialized
+INFO - 2024-05-02 17:53:33 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Email" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Msg" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Page" initialized
+INFO - 2024-05-02 17:53:33 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Markers" initialized
+INFO - 2024-05-02 17:53:33 --> Model "Events" initialized
+INFO - 2024-05-02 17:53:33 --> Model "News" initialized
+INFO - 2024-05-02 17:53:33 --> Controller Class Initialized
+INFO - 2024-05-02 17:53:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/map.php
+INFO - 2024-05-02 17:53:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 17:53:33 --> Final output sent to browser
+DEBUG - 2024-05-02 17:53:33 --> Total execution time: 0.1093
+INFO - 2024-05-02 17:53:34 --> Config Class Initialized
+INFO - 2024-05-02 17:53:34 --> Hooks Class Initialized
+INFO - 2024-05-02 17:53:34 --> Config Class Initialized
+INFO - 2024-05-02 17:53:34 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:53:34 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:53:34 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:53:34 --> URI Class Initialized
+DEBUG - 2024-05-02 17:53:34 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:53:34 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:53:34 --> Router Class Initialized
+INFO - 2024-05-02 17:53:34 --> URI Class Initialized
+INFO - 2024-05-02 17:53:34 --> Output Class Initialized
+INFO - 2024-05-02 17:53:34 --> Router Class Initialized
+INFO - 2024-05-02 17:53:34 --> Security Class Initialized
+INFO - 2024-05-02 17:53:34 --> Output Class Initialized
+DEBUG - 2024-05-02 17:53:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:53:34 --> CSRF cookie sent
+INFO - 2024-05-02 17:53:34 --> Input Class Initialized
+INFO - 2024-05-02 17:53:34 --> Security Class Initialized
+INFO - 2024-05-02 17:53:34 --> Language Class Initialized
+DEBUG - 2024-05-02 17:53:34 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:53:34 --> CSRF cookie sent
+INFO - 2024-05-02 17:53:34 --> Input Class Initialized
+INFO - 2024-05-02 17:53:34 --> Language Class Initialized
+INFO - 2024-05-02 17:53:34 --> Loader Class Initialized
+INFO - 2024-05-02 17:53:34 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:53:34 --> Loader Class Initialized
+INFO - 2024-05-02 17:53:34 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: text_helper
+INFO - 2024-05-02 17:53:34 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:53:34 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2024-05-02 17:53:34 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:53:34 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:53:34 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:53:34 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:53:34 --> Encryption Class Initialized
+INFO - 2024-05-02 17:53:34 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:53:34 --> Parser Class Initialized
+INFO - 2024-05-02 17:53:34 --> Email Class Initialized
+INFO - 2024-05-02 17:53:34 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:53:34 --> Jquery Class Initialized
+INFO - 2024-05-02 17:53:34 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:53:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:53:34 --> Pagination Class Initialized
+INFO - 2024-05-02 17:53:34 --> Table Class Initialized
+INFO - 2024-05-02 17:53:34 --> Trackback Class Initialized
+INFO - 2024-05-02 17:53:34 --> User Agent Class Initialized
+INFO - 2024-05-02 17:53:34 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:53:34 --> Model "Misc" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Sess" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:53:34 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:53:34 --> Model "Db" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Banns" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Logs" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Seo" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:53:34 --> Model "User" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Registration" initialized
+INFO - 2024-05-02 17:53:34 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Email" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Msg" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Page" initialized
+INFO - 2024-05-02 17:53:34 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Markers" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Events" initialized
+INFO - 2024-05-02 17:53:34 --> Model "News" initialized
+INFO - 2024-05-02 17:53:34 --> Controller Class Initialized
+INFO - 2024-05-02 17:53:34 --> Final output sent to browser
+DEBUG - 2024-05-02 17:53:34 --> Total execution time: 0.1105
+INFO - 2024-05-02 17:53:34 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:53:34 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:53:34 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:53:34 --> Encryption Class Initialized
+INFO - 2024-05-02 17:53:34 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:53:34 --> Parser Class Initialized
+INFO - 2024-05-02 17:53:34 --> Email Class Initialized
+INFO - 2024-05-02 17:53:34 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:53:34 --> Jquery Class Initialized
+INFO - 2024-05-02 17:53:34 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:53:34 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:53:34 --> Pagination Class Initialized
+INFO - 2024-05-02 17:53:34 --> Table Class Initialized
+INFO - 2024-05-02 17:53:34 --> Trackback Class Initialized
+INFO - 2024-05-02 17:53:34 --> User Agent Class Initialized
+INFO - 2024-05-02 17:53:34 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:53:34 --> Model "Misc" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Sess" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:53:34 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:53:34 --> Model "Db" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Banns" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Logs" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Seo" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:53:34 --> Model "User" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Registration" initialized
+INFO - 2024-05-02 17:53:34 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Email" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Msg" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Page" initialized
+INFO - 2024-05-02 17:53:34 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Markers" initialized
+INFO - 2024-05-02 17:53:34 --> Model "Events" initialized
+INFO - 2024-05-02 17:53:34 --> Model "News" initialized
+INFO - 2024-05-02 17:53:34 --> Controller Class Initialized
+INFO - 2024-05-02 17:53:34 --> Final output sent to browser
+DEBUG - 2024-05-02 17:53:34 --> Total execution time: 0.2150
+INFO - 2024-05-02 17:53:43 --> Config Class Initialized
+INFO - 2024-05-02 17:53:43 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:53:43 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:53:43 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:53:43 --> URI Class Initialized
+INFO - 2024-05-02 17:53:43 --> Router Class Initialized
+INFO - 2024-05-02 17:53:43 --> Output Class Initialized
+INFO - 2024-05-02 17:53:43 --> Security Class Initialized
+DEBUG - 2024-05-02 17:53:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:53:43 --> CSRF cookie sent
+INFO - 2024-05-02 17:53:45 --> Config Class Initialized
+INFO - 2024-05-02 17:53:45 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:53:45 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:53:45 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:53:45 --> URI Class Initialized
+INFO - 2024-05-02 17:53:45 --> Router Class Initialized
+INFO - 2024-05-02 17:53:45 --> Output Class Initialized
+INFO - 2024-05-02 17:53:45 --> Security Class Initialized
+DEBUG - 2024-05-02 17:53:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:53:45 --> CSRF cookie sent
+INFO - 2024-05-02 17:54:04 --> Config Class Initialized
+INFO - 2024-05-02 17:54:04 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:54:04 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:54:04 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:54:04 --> URI Class Initialized
+INFO - 2024-05-02 17:54:04 --> Router Class Initialized
+INFO - 2024-05-02 17:54:04 --> Output Class Initialized
+INFO - 2024-05-02 17:54:04 --> Security Class Initialized
+DEBUG - 2024-05-02 17:54:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:54:04 --> Input Class Initialized
+INFO - 2024-05-02 17:54:04 --> Language Class Initialized
+INFO - 2024-05-02 17:54:04 --> Loader Class Initialized
+INFO - 2024-05-02 17:54:04 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:54:04 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:54:04 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:54:04 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:54:04 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:54:05 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:54:05 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:54:05 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:54:05 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:54:05 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:54:05 --> Encryption Class Initialized
+INFO - 2024-05-02 17:54:05 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:54:05 --> Parser Class Initialized
+INFO - 2024-05-02 17:54:05 --> Email Class Initialized
+INFO - 2024-05-02 17:54:05 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:54:05 --> Jquery Class Initialized
+INFO - 2024-05-02 17:54:05 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:54:05 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:54:05 --> Pagination Class Initialized
+INFO - 2024-05-02 17:54:05 --> Table Class Initialized
+INFO - 2024-05-02 17:54:05 --> Trackback Class Initialized
+INFO - 2024-05-02 17:54:05 --> User Agent Class Initialized
+INFO - 2024-05-02 17:54:05 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:54:05 --> Model "Misc" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Sess" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:54:05 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:54:05 --> Model "Db" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Banns" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Logs" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Seo" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:54:05 --> Model "User" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Registration" initialized
+INFO - 2024-05-02 17:54:05 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Email" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Msg" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Page" initialized
+INFO - 2024-05-02 17:54:05 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Markers" initialized
+INFO - 2024-05-02 17:54:05 --> Model "Events" initialized
+INFO - 2024-05-02 17:54:05 --> Model "News" initialized
+INFO - 2024-05-02 17:54:05 --> Controller Class Initialized
+ERROR - 2024-05-02 17:54:05 --> Severity: Warning --> Undefined array key "userID" G:\xampp\htdocs\446.hu\application\controllers\Rest.php 47
+INFO - 2024-05-02 17:54:05 --> Final output sent to browser
+DEBUG - 2024-05-02 17:54:05 --> Total execution time: 0.0738
+INFO - 2024-05-02 17:54:12 --> Config Class Initialized
+INFO - 2024-05-02 17:54:12 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:54:12 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:54:12 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:54:12 --> URI Class Initialized
+INFO - 2024-05-02 17:54:12 --> Router Class Initialized
+INFO - 2024-05-02 17:54:12 --> Output Class Initialized
+INFO - 2024-05-02 17:54:12 --> Security Class Initialized
+DEBUG - 2024-05-02 17:54:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:54:12 --> CSRF cookie sent
+INFO - 2024-05-02 17:54:12 --> Input Class Initialized
+INFO - 2024-05-02 17:54:12 --> Language Class Initialized
+INFO - 2024-05-02 17:54:12 --> Loader Class Initialized
+INFO - 2024-05-02 17:54:12 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:54:12 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:54:12 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:54:12 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:54:12 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:54:12 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:54:12 --> Encryption Class Initialized
+INFO - 2024-05-02 17:54:12 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:54:12 --> Parser Class Initialized
+INFO - 2024-05-02 17:54:12 --> Email Class Initialized
+INFO - 2024-05-02 17:54:12 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:54:12 --> Jquery Class Initialized
+INFO - 2024-05-02 17:54:12 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:54:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:54:12 --> Pagination Class Initialized
+INFO - 2024-05-02 17:54:12 --> Table Class Initialized
+INFO - 2024-05-02 17:54:12 --> Trackback Class Initialized
+INFO - 2024-05-02 17:54:12 --> User Agent Class Initialized
+INFO - 2024-05-02 17:54:12 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:54:12 --> Model "Misc" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Sess" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:54:12 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:54:12 --> Model "Db" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Banns" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Logs" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Seo" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:54:12 --> Model "User" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Registration" initialized
+INFO - 2024-05-02 17:54:12 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Email" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Msg" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Page" initialized
+INFO - 2024-05-02 17:54:12 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Markers" initialized
+INFO - 2024-05-02 17:54:12 --> Model "Events" initialized
+INFO - 2024-05-02 17:54:12 --> Model "News" initialized
+INFO - 2024-05-02 17:54:12 --> Controller Class Initialized
+INFO - 2024-05-02 17:54:12 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 17:54:12 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 17:54:12 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 17:54:12 --> Final output sent to browser
+DEBUG - 2024-05-02 17:54:12 --> Total execution time: 0.0782
+INFO - 2024-05-02 17:56:44 --> Config Class Initialized
+INFO - 2024-05-02 17:56:44 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:56:44 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:56:44 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:56:44 --> URI Class Initialized
+INFO - 2024-05-02 17:56:44 --> Router Class Initialized
+INFO - 2024-05-02 17:56:44 --> Output Class Initialized
+INFO - 2024-05-02 17:56:44 --> Security Class Initialized
+DEBUG - 2024-05-02 17:56:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:56:44 --> CSRF cookie sent
+INFO - 2024-05-02 17:56:44 --> Input Class Initialized
+INFO - 2024-05-02 17:56:44 --> Language Class Initialized
+INFO - 2024-05-02 17:56:44 --> Loader Class Initialized
+INFO - 2024-05-02 17:56:44 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:56:44 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:56:44 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:56:44 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:56:44 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:56:44 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:56:44 --> Encryption Class Initialized
+INFO - 2024-05-02 17:56:44 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:56:44 --> Parser Class Initialized
+INFO - 2024-05-02 17:56:44 --> Email Class Initialized
+INFO - 2024-05-02 17:56:44 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:56:44 --> Jquery Class Initialized
+INFO - 2024-05-02 17:56:44 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:56:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:56:44 --> Pagination Class Initialized
+INFO - 2024-05-02 17:56:44 --> Table Class Initialized
+INFO - 2024-05-02 17:56:44 --> Trackback Class Initialized
+INFO - 2024-05-02 17:56:44 --> User Agent Class Initialized
+INFO - 2024-05-02 17:56:44 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:56:44 --> Model "Misc" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Sess" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:56:44 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:56:44 --> Model "Db" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Banns" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Logs" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Seo" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:56:44 --> Model "User" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Registration" initialized
+INFO - 2024-05-02 17:56:44 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Email" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Msg" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Page" initialized
+INFO - 2024-05-02 17:56:44 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Markers" initialized
+INFO - 2024-05-02 17:56:44 --> Model "Events" initialized
+INFO - 2024-05-02 17:56:44 --> Model "News" initialized
+INFO - 2024-05-02 17:56:44 --> Controller Class Initialized
+INFO - 2024-05-02 17:56:44 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 17:56:44 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 17:56:44 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 17:56:44 --> Final output sent to browser
+DEBUG - 2024-05-02 17:56:44 --> Total execution time: 0.0738
+INFO - 2024-05-02 17:56:46 --> Config Class Initialized
+INFO - 2024-05-02 17:56:46 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:56:46 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:56:46 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:56:46 --> URI Class Initialized
+INFO - 2024-05-02 17:56:46 --> Router Class Initialized
+INFO - 2024-05-02 17:56:46 --> Output Class Initialized
+INFO - 2024-05-02 17:56:46 --> Security Class Initialized
+DEBUG - 2024-05-02 17:56:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:56:46 --> CSRF cookie sent
+INFO - 2024-05-02 17:56:46 --> Input Class Initialized
+INFO - 2024-05-02 17:56:46 --> Language Class Initialized
+INFO - 2024-05-02 17:56:46 --> Loader Class Initialized
+INFO - 2024-05-02 17:56:46 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:56:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:56:46 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:56:46 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:56:46 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:56:46 --> Encryption Class Initialized
+INFO - 2024-05-02 17:56:46 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:56:46 --> Parser Class Initialized
+INFO - 2024-05-02 17:56:46 --> Email Class Initialized
+INFO - 2024-05-02 17:56:46 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:56:46 --> Jquery Class Initialized
+INFO - 2024-05-02 17:56:46 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:56:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:56:46 --> Pagination Class Initialized
+INFO - 2024-05-02 17:56:46 --> Table Class Initialized
+INFO - 2024-05-02 17:56:46 --> Trackback Class Initialized
+INFO - 2024-05-02 17:56:46 --> User Agent Class Initialized
+INFO - 2024-05-02 17:56:46 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:56:46 --> Model "Misc" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Sess" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:56:46 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:56:46 --> Model "Db" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Banns" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Logs" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Seo" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:56:46 --> Model "User" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Registration" initialized
+INFO - 2024-05-02 17:56:46 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Email" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Msg" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Page" initialized
+INFO - 2024-05-02 17:56:46 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Markers" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Events" initialized
+INFO - 2024-05-02 17:56:46 --> Model "News" initialized
+INFO - 2024-05-02 17:56:46 --> Controller Class Initialized
+INFO - 2024-05-02 17:56:46 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/map.php
+INFO - 2024-05-02 17:56:46 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 17:56:46 --> Final output sent to browser
+DEBUG - 2024-05-02 17:56:46 --> Total execution time: 0.0816
+INFO - 2024-05-02 17:56:46 --> Config Class Initialized
+INFO - 2024-05-02 17:56:46 --> Hooks Class Initialized
+INFO - 2024-05-02 17:56:46 --> Config Class Initialized
+INFO - 2024-05-02 17:56:46 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:56:46 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:56:46 --> Utf8 Class Initialized
+DEBUG - 2024-05-02 17:56:46 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:56:46 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:56:46 --> URI Class Initialized
+INFO - 2024-05-02 17:56:46 --> URI Class Initialized
+INFO - 2024-05-02 17:56:46 --> Router Class Initialized
+INFO - 2024-05-02 17:56:46 --> Router Class Initialized
+INFO - 2024-05-02 17:56:46 --> Output Class Initialized
+INFO - 2024-05-02 17:56:46 --> Output Class Initialized
+INFO - 2024-05-02 17:56:46 --> Security Class Initialized
+INFO - 2024-05-02 17:56:46 --> Security Class Initialized
+DEBUG - 2024-05-02 17:56:46 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-02 17:56:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:56:46 --> CSRF cookie sent
+INFO - 2024-05-02 17:56:46 --> CSRF cookie sent
+INFO - 2024-05-02 17:56:46 --> Input Class Initialized
+INFO - 2024-05-02 17:56:46 --> Input Class Initialized
+INFO - 2024-05-02 17:56:46 --> Language Class Initialized
+INFO - 2024-05-02 17:56:46 --> Language Class Initialized
+INFO - 2024-05-02 17:56:46 --> Loader Class Initialized
+INFO - 2024-05-02 17:56:46 --> Loader Class Initialized
+INFO - 2024-05-02 17:56:46 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: text_helper
+INFO - 2024-05-02 17:56:46 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:56:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2024-05-02 17:56:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:56:46 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:56:46 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:56:46 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:56:46 --> Encryption Class Initialized
+INFO - 2024-05-02 17:56:46 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:56:46 --> Parser Class Initialized
+INFO - 2024-05-02 17:56:46 --> Email Class Initialized
+INFO - 2024-05-02 17:56:46 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:56:46 --> Jquery Class Initialized
+INFO - 2024-05-02 17:56:46 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:56:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:56:46 --> Pagination Class Initialized
+INFO - 2024-05-02 17:56:46 --> Table Class Initialized
+INFO - 2024-05-02 17:56:46 --> Trackback Class Initialized
+INFO - 2024-05-02 17:56:46 --> User Agent Class Initialized
+INFO - 2024-05-02 17:56:46 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:56:46 --> Model "Misc" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Sess" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:56:46 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:56:46 --> Model "Db" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Banns" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Logs" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Seo" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:56:46 --> Model "User" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Registration" initialized
+INFO - 2024-05-02 17:56:46 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Email" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Msg" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Page" initialized
+INFO - 2024-05-02 17:56:46 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Markers" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Events" initialized
+INFO - 2024-05-02 17:56:46 --> Model "News" initialized
+INFO - 2024-05-02 17:56:46 --> Controller Class Initialized
+INFO - 2024-05-02 17:56:46 --> Final output sent to browser
+DEBUG - 2024-05-02 17:56:46 --> Total execution time: 0.0879
+INFO - 2024-05-02 17:56:46 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:56:46 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:56:46 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:56:46 --> Encryption Class Initialized
+INFO - 2024-05-02 17:56:46 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:56:46 --> Parser Class Initialized
+INFO - 2024-05-02 17:56:46 --> Email Class Initialized
+INFO - 2024-05-02 17:56:46 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:56:46 --> Jquery Class Initialized
+INFO - 2024-05-02 17:56:46 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:56:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:56:46 --> Pagination Class Initialized
+INFO - 2024-05-02 17:56:46 --> Table Class Initialized
+INFO - 2024-05-02 17:56:46 --> Trackback Class Initialized
+INFO - 2024-05-02 17:56:46 --> User Agent Class Initialized
+INFO - 2024-05-02 17:56:46 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:56:46 --> Model "Misc" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Sess" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:56:46 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:56:46 --> Model "Db" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Banns" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Logs" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Seo" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:56:46 --> Model "User" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Registration" initialized
+INFO - 2024-05-02 17:56:46 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Email" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Msg" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Page" initialized
+INFO - 2024-05-02 17:56:46 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Markers" initialized
+INFO - 2024-05-02 17:56:46 --> Model "Events" initialized
+INFO - 2024-05-02 17:56:46 --> Model "News" initialized
+INFO - 2024-05-02 17:56:46 --> Controller Class Initialized
+INFO - 2024-05-02 17:56:46 --> Final output sent to browser
+DEBUG - 2024-05-02 17:56:46 --> Total execution time: 0.1395
+INFO - 2024-05-02 17:56:54 --> Config Class Initialized
+INFO - 2024-05-02 17:56:54 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:56:54 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:56:54 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:56:54 --> URI Class Initialized
+INFO - 2024-05-02 17:56:54 --> Router Class Initialized
+INFO - 2024-05-02 17:56:54 --> Output Class Initialized
+INFO - 2024-05-02 17:56:54 --> Security Class Initialized
+DEBUG - 2024-05-02 17:56:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:56:54 --> Input Class Initialized
+INFO - 2024-05-02 17:56:54 --> Language Class Initialized
+INFO - 2024-05-02 17:56:54 --> Loader Class Initialized
+INFO - 2024-05-02 17:56:54 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:56:54 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:56:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:56:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:56:54 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:56:54 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:56:54 --> Encryption Class Initialized
+INFO - 2024-05-02 17:56:54 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:56:54 --> Parser Class Initialized
+INFO - 2024-05-02 17:56:54 --> Email Class Initialized
+INFO - 2024-05-02 17:56:54 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:56:54 --> Jquery Class Initialized
+INFO - 2024-05-02 17:56:54 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:56:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:56:54 --> Pagination Class Initialized
+INFO - 2024-05-02 17:56:54 --> Table Class Initialized
+INFO - 2024-05-02 17:56:54 --> Trackback Class Initialized
+INFO - 2024-05-02 17:56:54 --> User Agent Class Initialized
+INFO - 2024-05-02 17:56:54 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:56:54 --> Model "Misc" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Sess" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:56:54 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:56:54 --> Model "Db" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Banns" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Logs" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Seo" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:56:54 --> Model "User" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Registration" initialized
+INFO - 2024-05-02 17:56:54 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Email" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Msg" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Page" initialized
+INFO - 2024-05-02 17:56:54 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Markers" initialized
+INFO - 2024-05-02 17:56:54 --> Model "Events" initialized
+INFO - 2024-05-02 17:56:54 --> Model "News" initialized
+INFO - 2024-05-02 17:56:54 --> Controller Class Initialized
+INFO - 2024-05-02 17:56:54 --> Final output sent to browser
+DEBUG - 2024-05-02 17:56:54 --> Total execution time: 0.0953
+INFO - 2024-05-02 17:57:33 --> Config Class Initialized
+INFO - 2024-05-02 17:57:33 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:57:33 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:57:33 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:57:33 --> URI Class Initialized
+INFO - 2024-05-02 17:57:33 --> Router Class Initialized
+INFO - 2024-05-02 17:57:33 --> Output Class Initialized
+INFO - 2024-05-02 17:57:33 --> Security Class Initialized
+DEBUG - 2024-05-02 17:57:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:57:33 --> CSRF cookie sent
+INFO - 2024-05-02 17:57:33 --> Input Class Initialized
+INFO - 2024-05-02 17:57:33 --> Language Class Initialized
+INFO - 2024-05-02 17:57:33 --> Loader Class Initialized
+INFO - 2024-05-02 17:57:33 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:57:33 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:57:33 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:57:33 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:57:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:57:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:57:33 --> Encryption Class Initialized
+INFO - 2024-05-02 17:57:33 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:57:33 --> Parser Class Initialized
+INFO - 2024-05-02 17:57:33 --> Email Class Initialized
+INFO - 2024-05-02 17:57:33 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:57:33 --> Jquery Class Initialized
+INFO - 2024-05-02 17:57:33 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:57:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:57:33 --> Pagination Class Initialized
+INFO - 2024-05-02 17:57:33 --> Table Class Initialized
+INFO - 2024-05-02 17:57:33 --> Trackback Class Initialized
+INFO - 2024-05-02 17:57:33 --> User Agent Class Initialized
+INFO - 2024-05-02 17:57:33 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:57:33 --> Model "Misc" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Sess" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:57:33 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:57:33 --> Model "Db" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Banns" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Logs" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Seo" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:57:33 --> Model "User" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Registration" initialized
+INFO - 2024-05-02 17:57:33 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Email" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Msg" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Page" initialized
+INFO - 2024-05-02 17:57:33 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Markers" initialized
+INFO - 2024-05-02 17:57:33 --> Model "Events" initialized
+INFO - 2024-05-02 17:57:33 --> Model "News" initialized
+INFO - 2024-05-02 17:57:33 --> Controller Class Initialized
+INFO - 2024-05-02 17:57:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 17:57:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 17:57:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 17:57:33 --> Final output sent to browser
+DEBUG - 2024-05-02 17:57:33 --> Total execution time: 0.0666
+INFO - 2024-05-02 17:58:54 --> Config Class Initialized
+INFO - 2024-05-02 17:58:54 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:58:54 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:58:54 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:58:54 --> URI Class Initialized
+INFO - 2024-05-02 17:58:54 --> Router Class Initialized
+INFO - 2024-05-02 17:58:54 --> Output Class Initialized
+INFO - 2024-05-02 17:58:54 --> Security Class Initialized
+DEBUG - 2024-05-02 17:58:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:58:54 --> CSRF cookie sent
+INFO - 2024-05-02 17:58:54 --> Input Class Initialized
+INFO - 2024-05-02 17:58:54 --> Language Class Initialized
+INFO - 2024-05-02 17:58:54 --> Loader Class Initialized
+INFO - 2024-05-02 17:58:54 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:58:54 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:58:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:58:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:58:54 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:58:54 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:58:54 --> Encryption Class Initialized
+INFO - 2024-05-02 17:58:54 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:58:54 --> Parser Class Initialized
+INFO - 2024-05-02 17:58:54 --> Email Class Initialized
+INFO - 2024-05-02 17:58:54 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:58:54 --> Jquery Class Initialized
+INFO - 2024-05-02 17:58:54 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:58:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:58:54 --> Pagination Class Initialized
+INFO - 2024-05-02 17:58:54 --> Table Class Initialized
+INFO - 2024-05-02 17:58:54 --> Trackback Class Initialized
+INFO - 2024-05-02 17:58:54 --> User Agent Class Initialized
+INFO - 2024-05-02 17:58:54 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:58:54 --> Model "Misc" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Sess" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:58:54 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:58:54 --> Model "Db" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Banns" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Logs" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Seo" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:58:54 --> Model "User" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Registration" initialized
+INFO - 2024-05-02 17:58:54 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Email" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Msg" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Page" initialized
+INFO - 2024-05-02 17:58:54 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Markers" initialized
+INFO - 2024-05-02 17:58:54 --> Model "Events" initialized
+INFO - 2024-05-02 17:58:54 --> Model "News" initialized
+INFO - 2024-05-02 17:58:54 --> Controller Class Initialized
+INFO - 2024-05-02 17:58:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+ERROR - 2024-05-02 17:58:54 --> Severity: error --> Exception: Call to undefined method Markers::getNew() G:\xampp\htdocs\446.hu\application\views\admin\pages\p_marker_list.php 30
+INFO - 2024-05-02 17:59:24 --> Config Class Initialized
+INFO - 2024-05-02 17:59:24 --> Hooks Class Initialized
+DEBUG - 2024-05-02 17:59:24 --> UTF-8 Support Enabled
+INFO - 2024-05-02 17:59:24 --> Utf8 Class Initialized
+INFO - 2024-05-02 17:59:24 --> URI Class Initialized
+INFO - 2024-05-02 17:59:24 --> Router Class Initialized
+INFO - 2024-05-02 17:59:24 --> Output Class Initialized
+INFO - 2024-05-02 17:59:24 --> Security Class Initialized
+DEBUG - 2024-05-02 17:59:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 17:59:24 --> CSRF cookie sent
+INFO - 2024-05-02 17:59:24 --> Input Class Initialized
+INFO - 2024-05-02 17:59:24 --> Language Class Initialized
+INFO - 2024-05-02 17:59:24 --> Loader Class Initialized
+INFO - 2024-05-02 17:59:24 --> Helper loaded: typography_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: date_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: form_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: email_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: number_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: html_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: url_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: array_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: security_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: string_helper
+INFO - 2024-05-02 17:59:24 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 17:59:24 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 17:59:24 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 17:59:24 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 17:59:24 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 17:59:24 --> Encryption Class Initialized
+INFO - 2024-05-02 17:59:24 --> Form Validation Class Initialized
+INFO - 2024-05-02 17:59:24 --> Parser Class Initialized
+INFO - 2024-05-02 17:59:24 --> Email Class Initialized
+INFO - 2024-05-02 17:59:24 --> Image Lib Class Initialized
+INFO - 2024-05-02 17:59:24 --> Jquery Class Initialized
+INFO - 2024-05-02 17:59:24 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 17:59:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 17:59:24 --> Pagination Class Initialized
+INFO - 2024-05-02 17:59:24 --> Table Class Initialized
+INFO - 2024-05-02 17:59:24 --> Trackback Class Initialized
+INFO - 2024-05-02 17:59:24 --> User Agent Class Initialized
+INFO - 2024-05-02 17:59:24 --> XML-RPC Class Initialized
+INFO - 2024-05-02 17:59:24 --> Model "Misc" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Sess" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Cookie" initialized
+INFO - 2024-05-02 17:59:24 --> Database Driver Class Initialized
+INFO - 2024-05-02 17:59:24 --> Model "Db" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Banns" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Logs" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Seo" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Navbar" initialized
+INFO - 2024-05-02 17:59:24 --> Model "User" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Registration" initialized
+INFO - 2024-05-02 17:59:24 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Encryption" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Email" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Msg" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Visitor" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Page" initialized
+INFO - 2024-05-02 17:59:24 --> Model "AdminForm" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Markers" initialized
+INFO - 2024-05-02 17:59:24 --> Model "Events" initialized
+INFO - 2024-05-02 17:59:24 --> Model "News" initialized
+INFO - 2024-05-02 17:59:24 --> Controller Class Initialized
+INFO - 2024-05-02 17:59:24 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 17:59:24 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 17:59:24 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 17:59:24 --> Final output sent to browser
+DEBUG - 2024-05-02 17:59:24 --> Total execution time: 0.1130
+INFO - 2024-05-02 18:00:19 --> Config Class Initialized
+INFO - 2024-05-02 18:00:19 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:00:19 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:00:19 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:00:19 --> URI Class Initialized
+INFO - 2024-05-02 18:00:19 --> Router Class Initialized
+INFO - 2024-05-02 18:00:19 --> Output Class Initialized
+INFO - 2024-05-02 18:00:19 --> Security Class Initialized
+DEBUG - 2024-05-02 18:00:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:00:19 --> CSRF cookie sent
+INFO - 2024-05-02 18:00:19 --> Input Class Initialized
+INFO - 2024-05-02 18:00:19 --> Language Class Initialized
+INFO - 2024-05-02 18:00:19 --> Loader Class Initialized
+INFO - 2024-05-02 18:00:19 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:00:19 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:00:19 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:00:19 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:00:19 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:00:19 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:00:19 --> Encryption Class Initialized
+INFO - 2024-05-02 18:00:19 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:00:19 --> Parser Class Initialized
+INFO - 2024-05-02 18:00:19 --> Email Class Initialized
+INFO - 2024-05-02 18:00:19 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:00:19 --> Jquery Class Initialized
+INFO - 2024-05-02 18:00:19 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:00:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:00:19 --> Pagination Class Initialized
+INFO - 2024-05-02 18:00:19 --> Table Class Initialized
+INFO - 2024-05-02 18:00:19 --> Trackback Class Initialized
+INFO - 2024-05-02 18:00:19 --> User Agent Class Initialized
+INFO - 2024-05-02 18:00:19 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:00:19 --> Model "Misc" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Sess" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:00:19 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:00:19 --> Model "Db" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Banns" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Logs" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Seo" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:00:19 --> Model "User" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Registration" initialized
+INFO - 2024-05-02 18:00:19 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Email" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Msg" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Page" initialized
+INFO - 2024-05-02 18:00:19 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Markers" initialized
+INFO - 2024-05-02 18:00:19 --> Model "Events" initialized
+INFO - 2024-05-02 18:00:19 --> Model "News" initialized
+INFO - 2024-05-02 18:00:19 --> Controller Class Initialized
+INFO - 2024-05-02 18:00:19 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:00:19 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:00:19 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:00:19 --> Final output sent to browser
+DEBUG - 2024-05-02 18:00:19 --> Total execution time: 0.0929
+INFO - 2024-05-02 18:00:48 --> Config Class Initialized
+INFO - 2024-05-02 18:00:48 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:00:48 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:00:48 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:00:48 --> URI Class Initialized
+INFO - 2024-05-02 18:00:48 --> Router Class Initialized
+INFO - 2024-05-02 18:00:48 --> Output Class Initialized
+INFO - 2024-05-02 18:00:48 --> Security Class Initialized
+DEBUG - 2024-05-02 18:00:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:00:48 --> CSRF cookie sent
+INFO - 2024-05-02 18:00:48 --> Input Class Initialized
+INFO - 2024-05-02 18:00:48 --> Language Class Initialized
+INFO - 2024-05-02 18:00:48 --> Loader Class Initialized
+INFO - 2024-05-02 18:00:48 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:00:48 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:00:48 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:00:48 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:00:48 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:00:48 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:00:48 --> Encryption Class Initialized
+INFO - 2024-05-02 18:00:48 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:00:48 --> Parser Class Initialized
+INFO - 2024-05-02 18:00:48 --> Email Class Initialized
+INFO - 2024-05-02 18:00:48 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:00:48 --> Jquery Class Initialized
+INFO - 2024-05-02 18:00:48 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:00:48 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:00:48 --> Pagination Class Initialized
+INFO - 2024-05-02 18:00:48 --> Table Class Initialized
+INFO - 2024-05-02 18:00:48 --> Trackback Class Initialized
+INFO - 2024-05-02 18:00:48 --> User Agent Class Initialized
+INFO - 2024-05-02 18:00:48 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:00:48 --> Model "Misc" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Sess" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:00:48 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:00:48 --> Model "Db" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Banns" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Logs" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Seo" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:00:48 --> Model "User" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Registration" initialized
+INFO - 2024-05-02 18:00:48 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Email" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Msg" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Page" initialized
+INFO - 2024-05-02 18:00:48 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Markers" initialized
+INFO - 2024-05-02 18:00:48 --> Model "Events" initialized
+INFO - 2024-05-02 18:00:48 --> Model "News" initialized
+INFO - 2024-05-02 18:00:48 --> Controller Class Initialized
+INFO - 2024-05-02 18:00:48 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:00:48 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:00:48 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:00:48 --> Final output sent to browser
+DEBUG - 2024-05-02 18:00:48 --> Total execution time: 0.0676
+INFO - 2024-05-02 18:00:55 --> Config Class Initialized
+INFO - 2024-05-02 18:00:55 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:00:55 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:00:55 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:00:55 --> URI Class Initialized
+INFO - 2024-05-02 18:00:55 --> Router Class Initialized
+INFO - 2024-05-02 18:00:55 --> Output Class Initialized
+INFO - 2024-05-02 18:00:55 --> Security Class Initialized
+DEBUG - 2024-05-02 18:00:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:00:55 --> CSRF cookie sent
+INFO - 2024-05-02 18:00:55 --> Input Class Initialized
+INFO - 2024-05-02 18:00:55 --> Language Class Initialized
+INFO - 2024-05-02 18:00:55 --> Loader Class Initialized
+INFO - 2024-05-02 18:00:55 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:00:55 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:00:55 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:00:55 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:00:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:00:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:00:55 --> Encryption Class Initialized
+INFO - 2024-05-02 18:00:55 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:00:55 --> Parser Class Initialized
+INFO - 2024-05-02 18:00:55 --> Email Class Initialized
+INFO - 2024-05-02 18:00:55 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:00:55 --> Jquery Class Initialized
+INFO - 2024-05-02 18:00:55 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:00:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:00:55 --> Pagination Class Initialized
+INFO - 2024-05-02 18:00:55 --> Table Class Initialized
+INFO - 2024-05-02 18:00:55 --> Trackback Class Initialized
+INFO - 2024-05-02 18:00:55 --> User Agent Class Initialized
+INFO - 2024-05-02 18:00:55 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:00:55 --> Model "Misc" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Sess" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:00:55 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:00:55 --> Model "Db" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Banns" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Logs" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Seo" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:00:55 --> Model "User" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Registration" initialized
+INFO - 2024-05-02 18:00:55 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Email" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Msg" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Page" initialized
+INFO - 2024-05-02 18:00:55 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Markers" initialized
+INFO - 2024-05-02 18:00:55 --> Model "Events" initialized
+INFO - 2024-05-02 18:00:55 --> Model "News" initialized
+INFO - 2024-05-02 18:00:55 --> Controller Class Initialized
+INFO - 2024-05-02 18:00:55 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:00:55 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:00:55 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:00:55 --> Final output sent to browser
+DEBUG - 2024-05-02 18:00:55 --> Total execution time: 0.0903
+INFO - 2024-05-02 18:01:01 --> Config Class Initialized
+INFO - 2024-05-02 18:01:01 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:01 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:01 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:01 --> URI Class Initialized
+INFO - 2024-05-02 18:01:01 --> Router Class Initialized
+INFO - 2024-05-02 18:01:01 --> Output Class Initialized
+INFO - 2024-05-02 18:01:01 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:01 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:01 --> Input Class Initialized
+INFO - 2024-05-02 18:01:01 --> Language Class Initialized
+INFO - 2024-05-02 18:01:01 --> Loader Class Initialized
+INFO - 2024-05-02 18:01:01 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:01:01 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:01:01 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:01:01 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:01:01 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:01:01 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:01:01 --> Encryption Class Initialized
+INFO - 2024-05-02 18:01:01 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:01:01 --> Parser Class Initialized
+INFO - 2024-05-02 18:01:01 --> Email Class Initialized
+INFO - 2024-05-02 18:01:01 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:01:01 --> Jquery Class Initialized
+INFO - 2024-05-02 18:01:01 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:01:01 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:01:01 --> Pagination Class Initialized
+INFO - 2024-05-02 18:01:01 --> Table Class Initialized
+INFO - 2024-05-02 18:01:01 --> Trackback Class Initialized
+INFO - 2024-05-02 18:01:01 --> User Agent Class Initialized
+INFO - 2024-05-02 18:01:01 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:01:01 --> Model "Misc" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Sess" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:01:01 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:01:01 --> Model "Db" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Banns" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Logs" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Seo" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:01:01 --> Model "User" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Registration" initialized
+INFO - 2024-05-02 18:01:01 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Email" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Msg" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Page" initialized
+INFO - 2024-05-02 18:01:01 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Markers" initialized
+INFO - 2024-05-02 18:01:01 --> Model "Events" initialized
+INFO - 2024-05-02 18:01:01 --> Model "News" initialized
+INFO - 2024-05-02 18:01:01 --> Controller Class Initialized
+INFO - 2024-05-02 18:01:01 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:01:01 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:01:01 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:01:01 --> Final output sent to browser
+DEBUG - 2024-05-02 18:01:01 --> Total execution time: 0.0710
+INFO - 2024-05-02 18:01:03 --> Config Class Initialized
+INFO - 2024-05-02 18:01:03 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:03 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:03 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:03 --> URI Class Initialized
+INFO - 2024-05-02 18:01:03 --> Router Class Initialized
+INFO - 2024-05-02 18:01:03 --> Output Class Initialized
+INFO - 2024-05-02 18:01:03 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:03 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:03 --> Input Class Initialized
+INFO - 2024-05-02 18:01:03 --> Language Class Initialized
+INFO - 2024-05-02 18:01:03 --> Loader Class Initialized
+INFO - 2024-05-02 18:01:03 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:01:03 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:01:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:01:03 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:01:03 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:01:03 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:01:03 --> Encryption Class Initialized
+INFO - 2024-05-02 18:01:03 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:01:03 --> Parser Class Initialized
+INFO - 2024-05-02 18:01:03 --> Email Class Initialized
+INFO - 2024-05-02 18:01:03 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:01:03 --> Jquery Class Initialized
+INFO - 2024-05-02 18:01:03 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:01:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:01:03 --> Pagination Class Initialized
+INFO - 2024-05-02 18:01:03 --> Table Class Initialized
+INFO - 2024-05-02 18:01:03 --> Trackback Class Initialized
+INFO - 2024-05-02 18:01:03 --> User Agent Class Initialized
+INFO - 2024-05-02 18:01:03 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:01:03 --> Model "Misc" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Sess" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:01:03 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:01:03 --> Model "Db" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Banns" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Logs" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Seo" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:01:03 --> Model "User" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Registration" initialized
+INFO - 2024-05-02 18:01:03 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Email" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Msg" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Page" initialized
+INFO - 2024-05-02 18:01:03 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Markers" initialized
+INFO - 2024-05-02 18:01:03 --> Model "Events" initialized
+INFO - 2024-05-02 18:01:03 --> Model "News" initialized
+INFO - 2024-05-02 18:01:03 --> Controller Class Initialized
+INFO - 2024-05-02 18:01:03 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:01:03 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:01:03 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:01:03 --> Final output sent to browser
+DEBUG - 2024-05-02 18:01:03 --> Total execution time: 0.0777
+INFO - 2024-05-02 18:01:04 --> Config Class Initialized
+INFO - 2024-05-02 18:01:04 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:04 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:04 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:04 --> URI Class Initialized
+INFO - 2024-05-02 18:01:04 --> Router Class Initialized
+INFO - 2024-05-02 18:01:04 --> Output Class Initialized
+INFO - 2024-05-02 18:01:04 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:04 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:04 --> Input Class Initialized
+INFO - 2024-05-02 18:01:04 --> Language Class Initialized
+ERROR - 2024-05-02 18:01:04 --> 404 Page Not Found: Assets/images
+INFO - 2024-05-02 18:01:06 --> Config Class Initialized
+INFO - 2024-05-02 18:01:06 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:06 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:06 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:06 --> URI Class Initialized
+INFO - 2024-05-02 18:01:06 --> Router Class Initialized
+INFO - 2024-05-02 18:01:06 --> Output Class Initialized
+INFO - 2024-05-02 18:01:06 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:06 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:06 --> Input Class Initialized
+INFO - 2024-05-02 18:01:06 --> Language Class Initialized
+INFO - 2024-05-02 18:01:06 --> Loader Class Initialized
+INFO - 2024-05-02 18:01:06 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:01:06 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:01:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:01:06 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:01:06 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:01:06 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:01:06 --> Encryption Class Initialized
+INFO - 2024-05-02 18:01:06 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:01:06 --> Parser Class Initialized
+INFO - 2024-05-02 18:01:06 --> Email Class Initialized
+INFO - 2024-05-02 18:01:06 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:01:07 --> Jquery Class Initialized
+INFO - 2024-05-02 18:01:07 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:01:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:01:07 --> Pagination Class Initialized
+INFO - 2024-05-02 18:01:07 --> Table Class Initialized
+INFO - 2024-05-02 18:01:07 --> Trackback Class Initialized
+INFO - 2024-05-02 18:01:07 --> User Agent Class Initialized
+INFO - 2024-05-02 18:01:07 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:01:07 --> Model "Misc" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Sess" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:01:07 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:01:07 --> Model "Db" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Banns" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Logs" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Seo" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:01:07 --> Model "User" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Registration" initialized
+INFO - 2024-05-02 18:01:07 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Email" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Msg" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Page" initialized
+INFO - 2024-05-02 18:01:07 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Markers" initialized
+INFO - 2024-05-02 18:01:07 --> Model "Events" initialized
+INFO - 2024-05-02 18:01:07 --> Model "News" initialized
+INFO - 2024-05-02 18:01:07 --> Controller Class Initialized
+INFO - 2024-05-02 18:01:07 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:01:07 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:01:07 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:01:07 --> Final output sent to browser
+DEBUG - 2024-05-02 18:01:07 --> Total execution time: 0.0678
+INFO - 2024-05-02 18:01:07 --> Config Class Initialized
+INFO - 2024-05-02 18:01:07 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:07 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:07 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:07 --> URI Class Initialized
+INFO - 2024-05-02 18:01:07 --> Router Class Initialized
+INFO - 2024-05-02 18:01:07 --> Output Class Initialized
+INFO - 2024-05-02 18:01:07 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:07 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:07 --> Input Class Initialized
+INFO - 2024-05-02 18:01:07 --> Language Class Initialized
+ERROR - 2024-05-02 18:01:07 --> 404 Page Not Found: Assets/images
+INFO - 2024-05-02 18:01:11 --> Config Class Initialized
+INFO - 2024-05-02 18:01:11 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:11 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:11 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:11 --> URI Class Initialized
+INFO - 2024-05-02 18:01:11 --> Router Class Initialized
+INFO - 2024-05-02 18:01:11 --> Output Class Initialized
+INFO - 2024-05-02 18:01:11 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:11 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:11 --> Input Class Initialized
+INFO - 2024-05-02 18:01:11 --> Language Class Initialized
+INFO - 2024-05-02 18:01:11 --> Loader Class Initialized
+INFO - 2024-05-02 18:01:11 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:01:11 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:01:11 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:01:11 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:01:11 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:01:11 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:01:11 --> Encryption Class Initialized
+INFO - 2024-05-02 18:01:11 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:01:11 --> Parser Class Initialized
+INFO - 2024-05-02 18:01:11 --> Email Class Initialized
+INFO - 2024-05-02 18:01:11 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:01:11 --> Jquery Class Initialized
+INFO - 2024-05-02 18:01:11 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:01:11 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:01:11 --> Pagination Class Initialized
+INFO - 2024-05-02 18:01:11 --> Table Class Initialized
+INFO - 2024-05-02 18:01:11 --> Trackback Class Initialized
+INFO - 2024-05-02 18:01:11 --> User Agent Class Initialized
+INFO - 2024-05-02 18:01:11 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:01:11 --> Model "Misc" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Sess" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:01:11 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:01:11 --> Model "Db" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Banns" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Logs" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Seo" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:01:11 --> Model "User" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Registration" initialized
+INFO - 2024-05-02 18:01:11 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Email" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Msg" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Page" initialized
+INFO - 2024-05-02 18:01:11 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Markers" initialized
+INFO - 2024-05-02 18:01:11 --> Model "Events" initialized
+INFO - 2024-05-02 18:01:11 --> Model "News" initialized
+INFO - 2024-05-02 18:01:11 --> Controller Class Initialized
+INFO - 2024-05-02 18:01:11 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:01:11 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:01:11 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:01:11 --> Final output sent to browser
+DEBUG - 2024-05-02 18:01:11 --> Total execution time: 0.0725
+INFO - 2024-05-02 18:01:11 --> Config Class Initialized
+INFO - 2024-05-02 18:01:11 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:11 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:11 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:11 --> URI Class Initialized
+INFO - 2024-05-02 18:01:11 --> Router Class Initialized
+INFO - 2024-05-02 18:01:11 --> Output Class Initialized
+INFO - 2024-05-02 18:01:11 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:11 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:11 --> Input Class Initialized
+INFO - 2024-05-02 18:01:11 --> Language Class Initialized
+ERROR - 2024-05-02 18:01:11 --> 404 Page Not Found: Assets/images
+INFO - 2024-05-02 18:01:24 --> Config Class Initialized
+INFO - 2024-05-02 18:01:24 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:24 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:24 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:24 --> URI Class Initialized
+INFO - 2024-05-02 18:01:24 --> Router Class Initialized
+INFO - 2024-05-02 18:01:24 --> Output Class Initialized
+INFO - 2024-05-02 18:01:24 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:24 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:24 --> Input Class Initialized
+INFO - 2024-05-02 18:01:24 --> Language Class Initialized
+INFO - 2024-05-02 18:01:24 --> Loader Class Initialized
+INFO - 2024-05-02 18:01:24 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:01:24 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:01:24 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:01:24 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:01:24 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:01:24 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:01:24 --> Encryption Class Initialized
+INFO - 2024-05-02 18:01:24 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:01:24 --> Parser Class Initialized
+INFO - 2024-05-02 18:01:24 --> Email Class Initialized
+INFO - 2024-05-02 18:01:24 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:01:24 --> Jquery Class Initialized
+INFO - 2024-05-02 18:01:24 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:01:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:01:24 --> Pagination Class Initialized
+INFO - 2024-05-02 18:01:24 --> Table Class Initialized
+INFO - 2024-05-02 18:01:24 --> Trackback Class Initialized
+INFO - 2024-05-02 18:01:24 --> User Agent Class Initialized
+INFO - 2024-05-02 18:01:24 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:01:24 --> Model "Misc" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Sess" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:01:24 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:01:24 --> Model "Db" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Banns" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Logs" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Seo" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:01:24 --> Model "User" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Registration" initialized
+INFO - 2024-05-02 18:01:24 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Email" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Msg" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Page" initialized
+INFO - 2024-05-02 18:01:24 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Markers" initialized
+INFO - 2024-05-02 18:01:24 --> Model "Events" initialized
+INFO - 2024-05-02 18:01:24 --> Model "News" initialized
+INFO - 2024-05-02 18:01:24 --> Controller Class Initialized
+INFO - 2024-05-02 18:01:24 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:01:24 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:01:24 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:01:24 --> Final output sent to browser
+DEBUG - 2024-05-02 18:01:24 --> Total execution time: 0.0749
+INFO - 2024-05-02 18:01:24 --> Config Class Initialized
+INFO - 2024-05-02 18:01:24 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:24 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:24 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:24 --> URI Class Initialized
+INFO - 2024-05-02 18:01:24 --> Router Class Initialized
+INFO - 2024-05-02 18:01:24 --> Output Class Initialized
+INFO - 2024-05-02 18:01:24 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:24 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:24 --> Input Class Initialized
+INFO - 2024-05-02 18:01:24 --> Language Class Initialized
+ERROR - 2024-05-02 18:01:24 --> 404 Page Not Found: Assets/images
+INFO - 2024-05-02 18:01:25 --> Config Class Initialized
+INFO - 2024-05-02 18:01:25 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:25 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:25 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:25 --> URI Class Initialized
+INFO - 2024-05-02 18:01:25 --> Router Class Initialized
+INFO - 2024-05-02 18:01:25 --> Output Class Initialized
+INFO - 2024-05-02 18:01:25 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:25 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:25 --> Input Class Initialized
+INFO - 2024-05-02 18:01:25 --> Language Class Initialized
+INFO - 2024-05-02 18:01:25 --> Loader Class Initialized
+INFO - 2024-05-02 18:01:25 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:01:25 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:01:25 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:01:25 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:01:25 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:01:25 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:01:25 --> Encryption Class Initialized
+INFO - 2024-05-02 18:01:25 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:01:25 --> Parser Class Initialized
+INFO - 2024-05-02 18:01:25 --> Email Class Initialized
+INFO - 2024-05-02 18:01:25 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:01:25 --> Jquery Class Initialized
+INFO - 2024-05-02 18:01:25 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:01:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:01:25 --> Pagination Class Initialized
+INFO - 2024-05-02 18:01:25 --> Table Class Initialized
+INFO - 2024-05-02 18:01:25 --> Trackback Class Initialized
+INFO - 2024-05-02 18:01:25 --> User Agent Class Initialized
+INFO - 2024-05-02 18:01:25 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:01:25 --> Model "Misc" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Sess" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:01:25 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:01:25 --> Model "Db" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Banns" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Logs" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Seo" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:01:25 --> Model "User" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Registration" initialized
+INFO - 2024-05-02 18:01:25 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Email" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Msg" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Page" initialized
+INFO - 2024-05-02 18:01:25 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Markers" initialized
+INFO - 2024-05-02 18:01:25 --> Model "Events" initialized
+INFO - 2024-05-02 18:01:25 --> Model "News" initialized
+INFO - 2024-05-02 18:01:25 --> Controller Class Initialized
+INFO - 2024-05-02 18:01:25 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:01:25 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:01:25 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:01:25 --> Final output sent to browser
+DEBUG - 2024-05-02 18:01:25 --> Total execution time: 0.0775
+INFO - 2024-05-02 18:01:27 --> Config Class Initialized
+INFO - 2024-05-02 18:01:27 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:01:27 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:01:27 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:01:27 --> URI Class Initialized
+INFO - 2024-05-02 18:01:27 --> Router Class Initialized
+INFO - 2024-05-02 18:01:27 --> Output Class Initialized
+INFO - 2024-05-02 18:01:27 --> Security Class Initialized
+DEBUG - 2024-05-02 18:01:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:01:27 --> CSRF cookie sent
+INFO - 2024-05-02 18:01:27 --> Input Class Initialized
+INFO - 2024-05-02 18:01:27 --> Language Class Initialized
+INFO - 2024-05-02 18:01:27 --> Loader Class Initialized
+INFO - 2024-05-02 18:01:27 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:01:27 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:01:27 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:01:27 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:01:27 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:01:27 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:01:27 --> Encryption Class Initialized
+INFO - 2024-05-02 18:01:27 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:01:27 --> Parser Class Initialized
+INFO - 2024-05-02 18:01:27 --> Email Class Initialized
+INFO - 2024-05-02 18:01:27 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:01:27 --> Jquery Class Initialized
+INFO - 2024-05-02 18:01:27 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:01:27 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:01:27 --> Pagination Class Initialized
+INFO - 2024-05-02 18:01:27 --> Table Class Initialized
+INFO - 2024-05-02 18:01:27 --> Trackback Class Initialized
+INFO - 2024-05-02 18:01:27 --> User Agent Class Initialized
+INFO - 2024-05-02 18:01:27 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:01:27 --> Model "Misc" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Sess" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:01:27 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:01:27 --> Model "Db" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Banns" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Logs" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Seo" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:01:27 --> Model "User" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Registration" initialized
+INFO - 2024-05-02 18:01:27 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Email" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Msg" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Page" initialized
+INFO - 2024-05-02 18:01:27 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Markers" initialized
+INFO - 2024-05-02 18:01:27 --> Model "Events" initialized
+INFO - 2024-05-02 18:01:27 --> Model "News" initialized
+INFO - 2024-05-02 18:01:27 --> Controller Class Initialized
+INFO - 2024-05-02 18:01:27 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:01:27 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:01:27 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:01:27 --> Final output sent to browser
+DEBUG - 2024-05-02 18:01:27 --> Total execution time: 0.0816
+INFO - 2024-05-02 18:02:06 --> Config Class Initialized
+INFO - 2024-05-02 18:02:06 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:06 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:06 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:06 --> URI Class Initialized
+INFO - 2024-05-02 18:02:06 --> Router Class Initialized
+INFO - 2024-05-02 18:02:06 --> Output Class Initialized
+INFO - 2024-05-02 18:02:06 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:06 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:06 --> Input Class Initialized
+INFO - 2024-05-02 18:02:06 --> Language Class Initialized
+INFO - 2024-05-02 18:02:06 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:06 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:06 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:06 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:06 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:06 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:06 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:06 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:06 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:06 --> Email Class Initialized
+INFO - 2024-05-02 18:02:06 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:06 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:06 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:06 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:06 --> Table Class Initialized
+INFO - 2024-05-02 18:02:06 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:06 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:06 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:06 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:06 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:06 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:06 --> Model "User" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:06 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:06 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:06 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:06 --> Model "News" initialized
+INFO - 2024-05-02 18:02:06 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:06 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:02:06 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:02:06 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:06 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:06 --> Total execution time: 0.0693
+INFO - 2024-05-02 18:02:28 --> Config Class Initialized
+INFO - 2024-05-02 18:02:28 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:28 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:28 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:28 --> URI Class Initialized
+INFO - 2024-05-02 18:02:28 --> Router Class Initialized
+INFO - 2024-05-02 18:02:28 --> Output Class Initialized
+INFO - 2024-05-02 18:02:28 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:28 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:28 --> Input Class Initialized
+INFO - 2024-05-02 18:02:28 --> Language Class Initialized
+INFO - 2024-05-02 18:02:28 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:28 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:28 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:28 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:28 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:28 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:28 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:28 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:28 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:28 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:28 --> Email Class Initialized
+INFO - 2024-05-02 18:02:28 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:28 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:28 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:28 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:28 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:28 --> Table Class Initialized
+INFO - 2024-05-02 18:02:28 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:28 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:28 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:28 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:28 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:28 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:28 --> Model "User" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:28 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:28 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:28 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:28 --> Model "News" initialized
+INFO - 2024-05-02 18:02:28 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:28 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:02:28 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:02:28 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:28 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:28 --> Total execution time: 0.0859
+INFO - 2024-05-02 18:02:37 --> Config Class Initialized
+INFO - 2024-05-02 18:02:37 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:37 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:37 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:37 --> URI Class Initialized
+INFO - 2024-05-02 18:02:37 --> Router Class Initialized
+INFO - 2024-05-02 18:02:37 --> Output Class Initialized
+INFO - 2024-05-02 18:02:37 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:37 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:37 --> Input Class Initialized
+INFO - 2024-05-02 18:02:37 --> Language Class Initialized
+INFO - 2024-05-02 18:02:37 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:37 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:37 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:37 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:37 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:37 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:37 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:37 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:37 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:37 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:37 --> Email Class Initialized
+INFO - 2024-05-02 18:02:37 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:37 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:37 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:37 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:37 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:37 --> Table Class Initialized
+INFO - 2024-05-02 18:02:37 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:37 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:37 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:37 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:37 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:37 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:37 --> Model "User" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:37 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:37 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:37 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:37 --> Model "News" initialized
+INFO - 2024-05-02 18:02:37 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:37 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+ERROR - 2024-05-02 18:02:37 --> Severity: Warning --> Undefined array key 0 G:\xampp\htdocs\446.hu\application\models\AdminForm.php 13
+ERROR - 2024-05-02 18:02:37 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 15
+ERROR - 2024-05-02 18:02:37 --> Severity: Warning --> Attempt to read property "_value" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:37 --> Severity: Warning --> Attempt to read property "_hint" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:37 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 18
+INFO - 2024-05-02 18:02:37 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:02:37 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:37 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:37 --> Total execution time: 0.0807
+INFO - 2024-05-02 18:02:40 --> Config Class Initialized
+INFO - 2024-05-02 18:02:40 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:40 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:40 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:40 --> URI Class Initialized
+INFO - 2024-05-02 18:02:40 --> Router Class Initialized
+INFO - 2024-05-02 18:02:40 --> Output Class Initialized
+INFO - 2024-05-02 18:02:40 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:40 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:40 --> Input Class Initialized
+INFO - 2024-05-02 18:02:40 --> Language Class Initialized
+INFO - 2024-05-02 18:02:40 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:40 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:40 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:40 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:40 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:40 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:40 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:40 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:40 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:40 --> Email Class Initialized
+INFO - 2024-05-02 18:02:40 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:40 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:40 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:40 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:40 --> Table Class Initialized
+INFO - 2024-05-02 18:02:40 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:40 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:40 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:40 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:40 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:40 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:40 --> Model "User" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:40 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:40 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:40 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:40 --> Model "News" initialized
+INFO - 2024-05-02 18:02:40 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:40 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:02:40 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:02:40 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:40 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:40 --> Total execution time: 0.0688
+INFO - 2024-05-02 18:02:41 --> Config Class Initialized
+INFO - 2024-05-02 18:02:41 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:41 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:41 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:41 --> URI Class Initialized
+INFO - 2024-05-02 18:02:41 --> Router Class Initialized
+INFO - 2024-05-02 18:02:41 --> Output Class Initialized
+INFO - 2024-05-02 18:02:41 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:41 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:41 --> Input Class Initialized
+INFO - 2024-05-02 18:02:41 --> Language Class Initialized
+INFO - 2024-05-02 18:02:41 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:42 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:42 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:42 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:42 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:42 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:42 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:42 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:42 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:42 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:42 --> Email Class Initialized
+INFO - 2024-05-02 18:02:42 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:42 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:42 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:42 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:42 --> Table Class Initialized
+INFO - 2024-05-02 18:02:42 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:42 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:42 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:42 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:42 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:42 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:42 --> Model "User" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:42 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:42 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:42 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:42 --> Model "News" initialized
+INFO - 2024-05-02 18:02:42 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:42 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+ERROR - 2024-05-02 18:02:42 --> Severity: Warning --> Undefined array key 0 G:\xampp\htdocs\446.hu\application\models\AdminForm.php 13
+ERROR - 2024-05-02 18:02:42 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 15
+ERROR - 2024-05-02 18:02:42 --> Severity: Warning --> Attempt to read property "_value" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:42 --> Severity: Warning --> Attempt to read property "_hint" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:42 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 18
+INFO - 2024-05-02 18:02:42 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:02:42 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:42 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:42 --> Total execution time: 0.0814
+INFO - 2024-05-02 18:02:44 --> Config Class Initialized
+INFO - 2024-05-02 18:02:44 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:44 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:44 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:44 --> URI Class Initialized
+INFO - 2024-05-02 18:02:44 --> Router Class Initialized
+INFO - 2024-05-02 18:02:44 --> Output Class Initialized
+INFO - 2024-05-02 18:02:44 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:44 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:44 --> Input Class Initialized
+INFO - 2024-05-02 18:02:44 --> Language Class Initialized
+INFO - 2024-05-02 18:02:44 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:44 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:44 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:44 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:44 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:44 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:44 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:44 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:44 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:44 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:44 --> Email Class Initialized
+INFO - 2024-05-02 18:02:44 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:44 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:44 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:44 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:44 --> Table Class Initialized
+INFO - 2024-05-02 18:02:44 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:44 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:44 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:44 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:44 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:44 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:44 --> Model "User" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:44 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:44 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:44 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:44 --> Model "News" initialized
+INFO - 2024-05-02 18:02:44 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:44 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:02:44 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:02:44 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:44 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:44 --> Total execution time: 0.0838
+INFO - 2024-05-02 18:02:45 --> Config Class Initialized
+INFO - 2024-05-02 18:02:45 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:45 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:45 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:45 --> URI Class Initialized
+INFO - 2024-05-02 18:02:45 --> Router Class Initialized
+INFO - 2024-05-02 18:02:45 --> Output Class Initialized
+INFO - 2024-05-02 18:02:45 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:45 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:45 --> Input Class Initialized
+INFO - 2024-05-02 18:02:45 --> Language Class Initialized
+INFO - 2024-05-02 18:02:45 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:45 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:45 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:45 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:45 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:45 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:45 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:45 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:45 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:45 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:45 --> Email Class Initialized
+INFO - 2024-05-02 18:02:45 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:45 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:45 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:45 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:45 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:45 --> Table Class Initialized
+INFO - 2024-05-02 18:02:45 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:45 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:45 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:45 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:45 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:45 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:45 --> Model "User" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:45 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:45 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:45 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:45 --> Model "News" initialized
+INFO - 2024-05-02 18:02:45 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:45 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+ERROR - 2024-05-02 18:02:45 --> Severity: Warning --> Undefined array key 0 G:\xampp\htdocs\446.hu\application\models\AdminForm.php 13
+ERROR - 2024-05-02 18:02:45 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 15
+ERROR - 2024-05-02 18:02:45 --> Severity: Warning --> Attempt to read property "_value" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:45 --> Severity: Warning --> Attempt to read property "_hint" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:45 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 18
+INFO - 2024-05-02 18:02:45 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:02:45 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:45 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:45 --> Total execution time: 0.0772
+INFO - 2024-05-02 18:02:46 --> Config Class Initialized
+INFO - 2024-05-02 18:02:46 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:46 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:46 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:46 --> URI Class Initialized
+INFO - 2024-05-02 18:02:46 --> Router Class Initialized
+INFO - 2024-05-02 18:02:46 --> Output Class Initialized
+INFO - 2024-05-02 18:02:46 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:46 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:46 --> Input Class Initialized
+INFO - 2024-05-02 18:02:46 --> Language Class Initialized
+INFO - 2024-05-02 18:02:46 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:46 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:46 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:46 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:46 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:46 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:46 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:46 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:46 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:46 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:46 --> Email Class Initialized
+INFO - 2024-05-02 18:02:46 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:46 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:46 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:46 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:46 --> Table Class Initialized
+INFO - 2024-05-02 18:02:46 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:46 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:46 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:46 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:46 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:46 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:46 --> Model "User" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:46 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:46 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:46 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:46 --> Model "News" initialized
+INFO - 2024-05-02 18:02:46 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:46 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:02:46 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:02:46 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:46 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:46 --> Total execution time: 0.0810
+INFO - 2024-05-02 18:02:47 --> Config Class Initialized
+INFO - 2024-05-02 18:02:47 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:02:47 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:02:47 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:02:47 --> URI Class Initialized
+INFO - 2024-05-02 18:02:47 --> Router Class Initialized
+INFO - 2024-05-02 18:02:47 --> Output Class Initialized
+INFO - 2024-05-02 18:02:47 --> Security Class Initialized
+DEBUG - 2024-05-02 18:02:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:02:47 --> CSRF cookie sent
+INFO - 2024-05-02 18:02:47 --> Input Class Initialized
+INFO - 2024-05-02 18:02:47 --> Language Class Initialized
+INFO - 2024-05-02 18:02:47 --> Loader Class Initialized
+INFO - 2024-05-02 18:02:47 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:02:47 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:02:47 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:02:47 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:02:47 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:02:47 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:02:47 --> Encryption Class Initialized
+INFO - 2024-05-02 18:02:47 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:02:47 --> Parser Class Initialized
+INFO - 2024-05-02 18:02:47 --> Email Class Initialized
+INFO - 2024-05-02 18:02:47 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:02:47 --> Jquery Class Initialized
+INFO - 2024-05-02 18:02:47 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:02:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:02:47 --> Pagination Class Initialized
+INFO - 2024-05-02 18:02:47 --> Table Class Initialized
+INFO - 2024-05-02 18:02:47 --> Trackback Class Initialized
+INFO - 2024-05-02 18:02:47 --> User Agent Class Initialized
+INFO - 2024-05-02 18:02:47 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:02:47 --> Model "Misc" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Sess" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:02:47 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:02:47 --> Model "Db" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Banns" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Logs" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Seo" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:02:47 --> Model "User" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Registration" initialized
+INFO - 2024-05-02 18:02:47 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Email" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Msg" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Page" initialized
+INFO - 2024-05-02 18:02:47 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Markers" initialized
+INFO - 2024-05-02 18:02:47 --> Model "Events" initialized
+INFO - 2024-05-02 18:02:47 --> Model "News" initialized
+INFO - 2024-05-02 18:02:47 --> Controller Class Initialized
+INFO - 2024-05-02 18:02:47 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+ERROR - 2024-05-02 18:02:47 --> Severity: Warning --> Undefined array key 0 G:\xampp\htdocs\446.hu\application\models\AdminForm.php 13
+ERROR - 2024-05-02 18:02:47 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 15
+ERROR - 2024-05-02 18:02:47 --> Severity: Warning --> Attempt to read property "_value" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:47 --> Severity: Warning --> Attempt to read property "_hint" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:02:47 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 18
+INFO - 2024-05-02 18:02:47 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:02:47 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:02:47 --> Final output sent to browser
+DEBUG - 2024-05-02 18:02:47 --> Total execution time: 0.1078
+INFO - 2024-05-02 18:03:14 --> Config Class Initialized
+INFO - 2024-05-02 18:03:14 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:03:14 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:03:14 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:03:14 --> URI Class Initialized
+INFO - 2024-05-02 18:03:14 --> Router Class Initialized
+INFO - 2024-05-02 18:03:14 --> Output Class Initialized
+INFO - 2024-05-02 18:03:14 --> Security Class Initialized
+DEBUG - 2024-05-02 18:03:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:03:14 --> CSRF cookie sent
+INFO - 2024-05-02 18:03:14 --> Input Class Initialized
+INFO - 2024-05-02 18:03:14 --> Language Class Initialized
+INFO - 2024-05-02 18:03:14 --> Loader Class Initialized
+INFO - 2024-05-02 18:03:14 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:03:14 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:03:14 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:03:14 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:03:14 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:03:14 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:03:14 --> Encryption Class Initialized
+INFO - 2024-05-02 18:03:14 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:03:14 --> Parser Class Initialized
+INFO - 2024-05-02 18:03:14 --> Email Class Initialized
+INFO - 2024-05-02 18:03:14 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:03:14 --> Jquery Class Initialized
+INFO - 2024-05-02 18:03:14 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:03:14 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:03:14 --> Pagination Class Initialized
+INFO - 2024-05-02 18:03:14 --> Table Class Initialized
+INFO - 2024-05-02 18:03:14 --> Trackback Class Initialized
+INFO - 2024-05-02 18:03:14 --> User Agent Class Initialized
+INFO - 2024-05-02 18:03:14 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:03:14 --> Model "Misc" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Sess" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:03:14 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:03:14 --> Model "Db" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Banns" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Logs" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Seo" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:03:14 --> Model "User" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Registration" initialized
+INFO - 2024-05-02 18:03:14 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Email" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Msg" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Page" initialized
+INFO - 2024-05-02 18:03:14 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Markers" initialized
+INFO - 2024-05-02 18:03:14 --> Model "Events" initialized
+INFO - 2024-05-02 18:03:14 --> Model "News" initialized
+INFO - 2024-05-02 18:03:14 --> Controller Class Initialized
+INFO - 2024-05-02 18:03:14 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+ERROR - 2024-05-02 18:03:14 --> Severity: Warning --> Undefined array key 0 G:\xampp\htdocs\446.hu\application\models\AdminForm.php 13
+ERROR - 2024-05-02 18:03:14 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 15
+ERROR - 2024-05-02 18:03:14 --> Severity: Warning --> Attempt to read property "_value" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:03:14 --> Severity: Warning --> Attempt to read property "_hint" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:03:14 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 18
+INFO - 2024-05-02 18:03:14 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:03:14 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:03:14 --> Final output sent to browser
+DEBUG - 2024-05-02 18:03:14 --> Total execution time: 0.0799
+INFO - 2024-05-02 18:03:23 --> Config Class Initialized
+INFO - 2024-05-02 18:03:23 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:03:23 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:03:23 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:03:23 --> URI Class Initialized
+INFO - 2024-05-02 18:03:23 --> Router Class Initialized
+INFO - 2024-05-02 18:03:23 --> Output Class Initialized
+INFO - 2024-05-02 18:03:23 --> Security Class Initialized
+DEBUG - 2024-05-02 18:03:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:03:23 --> CSRF cookie sent
+INFO - 2024-05-02 18:03:23 --> Input Class Initialized
+INFO - 2024-05-02 18:03:23 --> Language Class Initialized
+INFO - 2024-05-02 18:03:23 --> Loader Class Initialized
+INFO - 2024-05-02 18:03:23 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:03:23 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:03:23 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:03:23 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:03:23 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:03:23 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:03:23 --> Encryption Class Initialized
+INFO - 2024-05-02 18:03:23 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:03:23 --> Parser Class Initialized
+INFO - 2024-05-02 18:03:23 --> Email Class Initialized
+INFO - 2024-05-02 18:03:23 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:03:23 --> Jquery Class Initialized
+INFO - 2024-05-02 18:03:23 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:03:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:03:23 --> Pagination Class Initialized
+INFO - 2024-05-02 18:03:23 --> Table Class Initialized
+INFO - 2024-05-02 18:03:23 --> Trackback Class Initialized
+INFO - 2024-05-02 18:03:23 --> User Agent Class Initialized
+INFO - 2024-05-02 18:03:23 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:03:23 --> Model "Misc" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Sess" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:03:23 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:03:23 --> Model "Db" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Banns" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Logs" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Seo" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:03:23 --> Model "User" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Registration" initialized
+INFO - 2024-05-02 18:03:23 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Email" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Msg" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Page" initialized
+INFO - 2024-05-02 18:03:23 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Markers" initialized
+INFO - 2024-05-02 18:03:23 --> Model "Events" initialized
+INFO - 2024-05-02 18:03:23 --> Model "News" initialized
+INFO - 2024-05-02 18:03:23 --> Controller Class Initialized
+INFO - 2024-05-02 18:03:23 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+ERROR - 2024-05-02 18:03:23 --> Severity: Warning --> Undefined array key 0 G:\xampp\htdocs\446.hu\application\models\AdminForm.php 13
+ERROR - 2024-05-02 18:03:23 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 15
+ERROR - 2024-05-02 18:03:23 --> Severity: Warning --> Attempt to read property "_value" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:03:23 --> Severity: Warning --> Attempt to read property "_hint" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 16
+ERROR - 2024-05-02 18:03:23 --> Severity: Warning --> Attempt to read property "_fieldParam" on null G:\xampp\htdocs\446.hu\application\models\AdminForm.php 18
+INFO - 2024-05-02 18:03:23 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:03:23 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:03:23 --> Final output sent to browser
+DEBUG - 2024-05-02 18:03:23 --> Total execution time: 0.0746
+INFO - 2024-05-02 18:04:03 --> Config Class Initialized
+INFO - 2024-05-02 18:04:03 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:03 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:03 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:03 --> URI Class Initialized
+INFO - 2024-05-02 18:04:03 --> Router Class Initialized
+INFO - 2024-05-02 18:04:03 --> Output Class Initialized
+INFO - 2024-05-02 18:04:03 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:03 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:03 --> Input Class Initialized
+INFO - 2024-05-02 18:04:03 --> Language Class Initialized
+INFO - 2024-05-02 18:04:03 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:03 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:03 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:03 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:03 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:03 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:03 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:03 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:03 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:03 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:03 --> Email Class Initialized
+INFO - 2024-05-02 18:04:03 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:03 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:03 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:03 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:03 --> Table Class Initialized
+INFO - 2024-05-02 18:04:03 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:03 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:03 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:03 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:03 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:03 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:03 --> Model "User" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:03 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:03 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:03 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:03 --> Model "News" initialized
+INFO - 2024-05-02 18:04:03 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:03 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:04:03 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:04:03 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:04:03 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:03 --> Total execution time: 0.0830
+INFO - 2024-05-02 18:04:06 --> Config Class Initialized
+INFO - 2024-05-02 18:04:06 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:06 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:06 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:06 --> URI Class Initialized
+INFO - 2024-05-02 18:04:06 --> Router Class Initialized
+INFO - 2024-05-02 18:04:06 --> Output Class Initialized
+INFO - 2024-05-02 18:04:06 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:06 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:06 --> Input Class Initialized
+INFO - 2024-05-02 18:04:06 --> Language Class Initialized
+INFO - 2024-05-02 18:04:06 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:06 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:06 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:06 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:06 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:06 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:06 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:06 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:06 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:06 --> Email Class Initialized
+INFO - 2024-05-02 18:04:06 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:06 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:06 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:06 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:06 --> Table Class Initialized
+INFO - 2024-05-02 18:04:06 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:06 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:06 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:06 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:06 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:06 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:06 --> Model "User" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:06 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:06 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:06 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:06 --> Model "News" initialized
+INFO - 2024-05-02 18:04:06 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:06 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:04:06 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:04:06 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:04:06 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:06 --> Total execution time: 0.0785
+INFO - 2024-05-02 18:04:07 --> Config Class Initialized
+INFO - 2024-05-02 18:04:07 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:07 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:07 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:07 --> URI Class Initialized
+INFO - 2024-05-02 18:04:07 --> Router Class Initialized
+INFO - 2024-05-02 18:04:07 --> Output Class Initialized
+INFO - 2024-05-02 18:04:07 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:07 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:07 --> Input Class Initialized
+INFO - 2024-05-02 18:04:07 --> Language Class Initialized
+INFO - 2024-05-02 18:04:07 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:07 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:07 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:07 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:07 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:07 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:07 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:07 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:07 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:07 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:07 --> Email Class Initialized
+INFO - 2024-05-02 18:04:07 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:07 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:07 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:07 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:07 --> Table Class Initialized
+INFO - 2024-05-02 18:04:07 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:07 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:07 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:07 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:07 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:07 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:07 --> Model "User" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:07 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:07 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:07 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:07 --> Model "News" initialized
+INFO - 2024-05-02 18:04:07 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:07 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:04:07 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_form.php
+INFO - 2024-05-02 18:04:07 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:04:07 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:07 --> Total execution time: 0.0778
+INFO - 2024-05-02 18:04:18 --> Config Class Initialized
+INFO - 2024-05-02 18:04:18 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:18 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:18 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:18 --> URI Class Initialized
+INFO - 2024-05-02 18:04:18 --> Router Class Initialized
+INFO - 2024-05-02 18:04:18 --> Output Class Initialized
+INFO - 2024-05-02 18:04:18 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:18 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:18 --> Input Class Initialized
+INFO - 2024-05-02 18:04:18 --> Language Class Initialized
+INFO - 2024-05-02 18:04:18 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:18 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:18 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:18 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:18 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:18 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:18 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:18 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:18 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:18 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:18 --> Email Class Initialized
+INFO - 2024-05-02 18:04:18 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:18 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:18 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:18 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:18 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:18 --> Table Class Initialized
+INFO - 2024-05-02 18:04:18 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:18 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:18 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:18 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:18 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:18 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:18 --> Model "User" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:18 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:18 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:18 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:18 --> Model "News" initialized
+INFO - 2024-05-02 18:04:18 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:18 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:04:18 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:04:18 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:04:18 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:18 --> Total execution time: 0.0959
+INFO - 2024-05-02 18:04:22 --> Config Class Initialized
+INFO - 2024-05-02 18:04:22 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:22 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:22 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:22 --> URI Class Initialized
+INFO - 2024-05-02 18:04:22 --> Router Class Initialized
+INFO - 2024-05-02 18:04:22 --> Output Class Initialized
+INFO - 2024-05-02 18:04:22 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:22 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:22 --> Input Class Initialized
+INFO - 2024-05-02 18:04:22 --> Language Class Initialized
+INFO - 2024-05-02 18:04:22 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:22 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:22 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:22 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:22 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:22 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:22 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:22 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:22 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:22 --> Email Class Initialized
+INFO - 2024-05-02 18:04:22 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:22 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:22 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:22 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:22 --> Table Class Initialized
+INFO - 2024-05-02 18:04:22 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:22 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:22 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:22 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:22 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:22 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:22 --> Model "User" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:22 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:22 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:22 --> Model "News" initialized
+INFO - 2024-05-02 18:04:22 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:22 --> Config Class Initialized
+INFO - 2024-05-02 18:04:22 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:22 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:22 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:22 --> URI Class Initialized
+INFO - 2024-05-02 18:04:22 --> Router Class Initialized
+INFO - 2024-05-02 18:04:22 --> Output Class Initialized
+INFO - 2024-05-02 18:04:22 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:22 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:22 --> Input Class Initialized
+INFO - 2024-05-02 18:04:22 --> Language Class Initialized
+INFO - 2024-05-02 18:04:22 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:22 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:22 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:22 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:22 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:22 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:22 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:22 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:22 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:22 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:22 --> Email Class Initialized
+INFO - 2024-05-02 18:04:22 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:22 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:22 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:22 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:22 --> Table Class Initialized
+INFO - 2024-05-02 18:04:22 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:22 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:22 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:22 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:22 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:22 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:22 --> Model "User" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:22 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:22 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:22 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:22 --> Model "News" initialized
+INFO - 2024-05-02 18:04:22 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:22 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:04:22 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:04:22 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:04:22 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:22 --> Total execution time: 0.0909
+INFO - 2024-05-02 18:04:26 --> Config Class Initialized
+INFO - 2024-05-02 18:04:26 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:26 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:26 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:26 --> URI Class Initialized
+INFO - 2024-05-02 18:04:26 --> Router Class Initialized
+INFO - 2024-05-02 18:04:26 --> Output Class Initialized
+INFO - 2024-05-02 18:04:26 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:26 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:26 --> Input Class Initialized
+INFO - 2024-05-02 18:04:26 --> Language Class Initialized
+INFO - 2024-05-02 18:04:26 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:26 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:26 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:26 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:26 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:26 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:26 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:26 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:26 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:26 --> Email Class Initialized
+INFO - 2024-05-02 18:04:26 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:26 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:26 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:26 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:26 --> Table Class Initialized
+INFO - 2024-05-02 18:04:26 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:26 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:26 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:26 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:26 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:26 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:26 --> Model "User" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:26 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:26 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:26 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:26 --> Model "News" initialized
+INFO - 2024-05-02 18:04:26 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:26 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/map.php
+INFO - 2024-05-02 18:04:26 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 18:04:26 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:26 --> Total execution time: 0.0736
+INFO - 2024-05-02 18:04:26 --> Config Class Initialized
+INFO - 2024-05-02 18:04:26 --> Hooks Class Initialized
+INFO - 2024-05-02 18:04:26 --> Config Class Initialized
+INFO - 2024-05-02 18:04:26 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:26 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:26 --> Utf8 Class Initialized
+DEBUG - 2024-05-02 18:04:26 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:26 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:26 --> URI Class Initialized
+INFO - 2024-05-02 18:04:26 --> URI Class Initialized
+INFO - 2024-05-02 18:04:26 --> Router Class Initialized
+INFO - 2024-05-02 18:04:26 --> Router Class Initialized
+INFO - 2024-05-02 18:04:26 --> Output Class Initialized
+INFO - 2024-05-02 18:04:26 --> Output Class Initialized
+INFO - 2024-05-02 18:04:26 --> Security Class Initialized
+INFO - 2024-05-02 18:04:26 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:26 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:26 --> Input Class Initialized
+INFO - 2024-05-02 18:04:26 --> Language Class Initialized
+DEBUG - 2024-05-02 18:04:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:26 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:26 --> Input Class Initialized
+INFO - 2024-05-02 18:04:26 --> Language Class Initialized
+INFO - 2024-05-02 18:04:26 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:26 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:26 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:26 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:26 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: text_helper
+INFO - 2024-05-02 18:04:27 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:27 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2024-05-02 18:04:27 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:27 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:27 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:27 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:27 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:27 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:27 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:27 --> Email Class Initialized
+INFO - 2024-05-02 18:04:27 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:27 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:27 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:27 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:27 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:27 --> Table Class Initialized
+INFO - 2024-05-02 18:04:27 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:27 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:27 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:27 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:27 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:27 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:27 --> Model "User" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:27 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:27 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:27 --> Model "News" initialized
+INFO - 2024-05-02 18:04:27 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:27 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:27 --> Total execution time: 0.1320
+INFO - 2024-05-02 18:04:27 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:27 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:27 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:27 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:27 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:27 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:27 --> Email Class Initialized
+INFO - 2024-05-02 18:04:27 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:27 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:27 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:27 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:27 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:27 --> Table Class Initialized
+INFO - 2024-05-02 18:04:27 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:27 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:27 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:27 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:27 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:27 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:27 --> Model "User" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:27 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:27 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:27 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:27 --> Model "News" initialized
+INFO - 2024-05-02 18:04:27 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:27 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:27 --> Total execution time: 0.1873
+INFO - 2024-05-02 18:04:36 --> Config Class Initialized
+INFO - 2024-05-02 18:04:36 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:36 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:36 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:36 --> URI Class Initialized
+INFO - 2024-05-02 18:04:36 --> Router Class Initialized
+INFO - 2024-05-02 18:04:36 --> Output Class Initialized
+INFO - 2024-05-02 18:04:36 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:36 --> Input Class Initialized
+INFO - 2024-05-02 18:04:36 --> Language Class Initialized
+INFO - 2024-05-02 18:04:36 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:36 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:36 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:36 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:36 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:36 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:36 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:36 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:36 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:36 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:36 --> Email Class Initialized
+INFO - 2024-05-02 18:04:36 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:36 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:36 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:36 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:36 --> Table Class Initialized
+INFO - 2024-05-02 18:04:36 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:36 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:36 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:36 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:36 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:36 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:36 --> Model "User" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:36 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:36 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:36 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:36 --> Model "News" initialized
+INFO - 2024-05-02 18:04:36 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:36 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:36 --> Total execution time: 0.0718
+INFO - 2024-05-02 18:04:39 --> Config Class Initialized
+INFO - 2024-05-02 18:04:39 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:39 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:39 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:39 --> URI Class Initialized
+INFO - 2024-05-02 18:04:39 --> Router Class Initialized
+INFO - 2024-05-02 18:04:39 --> Output Class Initialized
+INFO - 2024-05-02 18:04:39 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:39 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:39 --> Input Class Initialized
+INFO - 2024-05-02 18:04:39 --> Language Class Initialized
+INFO - 2024-05-02 18:04:39 --> Loader Class Initialized
+INFO - 2024-05-02 18:04:39 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:04:39 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:04:39 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:04:39 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:04:39 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:04:39 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:04:39 --> Encryption Class Initialized
+INFO - 2024-05-02 18:04:39 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:04:39 --> Parser Class Initialized
+INFO - 2024-05-02 18:04:39 --> Email Class Initialized
+INFO - 2024-05-02 18:04:39 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:04:39 --> Jquery Class Initialized
+INFO - 2024-05-02 18:04:39 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:04:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:04:39 --> Pagination Class Initialized
+INFO - 2024-05-02 18:04:39 --> Table Class Initialized
+INFO - 2024-05-02 18:04:39 --> Trackback Class Initialized
+INFO - 2024-05-02 18:04:39 --> User Agent Class Initialized
+INFO - 2024-05-02 18:04:39 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:04:39 --> Model "Misc" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Sess" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:04:39 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:04:39 --> Model "Db" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Banns" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Logs" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Seo" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:04:39 --> Model "User" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Registration" initialized
+INFO - 2024-05-02 18:04:39 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Email" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Msg" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Page" initialized
+INFO - 2024-05-02 18:04:39 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Markers" initialized
+INFO - 2024-05-02 18:04:39 --> Model "Events" initialized
+INFO - 2024-05-02 18:04:39 --> Model "News" initialized
+INFO - 2024-05-02 18:04:39 --> Controller Class Initialized
+INFO - 2024-05-02 18:04:39 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:04:39 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:04:39 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:04:39 --> Final output sent to browser
+DEBUG - 2024-05-02 18:04:39 --> Total execution time: 0.0704
+INFO - 2024-05-02 18:04:39 --> Config Class Initialized
+INFO - 2024-05-02 18:04:39 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:04:39 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:04:39 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:04:39 --> URI Class Initialized
+INFO - 2024-05-02 18:04:39 --> Router Class Initialized
+INFO - 2024-05-02 18:04:39 --> Output Class Initialized
+INFO - 2024-05-02 18:04:39 --> Security Class Initialized
+DEBUG - 2024-05-02 18:04:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:04:39 --> CSRF cookie sent
+INFO - 2024-05-02 18:04:39 --> Input Class Initialized
+INFO - 2024-05-02 18:04:39 --> Language Class Initialized
+ERROR - 2024-05-02 18:04:39 --> 404 Page Not Found: Assets/images
+INFO - 2024-05-02 18:06:57 --> Config Class Initialized
+INFO - 2024-05-02 18:06:57 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:06:57 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:06:57 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:06:57 --> URI Class Initialized
+INFO - 2024-05-02 18:06:57 --> Router Class Initialized
+INFO - 2024-05-02 18:06:57 --> Output Class Initialized
+INFO - 2024-05-02 18:06:57 --> Security Class Initialized
+DEBUG - 2024-05-02 18:06:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:06:57 --> CSRF cookie sent
+INFO - 2024-05-02 18:06:57 --> Input Class Initialized
+INFO - 2024-05-02 18:06:57 --> Language Class Initialized
+INFO - 2024-05-02 18:06:57 --> Loader Class Initialized
+INFO - 2024-05-02 18:06:57 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:06:57 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:06:57 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:06:57 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:06:57 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:06:57 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:06:57 --> Encryption Class Initialized
+INFO - 2024-05-02 18:06:57 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:06:57 --> Parser Class Initialized
+INFO - 2024-05-02 18:06:57 --> Email Class Initialized
+INFO - 2024-05-02 18:06:57 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:06:57 --> Jquery Class Initialized
+INFO - 2024-05-02 18:06:57 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:06:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:06:57 --> Pagination Class Initialized
+INFO - 2024-05-02 18:06:57 --> Table Class Initialized
+INFO - 2024-05-02 18:06:57 --> Trackback Class Initialized
+INFO - 2024-05-02 18:06:57 --> User Agent Class Initialized
+INFO - 2024-05-02 18:06:57 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:06:57 --> Model "Misc" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Sess" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:06:57 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:06:57 --> Model "Db" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Banns" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Logs" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Seo" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:06:57 --> Model "User" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Registration" initialized
+INFO - 2024-05-02 18:06:57 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Email" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Msg" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Page" initialized
+INFO - 2024-05-02 18:06:57 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Markers" initialized
+INFO - 2024-05-02 18:06:57 --> Model "Events" initialized
+INFO - 2024-05-02 18:06:57 --> Model "News" initialized
+INFO - 2024-05-02 18:06:57 --> Controller Class Initialized
+INFO - 2024-05-02 18:06:57 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:06:57 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:06:57 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:06:57 --> Final output sent to browser
+DEBUG - 2024-05-02 18:06:57 --> Total execution time: 0.0780
+INFO - 2024-05-02 18:06:57 --> Config Class Initialized
+INFO - 2024-05-02 18:06:57 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:06:57 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:06:57 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:06:57 --> URI Class Initialized
+INFO - 2024-05-02 18:06:57 --> Router Class Initialized
+INFO - 2024-05-02 18:06:57 --> Output Class Initialized
+INFO - 2024-05-02 18:06:57 --> Security Class Initialized
+DEBUG - 2024-05-02 18:06:57 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:06:57 --> CSRF cookie sent
+INFO - 2024-05-02 18:06:57 --> Input Class Initialized
+INFO - 2024-05-02 18:06:57 --> Language Class Initialized
+ERROR - 2024-05-02 18:06:57 --> 404 Page Not Found: Assets/images
+INFO - 2024-05-02 18:06:59 --> Config Class Initialized
+INFO - 2024-05-02 18:06:59 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:06:59 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:06:59 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:06:59 --> URI Class Initialized
+INFO - 2024-05-02 18:06:59 --> Router Class Initialized
+INFO - 2024-05-02 18:06:59 --> Output Class Initialized
+INFO - 2024-05-02 18:06:59 --> Security Class Initialized
+DEBUG - 2024-05-02 18:06:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:06:59 --> CSRF cookie sent
+INFO - 2024-05-02 18:06:59 --> Input Class Initialized
+INFO - 2024-05-02 18:06:59 --> Language Class Initialized
+INFO - 2024-05-02 18:06:59 --> Loader Class Initialized
+INFO - 2024-05-02 18:06:59 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:06:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:06:59 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:06:59 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:06:59 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:06:59 --> Encryption Class Initialized
+INFO - 2024-05-02 18:06:59 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:06:59 --> Parser Class Initialized
+INFO - 2024-05-02 18:06:59 --> Email Class Initialized
+INFO - 2024-05-02 18:06:59 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:06:59 --> Jquery Class Initialized
+INFO - 2024-05-02 18:06:59 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:06:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:06:59 --> Pagination Class Initialized
+INFO - 2024-05-02 18:06:59 --> Table Class Initialized
+INFO - 2024-05-02 18:06:59 --> Trackback Class Initialized
+INFO - 2024-05-02 18:06:59 --> User Agent Class Initialized
+INFO - 2024-05-02 18:06:59 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:06:59 --> Model "Misc" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Sess" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:06:59 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:06:59 --> Model "Db" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Banns" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Logs" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Seo" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:06:59 --> Model "User" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Registration" initialized
+INFO - 2024-05-02 18:06:59 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Email" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Msg" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Page" initialized
+INFO - 2024-05-02 18:06:59 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Markers" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Events" initialized
+INFO - 2024-05-02 18:06:59 --> Model "News" initialized
+INFO - 2024-05-02 18:06:59 --> Controller Class Initialized
+INFO - 2024-05-02 18:06:59 --> Config Class Initialized
+INFO - 2024-05-02 18:06:59 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:06:59 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:06:59 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:06:59 --> URI Class Initialized
+INFO - 2024-05-02 18:06:59 --> Router Class Initialized
+INFO - 2024-05-02 18:06:59 --> Output Class Initialized
+INFO - 2024-05-02 18:06:59 --> Security Class Initialized
+DEBUG - 2024-05-02 18:06:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:06:59 --> CSRF cookie sent
+INFO - 2024-05-02 18:06:59 --> Input Class Initialized
+INFO - 2024-05-02 18:06:59 --> Language Class Initialized
+INFO - 2024-05-02 18:06:59 --> Loader Class Initialized
+INFO - 2024-05-02 18:06:59 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:06:59 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:06:59 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:06:59 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:06:59 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:06:59 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:06:59 --> Encryption Class Initialized
+INFO - 2024-05-02 18:06:59 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:06:59 --> Parser Class Initialized
+INFO - 2024-05-02 18:06:59 --> Email Class Initialized
+INFO - 2024-05-02 18:06:59 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:06:59 --> Jquery Class Initialized
+INFO - 2024-05-02 18:06:59 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:06:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:06:59 --> Pagination Class Initialized
+INFO - 2024-05-02 18:06:59 --> Table Class Initialized
+INFO - 2024-05-02 18:06:59 --> Trackback Class Initialized
+INFO - 2024-05-02 18:06:59 --> User Agent Class Initialized
+INFO - 2024-05-02 18:06:59 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:06:59 --> Model "Misc" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Sess" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:06:59 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:06:59 --> Model "Db" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Banns" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Logs" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Seo" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:06:59 --> Model "User" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Registration" initialized
+INFO - 2024-05-02 18:06:59 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Email" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Msg" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Page" initialized
+INFO - 2024-05-02 18:06:59 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Markers" initialized
+INFO - 2024-05-02 18:06:59 --> Model "Events" initialized
+INFO - 2024-05-02 18:06:59 --> Model "News" initialized
+INFO - 2024-05-02 18:06:59 --> Controller Class Initialized
+INFO - 2024-05-02 18:06:59 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:06:59 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:06:59 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:06:59 --> Final output sent to browser
+DEBUG - 2024-05-02 18:06:59 --> Total execution time: 0.0686
+INFO - 2024-05-02 18:08:12 --> Config Class Initialized
+INFO - 2024-05-02 18:08:12 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:08:12 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:08:12 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:08:12 --> URI Class Initialized
+INFO - 2024-05-02 18:08:12 --> Router Class Initialized
+INFO - 2024-05-02 18:08:12 --> Output Class Initialized
+INFO - 2024-05-02 18:08:12 --> Security Class Initialized
+DEBUG - 2024-05-02 18:08:12 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:08:12 --> CSRF cookie sent
+INFO - 2024-05-02 18:08:12 --> Input Class Initialized
+INFO - 2024-05-02 18:08:12 --> Language Class Initialized
+INFO - 2024-05-02 18:08:12 --> Loader Class Initialized
+INFO - 2024-05-02 18:08:12 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:08:12 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:08:12 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:08:12 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:08:12 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:08:12 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:08:12 --> Encryption Class Initialized
+INFO - 2024-05-02 18:08:12 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:08:12 --> Parser Class Initialized
+INFO - 2024-05-02 18:08:12 --> Email Class Initialized
+INFO - 2024-05-02 18:08:12 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:08:12 --> Jquery Class Initialized
+INFO - 2024-05-02 18:08:12 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:08:12 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:08:12 --> Pagination Class Initialized
+INFO - 2024-05-02 18:08:12 --> Table Class Initialized
+INFO - 2024-05-02 18:08:12 --> Trackback Class Initialized
+INFO - 2024-05-02 18:08:12 --> User Agent Class Initialized
+INFO - 2024-05-02 18:08:12 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:08:12 --> Model "Misc" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Sess" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:08:12 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:08:12 --> Model "Db" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Banns" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Logs" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Seo" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:08:12 --> Model "User" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Registration" initialized
+INFO - 2024-05-02 18:08:12 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Email" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Msg" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Page" initialized
+INFO - 2024-05-02 18:08:12 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Markers" initialized
+INFO - 2024-05-02 18:08:12 --> Model "Events" initialized
+INFO - 2024-05-02 18:08:12 --> Model "News" initialized
+INFO - 2024-05-02 18:08:12 --> Controller Class Initialized
+INFO - 2024-05-02 18:08:12 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:08:12 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_index.php
+INFO - 2024-05-02 18:08:12 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/index.php
+INFO - 2024-05-02 18:08:12 --> Final output sent to browser
+DEBUG - 2024-05-02 18:08:12 --> Total execution time: 0.0690
+INFO - 2024-05-02 18:08:26 --> Config Class Initialized
+INFO - 2024-05-02 18:08:26 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:08:26 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:08:26 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:08:26 --> URI Class Initialized
+INFO - 2024-05-02 18:08:26 --> Router Class Initialized
+INFO - 2024-05-02 18:08:26 --> Output Class Initialized
+INFO - 2024-05-02 18:08:26 --> Security Class Initialized
+DEBUG - 2024-05-02 18:08:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:08:26 --> CSRF cookie sent
+INFO - 2024-05-02 18:08:26 --> Input Class Initialized
+INFO - 2024-05-02 18:08:26 --> Language Class Initialized
+INFO - 2024-05-02 18:08:26 --> Loader Class Initialized
+INFO - 2024-05-02 18:08:26 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:08:26 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:08:26 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:08:26 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:08:26 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:08:26 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:08:26 --> Encryption Class Initialized
+INFO - 2024-05-02 18:08:26 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:08:26 --> Parser Class Initialized
+INFO - 2024-05-02 18:08:26 --> Email Class Initialized
+INFO - 2024-05-02 18:08:26 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:08:26 --> Jquery Class Initialized
+INFO - 2024-05-02 18:08:26 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:08:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:08:26 --> Pagination Class Initialized
+INFO - 2024-05-02 18:08:26 --> Table Class Initialized
+INFO - 2024-05-02 18:08:26 --> Trackback Class Initialized
+INFO - 2024-05-02 18:08:26 --> User Agent Class Initialized
+INFO - 2024-05-02 18:08:26 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:08:26 --> Model "Misc" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Sess" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:08:26 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:08:26 --> Model "Db" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Banns" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Logs" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Seo" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:08:26 --> Model "User" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Registration" initialized
+INFO - 2024-05-02 18:08:26 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Email" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Msg" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Page" initialized
+INFO - 2024-05-02 18:08:26 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Markers" initialized
+INFO - 2024-05-02 18:08:26 --> Model "Events" initialized
+INFO - 2024-05-02 18:08:26 --> Model "News" initialized
+INFO - 2024-05-02 18:08:26 --> Controller Class Initialized
+INFO - 2024-05-02 18:08:26 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:08:26 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_index.php
+INFO - 2024-05-02 18:08:26 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/index.php
+INFO - 2024-05-02 18:08:26 --> Final output sent to browser
+DEBUG - 2024-05-02 18:08:26 --> Total execution time: 0.0688
+INFO - 2024-05-02 18:08:33 --> Config Class Initialized
+INFO - 2024-05-02 18:08:33 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:08:33 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:08:33 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:08:33 --> URI Class Initialized
+INFO - 2024-05-02 18:08:33 --> Router Class Initialized
+INFO - 2024-05-02 18:08:33 --> Output Class Initialized
+INFO - 2024-05-02 18:08:33 --> Security Class Initialized
+DEBUG - 2024-05-02 18:08:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:08:33 --> CSRF cookie sent
+INFO - 2024-05-02 18:08:33 --> Input Class Initialized
+INFO - 2024-05-02 18:08:33 --> Language Class Initialized
+INFO - 2024-05-02 18:08:33 --> Loader Class Initialized
+INFO - 2024-05-02 18:08:33 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:08:33 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:08:33 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:08:33 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:08:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:08:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:08:33 --> Encryption Class Initialized
+INFO - 2024-05-02 18:08:33 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:08:33 --> Parser Class Initialized
+INFO - 2024-05-02 18:08:33 --> Email Class Initialized
+INFO - 2024-05-02 18:08:33 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:08:33 --> Jquery Class Initialized
+INFO - 2024-05-02 18:08:33 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:08:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:08:33 --> Pagination Class Initialized
+INFO - 2024-05-02 18:08:33 --> Table Class Initialized
+INFO - 2024-05-02 18:08:33 --> Trackback Class Initialized
+INFO - 2024-05-02 18:08:33 --> User Agent Class Initialized
+INFO - 2024-05-02 18:08:33 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:08:33 --> Model "Misc" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Sess" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:08:33 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:08:33 --> Model "Db" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Banns" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Logs" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Seo" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:08:33 --> Model "User" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Registration" initialized
+INFO - 2024-05-02 18:08:33 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Email" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Msg" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Page" initialized
+INFO - 2024-05-02 18:08:33 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Markers" initialized
+INFO - 2024-05-02 18:08:33 --> Model "Events" initialized
+INFO - 2024-05-02 18:08:33 --> Model "News" initialized
+INFO - 2024-05-02 18:08:33 --> Controller Class Initialized
+INFO - 2024-05-02 18:08:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:08:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_index.php
+INFO - 2024-05-02 18:08:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/index.php
+INFO - 2024-05-02 18:08:33 --> Final output sent to browser
+DEBUG - 2024-05-02 18:08:33 --> Total execution time: 0.1196
+INFO - 2024-05-02 18:08:54 --> Config Class Initialized
+INFO - 2024-05-02 18:08:54 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:08:54 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:08:54 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:08:54 --> URI Class Initialized
+INFO - 2024-05-02 18:08:54 --> Router Class Initialized
+INFO - 2024-05-02 18:08:54 --> Output Class Initialized
+INFO - 2024-05-02 18:08:54 --> Security Class Initialized
+DEBUG - 2024-05-02 18:08:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:08:54 --> CSRF cookie sent
+INFO - 2024-05-02 18:08:54 --> Input Class Initialized
+INFO - 2024-05-02 18:08:54 --> Language Class Initialized
+INFO - 2024-05-02 18:08:54 --> Loader Class Initialized
+INFO - 2024-05-02 18:08:54 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:08:54 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:08:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:08:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:08:54 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:08:54 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:08:54 --> Encryption Class Initialized
+INFO - 2024-05-02 18:08:54 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:08:54 --> Parser Class Initialized
+INFO - 2024-05-02 18:08:54 --> Email Class Initialized
+INFO - 2024-05-02 18:08:54 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:08:54 --> Jquery Class Initialized
+INFO - 2024-05-02 18:08:54 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:08:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:08:54 --> Pagination Class Initialized
+INFO - 2024-05-02 18:08:54 --> Table Class Initialized
+INFO - 2024-05-02 18:08:54 --> Trackback Class Initialized
+INFO - 2024-05-02 18:08:54 --> User Agent Class Initialized
+INFO - 2024-05-02 18:08:54 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:08:54 --> Model "Misc" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Sess" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:08:54 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:08:54 --> Model "Db" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Banns" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Logs" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Seo" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:08:54 --> Model "User" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Registration" initialized
+INFO - 2024-05-02 18:08:54 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Email" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Msg" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Page" initialized
+INFO - 2024-05-02 18:08:54 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Markers" initialized
+INFO - 2024-05-02 18:08:54 --> Model "Events" initialized
+INFO - 2024-05-02 18:08:54 --> Model "News" initialized
+INFO - 2024-05-02 18:08:54 --> Controller Class Initialized
+INFO - 2024-05-02 18:08:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:08:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_index.php
+INFO - 2024-05-02 18:08:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/index.php
+INFO - 2024-05-02 18:08:54 --> Final output sent to browser
+DEBUG - 2024-05-02 18:08:54 --> Total execution time: 0.0706
+INFO - 2024-05-02 18:10:00 --> Config Class Initialized
+INFO - 2024-05-02 18:10:00 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:10:00 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:10:00 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:10:00 --> URI Class Initialized
+INFO - 2024-05-02 18:10:00 --> Router Class Initialized
+INFO - 2024-05-02 18:10:00 --> Output Class Initialized
+INFO - 2024-05-02 18:10:00 --> Security Class Initialized
+DEBUG - 2024-05-02 18:10:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:10:00 --> CSRF cookie sent
+INFO - 2024-05-02 18:10:00 --> Input Class Initialized
+INFO - 2024-05-02 18:10:00 --> Language Class Initialized
+INFO - 2024-05-02 18:10:00 --> Loader Class Initialized
+INFO - 2024-05-02 18:10:00 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:10:00 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:10:00 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:10:00 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:10:00 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:10:00 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:10:00 --> Encryption Class Initialized
+INFO - 2024-05-02 18:10:00 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:10:00 --> Parser Class Initialized
+INFO - 2024-05-02 18:10:00 --> Email Class Initialized
+INFO - 2024-05-02 18:10:00 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:10:00 --> Jquery Class Initialized
+INFO - 2024-05-02 18:10:00 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:10:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:10:00 --> Pagination Class Initialized
+INFO - 2024-05-02 18:10:00 --> Table Class Initialized
+INFO - 2024-05-02 18:10:00 --> Trackback Class Initialized
+INFO - 2024-05-02 18:10:00 --> User Agent Class Initialized
+INFO - 2024-05-02 18:10:00 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:10:00 --> Model "Misc" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Sess" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:10:00 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:10:00 --> Model "Db" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Banns" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Logs" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Seo" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:10:00 --> Model "User" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Registration" initialized
+INFO - 2024-05-02 18:10:00 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Email" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Msg" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Page" initialized
+INFO - 2024-05-02 18:10:00 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Markers" initialized
+INFO - 2024-05-02 18:10:00 --> Model "Events" initialized
+INFO - 2024-05-02 18:10:00 --> Model "News" initialized
+INFO - 2024-05-02 18:10:00 --> Controller Class Initialized
+INFO - 2024-05-02 18:10:00 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:10:00 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_index.php
+INFO - 2024-05-02 18:10:00 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/index.php
+INFO - 2024-05-02 18:10:00 --> Final output sent to browser
+DEBUG - 2024-05-02 18:10:00 --> Total execution time: 0.0736
+INFO - 2024-05-02 18:10:54 --> Config Class Initialized
+INFO - 2024-05-02 18:10:54 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:10:54 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:10:54 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:10:54 --> URI Class Initialized
+INFO - 2024-05-02 18:10:54 --> Router Class Initialized
+INFO - 2024-05-02 18:10:54 --> Output Class Initialized
+INFO - 2024-05-02 18:10:54 --> Security Class Initialized
+DEBUG - 2024-05-02 18:10:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:10:54 --> CSRF cookie sent
+INFO - 2024-05-02 18:10:54 --> Input Class Initialized
+INFO - 2024-05-02 18:10:54 --> Language Class Initialized
+INFO - 2024-05-02 18:10:54 --> Loader Class Initialized
+INFO - 2024-05-02 18:10:54 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:10:54 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:10:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:10:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:10:54 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:10:54 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:10:54 --> Encryption Class Initialized
+INFO - 2024-05-02 18:10:54 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:10:54 --> Parser Class Initialized
+INFO - 2024-05-02 18:10:54 --> Email Class Initialized
+INFO - 2024-05-02 18:10:54 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:10:54 --> Jquery Class Initialized
+INFO - 2024-05-02 18:10:54 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:10:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:10:54 --> Pagination Class Initialized
+INFO - 2024-05-02 18:10:54 --> Table Class Initialized
+INFO - 2024-05-02 18:10:54 --> Trackback Class Initialized
+INFO - 2024-05-02 18:10:54 --> User Agent Class Initialized
+INFO - 2024-05-02 18:10:54 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:10:54 --> Model "Misc" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Sess" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:10:54 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:10:54 --> Model "Db" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Banns" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Logs" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Seo" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:10:54 --> Model "User" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Registration" initialized
+INFO - 2024-05-02 18:10:54 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Email" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Msg" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Page" initialized
+INFO - 2024-05-02 18:10:54 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Markers" initialized
+INFO - 2024-05-02 18:10:54 --> Model "Events" initialized
+INFO - 2024-05-02 18:10:54 --> Model "News" initialized
+INFO - 2024-05-02 18:10:54 --> Controller Class Initialized
+INFO - 2024-05-02 18:10:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:10:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_index.php
+INFO - 2024-05-02 18:10:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/index.php
+INFO - 2024-05-02 18:10:54 --> Final output sent to browser
+DEBUG - 2024-05-02 18:10:54 --> Total execution time: 0.0705
+INFO - 2024-05-02 18:13:40 --> Config Class Initialized
+INFO - 2024-05-02 18:13:40 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:13:40 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:13:40 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:13:40 --> URI Class Initialized
+INFO - 2024-05-02 18:13:40 --> Router Class Initialized
+INFO - 2024-05-02 18:13:40 --> Output Class Initialized
+INFO - 2024-05-02 18:13:40 --> Security Class Initialized
+DEBUG - 2024-05-02 18:13:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:13:40 --> CSRF cookie sent
+INFO - 2024-05-02 18:13:40 --> Input Class Initialized
+INFO - 2024-05-02 18:13:40 --> Language Class Initialized
+INFO - 2024-05-02 18:13:40 --> Loader Class Initialized
+INFO - 2024-05-02 18:13:40 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:13:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:13:40 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:13:40 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:13:40 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:13:40 --> Encryption Class Initialized
+INFO - 2024-05-02 18:13:40 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:13:40 --> Parser Class Initialized
+INFO - 2024-05-02 18:13:40 --> Email Class Initialized
+INFO - 2024-05-02 18:13:40 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:13:40 --> Jquery Class Initialized
+INFO - 2024-05-02 18:13:40 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:13:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:13:40 --> Pagination Class Initialized
+INFO - 2024-05-02 18:13:40 --> Table Class Initialized
+INFO - 2024-05-02 18:13:40 --> Trackback Class Initialized
+INFO - 2024-05-02 18:13:40 --> User Agent Class Initialized
+INFO - 2024-05-02 18:13:40 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:13:40 --> Model "Misc" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Sess" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:13:40 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:13:40 --> Model "Db" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Banns" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Logs" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Seo" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:13:40 --> Model "User" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Registration" initialized
+INFO - 2024-05-02 18:13:40 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Email" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Msg" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Page" initialized
+INFO - 2024-05-02 18:13:40 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Markers" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Events" initialized
+INFO - 2024-05-02 18:13:40 --> Model "News" initialized
+INFO - 2024-05-02 18:13:40 --> Controller Class Initialized
+INFO - 2024-05-02 18:13:40 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/map.php
+INFO - 2024-05-02 18:13:40 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 18:13:40 --> Final output sent to browser
+DEBUG - 2024-05-02 18:13:40 --> Total execution time: 0.0768
+INFO - 2024-05-02 18:13:40 --> Config Class Initialized
+INFO - 2024-05-02 18:13:40 --> Hooks Class Initialized
+INFO - 2024-05-02 18:13:40 --> Config Class Initialized
+INFO - 2024-05-02 18:13:40 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:13:40 --> UTF-8 Support Enabled
+DEBUG - 2024-05-02 18:13:40 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:13:40 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:13:40 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:13:40 --> URI Class Initialized
+INFO - 2024-05-02 18:13:40 --> URI Class Initialized
+INFO - 2024-05-02 18:13:40 --> Router Class Initialized
+INFO - 2024-05-02 18:13:40 --> Router Class Initialized
+INFO - 2024-05-02 18:13:40 --> Output Class Initialized
+INFO - 2024-05-02 18:13:40 --> Output Class Initialized
+INFO - 2024-05-02 18:13:40 --> Security Class Initialized
+INFO - 2024-05-02 18:13:40 --> Security Class Initialized
+DEBUG - 2024-05-02 18:13:40 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-02 18:13:40 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:13:40 --> CSRF cookie sent
+INFO - 2024-05-02 18:13:40 --> CSRF cookie sent
+INFO - 2024-05-02 18:13:40 --> Input Class Initialized
+INFO - 2024-05-02 18:13:40 --> Input Class Initialized
+INFO - 2024-05-02 18:13:40 --> Language Class Initialized
+INFO - 2024-05-02 18:13:40 --> Language Class Initialized
+INFO - 2024-05-02 18:13:40 --> Loader Class Initialized
+INFO - 2024-05-02 18:13:40 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:13:40 --> Loader Class Initialized
+INFO - 2024-05-02 18:13:40 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: text_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: date_helper
+DEBUG - 2024-05-02 18:13:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:13:40 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:13:40 --> Session: Class initialized using 'files' driver.
+INFO - 2024-05-02 18:13:40 --> Helper loaded: inflector_helper
+DEBUG - 2024-05-02 18:13:40 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:13:40 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:13:40 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:13:40 --> Encryption Class Initialized
+INFO - 2024-05-02 18:13:40 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:13:40 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:13:40 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:13:40 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:13:40 --> Parser Class Initialized
+INFO - 2024-05-02 18:13:40 --> Helper loaded: text_helper
+INFO - 2024-05-02 18:13:40 --> Email Class Initialized
+DEBUG - 2024-05-02 18:13:40 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:13:40 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:13:40 --> Jquery Class Initialized
+INFO - 2024-05-02 18:13:40 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:13:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:13:40 --> Pagination Class Initialized
+INFO - 2024-05-02 18:13:40 --> Table Class Initialized
+INFO - 2024-05-02 18:13:40 --> Trackback Class Initialized
+INFO - 2024-05-02 18:13:40 --> User Agent Class Initialized
+INFO - 2024-05-02 18:13:40 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:13:40 --> Model "Misc" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Sess" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:13:40 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:13:40 --> Model "Db" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Banns" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Logs" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Seo" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:13:40 --> Model "User" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Registration" initialized
+INFO - 2024-05-02 18:13:40 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Email" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Msg" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Page" initialized
+INFO - 2024-05-02 18:13:40 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Markers" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Events" initialized
+INFO - 2024-05-02 18:13:40 --> Model "News" initialized
+INFO - 2024-05-02 18:13:40 --> Controller Class Initialized
+INFO - 2024-05-02 18:13:40 --> Final output sent to browser
+DEBUG - 2024-05-02 18:13:40 --> Total execution time: 0.1044
+INFO - 2024-05-02 18:13:40 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:13:40 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:13:40 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:13:40 --> Encryption Class Initialized
+INFO - 2024-05-02 18:13:40 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:13:40 --> Parser Class Initialized
+INFO - 2024-05-02 18:13:40 --> Email Class Initialized
+INFO - 2024-05-02 18:13:40 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:13:40 --> Jquery Class Initialized
+INFO - 2024-05-02 18:13:40 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:13:40 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:13:40 --> Pagination Class Initialized
+INFO - 2024-05-02 18:13:40 --> Table Class Initialized
+INFO - 2024-05-02 18:13:40 --> Trackback Class Initialized
+INFO - 2024-05-02 18:13:40 --> User Agent Class Initialized
+INFO - 2024-05-02 18:13:40 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:13:40 --> Model "Misc" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Sess" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:13:40 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:13:40 --> Model "Db" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Banns" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Logs" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Seo" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:13:40 --> Model "User" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Registration" initialized
+INFO - 2024-05-02 18:13:40 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Email" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Msg" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Page" initialized
+INFO - 2024-05-02 18:13:40 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Markers" initialized
+INFO - 2024-05-02 18:13:40 --> Model "Events" initialized
+INFO - 2024-05-02 18:13:40 --> Model "News" initialized
+INFO - 2024-05-02 18:13:40 --> Controller Class Initialized
+INFO - 2024-05-02 18:13:40 --> Final output sent to browser
+DEBUG - 2024-05-02 18:13:40 --> Total execution time: 0.1465
+INFO - 2024-05-02 18:14:29 --> Config Class Initialized
+INFO - 2024-05-02 18:14:29 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:14:29 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:14:29 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:14:29 --> URI Class Initialized
+INFO - 2024-05-02 18:14:29 --> Router Class Initialized
+INFO - 2024-05-02 18:14:29 --> Output Class Initialized
+INFO - 2024-05-02 18:14:29 --> Security Class Initialized
+DEBUG - 2024-05-02 18:14:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:14:29 --> Input Class Initialized
+INFO - 2024-05-02 18:14:29 --> Language Class Initialized
+INFO - 2024-05-02 18:14:29 --> Loader Class Initialized
+INFO - 2024-05-02 18:14:29 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:14:29 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:14:29 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:14:29 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:14:29 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:14:29 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:14:29 --> Encryption Class Initialized
+INFO - 2024-05-02 18:14:29 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:14:29 --> Parser Class Initialized
+INFO - 2024-05-02 18:14:29 --> Email Class Initialized
+INFO - 2024-05-02 18:14:29 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:14:29 --> Jquery Class Initialized
+INFO - 2024-05-02 18:14:29 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:14:29 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:14:29 --> Pagination Class Initialized
+INFO - 2024-05-02 18:14:29 --> Table Class Initialized
+INFO - 2024-05-02 18:14:29 --> Trackback Class Initialized
+INFO - 2024-05-02 18:14:29 --> User Agent Class Initialized
+INFO - 2024-05-02 18:14:29 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:14:29 --> Model "Misc" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Sess" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:14:29 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:14:29 --> Model "Db" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Banns" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Logs" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Seo" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:14:29 --> Model "User" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Registration" initialized
+INFO - 2024-05-02 18:14:29 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Email" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Msg" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Page" initialized
+INFO - 2024-05-02 18:14:29 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Markers" initialized
+INFO - 2024-05-02 18:14:29 --> Model "Events" initialized
+INFO - 2024-05-02 18:14:29 --> Model "News" initialized
+INFO - 2024-05-02 18:14:29 --> Controller Class Initialized
+INFO - 2024-05-02 18:14:29 --> Final output sent to browser
+DEBUG - 2024-05-02 18:14:29 --> Total execution time: 0.0805
+INFO - 2024-05-02 18:14:33 --> Config Class Initialized
+INFO - 2024-05-02 18:14:33 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:14:33 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:14:33 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:14:33 --> URI Class Initialized
+INFO - 2024-05-02 18:14:33 --> Router Class Initialized
+INFO - 2024-05-02 18:14:33 --> Output Class Initialized
+INFO - 2024-05-02 18:14:33 --> Security Class Initialized
+DEBUG - 2024-05-02 18:14:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:14:33 --> CSRF cookie sent
+INFO - 2024-05-02 18:14:33 --> Input Class Initialized
+INFO - 2024-05-02 18:14:33 --> Language Class Initialized
+INFO - 2024-05-02 18:14:33 --> Loader Class Initialized
+INFO - 2024-05-02 18:14:33 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:14:33 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:14:33 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:14:33 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:14:33 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:14:33 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:14:33 --> Encryption Class Initialized
+INFO - 2024-05-02 18:14:33 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:14:33 --> Parser Class Initialized
+INFO - 2024-05-02 18:14:33 --> Email Class Initialized
+INFO - 2024-05-02 18:14:33 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:14:33 --> Jquery Class Initialized
+INFO - 2024-05-02 18:14:33 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:14:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:14:33 --> Pagination Class Initialized
+INFO - 2024-05-02 18:14:33 --> Table Class Initialized
+INFO - 2024-05-02 18:14:33 --> Trackback Class Initialized
+INFO - 2024-05-02 18:14:33 --> User Agent Class Initialized
+INFO - 2024-05-02 18:14:33 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:14:33 --> Model "Misc" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Sess" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:14:33 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:14:33 --> Model "Db" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Banns" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Logs" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Seo" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:14:33 --> Model "User" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Registration" initialized
+INFO - 2024-05-02 18:14:33 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Email" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Msg" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Page" initialized
+INFO - 2024-05-02 18:14:33 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Markers" initialized
+INFO - 2024-05-02 18:14:33 --> Model "Events" initialized
+INFO - 2024-05-02 18:14:33 --> Model "News" initialized
+INFO - 2024-05-02 18:14:33 --> Controller Class Initialized
+INFO - 2024-05-02 18:14:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:14:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:14:33 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:14:33 --> Final output sent to browser
+DEBUG - 2024-05-02 18:14:33 --> Total execution time: 0.0925
+INFO - 2024-05-02 18:14:36 --> Config Class Initialized
+INFO - 2024-05-02 18:14:36 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:14:36 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:14:36 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:14:36 --> URI Class Initialized
+INFO - 2024-05-02 18:14:36 --> Router Class Initialized
+INFO - 2024-05-02 18:14:36 --> Output Class Initialized
+INFO - 2024-05-02 18:14:36 --> Security Class Initialized
+DEBUG - 2024-05-02 18:14:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:14:36 --> CSRF cookie sent
+INFO - 2024-05-02 18:14:36 --> Input Class Initialized
+INFO - 2024-05-02 18:14:36 --> Language Class Initialized
+INFO - 2024-05-02 18:14:36 --> Loader Class Initialized
+INFO - 2024-05-02 18:14:36 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:14:36 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:14:36 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:14:36 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:14:36 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:14:36 --> Encryption Class Initialized
+INFO - 2024-05-02 18:14:36 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:14:36 --> Parser Class Initialized
+INFO - 2024-05-02 18:14:36 --> Email Class Initialized
+INFO - 2024-05-02 18:14:36 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:14:36 --> Jquery Class Initialized
+INFO - 2024-05-02 18:14:36 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:14:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:14:36 --> Pagination Class Initialized
+INFO - 2024-05-02 18:14:36 --> Table Class Initialized
+INFO - 2024-05-02 18:14:36 --> Trackback Class Initialized
+INFO - 2024-05-02 18:14:36 --> User Agent Class Initialized
+INFO - 2024-05-02 18:14:36 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:14:36 --> Model "Misc" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Sess" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:14:36 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:14:36 --> Model "Db" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Banns" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Logs" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Seo" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:14:36 --> Model "User" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Registration" initialized
+INFO - 2024-05-02 18:14:36 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Email" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Msg" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Page" initialized
+INFO - 2024-05-02 18:14:36 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Markers" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Events" initialized
+INFO - 2024-05-02 18:14:36 --> Model "News" initialized
+INFO - 2024-05-02 18:14:36 --> Controller Class Initialized
+INFO - 2024-05-02 18:14:36 --> Config Class Initialized
+INFO - 2024-05-02 18:14:36 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:14:36 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:14:36 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:14:36 --> URI Class Initialized
+INFO - 2024-05-02 18:14:36 --> Router Class Initialized
+INFO - 2024-05-02 18:14:36 --> Output Class Initialized
+INFO - 2024-05-02 18:14:36 --> Security Class Initialized
+DEBUG - 2024-05-02 18:14:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:14:36 --> CSRF cookie sent
+INFO - 2024-05-02 18:14:36 --> Input Class Initialized
+INFO - 2024-05-02 18:14:36 --> Language Class Initialized
+INFO - 2024-05-02 18:14:36 --> Loader Class Initialized
+INFO - 2024-05-02 18:14:36 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:14:36 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:14:36 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:14:36 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:14:36 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:14:36 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:14:36 --> Encryption Class Initialized
+INFO - 2024-05-02 18:14:36 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:14:36 --> Parser Class Initialized
+INFO - 2024-05-02 18:14:36 --> Email Class Initialized
+INFO - 2024-05-02 18:14:36 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:14:36 --> Jquery Class Initialized
+INFO - 2024-05-02 18:14:36 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:14:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:14:36 --> Pagination Class Initialized
+INFO - 2024-05-02 18:14:36 --> Table Class Initialized
+INFO - 2024-05-02 18:14:36 --> Trackback Class Initialized
+INFO - 2024-05-02 18:14:36 --> User Agent Class Initialized
+INFO - 2024-05-02 18:14:36 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:14:36 --> Model "Misc" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Sess" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:14:36 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:14:36 --> Model "Db" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Banns" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Logs" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Seo" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:14:36 --> Model "User" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Registration" initialized
+INFO - 2024-05-02 18:14:36 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Email" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Msg" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Page" initialized
+INFO - 2024-05-02 18:14:36 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Markers" initialized
+INFO - 2024-05-02 18:14:36 --> Model "Events" initialized
+INFO - 2024-05-02 18:14:36 --> Model "News" initialized
+INFO - 2024-05-02 18:14:36 --> Controller Class Initialized
+INFO - 2024-05-02 18:14:36 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:14:36 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:14:36 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:14:36 --> Final output sent to browser
+DEBUG - 2024-05-02 18:14:36 --> Total execution time: 0.0740
+INFO - 2024-05-02 18:14:38 --> Config Class Initialized
+INFO - 2024-05-02 18:14:38 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:14:38 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:14:38 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:14:38 --> URI Class Initialized
+INFO - 2024-05-02 18:14:38 --> Router Class Initialized
+INFO - 2024-05-02 18:14:38 --> Output Class Initialized
+INFO - 2024-05-02 18:14:38 --> Security Class Initialized
+DEBUG - 2024-05-02 18:14:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:14:38 --> CSRF cookie sent
+INFO - 2024-05-02 18:14:38 --> Input Class Initialized
+INFO - 2024-05-02 18:14:38 --> Language Class Initialized
+INFO - 2024-05-02 18:14:38 --> Loader Class Initialized
+INFO - 2024-05-02 18:14:38 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:14:38 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:14:38 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:14:38 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:14:38 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:14:38 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:14:38 --> Encryption Class Initialized
+INFO - 2024-05-02 18:14:38 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:14:38 --> Parser Class Initialized
+INFO - 2024-05-02 18:14:38 --> Email Class Initialized
+INFO - 2024-05-02 18:14:38 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:14:38 --> Jquery Class Initialized
+INFO - 2024-05-02 18:14:38 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:14:38 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:14:38 --> Pagination Class Initialized
+INFO - 2024-05-02 18:14:38 --> Table Class Initialized
+INFO - 2024-05-02 18:14:38 --> Trackback Class Initialized
+INFO - 2024-05-02 18:14:38 --> User Agent Class Initialized
+INFO - 2024-05-02 18:14:38 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:14:38 --> Model "Misc" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Sess" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:14:38 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:14:38 --> Model "Db" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Banns" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Logs" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Seo" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:14:38 --> Model "User" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Registration" initialized
+INFO - 2024-05-02 18:14:38 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Email" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Msg" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Page" initialized
+INFO - 2024-05-02 18:14:38 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Markers" initialized
+INFO - 2024-05-02 18:14:38 --> Model "Events" initialized
+INFO - 2024-05-02 18:14:38 --> Model "News" initialized
+INFO - 2024-05-02 18:14:38 --> Controller Class Initialized
+INFO - 2024-05-02 18:14:38 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/map.php
+INFO - 2024-05-02 18:14:38 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 18:14:38 --> Final output sent to browser
+DEBUG - 2024-05-02 18:14:38 --> Total execution time: 0.0944
+INFO - 2024-05-02 18:14:39 --> Config Class Initialized
+INFO - 2024-05-02 18:14:39 --> Hooks Class Initialized
+INFO - 2024-05-02 18:14:39 --> Config Class Initialized
+INFO - 2024-05-02 18:14:39 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:14:39 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:14:39 --> Utf8 Class Initialized
+DEBUG - 2024-05-02 18:14:39 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:14:39 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:14:39 --> URI Class Initialized
+INFO - 2024-05-02 18:14:39 --> URI Class Initialized
+INFO - 2024-05-02 18:14:39 --> Router Class Initialized
+INFO - 2024-05-02 18:14:39 --> Router Class Initialized
+INFO - 2024-05-02 18:14:39 --> Output Class Initialized
+INFO - 2024-05-02 18:14:39 --> Output Class Initialized
+INFO - 2024-05-02 18:14:39 --> Security Class Initialized
+INFO - 2024-05-02 18:14:39 --> Security Class Initialized
+DEBUG - 2024-05-02 18:14:39 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-02 18:14:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:14:39 --> CSRF cookie sent
+INFO - 2024-05-02 18:14:39 --> CSRF cookie sent
+INFO - 2024-05-02 18:14:39 --> Input Class Initialized
+INFO - 2024-05-02 18:14:39 --> Input Class Initialized
+INFO - 2024-05-02 18:14:39 --> Language Class Initialized
+INFO - 2024-05-02 18:14:39 --> Language Class Initialized
+INFO - 2024-05-02 18:14:39 --> Loader Class Initialized
+INFO - 2024-05-02 18:14:39 --> Loader Class Initialized
+INFO - 2024-05-02 18:14:39 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: text_helper
+INFO - 2024-05-02 18:14:39 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:14:39 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:14:39 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:14:39 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2024-05-02 18:14:39 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:14:39 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:14:39 --> Encryption Class Initialized
+INFO - 2024-05-02 18:14:39 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:14:39 --> Parser Class Initialized
+INFO - 2024-05-02 18:14:39 --> Email Class Initialized
+INFO - 2024-05-02 18:14:39 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:14:39 --> Jquery Class Initialized
+INFO - 2024-05-02 18:14:39 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:14:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:14:39 --> Pagination Class Initialized
+INFO - 2024-05-02 18:14:39 --> Table Class Initialized
+INFO - 2024-05-02 18:14:39 --> Trackback Class Initialized
+INFO - 2024-05-02 18:14:39 --> User Agent Class Initialized
+INFO - 2024-05-02 18:14:39 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:14:39 --> Model "Misc" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Sess" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:14:39 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:14:39 --> Model "Db" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Banns" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Logs" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Seo" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:14:39 --> Model "User" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Registration" initialized
+INFO - 2024-05-02 18:14:39 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Email" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Msg" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Page" initialized
+INFO - 2024-05-02 18:14:39 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Markers" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Events" initialized
+INFO - 2024-05-02 18:14:39 --> Model "News" initialized
+INFO - 2024-05-02 18:14:39 --> Controller Class Initialized
+INFO - 2024-05-02 18:14:39 --> Final output sent to browser
+DEBUG - 2024-05-02 18:14:39 --> Total execution time: 0.0921
+INFO - 2024-05-02 18:14:39 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:14:39 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:14:39 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:14:39 --> Encryption Class Initialized
+INFO - 2024-05-02 18:14:39 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:14:39 --> Parser Class Initialized
+INFO - 2024-05-02 18:14:39 --> Email Class Initialized
+INFO - 2024-05-02 18:14:39 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:14:39 --> Jquery Class Initialized
+INFO - 2024-05-02 18:14:39 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:14:39 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:14:39 --> Pagination Class Initialized
+INFO - 2024-05-02 18:14:39 --> Table Class Initialized
+INFO - 2024-05-02 18:14:39 --> Trackback Class Initialized
+INFO - 2024-05-02 18:14:39 --> User Agent Class Initialized
+INFO - 2024-05-02 18:14:39 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:14:39 --> Model "Misc" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Sess" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:14:39 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:14:39 --> Model "Db" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Banns" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Logs" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Seo" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:14:39 --> Model "User" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Registration" initialized
+INFO - 2024-05-02 18:14:39 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Email" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Msg" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Page" initialized
+INFO - 2024-05-02 18:14:39 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Markers" initialized
+INFO - 2024-05-02 18:14:39 --> Model "Events" initialized
+INFO - 2024-05-02 18:14:39 --> Model "News" initialized
+INFO - 2024-05-02 18:14:39 --> Controller Class Initialized
+INFO - 2024-05-02 18:14:39 --> Final output sent to browser
+DEBUG - 2024-05-02 18:14:39 --> Total execution time: 0.1446
+INFO - 2024-05-02 18:15:35 --> Config Class Initialized
+INFO - 2024-05-02 18:15:35 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:35 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:35 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:35 --> URI Class Initialized
+INFO - 2024-05-02 18:15:35 --> Router Class Initialized
+INFO - 2024-05-02 18:15:35 --> Output Class Initialized
+INFO - 2024-05-02 18:15:35 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:35 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:35 --> Input Class Initialized
+INFO - 2024-05-02 18:15:35 --> Language Class Initialized
+INFO - 2024-05-02 18:15:35 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:35 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:35 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:35 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:35 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:35 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:35 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:35 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:35 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:35 --> Email Class Initialized
+INFO - 2024-05-02 18:15:35 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:35 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:35 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:35 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:35 --> Table Class Initialized
+INFO - 2024-05-02 18:15:35 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:35 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:35 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:35 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:35 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:35 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:35 --> Model "User" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:35 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:35 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:35 --> Model "News" initialized
+INFO - 2024-05-02 18:15:35 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:35 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/map.php
+INFO - 2024-05-02 18:15:35 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 18:15:35 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:35 --> Total execution time: 0.0860
+INFO - 2024-05-02 18:15:35 --> Config Class Initialized
+INFO - 2024-05-02 18:15:35 --> Hooks Class Initialized
+INFO - 2024-05-02 18:15:35 --> Config Class Initialized
+INFO - 2024-05-02 18:15:35 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:35 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:35 --> Utf8 Class Initialized
+DEBUG - 2024-05-02 18:15:35 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:35 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:35 --> URI Class Initialized
+INFO - 2024-05-02 18:15:35 --> URI Class Initialized
+INFO - 2024-05-02 18:15:35 --> Router Class Initialized
+INFO - 2024-05-02 18:15:35 --> Router Class Initialized
+INFO - 2024-05-02 18:15:35 --> Output Class Initialized
+INFO - 2024-05-02 18:15:35 --> Output Class Initialized
+INFO - 2024-05-02 18:15:35 --> Security Class Initialized
+INFO - 2024-05-02 18:15:35 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:35 --> CSRF cookie sent
+DEBUG - 2024-05-02 18:15:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:35 --> Input Class Initialized
+INFO - 2024-05-02 18:15:35 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:35 --> Input Class Initialized
+INFO - 2024-05-02 18:15:35 --> Language Class Initialized
+INFO - 2024-05-02 18:15:35 --> Language Class Initialized
+INFO - 2024-05-02 18:15:35 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:35 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:35 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: text_helper
+INFO - 2024-05-02 18:15:35 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:35 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2024-05-02 18:15:35 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:35 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:35 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:35 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:35 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:35 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:35 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:35 --> Email Class Initialized
+INFO - 2024-05-02 18:15:35 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:35 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:35 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:35 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:35 --> Table Class Initialized
+INFO - 2024-05-02 18:15:35 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:35 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:35 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:35 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:35 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:35 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:35 --> Model "User" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:35 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:35 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:35 --> Model "News" initialized
+INFO - 2024-05-02 18:15:35 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:35 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:35 --> Total execution time: 0.0938
+INFO - 2024-05-02 18:15:35 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:35 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:35 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:35 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:35 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:35 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:35 --> Email Class Initialized
+INFO - 2024-05-02 18:15:35 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:35 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:35 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:35 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:35 --> Table Class Initialized
+INFO - 2024-05-02 18:15:35 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:35 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:35 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:35 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:35 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:35 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:35 --> Model "User" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:35 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:35 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:35 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:35 --> Model "News" initialized
+INFO - 2024-05-02 18:15:35 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:35 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:35 --> Total execution time: 0.1536
+INFO - 2024-05-02 18:15:49 --> Config Class Initialized
+INFO - 2024-05-02 18:15:49 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:49 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:49 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:49 --> URI Class Initialized
+INFO - 2024-05-02 18:15:49 --> Router Class Initialized
+INFO - 2024-05-02 18:15:49 --> Output Class Initialized
+INFO - 2024-05-02 18:15:49 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:49 --> Input Class Initialized
+INFO - 2024-05-02 18:15:49 --> Language Class Initialized
+INFO - 2024-05-02 18:15:49 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:49 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:49 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:49 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:49 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:49 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:49 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:49 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:49 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:49 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:49 --> Email Class Initialized
+INFO - 2024-05-02 18:15:49 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:49 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:49 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:49 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:49 --> Table Class Initialized
+INFO - 2024-05-02 18:15:49 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:49 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:49 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:49 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:49 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:49 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:49 --> Model "User" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:49 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:49 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:49 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:49 --> Model "News" initialized
+INFO - 2024-05-02 18:15:49 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:49 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:49 --> Total execution time: 0.0702
+INFO - 2024-05-02 18:15:52 --> Config Class Initialized
+INFO - 2024-05-02 18:15:52 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:52 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:52 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:52 --> URI Class Initialized
+INFO - 2024-05-02 18:15:52 --> Router Class Initialized
+INFO - 2024-05-02 18:15:52 --> Output Class Initialized
+INFO - 2024-05-02 18:15:52 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:52 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:52 --> Input Class Initialized
+INFO - 2024-05-02 18:15:52 --> Language Class Initialized
+INFO - 2024-05-02 18:15:52 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:52 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:52 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:52 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:52 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:52 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:52 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:52 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:52 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:52 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:52 --> Email Class Initialized
+INFO - 2024-05-02 18:15:52 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:52 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:52 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:52 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:52 --> Table Class Initialized
+INFO - 2024-05-02 18:15:52 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:52 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:52 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:52 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:52 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:52 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:52 --> Model "User" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:52 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:52 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:52 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:52 --> Model "News" initialized
+INFO - 2024-05-02 18:15:52 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:52 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:15:52 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:15:52 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:15:52 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:52 --> Total execution time: 0.0884
+INFO - 2024-05-02 18:15:53 --> Config Class Initialized
+INFO - 2024-05-02 18:15:53 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:53 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:53 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:53 --> URI Class Initialized
+INFO - 2024-05-02 18:15:53 --> Router Class Initialized
+INFO - 2024-05-02 18:15:53 --> Output Class Initialized
+INFO - 2024-05-02 18:15:53 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:53 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:53 --> Input Class Initialized
+INFO - 2024-05-02 18:15:53 --> Language Class Initialized
+INFO - 2024-05-02 18:15:53 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:53 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:53 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:53 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:53 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:53 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:53 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:53 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:53 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:53 --> Email Class Initialized
+INFO - 2024-05-02 18:15:53 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:53 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:53 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:53 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:53 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:53 --> Table Class Initialized
+INFO - 2024-05-02 18:15:53 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:53 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:53 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:53 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:53 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:53 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:53 --> Model "User" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:53 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:53 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:53 --> Model "News" initialized
+INFO - 2024-05-02 18:15:53 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:53 --> Config Class Initialized
+INFO - 2024-05-02 18:15:53 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:53 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:53 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:53 --> URI Class Initialized
+INFO - 2024-05-02 18:15:53 --> Router Class Initialized
+INFO - 2024-05-02 18:15:53 --> Output Class Initialized
+INFO - 2024-05-02 18:15:53 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:53 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:53 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:53 --> Input Class Initialized
+INFO - 2024-05-02 18:15:53 --> Language Class Initialized
+INFO - 2024-05-02 18:15:53 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:53 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:53 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:53 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:53 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:53 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:53 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:53 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:53 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:53 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:53 --> Email Class Initialized
+INFO - 2024-05-02 18:15:53 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:53 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:53 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:53 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:53 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:53 --> Table Class Initialized
+INFO - 2024-05-02 18:15:53 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:53 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:53 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:53 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:53 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:53 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:53 --> Model "User" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:53 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:53 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:53 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:53 --> Model "News" initialized
+INFO - 2024-05-02 18:15:53 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:53 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:15:53 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_marker_list.php
+INFO - 2024-05-02 18:15:53 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin//index.php
+INFO - 2024-05-02 18:15:53 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:53 --> Total execution time: 0.0689
+INFO - 2024-05-02 18:15:54 --> Config Class Initialized
+INFO - 2024-05-02 18:15:54 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:54 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:54 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:54 --> URI Class Initialized
+INFO - 2024-05-02 18:15:54 --> Router Class Initialized
+INFO - 2024-05-02 18:15:54 --> Output Class Initialized
+INFO - 2024-05-02 18:15:54 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:54 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:54 --> Input Class Initialized
+INFO - 2024-05-02 18:15:54 --> Language Class Initialized
+INFO - 2024-05-02 18:15:54 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:54 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:54 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:54 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:54 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:54 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:54 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:54 --> Email Class Initialized
+INFO - 2024-05-02 18:15:54 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:54 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:54 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:54 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:54 --> Table Class Initialized
+INFO - 2024-05-02 18:15:54 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:54 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:54 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:54 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:54 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:54 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:54 --> Model "User" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:54 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:54 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:54 --> Model "News" initialized
+INFO - 2024-05-02 18:15:54 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/pages/map.php
+INFO - 2024-05-02 18:15:54 --> File loaded: G:\xampp\htdocs\446.hu\application\views\internal/frame.php
+INFO - 2024-05-02 18:15:54 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:54 --> Total execution time: 0.0693
+INFO - 2024-05-02 18:15:54 --> Config Class Initialized
+INFO - 2024-05-02 18:15:54 --> Config Class Initialized
+INFO - 2024-05-02 18:15:54 --> Hooks Class Initialized
+INFO - 2024-05-02 18:15:54 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:15:54 --> UTF-8 Support Enabled
+DEBUG - 2024-05-02 18:15:54 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:15:54 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:54 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:15:54 --> URI Class Initialized
+INFO - 2024-05-02 18:15:54 --> URI Class Initialized
+INFO - 2024-05-02 18:15:54 --> Router Class Initialized
+INFO - 2024-05-02 18:15:54 --> Router Class Initialized
+INFO - 2024-05-02 18:15:54 --> Output Class Initialized
+INFO - 2024-05-02 18:15:54 --> Output Class Initialized
+INFO - 2024-05-02 18:15:54 --> Security Class Initialized
+INFO - 2024-05-02 18:15:54 --> Security Class Initialized
+DEBUG - 2024-05-02 18:15:54 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-02 18:15:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:15:54 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:54 --> CSRF cookie sent
+INFO - 2024-05-02 18:15:54 --> Input Class Initialized
+INFO - 2024-05-02 18:15:54 --> Input Class Initialized
+INFO - 2024-05-02 18:15:54 --> Language Class Initialized
+INFO - 2024-05-02 18:15:54 --> Language Class Initialized
+INFO - 2024-05-02 18:15:54 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:54 --> Loader Class Initialized
+INFO - 2024-05-02 18:15:54 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: text_helper
+INFO - 2024-05-02 18:15:54 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:15:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+DEBUG - 2024-05-02 18:15:54 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:15:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:54 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:54 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:54 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:54 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:54 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:54 --> Email Class Initialized
+INFO - 2024-05-02 18:15:54 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:54 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:54 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:54 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:54 --> Table Class Initialized
+INFO - 2024-05-02 18:15:54 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:54 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:54 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:54 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:54 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:55 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:55 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:55 --> Model "User" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:55 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:55 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:55 --> Model "News" initialized
+INFO - 2024-05-02 18:15:55 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:55 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:55 --> Total execution time: 0.0872
+INFO - 2024-05-02 18:15:55 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:15:55 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:15:55 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:15:55 --> Encryption Class Initialized
+INFO - 2024-05-02 18:15:55 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:15:55 --> Parser Class Initialized
+INFO - 2024-05-02 18:15:55 --> Email Class Initialized
+INFO - 2024-05-02 18:15:55 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:15:55 --> Jquery Class Initialized
+INFO - 2024-05-02 18:15:55 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:15:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:15:55 --> Pagination Class Initialized
+INFO - 2024-05-02 18:15:55 --> Table Class Initialized
+INFO - 2024-05-02 18:15:55 --> Trackback Class Initialized
+INFO - 2024-05-02 18:15:55 --> User Agent Class Initialized
+INFO - 2024-05-02 18:15:55 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:15:55 --> Model "Misc" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Sess" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:15:55 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:15:55 --> Model "Db" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Banns" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Logs" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Seo" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:15:55 --> Model "User" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Registration" initialized
+INFO - 2024-05-02 18:15:55 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Email" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Msg" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Page" initialized
+INFO - 2024-05-02 18:15:55 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Markers" initialized
+INFO - 2024-05-02 18:15:55 --> Model "Events" initialized
+INFO - 2024-05-02 18:15:55 --> Model "News" initialized
+INFO - 2024-05-02 18:15:55 --> Controller Class Initialized
+INFO - 2024-05-02 18:15:55 --> Final output sent to browser
+DEBUG - 2024-05-02 18:15:55 --> Total execution time: 0.1409
+INFO - 2024-05-02 18:16:11 --> Config Class Initialized
+INFO - 2024-05-02 18:16:11 --> Hooks Class Initialized
+DEBUG - 2024-05-02 18:16:11 --> UTF-8 Support Enabled
+INFO - 2024-05-02 18:16:11 --> Utf8 Class Initialized
+INFO - 2024-05-02 18:16:11 --> URI Class Initialized
+INFO - 2024-05-02 18:16:11 --> Router Class Initialized
+INFO - 2024-05-02 18:16:11 --> Output Class Initialized
+INFO - 2024-05-02 18:16:11 --> Security Class Initialized
+DEBUG - 2024-05-02 18:16:11 --> Global POST, GET and COOKIE data sanitized
+INFO - 2024-05-02 18:16:11 --> CSRF cookie sent
+INFO - 2024-05-02 18:16:11 --> Input Class Initialized
+INFO - 2024-05-02 18:16:11 --> Language Class Initialized
+INFO - 2024-05-02 18:16:11 --> Loader Class Initialized
+INFO - 2024-05-02 18:16:11 --> Helper loaded: typography_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: captcha_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: date_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: form_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: email_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: inflector_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: number_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: html_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: cookie_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: url_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: array_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: security_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: string_helper
+INFO - 2024-05-02 18:16:11 --> Helper loaded: text_helper
+DEBUG - 2024-05-02 18:16:11 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2024-05-02 18:16:11 --> Session: Class initialized using 'files' driver.
+DEBUG - 2024-05-02 18:16:11 --> Encryption: Auto-configured driver 'openssl'.
+INFO - 2024-05-02 18:16:11 --> Encryption: OpenSSL initialized with method AES-128-CBC.
+INFO - 2024-05-02 18:16:11 --> Encryption Class Initialized
+INFO - 2024-05-02 18:16:11 --> Form Validation Class Initialized
+INFO - 2024-05-02 18:16:11 --> Parser Class Initialized
+INFO - 2024-05-02 18:16:11 --> Email Class Initialized
+INFO - 2024-05-02 18:16:11 --> Image Lib Class Initialized
+INFO - 2024-05-02 18:16:11 --> Jquery Class Initialized
+INFO - 2024-05-02 18:16:11 --> Javascript Class Initialized and loaded. Driver used: jquery
+INFO - 2024-05-02 18:16:11 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2024-05-02 18:16:11 --> Pagination Class Initialized
+INFO - 2024-05-02 18:16:11 --> Table Class Initialized
+INFO - 2024-05-02 18:16:11 --> Trackback Class Initialized
+INFO - 2024-05-02 18:16:11 --> User Agent Class Initialized
+INFO - 2024-05-02 18:16:11 --> XML-RPC Class Initialized
+INFO - 2024-05-02 18:16:11 --> Model "Misc" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Sess" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Cookie" initialized
+INFO - 2024-05-02 18:16:11 --> Database Driver Class Initialized
+INFO - 2024-05-02 18:16:11 --> Model "Db" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Banns" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Logs" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Seo" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Navbar" initialized
+INFO - 2024-05-02 18:16:11 --> Model "User" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Registration" initialized
+INFO - 2024-05-02 18:16:11 --> Model "GeoCoding" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Encryption" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Email" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Msg" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Visitor" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Page" initialized
+INFO - 2024-05-02 18:16:11 --> Model "AdminForm" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Markers" initialized
+INFO - 2024-05-02 18:16:11 --> Model "Events" initialized
+INFO - 2024-05-02 18:16:11 --> Model "News" initialized
+INFO - 2024-05-02 18:16:11 --> Controller Class Initialized
+INFO - 2024-05-02 18:16:11 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/sidebar.php
+INFO - 2024-05-02 18:16:11 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/pages/p_index.php
+INFO - 2024-05-02 18:16:11 --> File loaded: G:\xampp\htdocs\446.hu\application\views\admin/index.php
+INFO - 2024-05-02 18:16:11 --> Final output sent to browser
+DEBUG - 2024-05-02 18:16:11 --> Total execution time: 0.0714

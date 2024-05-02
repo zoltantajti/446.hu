@@ -57,4 +57,4 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 $config['javascript_location'] = './assets/js/';
-$config['csrf_exclude_uris'] = array('Rest/setState','Rest/uploadFile','Rest/removeFile','admin/markers');
+$config['csrf_exclude_uris'] = array('Rest/setState','Rest/uploadFile','Rest/removeFile','Rest/addMarker');

@@ -29,6 +29,20 @@
                     Összes látogatások: <b><?=@number_format($this->Visitor->countAll(),0,'',' ')?></b>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="alert alert-info text-center">
+                    <i class="fa-solid fa-map-marker-alt fa-4x"></i>
+                    <hr />
+                    Markerek: <b><?=@number_format($this->Markers->countAll(),0,'',' ')?></b> / <?=@number_format($this->Markers->countNew(),0,'',' ')?> új
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert alert-info text-center">
+                    <i class="fa-solid fa-users fa-4x"></i>
+                    <hr />
+                    Felhasználók: <b><?=@number_format($this->User->countAll(),0,'',' ')?></b>
+                </div>
+            </div>
         </div>
     </div>
       

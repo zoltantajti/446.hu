@@ -199,6 +199,7 @@ class Admin extends CI_Controller {
         }
     }
 
+    /*Markers*/
     public function markers($f = "list", $id = -1, $filter = null){
         $this->User->checkLogin();
         if($f == "list" && $id == -1){
@@ -262,6 +263,8 @@ class Admin extends CI_Controller {
             }else{
                 $this->Markers->edit($this->input->post());
             }
+        }elseif($f == "allow" && $id != -1){
+            $this->Markers->allow($id);   
         }elseif($f == "delete" && $id != -1){
             $this->Markers->delete($id);
         }

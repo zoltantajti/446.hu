@@ -3,7 +3,9 @@ class User extends CI_Model {
     public function __construct(){
         parent::__construct();
     }
-
+    public function countAll(){
+        return $this->db->select('id')->from('users')->count_all_results();
+    }
     public function checkLogin(){
         if(!$this->Sess->has("user") || $this->Sess->getSub("user","login") != true){
             redirect('internal/login');

@@ -26,3 +26,32 @@ main > .container, main > .container-fluid {
     border: 1px solid var(--linkHColor);
     color: #fff;
 }
+
+.card-img-fixed{
+    width: 265px;
+    height: 248px;
+}
+.card-title{
+    height: 48px;
+}
+.card-text{
+    text-align: center;
+    min-height: 48px;
+}
+.ml-3{
+    margin-left: 10px;
+}
+.event-meta{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.30);
+}
+
+.event-details{
+    margin-top: 25px;
+}
+.event-details img {
+    float:left;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    max-width: 320px;
+}

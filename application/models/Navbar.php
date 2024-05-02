@@ -55,7 +55,7 @@ class Navbar extends CI_Model {
     private function genLink($item)
     {
         $link = '';
-        if($this->checkChildren($item['id'],$item['isPublic'])){
+        if($this->checkChildren($item['id'],@$item['isPublic'])){
             $link .= '<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">';
             $link .= $this->makeIcon($item['icon']);
             $link .= " " . $item['title'] . '</a>';

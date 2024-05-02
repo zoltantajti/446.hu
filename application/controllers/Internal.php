@@ -9,7 +9,7 @@ class Internal extends CI_Controller {
 
     public function index() {
         $this->User->checkLogin();
-
+        $this->data['page'] = $this->thm . "pages/main";
         $this->load->view($this->thm . 'frame', $this->data);
     }
 
@@ -157,6 +157,7 @@ class Internal extends CI_Controller {
 
 
     public function terkep(){
+        $this->User->checkLogin();
         $this->data['page'] = $this->thm . 'pages/map';
         $this->data['css'] = '
 <link rel="stylesheet" media="screen" href="./assets/js/leaflet/leaflet.css" />
@@ -174,4 +175,99 @@ class Internal extends CI_Controller {
 <script type="module" src="./assets/js/map/index.js?ref=internal"></script>';
         $this->load->view($this->thm . 'frame', $this->data);
     }
+
+    public function events($page = 0)
+    {
+        $this->User->checkLogin();
+        $this->load->library('pagination');
+        $config['use_page_numbers'] = true;
+        $config['base_url'] = base_url() . 'internal/events';
+        $config['total_rows'] = $this->db->select('id')->from('events')->where('eventStart >=', date("Y-m-d H:i:s"))->count_all_results();
+        $config['per_page'] = 10;
+		$config['full_tag_open'] = '<nav><ul class="pagination">';
+		$config['full_tag_close'] = '</ul></nav>';
+		$config['first_tag_open'] = '<li class="page-item">';
+		$config['first_link'] = 'Első';
+		$config['first_tag_close'] = '</li>';		
+		$config['last_tag_open'] = '<li class="page-item">';
+		$config['last_link'] = 'Utolsó';
+		$config['last_tag_close'] = '</li>';		
+		$config['prev_tag_open'] = '<li class="page-item">';
+		$config['prev_tag_close'] = '</li>';		
+		$config['next_tag_open'] = '<li class="page-item">';
+		$config['next_tag_close'] = '</li>';		
+		$config['cur_tag_open'] = '<li class="page-item active" aria-current="page">';
+		$config['curr_tag_close'] = '</li>';		
+		$config['num_tag_open'] = '<li class="page-item">';
+		$config['num_tag_close'] = '</li>';
+        $this->pagination->initialize($config);
+        $this->data['pagi'] = $this->pagination->create_links();
+        $offset = ($page == 0) ? 0 : (($page - 1) * $config['per_page']);
+		$rows = $this->db->select('*')->from('events')->where('eventStart >=', date("Y-m-d H:i:s"))->order_by('eventStart','asc')->limit($config['per_page'],$offset)->get()->result_array();
+		$this->data['events'] = $rows;
+        $this->data['page'] = $this->thm . "pages/events";
+		$this->load->view($this->thm . 'frame', $this->data);
+    }
+    public function event($alias){
+        $this->User->checkLogin();
+        $rows = $this->db->select('*')->from('events')->where('seoLink',$alias)->get()->result_array();
+		$this->data['event'] = $rows[0];
+		$this->data['page'] = $this->thm . "pages/event";
+        $this->load->view($this->thm . 'frame', $this->data);
+    }
+
+    public function news($page = 0)
+    {
+        $this->User->checkLogin();
+        $this->load->library('pagination');
+        $config['use_page_numbers'] = true;
+        $config['base_url'] = base_url() . 'internal/news';
+        $config['total_rows'] = $this->db->select('id')->from('news')->count_all_results();
+        $config['per_page'] = 10;
+		$config['full_tag_open'] = '<nav><ul class="pagination">';
+		$config['full_tag_close'] = '</ul></nav>';
+		$config['first_tag_open'] = '<li class="page-item">';
+		$config['first_link'] = 'Első';
+		$config['first_tag_close'] = '</li>';		
+		$config['last_tag_open'] = '<li class="page-item">';
+		$config['last_link'] = 'Utolsó';
+		$config['last_tag_close'] = '</li>';		
+		$config['prev_tag_open'] = '<li class="page-item">';
+		$config['prev_tag_close'] = '</li>';		
+		$config['next_tag_open'] = '<li class="page-item">';
+		$config['next_tag_close'] = '</li>';		
+		$config['cur_tag_open'] = '<li class="page-item active" aria-current="page">';
+		$config['curr_tag_close'] = '</li>';		
+		$config['num_tag_open'] = '<li class="page-item">';
+		$config['num_tag_close'] = '</li>';
+        $this->pagination->initialize($config);
+        $this->data['pagi'] = $this->pagination->create_links();
+        $offset = ($page == 0) ? 0 : (($page - 1) * $config['per_page']);
+		$rows = $this->db->select('*')->from('news')->order_by('createdAt','desc')->limit($config['per_page'],$offset)->get()->result_array();
+		$this->data['events'] = $rows;
+        $this->data['page'] = $this->thm . "pages/news";
+		$this->load->view($this->thm . 'frame', $this->data);
+    }
+    public function new($alias){
+        $this->User->checkLogin();
+        $rows = $this->db->select('*')->from('news')->where('alias',$alias)->get()->result_array();
+		$this->data['event'] = $rows[0];
+		$this->data['page'] = $this->thm . "pages/new";
+        $this->load->view($this->thm . 'frame', $this->data);
+    }
+
+    public function page($alias){
+        if($this->db->select('id,title,content,module,meta_key,meta_desc')->from('pages')->where('alias', $alias)->count_all_results() == 1){
+            $page = $this->db->select('id,title,content,module,meta_key,meta_desc')->from('pages')->where('alias', $alias)->get()->result_array()[0];
+            if($page['module'] == null){
+                $this->data['page'] = $this->thm . "pages/content";
+                $this->data['ctx'] = $page;
+                $this->load->view($this->thm . "frame", $this->data);
+            };
+        }else{
+            $this->data['page'] = $this->thm . "errors/404";
+            $this->load->view($this->thm . "frame", $this->data);
+        }
+    }
+    
 }

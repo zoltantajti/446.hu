@@ -169,6 +169,68 @@ class User extends CI_Model {
         return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('opName',$user)->or_where('email',$user)
                     ->where('perm >=', 1)->count_all_results() == 1 ? true : false;
     }
+    
+    /*Internal*/
+    public function changePassword()
+    {
+        $p = $this->input->post();
+        $p['oldPW'] = $this->Encryption->hash($p['oldPW']);
+        $p['newPW'] = $this->Encryption->hash($p['newPW']);
+        unset($p['submit'],$p['newPWRep']);
+        if($p['oldPW'] == $p['newPW']){
+            $this->Msg->set("A jelenlegi jelszavad nem egyezhet meg az új jelszóval!", "danger");
+            redirect('internal/profile/password');
+        }else{
+            if($this->db->select('id')->from('user_passwords')->where('userID', $this->Sess->getChain("id","user"))->count_all_results() == 1){
+                $passwords = json_decode($this->db->select('prevPasswords')->from('user_passwords')->where('userID', $this->Sess->getChain("id", "user"))->get()->result_array()[0]['prevPasswords'], true);
+                if(in_array($p['newPW'], $passwords, true)){
+                    $this->Msg->set("Nem használhatod ezt a jelszót, mert szerepel az általad hassznált legutóbbi 5 használt jelszó között!", "danger");
+                    redirect('internal/profile/password');
+                }else{
+                    $passwords[] = $p['oldPW'];
+                    if(count($passwords) == 6){ unset($passwords[0]); }
+                    $this->Db->update("user_passwords", array("prevPasswords" => json_encode($passwords)), array("userID" => $this->Sess->getChain("id","user")));
+                    $this->Db->update("users", array("password" => $p['newPW']), array("id" => $this->Sess->getChain("id", "user")));
+                    $this->Msg->set("Sikeres jelszómódosítás!", "success");
+                    redirect('internal/profile/password');
+                }
+            }else{
+                $array = array(
+                    "userID" => $this->Sess->getChain("id","user"),
+                    "prevPasswords" => json_encode(array($p['oldPW']))
+                );
+                $this->Db->insert("user_passwords", $array);
+                $this->Db->update("users", array("password" => $p['newPW']), array("id" => $this->Sess->getChain("id", "user")));
+                $this->Msg->set("Sikeres jelszómódosítás!", "success");
+                redirect('internal/profile/password');
+            }
+        }
+        print_r($p);
+    }
+    public function updatePersonal()
+    {
+        $p = $this->input->post();
+        unset($p['submit']);
+        $this->Db->update("users", $p, array("id" => $this->Sess->getChain("id","user")));
+        $this->Msg->set("Sikeres adatmódosítás!", "success");
+        redirect('internal/profile/personal');
+    }
+    public function updateRadios()
+    {
+        $p = $this->input->post();
+        unset($p['submit']);
+        $this->Db->update("users", $p, array("id" => $this->Sess->getChain("id","user")));
+        $this->Msg->set("Sikeres adatmódosítás!", "success");
+        redirect('internal/profile/radio');
+    }
+    public function updateAbout()
+    {
+        $p = $this->input->post();
+        unset($p['submit']);
+        $this->Db->update("users", $p, array("id" => $this->Sess->getChain("id","user")));
+        $this->Msg->set("Sikeres adatmódosítás!", "success");
+        redirect('internal/profile/about');
+    }
 
     /*Admin*/
     public function getToken(){

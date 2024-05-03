@@ -82,3 +82,8 @@ main > .container, main > .container-fluid {
     left: -60px !important;
     padding: 15px;
 }
+.tab-pane{
+    padding-top: 25px;
+}
+
+.green { color: green;}

@@ -21,11 +21,37 @@ class Rest extends CI_Controller
                     ->result_array();
         echo(json_encode($qso));
     }
+    public function getCitiesByCounty($_county){
+        $county = $this->db->select('code')->from('counties')->where('name',$_county)->get()->result_array()[0];
+        $cities = $this->db->select('name')->from('cities')->where('county_code', $county['code'])->get()->result_array();
+        echo json_encode($cities);
+    }
     public function getMapMarkers()
     {
         $markers = $this->db->select('*')->from('markers')->where('active',1)->get()->result_array();
+        foreach($markers as $k=>$marker){
+            if($marker['type'] == "mobile_radio" || $marker['type'] == "desktop_radio"){
+                if($this->db->select('id')->from('users')->where('callsign',$marker['title'])->count_all_results() == 1){
+                    $markers[$k]['hasUser'] = true;
+                    $markers[$k]['userID'] = $this->db->select('id')->from('users')->where('callsign',$marker['title'])->get()->result_array()[0]['id'];
+                }else{
+                    $markers[$k]['hasUser'] = false;
+                    $markers[$k]['userID'] = -1;
+                }
+            }
+        }
         echo(json_encode($markers));
     }
+
+    public function checkUser($callsign){
+        $callsign = base64_decode(str_replace('_','=', $callsign),true);
+        if($this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->count_all_results() == 1){
+            echo $this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->get()->result_array()[0]['id'];
+        }else{
+            echo "-1";
+        }
+    }
+
     public function getMapEvents()
     {
         /*$events = $this->db->select('events.id as id,

@@ -1,10 +1,12 @@
-$(document).ready((event) => {
+$(document).ready((event) => { 
     
-    
+    if(window.location.href.includes('profile')){
+        initRadios();
+        initAntennas();
+        initFreqs();
+    };
 });
-
 let mylat, mylon, remlat, remlon = 0;
-
 const getGeoCode = (address) => {
     address = encodeURIComponent(address);
     return new Promise((resolve, reject) => {
@@ -105,5 +107,157 @@ $("#mode").change((event) => {
     }else if($("#mode").val() === "/A"){
         $("#parrotFrame").addClass("hidden");
         $("#amateurFrame").removeClass("hidden");
+    }
+})
+
+$("#profile-countries").change((event) => {
+    if($("#profile-countries").val() === "Magyarország"){
+        $("#profile-counties").attr("list", "counties");
+        $("#profile-cities").attr("list", null);
+    }else{
+        alert("OK");
+        $("#profile-counties").attr("list", null);
+        $("#profile-cities").attr("list", null);
+    }
+})
+$("#profile-counties").change((event) => {
+    let county = $("#profile-counties").val();
+    $.getJSON("Rest/getCitiesByCounty/" + county, (data) => {
+        $("#cities").empty();
+        data.forEach((city,index) => {
+            let content = `<option value="${city.name}">`;
+            $("#cities").append(content);
+        })
+    })
+})
+
+let radios = [];
+let antennas = [];
+let freqs = [];
+
+const initRadios = () => {
+    let radios = JSON.parse($("#radios").val());
+    radios.forEach((radio) => { createRadioItem(radio); })
+}
+const initAntennas = () => {
+    let radios = JSON.parse($("#antennas").val());
+    radios.forEach((radio) => { createAntennaItem(radio); })
+}
+const initFreqs = () => {
+    let radios = JSON.parse($("#freqs").val());
+    radios.forEach((radio) => { createFreqItem(radio); })
+}
+
+const createRadioItem = (name, fromInput = false) => {
+    const id = name.replace('/\s+/g', "-");
+    const removeLink = document.createElement("a");
+    removeLink.href = "javascript:;";
+    removeLink.innerHTML = '<i class="fa fa-fw fa-times red"></i>';
+    removeLink.addEventListener('click', () => {
+        const radioItem = document.getElementById("RI_" + id);
+        if(radioItem){
+            let index = radios.indexOf(name);
+            if(index !== -1){
+                radios.splice(index, 1);
+            };
+            radioItem.remove();
+            updateRadioField();
+        }
+    });
+    const radioItem = document.createElement("span");
+    radioItem.classList.add("radioItem");
+    radioItem.classList.add("input-group-text");
+    radioItem.id = "RI_" + id;
+    radioItem.textContent = name;
+    radioItem.appendChild(removeLink);
+    $("#radiosFrameAfter").after(radioItem);
+    radios.push(name);
+    updateRadioField();
+}
+const createAntennaItem = (name, fromInput = false) => {
+    const id = name.replace('/\s+/g', "-");
+    const removeLink = document.createElement("a");
+    removeLink.href = "javascript:;";
+    removeLink.innerHTML = '<i class="fa fa-fw fa-times red"></i>';
+    removeLink.addEventListener('click', () => {
+        const radioItem = document.getElementById("AI_" + id);
+        if(radioItem){
+            let index = antennas.indexOf(name);
+            if(index !== -1){
+                antennas.splice(index, 1);
+            };
+            radioItem.remove();
+            updateAntennaField();
+        }
+    });
+    const radioItem = document.createElement("span");
+    radioItem.classList.add("radioItem");
+    radioItem.classList.add("input-group-text");
+    radioItem.id = "AI_" + id;
+    radioItem.textContent = name;
+    radioItem.appendChild(removeLink);
+    $("#antennasFrameAfter").after(radioItem);
+    antennas.push(name);
+    updateAntennaField();
+}
+const createFreqItem = (name, fromInput = false) => {
+    const id = name.replace('/\s+/g', "-");
+    const removeLink = document.createElement("a");
+    removeLink.href = "javascript:;";
+    removeLink.innerHTML = '<i class="fa fa-fw fa-times red"></i>';
+    removeLink.addEventListener('click', () => {
+        const radioItem = document.getElementById("FI_" + id);
+        if(radioItem){
+            let index = freqs.indexOf(name);
+            if(index !== -1){
+                freqs.splice(index, 1);
+            };
+            radioItem.remove();
+            updateFreqField();
+        }
+    });
+    const radioItem = document.createElement("span");
+    radioItem.classList.add("radioItem");
+    radioItem.classList.add("input-group-text");
+    radioItem.id = "FI_" + id;
+    radioItem.textContent = name;
+    radioItem.appendChild(removeLink);
+    $("#freqsFrameAfter").after(radioItem);
+    freqs.push(name);
+    updateFreqField();
+}
+
+const updateRadioField = () => {
+    $("#radios").val(JSON.stringify(radios));
+}
+const updateAntennaField = () => {
+    $("#antennas").val(JSON.stringify(antennas));
+}
+const updateFreqField = () => {
+    $("#freqs").val(JSON.stringify(freqs));
+}
+
+$("#addRadio").on('click', (event) => {
+    if($("#radios_input").val().length == 0){
+        alert("A rádió mező nem lehet üres!");
+    }else{
+        createRadioItem($("#radios_input").val());
+        $("#radios_input").val("");
+    }
+})
+$("#addAntenna").on('click', (event) => {
+    if($("#antennas_input").val().length == 0){
+        alert("Az antenna mező nem lehet üres!");
+    }else{
+        createAntennaItem($("#antennas_input").val());
+        $("#antennas_input").val("");
+    }
+})
+$("#addFreq").on('click', (event) => {
+    if($("#freqs_input").val().length == 0){
+        alert("Az antenna mező nem lehet üres!");
+    }else{
+        createFreqItem($("#freqs_input").val());
+        $("#freqs_input").val("");
     }
 })

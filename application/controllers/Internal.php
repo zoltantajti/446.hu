@@ -271,6 +271,7 @@ class Internal extends CI_Controller {
         }
     }
     
+    /*QSO page*/
     public function qso($f = "add", $id = -1){
         if($f == "add" && $id == -1){
             $this->data['page'] = $this->thm . "pages/qso_add";
@@ -324,7 +325,49 @@ class Internal extends CI_Controller {
 		<script src="./assets/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
 		<script type="module" src="./assets/js/map/qso.js"></script>';
             $this->load->view($this->thm . "frame", $this->data);
-        }
-        
+        }        
     }
+
+    public function profile($id = null){
+        if($id == null || $id == "login" || $id == "password" || $id == "personal" || $id == "radio" || $id == "about"){
+            if($id == null){ $id = "login"; };
+            $this->data['segment'] = $id;
+            $this->data['user'] = $this->db->select('callsign,opName,country,county,city,address,radios,antennas,freqs,aboutME,regDate,loginDate,perm')->from('users')->where('id',$this->Sess->getChain('id','user'))->get()->result_array()[0];
+            $this->data['page'] = $this->thm . "pages/profile";
+        }else{
+            if($this->db->select('id')->from('users')->where('id',$id)->count_all_results() == 0){
+                $this->data['page'] = $this->thm . "errors/404";
+            }else{
+                $this->data['user'] = $this->db->select('id,callsign,opName,country,county,city,address,radios,antennas,freqs,aboutME,regDate,loginDate,perm')->from('users')->where('id',$id)->get()->result_array()[0];
+                $this->data['page'] = $this->thm . "pages/profile_pub";
+            };
+        }
+        $this->load->view($this->thm . "frame", $this->data);
+    }
+        public function changePassword(){
+            $this->form_validation->set_rules('oldPW', 'Jelenlegi jelszó', 'trim|required|min_length[8]|max_length[32]');
+            $this->form_validation->set_rules('newPW', 'Új jelszó', 'trim|required|min_length[8]|max_length[32]');
+            $this->form_validation->set_rules('newPWRep', 'Új jelszó megerősítése', 'trim|required|min_length[8]|max_length[32]|matches[newPW]');
+            if($this->form_validation->run()){
+                $this->User->changePassword();
+            }else{
+                $this->Msg->set(validation_errors(), "danger");
+                redirect('internal/profile/password');
+            }
+        }
+        public function updatePersonal(){
+            $this->form_validation->set_rules('country', 'Ország', 'trim|required');
+            $this->form_validation->set_rules('county', 'Megye', 'trim|required');
+            $this->form_validation->set_rules('city', 'Város', 'trim|required');
+            $this->form_validation->set_rules('address', 'Cím', 'trim');
+            if($this->form_validation->run()){
+                $this->User->updatePersonal();
+            }else{
+                $this->Msg->set(validation_errors(), "danger");
+                redirect('internal/profile/personal');
+            }
+        }
+        public function updateRadios(){ $this->User->updateRadios(); }
+        public function updateAbout(){ $this->User->updateAbout(); }
+
 }

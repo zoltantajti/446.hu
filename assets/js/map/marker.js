@@ -1,7 +1,7 @@
 import { Icon } from "./Icon.js";
 
 class Marker {
-    constructor(id, lat, lon, active, title, description, type, parrotState, parrotRadius, ref = "public"){
+    constructor(id, lat, lon, active, title, description, type, parrotState, parrotRadius, hasUser, userID, ref = "public"){
         this.id = id;
         this.lat = lat;
         this.lon = lon;
@@ -12,6 +12,8 @@ class Marker {
         this.parrotState = parrotState;
         this.parrotRadius = parrotRadius;
         this.ref = ref;
+        this.hasUser = hasUser;
+        this.userID = userID;
     }
 
     create = (_layer) => {
@@ -22,7 +24,14 @@ class Marker {
             status: this.parrotState
         });
         if(this.ref === "internal"){
-            this.marker.bindPopup(`<b>${this.title}</b><hr/>${this.description}`);
+            let link = "";
+            if(this.hasUser){
+                link = `<br/><hr/><a title="Profil megnyitása" href="internal/profile/${this.userID}" target="_balnk"><i class="fa fa-fw fa-user"></i></a>`;
+            };
+
+            let popup = `<b>${this.title}</b><hr/>${this.description}${link}`;
+
+            this.marker.bindPopup(popup);
             this.marker.on('contextmenu', (e) => { });
         }else if(this.ref === "public"){
             this.marker.bindPopup(`<b>${this.title}</b><hr/>Az információk csak<br/> a belső térképen érhetőek el!`);

@@ -30,7 +30,6 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-md-0">
 <?php
     $notif = ($this->Notifications->collectNotificatable() > 0) ? true : false;
-
 ?>
                         <li class="nav-item dropdown">
                         <a class="nav-link" <?=($notif) ? 'href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"' : 'href="javascript:;" title="Nincs új értesítés"'?>>
@@ -52,8 +51,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <?php if($this->Sess->getChain('perm','user') == 99){ ?>
-                                <li><a class="dropdown-item" href="admin"><i class="fa-solid fa-user-tie"></i> Admin</a></li>
+                                <li><a class="dropdown-item" href="admin"><i class="fa-solid fa-fw fa-user-tie"></i> Admin</a></li>
                                 <?php }; ?>
+                                <li><a class="dropdown-item" href="internal/profile"><i class="fa fa-fw fa-user"></i> Profilom</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="internal/logout"><i class="fa fa-fw fa-sign-out-alt"></i> Kilépés</a></li>
                             </ul>

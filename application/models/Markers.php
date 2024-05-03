@@ -69,6 +69,20 @@ class Markers extends CI_Model
     public function getType($type){
         return Types::get($type);
     }
+
+    /*Internal*/
+    public function isOnMap($callsign){
+        return ($this->db->select('id')->from('markers')->where('title',$callsign)->count_all_results() == 1) ? '<i class="fa-solid fa-check green"></i>' : '<i class="fa-solid fa-xmark red"></i>';
+    }
+    public function addedParrots($id){
+        return $this->db->select('id')->from('markers')->where('type','parrot')->where('active',1)->where('created_user',$id)->count_all_results();
+    }
+    public function addedRadios($id){
+        return $this->db->select('id')->from('markers')->where('type','mobile_radio')->or_where('type','desktop_radio')->where('active',1)->where('created_user',$id)->count_all_results();
+    }
+    public function addedStations($id){
+        return $this->db->select('id')->from('markers')->where('type','station')->where('active',1)->where('created_user',$id)->count_all_results();
+    }
 }
 
 class Types {

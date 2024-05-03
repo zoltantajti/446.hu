@@ -19,6 +19,22 @@ class Qso extends CI_Model
             ->result_array();
     }
 
+    public function countAllQso($callsign){
+        $in = $this->db->select('id')->from('qso')->where('rem_callsign',$callsign)->count_all_results();
+        $out = $this->db->select('id')->from('qso')->where('my_callsign',$callsign)->count_all_results();
+        return "(" . $in . " / " . $out . ")";
+    }
+    public function getQSOByUser($callsign, $limit = 5){
+        return $this->db
+            ->select('my_callsign,rem_callsign,distance,status,suffix,mode')
+            ->from('qso')
+            ->where('my_callsign', $callsign)
+            ->or_where('rem_callsign', $callsign)
+            ->limit(5, 0)
+            ->get()
+            ->result_array();
+    }
+
     public function add() {
         $p = $this->input->post();
         unset($p['submit'], $p['my_opName']);

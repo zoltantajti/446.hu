@@ -27,4 +27,13 @@ class Pub extends CI_Controller{
         $this->data['p'] = "index";
         $this->render("index", $this->data);
     }
+    public function newsItem($alias){
+        if($this->db->select('id')->from('news')->where('alias', $alias)->count_all_results() == 1){
+            $this->data['item'] = $this->db->select('*')->from('news')->where('alias',$alias)->get()->result_array()[0];
+            $this->data['p'] = "newsItem";
+        }else{
+            $this->data['p'] = "404";
+        };
+        $this->render("index", $this->data);
+    }
 }

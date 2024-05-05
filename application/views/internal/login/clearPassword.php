@@ -27,7 +27,7 @@
                 <form class="form-box px-3" method="POST" action="" autocomplete="off">
                     <?=$this->Msg->get()?>
                     <input type="hidden" name="<?=$this->security->get_csrf_token_name()?>" value="<?=$this->security->get_csrf_hash()?>" />
-                    <div class="form-input">
+                    <div class="form-input mb-3">
                         <span><i class="fa fa-at"></i></span>
                         <input type="email" name="email" id="email" placeholder="E-mail cím" tabindex="10">
                         <?=form_error('email','<div class="error">','</div>')?>

@@ -23,7 +23,11 @@ $route['admin/markers/(:any)'] = 'Admin/markers/list/-1/$1';
 
 /*Public segment*/
 $route['public/terkep'] = 'Map/publicMap';
+$route['public/hir/(:any)'] = 'Pub/newsItem/$1';
 $route['default_controller'] = 'Pub';
+
+/*Exporter*/
+$route['export/(csv)/(cottonEar)'] = 'CExporter/$1/$2';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -28,12 +28,12 @@
                 <form class="form-box px-3" method="POST" action="" autocomplete="off">
                     <?=$this->Msg->get()?>                    
                     <input type="hidden" name="<?=$this->security->get_csrf_token_name()?>" value="<?=$this->security->get_csrf_hash()?>" />
-                    <div class="form-input">
+                    <div class="form-input mb-3">
                         <span><i class="fa fa-key"></i></span>
                         <input type="password" name="password" id="password" placeholder="Jelszó" tabindex="10">
                         <?=form_error('password','<div class="error">','</div>')?>
                     </div>
-                    <div class="form-input">
+                    <div class="form-input mb-3">
                         <span><i class="fa fa-key"></i></span>
                         <input type="password" name="password_rep" id="password_rep" placeholder="Jelszó megerősítése" tabindex="10">
                         <?=form_error('password_rep','<div class="error">','</div>')?>

@@ -80,15 +80,12 @@ class Map {
         this.QTHLocator.addLayer(L.maidenhead({color : 'rgba(255, 0, 0, 0.4)'}));
 
         this.cms.initFromMap(this);
-        
-        //this.search.init(this.map);
     }
 
     getMarkers = function() {
         let rest = new Rest();
         rest.getMarkers().then((data) => { 
             data.forEach((_marker) => {
-                console.log(_marker);
                 let markerObject = new Marker(_marker.id, _marker.lat, _marker.lon, _marker.active, _marker.title, _marker.description, _marker.type, _marker.parrotState, _marker.parrotRadius, _marker.hasUser, _marker.userID, this.ref);
                 switch(_marker.type){
                     case "mobile_radio": 

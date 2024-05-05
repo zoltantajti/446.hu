@@ -10,7 +10,7 @@
                     <p class="card-text">
                         <?=$v['short']?>
                     </p>
-                    <a href="internal/new/<?=$v['alias']?>" class="btn d-block btn-primary">Részletek</a>
+                    <a href="internal/newsDetails/<?=$v['alias']?>" class="btn d-block btn-primary">Részletek</a>
                 </div>
                 <div class="card-footer text-body-secondary">
                     <i class="fa fa-fw fa-calendar-alt"></i> <?=str_replace('-','.',$v['createdAt'])?></i>

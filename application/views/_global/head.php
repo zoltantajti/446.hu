@@ -21,13 +21,13 @@
     <meta property="og:url" content="<?=site_url()?>" />
     <meta property="og:title" content="<?=($this->Seo->get('name',@$meta['name']) != null) ? $this->Seo->get('name') . " - " : ""?>446.hu" />
     <meta property="og:description" content="<?=($this->Seo->get('description',@$meta['description']) != null) ? $this->Seo->get('description') : ""?>" />
-    <meta property="og:image" content="<?=site_url()?>assets/images/446logo.png" />
+    <meta property="og:image" content="<?=site_url()?>assets/images/446logo2.png" />
     
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="<?=site_url()?>" />
     <meta property="twitter:title" content="<?=($this->Seo->get('name',@$meta['name']) != null) ? $this->Seo->get('name') . " - " : ""?>446.hu" />
     <meta property="twitter:description" content="<?=($this->Seo->get('description',@$meta['description']) != null) ? $this->Seo->get('description') : ""?>" />
-    <meta property="twitter:image" content="<?=site_url()?>assets/images/446logo.png" />
+    <meta property="twitter:image" content="<?=site_url()?>assets/images/446logo2.png" />
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="canonical" href="<?=base_url()?>" />
 	<link rel="stylesheet" media="screen" type="text/css" href="./assets/css/bootstrap.min.css" />

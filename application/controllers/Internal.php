@@ -57,6 +57,7 @@ class Internal extends CI_Controller {
     public function register($step = 1) {
         $this->User->isLoggedIn();
         if($step == 1){
+            $_SESSION['registration'] = null;
             $this->form_validation->set_rules('callsign', 'Hívójel', 'required|trim|is_unique[users.callsign]|callback_nmhh_check');
             $this->form_validation->set_rules('opname', 'Operátor név', 'required|trim|is_unique[users.opname]');
             $this->form_validation->set_rules('email', 'E-mail cím', 'required|trim|is_unique[users.email]|valid_email');
@@ -147,7 +148,7 @@ class Internal extends CI_Controller {
     }
     public function nmhh_check($str){
         if($this->db->select('callsign')->from('callsignbook')->where('callsign', $str)->count_all_results() == 1){
-            $_SESSION['registration']['nmhh'] = $this->db->select('name,country,city,address')->from('callsignbook')->get()->result_array()[0];
+            $_SESSION['registration']['nmhh'] = $this->db->select('name,country,city,address')->from('callsignbook')->where('callsign', $str)->get()->result_array()[0];
             return true;
         }else{            
             unset($_SESSION['registration']['nmhh']);
@@ -249,7 +250,7 @@ class Internal extends CI_Controller {
 		$this->load->view($this->thm . 'frame', $this->data);
     }
     
-	public function newDetail($alias){
+	public function newsDetails($alias){
         $this->User->checkLogin();
         $rows = $this->db->select('*')->from('news')->where('alias',$alias)->get()->result_array();
 		$this->data['event'] = $rows[0];
@@ -264,7 +265,16 @@ class Internal extends CI_Controller {
                 $this->data['page'] = $this->thm . "pages/content";
                 $this->data['ctx'] = $page;
                 $this->load->view($this->thm . "frame", $this->data);
-            };
+            }else{
+                $this->data['page'] = $this->thm . "pages/content";
+                $this->data['ctx'] = $page;
+                
+                $module = explode("/", $page['module']);
+                print_r($module);
+                $this->load->model($module[0]);
+                $this->data['module'] = $this->{$module[0]}->{$module[1]}($module[2]);
+                $this->load->view($this->thm . "frame", $this->data);
+            }
         }else{
             $this->data['page'] = $this->thm . "errors/404";
             $this->load->view($this->thm . "frame", $this->data);

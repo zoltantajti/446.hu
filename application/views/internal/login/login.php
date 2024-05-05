@@ -27,17 +27,17 @@
                 <form class="form-box px-3" method="POST" action="" autocomplete="off">
                     <?=$this->Msg->get()?>
                     <input type="hidden" name="<?=$this->security->get_csrf_token_name()?>" value="<?=$this->security->get_csrf_hash()?>" />
-                    <div class="form-input">
+                    <div class="form-input mb-3">
                         <span><i class="fa fa-user"></i></span>
                         <input type="text" name="username" id="username" placeholder="Felhasználónév vagy Hívójel" tabindex="10">
                         <?=form_error('username','<div class="error">','</div>')?>
                     </div>
-                    <div class="form-input">
+                    <div class="form-input mb-3">
                         <span><i class="fa fa-key"></i></span>
                         <input type="password" name="password" id="password" placeholder="Jelszó">
                         <?=form_error('password','<div class="error">','</div>')?>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 mb-3">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" name="rememberME" class="custom-control-input" id="cb1" name="">
                             <label class="custom-control-label" for="cb1">Jegyezzen meg</label>

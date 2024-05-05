@@ -1,4 +1,8 @@
 <center class="mb-3"><b>Rádió adatok</b></center>
+<div class="alert alert-warning">
+    Figyelem!<br/>
+    Kérlek, a megadott Rádió/Antenna/Frekvencia után nyomj egy ENTER-t, és akkor fog rögzülni. Köszönöm!
+</div>
 <div class="input-group mb-3">
     <span class="input-group-text" id="form-placeholder-box"><i class="fa fa-fw fa-walkie-talkie"></i></span>
     <div class="form-floating" id="radiosFrameBefore">
@@ -7,7 +11,6 @@
     </div>
     <input type="hidden" name="radios" id="radios" value=''/>
 </div>
-<?=form_error('radios','<div class="error">','</div>')?>
 <div class="input-group mb-3">
     <span class="input-group-text" id="form-placeholder-box-ant"><i class="fa-solid fa-tower-broadcast"></i></span>
     <div class="form-floating" id="antennaFrameBefore">
@@ -16,7 +19,6 @@
     </div>
     <input type="hidden" name="antennas" id="antennas" value=''/>
 </div>
-<?=form_error('antennas','<div class="error">','</div>')?>
 <div class="input-group mb-3">
     <span class="input-group-text" id="form-placeholder-box-freq"><i class="fa-solid fa-signal"></i></span>
     <div class="form-floating" id="freqFrameBefore">
@@ -25,10 +27,9 @@
     </div>
     <input type="hidden" name="freqs" id="freqs" value=''/>
 </div>
-<?=form_error('freqs','<div class="error">','</div>')?>
 <div class="row">
     <div class="col-md-6">
-        <a href="register/2" class="btn btn-block text-uppercase button">
+        <a href="internal/register/2" class="btn btn-block text-uppercase button">
             Előző
     </a>
     </div>

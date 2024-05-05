@@ -6,7 +6,7 @@
 </div>
 <div class="row">
     <div class="col-md-6">
-        <a href="register/3" class="btn btn-block text-uppercase button">
+        <a href="internal/register/3" class="btn btn-block text-uppercase button">
             Előző
         </a>
     </div>

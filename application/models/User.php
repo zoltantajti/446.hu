@@ -233,6 +233,9 @@ class User extends CI_Model {
     }
 
     /*Admin*/
+    public function getOwner(){
+        return ($this->Sess->getChain("callsign", "user") == "92-es Zotya") ? true : false;
+    }
     public function getToken(){
         return $this->Sess->get('__id');
     }
@@ -271,4 +274,6 @@ class User extends CI_Model {
             case "99": return "Rendszergazda"; break;
         }
     }
+
+   
 }

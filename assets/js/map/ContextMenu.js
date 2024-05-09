@@ -44,8 +44,9 @@ class ContextMenu {
         this.menu.id = 'customContextMenu';
         this.menu.innerHTML = `
             <ul class="list-group list-group-flush">
-                <a href="javascript:;" id="parrotWorks" class="list-group-item list-group-item-success">Működik</a>
-                <a href="javascript:;" id="parrotNotWorks" class="list-group-item list-group-item-danger">Nem működik</a>
+                <a href="javascript:;" id="parrotWorks" class="list-group-item list-group-item-success"><i class="fa fa-fw fa-check"></i> Működik</a>
+                <a href="javascript:;" id="parrotNotWorks" class="list-group-item list-group-item-danger"><i class="fa fa-fw fa-times"></i> Nem működik</a>
+                <a href="javascript:;" id="parrotEdit" class="list-group-item list-group-item-dark"><i class="fa fa-fw fa-pencil"></i> Szerkesztés</a>
             </ul>
         `;
 
@@ -61,6 +62,35 @@ class ContextMenu {
             this.modifyParrotState(0, id, markerID);
             this.toast.show("Köszi :)", "Köszönjük a visszajelzésed!");
         });
+
+        let parrotEdit = document.getElementById('parrotEdit');
+        parrotEdit.addEventListener('click', (event) => {
+            const id = e.target.options.dbID;
+            let rest = new Rest();
+            rest.getMarkerById(id).then((marker) => {
+                this.hide();
+                $("#map-modal-title").html('Marker módosítása');
+                $("#lat").val(marker.lat).attr("readonly","true");
+                $("#lon").val(marker.lon).attr("readonly","true");
+                $("#type").val(marker.type);
+                $("#title").val(marker.title);
+                tinymce.get('description').setContent(marker.description);
+                $("#addNewMarker").show();
+                btnSaveMarker.addEventListener('click', (event) => {
+                    let rest = new Rest();
+                    rest.updateMarker(id);
+                });
+                let btnClearMarker = document.getElementById("btnClearMarker");
+                btnClearMarker.addEventListener('click', (event) => {
+                    $("#lat").val("").attr("readonly","true");
+                    $("#lon").val("").attr("readonly","true");
+                    $("#type").val("");
+                    $("#title").val("");
+                    tinymce.get('description').setContent("");
+                    $("#addNewMarker").hide();
+                });
+            });
+        })
     }
 
     mapMenu = (e) => {
@@ -75,6 +105,7 @@ class ContextMenu {
             var latlng = e.latlng;
             let marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(this.base.map);
             this.hide();
+            $("#map-modal-title").html('Új marker hozzáadása');
             $("#lat").val(latlng.lat).attr("readonly","true");
             $("#lon").val(latlng.lng).attr("readonly","true");
             $("#addNewMarker").show();

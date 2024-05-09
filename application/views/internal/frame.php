@@ -13,6 +13,7 @@
 
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     
+    <script src="./assets/js/jquery.min.js"></script>
     <title>446.HU</title>
 </head>
 <body class="d-flex flex-column h-100">
@@ -71,7 +72,7 @@
             <span class="text-body-secondary">Minden jog fenntartva &copy; <a href="https://446.hu">446.hu</a></span>
         </div>
     </footer>
-    <script src="./assets/js/jquery.min.js"></script>
+    
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/446script.js"></script>
     <?=@$js?>

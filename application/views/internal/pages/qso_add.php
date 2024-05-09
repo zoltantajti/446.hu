@@ -8,6 +8,7 @@
     <?=form_open('internal/qso/add', 'class="qso-form" id="qso-form"')?>
     <input type="hidden" name="myPos" id="myPos" />
     <input type="hidden" name="remPos" id="remPos" />
+    <div class="alert alert-danger">Minden adat kitöltése kötelező!</div>
     <div class="row">
         <div class="col-md-6 mb-3">
             <fieldset>
@@ -33,7 +34,7 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-text address-nth-8" id="basic-addon1"><i class="fa fa-fw fa-map-marker-alt"></i></span>
-                    <input type="text" class="form-control address-nth-9" name="my_qth" id="my_qth" value="" placeholder="QTH lokátor kód" readonly/>
+                    <input type="text" class="form-control address-nth-9" name="my_qth" id="my_qth" value="<?=set_value('my_qth')?>" placeholder="QTH lokátor kód"/>
                 </div>
             </fieldset>
         </div>
@@ -42,26 +43,26 @@
                 <legend>Ellenállomás adatai</legend>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
-                    <input type="text" class="form-control" name="rem_callsign" value="" placeholder="Hívójele"/>
+                    <input type="text" class="form-control" name="rem_callsign" value="<?=set_value('rem_callsign')?>" placeholder="Hívójele"/>
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
-                    <input type="text" class="form-control" name="rem_opname" value="" placeholder="Operátor név"/>
+                    <input type="text" class="form-control" name="rem_opname" value="<?=set_value('rem_opname')?>" placeholder="Operátor név"/>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text address-nth-1" id="basic-addon1"><i class="fa fa-fw fa-city"></i></span>
-                    <input type="text" class="form-control" list="countries" name="rem_country" id="rem_country" value="" placeholder="Ország"/>
-                    <input type="text" class="form-control" list="counties" name="rem_county" id="rem_county" value="" placeholder="Megye"/>
-                    <input type="text" class="form-control address-nth-4" list="cities" name="rem_city" id="rem_city" value="" placeholder="Város"/>
+                    <input type="text" class="form-control" list="countries" name="rem_country" id="rem_country" value="<?=set_value('rem_country')?>" placeholder="Ország"/>
+                    <input type="text" class="form-control" list="counties" name="rem_county" id="rem_county" value="<?=set_value('rem_county')?>" placeholder="Megye"/>
+                    <input type="text" class="form-control address-nth-4" list="cities" name="rem_city" id="rem_city" value="<?=set_value('rem_city')?>" placeholder="Város"/>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text address-nth-5" id="basic-addon1"><i class="fa fa-fw fa-city"></i></span>
-                    <input type="text" class="form-control" name="rem_address" id="rem_address" value="" placeholder="Utca, házszám (ha van)"/>
+                    <input type="text" class="form-control" name="rem_address" id="rem_address" value="<?=set_value('rem_address')?>" placeholder="Utca, házszám (ha van)"/>
                     <button type="button" class="btn btn-outline-secondary address-nth-7" onclick="calculateQTH('rem');"><i class="fa fa-fw fa-map-marker-alt"></i></button>
                 </div>
                 <div class="input-group">
                     <span class="input-group-text address-nth-8" id="basic-addon1"><i class="fa fa-fw fa-map-marker-alt"></i></span>
-                    <input type="text" class="form-control address-nth-9" name="rem_qth" id="rem_qth" value="" placeholder="QTH lokátor kódja" readonly/>
+                    <input type="text" class="form-control address-nth-9" name="rem_qth" id="rem_qth" value="<?=set_value('rem_qth')?>" placeholder="QTH lokátor kódja"/>
                 </div>
             </fieldset>
         </div>
@@ -72,40 +73,41 @@
                     <div class="col-md-4">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-calendar"></i></span>
-                            <input type="date" class="form-control" name="date" placeholder="Dátum" value="<?=date("Y-m-d")?>"/>
-                            <input type="time" class="form-control" name="time" placeholder="Idő" value="<?=date("H:i:s")?>"/>
+                            <input type="date" class="form-control" name="date" placeholder="Dátum" value="<?=(set_value('date') ? set_value('date') : date("Y-m-d"))?>"/>
+                            <input type="time" class="form-control" name="time" placeholder="Idő" value="<?=(set_value('time') ? set_value('time') : date("H:i:s"))?>"/>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-wave-sine"></i></span>
-                            <input type="text" name="freq" placeholder="Frekvencia" class="form-control"/>
+                            <input type="text" name="freq" value="<?=set_value('freq')?>" placeholder="Frekvencia" class="form-control"/>
                             <span class="input-group-text" id="basic-addon1">MHz</span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-lock"></i></span>
-                            <input type="text" list="ctcs" placeholder="CTCS" class="form-control" name="ctcs" />
+                            <input type="text" list="ctcs" value="<?=set_value('ctcs')?>" placeholder="CTCS" class="form-control" name="ctcs" />
                             <span class="input-group-text" id="basic-addon1">Hz</span>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-lock"></i></span>
-                            <input type="text" list="dcs" placeholder="DCS" class="form-control" name="dcs" />
+                            <input type="text" list="dcs" value="<?=set_value('dcs')?>" placeholder="DCS" class="form-control" name="dcs" />
                         </div>
                     </div>
                 </div>
+                
                 <div class="row">
                     <div class="col-md-4">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Típus</span>
                             <select class="form-control" name="suffix" id="suffix">
-                                <option value="/"> (/) Stabil</option>
-                                <option value="/P"> (/P) Kitelepült / Gyalog állomás</option>
-                                <option value="/M"> (/M) Mobil állomás</option>
-                                <option value="/SM"> (/SM) Statikus mobilállomás</option>
+                                <option value="/" <?=(set_value('suffix') == '/' ? 'selected' : '')?>> (/) Stabil</option>
+                                <option value="/P" <?=(set_value('suffix') == '/P' ? 'selected' : '')?>> (/P) Kitelepült / Gyalog állomás</option>
+                                <option value="/M" <?=(set_value('suffix') == '/M' ? 'selected' : '')?>> (/M) Mobil állomás</option>
+                                <option value="/SM" <?=(set_value('suffix') == '/SM' ? 'selected' : '')?>> (/SM) Statikus mobilállomás</option>
                             </select>
                         </div>
                     </div>
@@ -113,28 +115,23 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">Módja</span>
                             <select class="form-control" name="mode" id="mode">
-                                <option value="/D"> (/D) Direkt</option>
-                                <option value="/P"> (/P) Papagájon át</option>
-                                <option value="/A"> (/A) Amatőr átjásztón át</option>
+                                <option value="/D" <?=(set_value('mode') == '/D' ? 'selected' : '')?>> (/D) Direkt</option>
+                                <option value="/P" <?=(set_value('mode') == '/P' ? 'selected' : '')?>> (/P) Papagájon át</option>
+                                <option value="/A" <?=(set_value('mode') == '/A' ? 'selected' : '')?>> (/A) Amatőr átjásztón át</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-4 hidden" id="parrotFrame">
+                    <?php if(!set_value('mode') || set_value('mode') == '/D'){ $repeaterShow = "hidden"; }else{ $repeaterShow = '';}; ?>
+                    <div class="col-md-4 <?=$repeaterShow?>" id="parrotFrame">
                         <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Papagáj</span>
-                            <input type="text" list="parrot" placeholder="Papagáj neve" class="form-control" name="parrot_name" />
-                        </div>
-                    </div>
-                    <div class="col-md-4 hidden" id="amateurFrame">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">Átjátszó</span>
-                            <input type="text" list="antenna" placeholder="Átjátszó neve" class="form-control" name="parrot_name" />
+                            <span class="input-group-text" id="repeater-caption">Papagáj</span>
+                            <input type="text" list="parrot" id="repeater-field" value="<?=set_value('parrot_name')?>" placeholder="Papagáj neve" class="form-control" name="parrot_name" />
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="fa-thin fa-people-arrows"></i></span>
-                            <input type="text" name="distance" id="distance" class="form-control" placeholder="Távolság" readonly/>
+                            <input type="text" name="distance" id="distance" value="<?=set_value('distance')?>" class="form-control" placeholder="Távolság" readonly/>
                             <button type="button" class="btn btn-outline-secondary" id="calculateDistance"><i class="fa-solid fa-ruler"></i></button>
                         </div>
                     </div>

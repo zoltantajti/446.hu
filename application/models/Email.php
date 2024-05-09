@@ -1,10 +1,10 @@
 <?php
 class Email extends CI_Model {
-    protected $fa = "noreply@tajtizoltan.hu";
+    protected $fa = "info@446.hu";
     protected $faName = "446PMR | Amatőr Rádió";
-    protected $user = "teszt@tajtizoltan.hu";
-    protected $pass = "Kyocera1995#";
-    protected $host = "mail.tajtizoltan.hu";
+    protected $user = "info@446.hu";
+    protected $pass = "Kyocera1995#%";
+    protected $host = "mail.446.hu";
     protected $port = 587;
     protected $cfg = array();
 
@@ -28,6 +28,16 @@ class Email extends CI_Model {
         $item = $this->db->select('subject,content')->from('emails')->where('alias',$dbID)->get()->result_array()[0];
         $this->email->subject($item['subject']);
         $this->email->message($this->formatLetter($item['content'], $values));
+        if(!$this->email->send()){
+            die($this->email->print_debugger());
+        };
+    }
+    public function sendBlank($to, $subject, $msg){
+        $this->email->initialize($this->cfg);
+        $this->email->from($this->fa, $this->faName);
+        $this->email->to($to);
+        $this->email->subject($subject);
+        $this->email->message($msg);
         if(!$this->email->send()){
             die($this->email->print_debugger());
         };

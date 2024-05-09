@@ -1,10 +1,33 @@
 $(document).ready((event) => { 
     
+    
+
     if(window.location.href.includes('profile')){
-        initRadios();
-        initAntennas();
-        initFreqs();
+        var profileRegExp = /\/profile\/(\d+)/;
+        if(profileRegExp.test(window.location.href)){
+            const qthCodeField = document.getElementById('qthCode');
+            let parts = window.location.href.split('/');
+            let userID = parts[parts.length - 1];
+            if(qthCodeField){
+                qthCodeField.innerHTML = '<i class="fa fa-fw fa-spinner fa-spin"></i>';
+                $.getJSON('Rest/getUserAddressByID/' + userID,(data) => {
+                    let address = `${data.country}, ${data.county}, ${data.city}, ${data.address}`;
+                    $.getJSON(`https://geocode.maps.co/search?q=${address}&api_key=663371914590f062701345usb7a1683`, (geo) => {
+                        
+                        let latlon = {'lat': geo[0]['lat'], 'lon': geo[0]['lon']};
+                        let qth = getQTHCode(latlon);    
+                        qthCodeField.innerHTML = qth;
+                    });
+                })
+            }
+        }else{
+            initRadios();
+            initAntennas();
+            initFreqs();
+        };
     };
+
+    
 });
 let mylat, mylon, remlat, remlon = 0;
 const getGeoCode = (address) => {
@@ -21,7 +44,7 @@ const getGeoCode = (address) => {
 const getQTHCode = (object) => {
     let lat = object.lat;
     let lon = object.lon;
-    var QTHlon = (1 * lon + 180) / 20;
+    var QTHlon = (1.0 * lon + 180) / 20;
     var QTHlat = (1 * lat + 90) / 10;
     var QTHlocator = String.fromCharCode(Math.floor(QTHlon) + 65) + String.fromCharCode(Math.floor(QTHlat) + 65);
     
@@ -100,13 +123,14 @@ $("#calculateDistance").on('click', (event) => {
 $("#mode").change((event) => {
     if($("#mode").val() === "/D"){
         $("#parrotFrame").addClass("hidden");
-        $("#amateurFrame").addClass("hidden");
     }else if($("#mode").val() === "/P"){
         $("#parrotFrame").removeClass("hidden");
-        $("#amateurFrame").addClass("hidden");
+        $("#repeater-caption").html('Papagáj');
+        $("#repeater-field").attr('Placeholder', 'Papagáj neve');
     }else if($("#mode").val() === "/A"){
-        $("#parrotFrame").addClass("hidden");
-        $("#amateurFrame").removeClass("hidden");
+        $("#parrotFrame").removeClass("hidden");
+        $("#repeater-caption").html('Állomás');
+        $("#repeater-field").attr('Placeholder', 'Állomás neve');
     }
 })
 

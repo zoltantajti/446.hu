@@ -11,10 +11,9 @@ tinymce.init({
 		{title: 'Right', value: 'float-right'}
 	],
 	templates: (callback) => {
-		$.getJSON("rest/getTemplates", function(data){
+		$.getJSON("Rest/getTemplates", function(data){
 			var templates = [];
 			$.each(data, function(key,val){
-				console.log(val);
 				templates.push(val);
 			});
 			callback(templates);

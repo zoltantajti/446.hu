@@ -24,6 +24,7 @@ $route['admin/markers/(:any)'] = 'Admin/markers/list/-1/$1';
 /*Public segment*/
 $route['public/terkep'] = 'Map/publicMap';
 $route['public/hir/(:any)'] = 'Pub/newsItem/$1';
+$route['public/esemeny/(:any)'] = 'Pub/eventItem/$1';
 $route['default_controller'] = 'Pub';
 
 /*Exporter*/

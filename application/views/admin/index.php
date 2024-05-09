@@ -36,6 +36,7 @@
             </div>
         </div>
     </div>
+    <div class="loader"><p><i class="fa-sharp fa-solid fa-spinner fa-spin"></i></p></div>
     <div class="toast-container p-3 top-0 end-0" id="toastPlacement" data-original-class="toast-container p-3"></div>
     <script id="adminjs" src="./assets/js/446admin.js?token=<?=$this->User->getToken()?>"></script>
 </body>

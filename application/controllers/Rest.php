@@ -43,6 +43,11 @@ class Rest extends CI_Controller
         echo(json_encode($markers));
     }
 
+    public function getMarkerById($id){
+        $marker = $this->db->select('lat,lon,type,title,description')->from('markers')->where('id',$id)->get()->result_array()[0];
+        echo json_encode($marker);
+    }
+
     public function checkUser($callsign){
         $callsign = base64_decode(str_replace('_','=', $callsign),true);
         if($this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->count_all_results() == 1){
@@ -88,13 +93,30 @@ class Rest extends CI_Controller
         $this->Db->insert("markers", $p);
         echo("200");
     }
-
+    public function updateMarker()
+    {
+        $p = $this->input->post();
+        $id = $p['id'];
+        unset($p['id']);
+        $this->Db->update("markers", $p, array("id"=>$id));
+        echo("200");
+    }
+   
     public function getEvents()
     {
         $events = $this->db->select("*")->from('events')->get()->result_array();
         echo(json_encode($events));
     }
-
+    
+    /*Frekvenciák*/
+    public function updateFreq() {
+        $p = $this->input->post();
+        $id = $p['id'];
+        $tbl = $p['tbl'];
+        unset($p['id'],$p['tbl']);
+        $this->Db->update($tbl, $p, array("id" => $id));
+        echo("200");
+    }
     /*Imagemanager*/
     public function getFolder()
     {
@@ -142,10 +164,27 @@ class Rest extends CI_Controller
         unlink($p['path']);
         echo(json_encode(array("success" => true)));
     }
+
+    /*TinyMCE*/
+    public function getTemplates() {
+        echo json_encode($this->db->select("*")->from("templates")->get()->result_array());
+    }
+
     /*CRONS*/
     public function updateCSBook()
     {
         $this->load->model('NMHH');
         $this->NMHH->updateCallSignBook();
+    }
+
+    /*Imap*/
+    public function readImap()
+    {
+        $this->ImapReader->getInbox();
+    }
+
+    /*Profile*/
+    public function getUserAddressByID($id){
+        echo json_encode($this->db->select('country,county,city,address')->from('users')->where('id',$id)->get()->result_array()[0]);
     }
 }

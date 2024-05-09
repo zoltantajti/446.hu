@@ -11,7 +11,7 @@
             </header>
             <main class="px-3 text-center ">
                 <img src="./assets/images/446logo.png" alt="446logo"/>
-                <p class="lead"></p>
+                <p class="lead"><h1>Brékó, Brékó!</h1></p>
                 <p class="lead"></p>
             </main>
             <footer class="mt-auto text-center text-white-50">

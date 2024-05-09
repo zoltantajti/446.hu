@@ -30,7 +30,22 @@ class Pub extends CI_Controller{
     public function newsItem($alias){
         if($this->db->select('id')->from('news')->where('alias', $alias)->count_all_results() == 1){
             $this->data['item'] = $this->db->select('*')->from('news')->where('alias',$alias)->get()->result_array()[0];
+            $this->data['meta'] = array(
+                'description' => $this->data['item']['metadesc'],
+                'keywords' => $this->data['item']['metakey'],
+                'robots' => 'index, follow',
+                'revisit-after' => '1 Hour'
+            );
             $this->data['p'] = "newsItem";
+        }else{
+            $this->data['p'] = "404";
+        };
+        $this->render("index", $this->data);
+    }
+    public function eventItem($alias){
+        if($this->db->select('id')->from('events')->where('seoLink', $alias)->count_all_results() == 1){
+            $this->data['item'] = $this->db->select('*')->from('events')->where('seoLink',$alias)->get()->result_array()[0];
+            $this->data['p'] = "eventItem";
         }else{
             $this->data['p'] = "404";
         };

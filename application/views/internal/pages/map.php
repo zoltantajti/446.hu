@@ -17,11 +17,14 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Új marker hozzáadása</h5>
+                <h5 class="modal-title" id="map-modal-title">Új marker hozzáadása</h5>
                 <button type="button" class="btn-close" onClick="$('#addNewMarker').hide();" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form>
+                    <div class="alert alert-warning mb-3">Megkérek, minden Felhasználót, hogy a marker nevéhez a hívójelét adja meg!
+                        Ellentkező esetben <b>automatikusan elutasításra kerül!</b>
+                    </div>
                     <div class="row mb-3">
                         <label for="place" class="col-sm-4 col-form-label">Hol található?</label>
                         <div class="col-sm-4">
@@ -43,7 +46,7 @@
                         </div>                        
                     </div>
                     <div class="row mb-3">
-                        <label for="title" class="col-sm-4 col-form-label">Elem neve</label>
+                        <label for="title" class="col-sm-4 col-form-label">Elem neve <br/><small>(Hívójeled)</small></label>
                         <div class="col-sm-8">
                             <input type="text" name="title" class="form-control" id="title">
                         </div>

@@ -65,7 +65,21 @@
                     <i class="fa-solid fa-users"></i>
                     <span class="nav-item-name">Felhasználók</span>
                 </a>
+            </li>
+            <?php if($this->User->getOwner()){ ?>
+            <li class="nav-item">
+                <a href="admin/conversations/list" class="nav-link" aria-current="page">
+                    <?php 
+                        $_new = $this->Contact->countNew(); 
+                        $myNew = $this->Contact->countNewMy();
+
+                        $new = $_new + $myNew;
+                    ?>
+                    <i class="fa-regular fa-comment"></i>
+                    <span class="nav-item-name">Üzenetek</span> <span id="msgBadge" class="badge text-bg-<?=($new==0) ? "secondary" : "danger"?>"><?=($new==0) ? "0" : "+" . $new?></span>
+                </a>
             </li> 
+            <?php }; ?>
             <?php }; ?>
         </ul>
         <hr>

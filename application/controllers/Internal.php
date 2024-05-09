@@ -2,6 +2,15 @@
 class Internal extends CI_Controller {
     private $thm = "internal/";
     private $data = array();
+    
+    private $errors = array(
+        'requred' => 'A %s mező kitöltése kötelező!',
+        'min_length' => 'A {field} mezőnek legalább {param} karakterből kell állnia!',
+        'max_length' => 'A {field} mezőnek legfeljebb {param} karekterből állhat!',
+        'valid_email' => 'Kérlek érvényes e-mail címet adj meg!',
+        'matches' => 'A {field} mező nem egyezik meg a {param} mezővel!',
+        'is_unique' => 'A %s mező értéke már használatban van!',
+    );
 
     public function __construct(){
         parent::__construct();
@@ -16,8 +25,8 @@ class Internal extends CI_Controller {
     public function login() {
         $this->User->isLoggedIn();
         if($this->Cookie->has('remember_user') && $this->Cookie->has('remember_id')){ $this->User->autoLogin(); };        
-        $this->form_validation->set_rules('username', 'Felhasználónév vagy hívójel', 'required|trim');
-        $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]');
+        $this->form_validation->set_rules('username', 'Felhasználónév vagy hívójel', 'required|trim', $this->errors);
+        $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]', $this->errors);
         if($this->form_validation->run() == FALSE){
             $this->load->view($this->thm . "login/login", $this->data);
         }else{
@@ -31,7 +40,7 @@ class Internal extends CI_Controller {
     public function lostpassword($method = "clear", $hash = null){
         $this->User->isLoggedIn();
         if($method == "clear"){
-            $this->form_validation->set_rules('email', 'E-mail cím', 'required|trim|valid_email');
+            $this->form_validation->set_rules('email', 'E-mail cím', 'required|trim|valid_email', $this->errors);
             if($this->form_validation->run() == FALSE){
                 $this->load->view($this->thm . "login/clearPassword", $this->data);
             }else{
@@ -39,8 +48,8 @@ class Internal extends CI_Controller {
             }
         }elseif($method == "reset" && $hash != null){
             if($this->db->select('id')->from('users')->where('hash', $hash)->count_all_results() == 1){
-                $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]');
-                $this->form_validation->set_rules('password_rep', 'Jelszó megerősítése', 'required|trim|min_length[8]|max_length[32]|matches[password]');
+                $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]', $this->errors);
+                $this->form_validation->set_rules('password_rep', 'Jelszó megerősítése', 'required|trim|min_length[8]|max_length[32]|matches[password]', $this->errors);
                 if($this->form_validation->run() == FALSE){
                     $this->data['form'] = true;
                     $this->load->view($this->thm . "login/resetPassword", $this->data);
@@ -58,10 +67,10 @@ class Internal extends CI_Controller {
         $this->User->isLoggedIn();
         if($step == 1){
             $_SESSION['registration'] = null;
-            $this->form_validation->set_rules('callsign', 'Hívójel', 'required|trim|is_unique[users.callsign]|callback_nmhh_check');
-            $this->form_validation->set_rules('opname', 'Operátor név', 'required|trim|is_unique[users.opname]');
-            $this->form_validation->set_rules('email', 'E-mail cím', 'required|trim|is_unique[users.email]|valid_email');
-            $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]');
+            $this->form_validation->set_rules('callsign', 'Hívójel', 'required|trim|is_unique[users.callsign]|callback_nmhh_check', $this->errors);
+            $this->form_validation->set_rules('opname', 'Operátor név', 'required|trim|is_unique[users.opname]', $this->errors);
+            $this->form_validation->set_rules('email', 'E-mail cím', 'required|trim|is_unique[users.email]|valid_email', $this->errors);
+            $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]', $this->errors);
             if($this->form_validation->run() == FALSE){
                 $this->data['step'] = "step1";
                 $this->load->view($this->thm . "register/frame", $this->data);
@@ -74,11 +83,11 @@ class Internal extends CI_Controller {
             }
         }elseif($step == 2){
             if(!isset($_SESSION['registration'])) { redirect('register/1'); };
-            $this->form_validation->set_rules('name', 'Teljes név', 'required|trim');
-            $this->form_validation->set_rules('country', 'Ország', 'required|trim');
-            $this->form_validation->set_rules('county', 'Vármegye', 'required|trim');
-            $this->form_validation->set_rules('city', 'Város', 'required|trim');
-            $this->form_validation->set_rules('address', 'Cím', 'trim');
+            $this->form_validation->set_rules('name', 'Teljes név', 'required|trim', $this->errors);
+            $this->form_validation->set_rules('country', 'Ország', 'required|trim', $this->errors);
+            $this->form_validation->set_rules('county', 'Vármegye', 'required|trim', $this->errors);
+            $this->form_validation->set_rules('city', 'Város', 'required|trim', $this->errors);
+            $this->form_validation->set_rules('address', 'Cím', 'trim', $this->errors);
 
             if($this->form_validation->run() == FALSE){
                 $this->data['step'] = "step2";
@@ -94,9 +103,9 @@ class Internal extends CI_Controller {
         }elseif($step == 3){
             if(!isset($_SESSION['registration'])) { redirect('register/1'); };
             
-            $this->form_validation->set_rules('radios', 'Rádiók', 'trim');
-            $this->form_validation->set_rules('antennas', 'Antennák', 'trim');
-            $this->form_validation->set_rules('freqs', 'Frekvenciák', 'trim');
+            $this->form_validation->set_rules('radios', 'Rádiók', 'trim', $this->errors);
+            $this->form_validation->set_rules('antennas', 'Antennák', 'trim', $this->errors);
+            $this->form_validation->set_rules('freqs', 'Frekvenciák', 'trim', $this->errors);
 
             if($this->form_validation->run() == FALSE){
                 $this->data['step'] = "step3";
@@ -110,7 +119,7 @@ class Internal extends CI_Controller {
         }elseif($step == 4){
             if(!isset($_SESSION['registration'])) { redirect('register/1'); };
             
-            $this->form_validation->set_rules('aboutME', 'Bemutatkozás', 'trim');
+            $this->form_validation->set_rules('aboutME', 'Bemutatkozás', 'trim', $this->errors);
 
             if($this->form_validation->run() == FALSE){
                 $this->data['step'] = "step4";
@@ -259,6 +268,7 @@ class Internal extends CI_Controller {
     }
 
     public function page($alias){
+        $this->User->checkLogin();
         if($this->db->select('id,title,content,module,meta_key,meta_desc')->from('pages')->where('alias', $alias)->count_all_results() == 1){
             $page = $this->db->select('id,title,content,module,meta_key,meta_desc')->from('pages')->where('alias', $alias)->get()->result_array()[0];
             if($page['module'] == null){
@@ -268,9 +278,7 @@ class Internal extends CI_Controller {
             }else{
                 $this->data['page'] = $this->thm . "pages/content";
                 $this->data['ctx'] = $page;
-                
                 $module = explode("/", $page['module']);
-                print_r($module);
                 $this->load->model($module[0]);
                 $this->data['module'] = $this->{$module[0]}->{$module[1]}($module[2]);
                 $this->load->view($this->thm . "frame", $this->data);
@@ -283,25 +291,34 @@ class Internal extends CI_Controller {
     
     /*QSO page*/
     public function qso($f = "add", $id = -1){
+        $this->User->checkLogin();
         if($f == "add" && $id == -1){
             $this->data['page'] = $this->thm . "pages/qso_add";
-            $this->form_validation->set_rules('date', 'Dátum', 'trim|required');
-            $this->form_validation->set_rules('time', 'Idő', 'trim|required');
-            $this->form_validation->set_rules('freq', 'Frekvencia', 'trim|required');
-            $this->form_validation->set_rules('ctcs', 'CTCS', 'trim|required');
-            $this->form_validation->set_rules('dcs', 'DCS', 'trim|required');
-            $this->form_validation->set_rules('my_callsign', 'Hívójelem', 'trim|required');
-            $this->form_validation->set_rules('my_qth', 'QTH lokátor kódom', 'trim|required');
+            $this->form_validation->set_rules('date', 'Dátum', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('time', 'Idő', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('freq', 'Frekvencia', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('ctcs', 'CTCS', 'trim', $this->errors);
+            $this->form_validation->set_rules('dcs', 'DCS', 'trim', $this->errors);
+            $this->form_validation->set_rules('my_callsign', 'Hívójelem', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('my_country', 'Országom', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('my_county', 'Megyém', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('my_city', 'Városom', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('my_address', 'Címem', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('my_qth', 'QTH lokátor kódom', 'trim|required', $this->errors);
             $this->form_validation->set_rules('suffix', 'Típus', 'trim|required');
-            $this->form_validation->set_rules('rem_callsign', 'Ellenállomás hívójele', 'trim|required');
-            $this->form_validation->set_rules('rem_qth', 'Ellenállomás QTH kódja', 'trim|required');
-            $this->form_validation->set_rules('rem_opname', 'Ellenállomás Operátora', 'trim|required');
-            $this->form_validation->set_rules('mode', 'Hívás módja', 'trim|required');
-            $this->form_validation->set_rules('parrot_name', 'Papagáj neve', 'trim');
-            $this->form_validation->set_rules('comment', 'Megjegyzés', 'trim');
-            $this->form_validation->set_rules('distance', 'Távolság', 'trim|required');
-            $this->form_validation->set_rules('myPos', 'GPS koordinátáim', 'trim|required');
-            $this->form_validation->set_rules('remPos', 'Ellenállomás GPS korrdinátái', 'trim|required');
+            $this->form_validation->set_rules('rem_callsign', 'Ellenállomás hívójele', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('rem_country', 'Ellenállomás Országa', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('rem_county', 'Ellenállomás Megyéje', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('rem_city', 'Ellenállomás Városa', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('rem_address', 'Ellenállomás Címe', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('rem_qth', 'Ellenállomás QTH kódja', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('rem_opname', 'Ellenállomás Operátora', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('mode', 'Hívás módja', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('parrot_name', 'Papagáj neve', 'trim', $this->errors);
+            $this->form_validation->set_rules('comment', 'Megjegyzés', 'trim', $this->errors);
+            $this->form_validation->set_rules('distance', 'Távolság', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('myPos', 'GPS koordinátáim', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('remPos', 'Ellenállomás GPS korrdinátái', 'trim|required', $this->errors);
 
             if(!$this->form_validation->run()){
                 $this->load->view($this->thm . "frame", $this->data);
@@ -339,6 +356,7 @@ class Internal extends CI_Controller {
     }
 
     public function profile($id = null){
+        $this->User->checkLogin();
         if($id == null || $id == "login" || $id == "password" || $id == "personal" || $id == "radio" || $id == "about"){
             if($id == null){ $id = "login"; };
             $this->data['segment'] = $id;
@@ -355,9 +373,10 @@ class Internal extends CI_Controller {
         $this->load->view($this->thm . "frame", $this->data);
     }
         public function changePassword(){
-            $this->form_validation->set_rules('oldPW', 'Jelenlegi jelszó', 'trim|required|min_length[8]|max_length[32]');
-            $this->form_validation->set_rules('newPW', 'Új jelszó', 'trim|required|min_length[8]|max_length[32]');
-            $this->form_validation->set_rules('newPWRep', 'Új jelszó megerősítése', 'trim|required|min_length[8]|max_length[32]|matches[newPW]');
+            $this->User->checkLogin();
+            $this->form_validation->set_rules('oldPW', 'Jelenlegi jelszó', 'trim|required|min_length[8]|max_length[32]', $this->errors);
+            $this->form_validation->set_rules('newPW', 'Új jelszó', 'trim|required|min_length[8]|max_length[32]', $this->errors);
+            $this->form_validation->set_rules('newPWRep', 'Új jelszó megerősítése', 'trim|required|min_length[8]|max_length[32]|matches[newPW]', $this->errors);
             if($this->form_validation->run()){
                 $this->User->changePassword();
             }else{
@@ -366,10 +385,11 @@ class Internal extends CI_Controller {
             }
         }
         public function updatePersonal(){
-            $this->form_validation->set_rules('country', 'Ország', 'trim|required');
-            $this->form_validation->set_rules('county', 'Megye', 'trim|required');
-            $this->form_validation->set_rules('city', 'Város', 'trim|required');
-            $this->form_validation->set_rules('address', 'Cím', 'trim');
+            $this->User->checkLogin();
+            $this->form_validation->set_rules('country', 'Ország', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('county', 'Megye', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('city', 'Város', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('address', 'Cím', 'trim', $this->errors);
             if($this->form_validation->run()){
                 $this->User->updatePersonal();
             }else{
@@ -377,7 +397,7 @@ class Internal extends CI_Controller {
                 redirect('internal/profile/personal');
             }
         }
-        public function updateRadios(){ $this->User->updateRadios(); }
-        public function updateAbout(){ $this->User->updateAbout(); }
+        public function updateRadios(){$this->User->checkLogin(); $this->User->updateRadios(); }
+        public function updateAbout(){$this->User->checkLogin(); $this->User->updateAbout(); }
 
 }

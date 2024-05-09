@@ -28,6 +28,8 @@
     <meta property="twitter:title" content="<?=($this->Seo->get('name',@$meta['name']) != null) ? $this->Seo->get('name') . " - " : ""?>446.hu" />
     <meta property="twitter:description" content="<?=($this->Seo->get('description',@$meta['description']) != null) ? $this->Seo->get('description') : ""?>" />
     <meta property="twitter:image" content="<?=site_url()?>assets/images/446logo2.png" />
+	<meta name="google-adsense-account" content="ca-pub-2303113274435979">
+	
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="canonical" href="<?=base_url()?>" />
 	<link rel="stylesheet" media="screen" type="text/css" href="./assets/css/bootstrap.min.css" />
@@ -38,5 +40,7 @@
 	<script type="application/ld+json">{"@context": "http://schema.org","@type": "Website","name": "446.HU - A Magyar PMR Csoport"}; </script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSB0GJYLGN"></script> 
 	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-NSB0GJYLGN'); </script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2303113274435979"
+     crossorigin="anonymous"></script>
 </head>
 <body class="" <?=(uri_string() == "public/terkep") ? 'style="padding-top: 3.5rem;"' : ''?>>

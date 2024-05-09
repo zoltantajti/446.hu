@@ -406,4 +406,32 @@ class Admin extends CI_Controller {
             $this->Banns->remove($id);
         }
     }
+
+    /*Email fiók*/
+    public function conversations($f = "list", $id = -1){
+        $this->User->checkLogin();
+        if(!$this->User->getOwner()){ redirect('admin'); };
+        if($f == "list" && $id == -1){
+            $this->data = array_merge($this->data, array(
+                'page'=>'conv_list',
+                'sidebar'=>true,
+                'data' => $this->Contact->getList()
+            ));
+            $this->load->view($this->thm . '/index', $this->data);
+        }elseif($f == "read" && $id != -1){
+            $this->Db->update("conversation_ids", array("haveUnreaded"=>0), array("id"=>$id));
+            $this->data = array_merge($this->data, array(
+                'page'=>'conv_item',
+                'sidebar'=>true,
+                'data' => $this->Contact->getItem($id)
+            ));
+            $this->load->view($this->thm . '/index', $this->data);
+            
+        }elseif($f == "reply" && $id != -1){
+            $this->form_validation->set_rules('message', 'Üzenet', 'trim');
+            if($this->form_validation->run()){
+                $this->Contact->reply($id);
+            }
+        }
+    }
 }

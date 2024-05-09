@@ -11,7 +11,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><i class="fa-duotone fa-hat-cowboy"></i> <b><?=$this->User->getPermById($user['perm'])?></b></li>
                     <li class="list-group-item"><i class="fa-solid fa-user"></i> <b><?=$user['opName']?></b></li>
-                    <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> <b>{QTH lokátor kód}</b></li>
+                    <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> <b id="qthCode"></b></li>
                 </ul>
             </div>
             <div class="card mb-3">
@@ -33,25 +33,31 @@
             <div class="card mb-3">
                 <div class="card-header text-center"><b>Rádiók</b></div>
                 <ul class="list-group list-group-flush">
-                    <?php foreach(json_decode($user['radios'],true) as $radio){ ?>
+                    <?php if($user['radios'] != null){ foreach(json_decode($user['radios'],true) as $radio){ ?>
                     <li class="list-group-item"><?=$radio?></li>
-                    <?php }; ?>
+                    <?php };}else{ ?>
+					<li class="list-group-item text-center">***Nem adott meg***</li>
+					<?php }; ?>
                 </ul>
             </div>
             <div class="card mb-3">
                 <div class="card-header text-center"><b>Antennák</b></div>
                 <ul class="list-group list-group-flush">
-                    <?php foreach(json_decode($user['antennas'],true) as $antenna){ ?>
+                    <?php if($user['antennas'] != null){foreach(json_decode($user['antennas'],true) as $antenna){ ?>
                     <li class="list-group-item"><?=$antenna?></li>
-                    <?php }; ?>
+                    <?php };}else{ ?>
+					<li class="list-group-item text-center">***Nem adott meg***</li>
+					<?php }; ?>
                 </ul>
             </div>
             <div class="card mb-3">
                 <div class="card-header text-center"><b>Látogatott frekvenciák</b></div>
                 <ul class="list-group list-group-flush">
-                    <?php foreach(json_decode($user['freqs'],true) as $freq){ ?>
-                    <li class="list-group-item"><?=(str_starts_with($freq, "PMR") ? $freq : $freq . " MHz")?></li>
-                    <?php }; ?>
+                    <?php if($user['freqs'] != null){foreach(json_decode($user['freqs'],true) as $freq){ ?>
+                    <li class="list-group-item"><?=(str_starts_with($freq, "PMR") ? $freq : $freq . "")?></li>
+                    <?php };}else{ ?>
+					<li class="list-group-item text-center">***Nem adott meg***</li>
+					<?php }; ?>
                 </ul>
             </div>
             <div class="card mb-3">

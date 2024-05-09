@@ -87,3 +87,29 @@
     margin-top: 15px;
     padding-top: 10px;
 }
+
+.breadcrumb-item a{
+    text-decoration: none !important;
+}
+
+#cookieModal .modal-dialog {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    max-width: none;
+    height: 125px;
+    max-height: 125px;
+    
+}
+#cookieModal .modal-content{
+    border-radius: 0px !important;
+}
+#cookieModal .modal-footer{
+    display: block;
+    text-align: center;
+}
+
+@media(min-width: 576px){
+    #cookieModal .modal-dialog{ max-width: 100%; }
+}

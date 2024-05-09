@@ -17,15 +17,15 @@ class Map {
             maxZoom: 19,
             attribution: ''
         });
-        this.stadiaLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
+        /*this.stadiaLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
             minZoom: 0,
             maxZoom: 20,
             ext: 'png'
-        });
+        });*/
 
         this.baseLayers = {
             "OpenStreetMap": this.osmLayer,
-            "Sötét": this.stadiaLayer
+            //"Sötét": this.stadiaLayer
         };
 
         this.mobileRadioLayer = L.layerGroup();

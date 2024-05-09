@@ -119,3 +119,75 @@ main > .container, main > .container-fluid {
     font-weight: bold;
     color: #fff;
 }
+.noradius{
+    border-radius: 0px !important;
+}
+
+/*EventCalendar*/
+#calendar { 
+    height: 440px !important;
+}
+.fc-event {
+    border: 1px solid #eee !important;
+}
+.fc-content {
+    padding: 3px !important;
+}
+.fc-content .fc-title {
+    display: block !important;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+.fc-customButton-button {
+    font-size: 13px !important;
+    position: absolute;
+    top:  0px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group>label {
+    margin-bottom: 10px;
+}
+#delete-modal .modal-footer > .btn {
+    border-radius: 3px !important; 
+    padding: 0px 8px !important;
+    font-size: 15px;
+}
+.fc-scroller {
+    overflow-y: hidden !important;
+    height: 365px !important
+}
+.fc-left h2{
+    color: var(--linkColor);
+}
+.fc-today{
+    background-color: rgb(25, 135, 84) !important;
+}
+.calendar-loader{
+    position: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/*Badges*/
+.badge-image{
+    max-width: 105px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    float:left;
+}
+.profile-pub .badge-image{
+    max-width: 126px;
+}

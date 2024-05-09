@@ -28,7 +28,7 @@
                 <td class="<?=$class?>"><?=$this->Qso->formatStatus($v['status'])?></td>
                 <td class="<?=$class?>"><?=str_replace('-','.',$v['date'])?></td>
                 <td class="<?=$class?>"><?=$v['time']?></td>
-                <td class="<?=$class?>"><?=($dir == "in") ? $v['rem_callsign'] : $v['my_callsign']?></td>
+                <td class="<?=$class?>"><?=($dir == "out") ? $v['rem_callsign'] : $v['my_callsign']?></td>
                 <td class="<?=$class?>"><?=$v['distance']?></td>
                 <td class="<?=$class?>"><?=$this->Qso->formatSuffix($v['suffix'])?></td>
                 <td class="<?=$class?>"><?=$this->Qso->formatMode($v['mode'])?></td>

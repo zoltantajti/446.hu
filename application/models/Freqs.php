@@ -5,7 +5,8 @@ class Freqs extends CI_Model {
     public function getList($mit){
         $table = "freq_" . $mit;
         $rows = $this->db->select('id,name,freq,ctcs,dcs,duplex,offset,comment,place,type')->from($table)->get()->result_array();
-        $html = '<table class="table table-responsive mb-3"><thead><tr>';
+        $html = '<div class="alert alert-warning">Kérlek, amennyiben van infód a frekvenciáról, írd be!</div>';
+        $html .= '<table class="table table-responsive mb-3"><thead><tr>';
             $html.='<th class="text-center"><input type="text" id="filterPlace" class="form-control-filter" placeholder="Helyszín"/></th>' . 
             '<th><input type="text" id="filterType" class="form-control-filter" placeholder="Típus"/></th>'.
             '<th><input type="text" id="filterName" class="form-control-filter" placeholder="Név"/></th>'.
@@ -18,7 +19,7 @@ class Freqs extends CI_Model {
             $html.='<tr class="' . (($row['id'] % 2) ? "freq-table-even" : "freq-table-odd") . '">';
                 $html.='<td>'.$row['place'].'</td>';
                 $html.='<td>'.$row['type'].'</td>';
-                $html.='<td>'.$row['name'].'</td>';
+                $html.='<td>'.$row['name'] . (($row['comment'] != null) ? ' <i class="fa-solid fa-comment" class="badge-image" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="badge-tooltip" data-bs-title="'.$row['comment'].'" data-bs-html="true"/></i>' : '' ) . '</td>';
                 $html.='<td>'.$row['freq'].' MHz</td>';
                 $html.='<td>'.(($row['ctcs'] != null) ? $row['ctcs'] . ' Hz' : '-' ) . '</td>';
                 $html.='<td>'.(($row['dcs'] != null) ? $row['dcs'] : '-') .'</td>';

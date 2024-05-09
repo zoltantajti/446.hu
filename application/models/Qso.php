@@ -9,14 +9,16 @@ class Qso extends CI_Model
     }
     public function getList()
     {
-        return $this->db
-            ->select('id,date,time,my_callsign,rem_callsign,distance,status,suffix,mode,parrot_name')
+        $cs = $this->Sess->getChain("callsign","user");
+        $qso = $this->db->select('id,date,time,my_callsign,rem_callsign,distance,status,suffix,mode,parrot_name')
             ->from('qso')
-            ->where('my_callsign', $this->Sess->getChain("callsign","user"))
-            ->or_where('rem_callsign', $this->Sess->getChain("callsign","user"))
-            ->where('verified',1)->where('status','approved')->or_where('status','pending')
+            ->where("(my_callsign = '".$cs."' AND status != 'denied') OR (rem_callsign = '".$cs."' AND status != 'denied')")
+            ->order_by('verified', 'ASC')
+            ->order_by('date','DESC')
+            ->order_by('time','DESC')
             ->get()
             ->result_array();
+        return $qso;
     }
 
     public function countAllQso($callsign){

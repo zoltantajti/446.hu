@@ -1,6 +1,6 @@
 $(document).ready((event) => { 
-    
-    
+    const toolTipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...toolTipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
     if(window.location.href.includes('profile')){
         var profileRegExp = /\/profile\/(\d+)/;
@@ -11,12 +11,27 @@ $(document).ready((event) => {
             if(qthCodeField){
                 qthCodeField.innerHTML = '<i class="fa fa-fw fa-spinner fa-spin"></i>';
                 $.getJSON('Rest/getUserAddressByID/' + userID,(data) => {
-                    let address = `${data.country}, ${data.county}, ${data.city}, ${data.address}`;
+                    let county = address = precision = null;
+                    if(data.country !== "Magyarország"){
+                        address = data.country +"," + data.city;
+                        precision = 3;
+                    }else{
+                        county = (data.country === "Magyarország" && data.county !== "Budapest") ? data.county + " Vármegye," : "Budapest,";
+                        address = `${data.country}, ${county} ${data.city}, ${data.address}`;
+                        precision = 4;
+                    };                    
                     $.getJSON(`https://geocode.maps.co/search?q=${address}&api_key=663371914590f062701345usb7a1683`, (geo) => {
-                        
-                        let latlon = {'lat': geo[0]['lat'], 'lon': geo[0]['lon']};
-                        let qth = getQTHCode(latlon);    
-                        qthCodeField.innerHTML = qth;
+                        console.log(address);
+                        if(geo.length === 0){
+                            qthCodeField.innerHTML = '<span class="text-danger">N/A</span> <i class="fa fa-fw fa-exclamation-triangle text-danger" title="Kérd meg, hogy pontosítsa a címét!"></i>';
+                            $("#errorBefore").before('<div class="alert alert-danger">A felhasználó nem adta meg pontosan a címét, ezért a QTH lokátor kód nem számolható ki!');
+                            $("#qthIcon").addClass("text-danger");
+                            $("#qthRow").addClass("text-bg-light");
+                        }else{
+                            let latlon = {'lat': geo[0]['lat'], 'lon': geo[0]['lon']};
+                            let qth = getQTHCode(latlon, precision);    
+                            qthCodeField.innerHTML = qth;
+                        };
                     });
                 })
             }
@@ -25,9 +40,7 @@ $(document).ready((event) => {
             initAntennas();
             initFreqs();
         };
-    };
-
-    
+    };    
 });
 let mylat, mylon, remlat, remlon = 0;
 const getGeoCode = (address) => {
@@ -41,22 +54,33 @@ const getGeoCode = (address) => {
         });
     });
 }
-const getQTHCode = (object) => {
+const getQTHCode = (object, _precision = 4) => {
     let lat = object.lat;
     let lon = object.lon;
-    var QTHlon = (1.0 * lon + 180) / 20;
-    var QTHlat = (1 * lat + 90) / 10;
-    var QTHlocator = String.fromCharCode(Math.floor(QTHlon) + 65) + String.fromCharCode(Math.floor(QTHlat) + 65);
-    
-    QTHlon = (QTHlon %1) * 10;
-    QTHlat = (QTHlat %1) * 10;
-    QTHlocator = QTHlocator + String.fromCharCode(Math.floor(QTHlon) + 48) + String.fromCharCode(Math.floor(QTHlat) + 48);
-    
-    QTHlon = (QTHlon %1) * 24;
-    QTHlat = (QTHlat %1) * 24;
-    QTHlocator = QTHlocator + String.fromCharCode(Math.floor(QTHlon) + 97) + String.fromCharCode(Math.floor(QTHlat) + 97);
-    
-    return QTHlocator.toUpperCase();
+    var ydiv_arr = [10, 1, 1/24, 1/240, 1/240/24];
+    var d1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+    var d2 = "ABCDEFGHIJKLMNOPQRSTUVWX".split("");
+    var locator = "";
+    var x = lon;
+    var y = lat;
+    var precision = _precision;
+    while (x < -180) { x += 360; }
+    while (x > 180) { x -= 360; }
+    x = x + 180;
+    y = y + 90;
+    locator += d1[Math.floor(x / 20)] + d1[Math.floor(y / 10)];
+    for (var i = 0; i < 4; i++) {
+        if (precision > i + 1) {
+            var rlon = x % (ydiv_arr[i] * 2);
+            var rlat = y % (ydiv_arr[i]);
+            if ((i % 2) == 0) {
+                locator += Math.floor(rlon / (ydiv_arr[i + 1] * 2)) + "" + Math.floor(rlat / (ydiv_arr[i + 1]));
+            } else {
+                locator += d2[Math.floor(rlon / (ydiv_arr[i + 1] * 2))] + "" + d2[Math.floor(rlat / (ydiv_arr[i + 1]))];
+            }
+        }
+    };
+    return locator.replace('AE','JN');
 }
 const calculateQTH = (prefix) => {
     let address = $(`#${prefix}_country`).val() + ", " + $(`#${prefix}_county`).val() + ", " + $(`#${prefix}_city`).val() + " " + $(`#${prefix}_address`).val();

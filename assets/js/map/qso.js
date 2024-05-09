@@ -48,11 +48,11 @@ class Map {
                 console.log(qso);
 
                 let myPos = JSON.parse(qso.myPos);
-                let me = new Marker(1, myPos.lat, myPos.lon, 1, qso.my_callsign, "", "mobile_radio", null, null, "internal");
+                let me = new Marker(1, myPos.lat, myPos.lon, 1, qso.my_callsign, "", "mobile_radio", null, null, false,  null,  "internal");
                 me.create(this.qsoLayer)
 
                 let remPos = JSON.parse(qso.remPos);
-                let rem = new Marker(2, remPos.lat, remPos.lon, 1, qso.rem_callsign, "", "mobile_radio", null, null, "internal");
+                let rem = new Marker(2, remPos.lat, remPos.lon, 1, qso.rem_callsign, "", "mobile_radio", null, null, false, null, "internal");
                 rem.create(this.qsoLayer);
 
                 var points = [

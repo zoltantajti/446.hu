@@ -19,6 +19,20 @@ class Internal extends CI_Controller {
     public function index() {
         $this->User->checkLogin();
         $this->data['page'] = $this->thm . "pages/main";
+
+        $this->data['css'] = "
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.css'>
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.3.0/main.min.css'>
+		";
+        $this->data['js'] = "
+		<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.js'></script>
+		<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.2.0/main.js'></script>
+		<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@4.2.0/main.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+		<script src='https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js'></script>
+		<script src='./assets/js/eventCalendar.js'></script>
+		";
+
         $this->load->view($this->thm . 'frame', $this->data);
     }
 

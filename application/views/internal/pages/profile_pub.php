@@ -4,14 +4,14 @@
             <h4 class="title"><?=$user['callsign']?></h4>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="errorBefore">
         <div class="col-md-3">
             <div class="card mb-3">
                 <div class="card-header text-center"><b>Személyes adatok</b></div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><i class="fa-duotone fa-hat-cowboy"></i> <b><?=$this->User->getPermById($user['perm'])?></b></li>
                     <li class="list-group-item"><i class="fa-solid fa-user"></i> <b><?=$user['opName']?></b></li>
-                    <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> <b id="qthCode"></b></li>
+                    <li class="list-group-item" id="qthRow"><i id="qthIcon" class="fa-solid fa-location-dot"></i> <b id="qthCode"></b></li>
                 </ul>
             </div>
             <div class="card mb-3">
@@ -90,6 +90,14 @@
             </div>
         </div>
         <div class="col-md-6 mb-3">
+            <div class="card mb-3">
+                <div class="card-header text-center">Megszerzett jelvények</div>
+                <div class="card-body profile-pub text-center">
+                    <?php foreach($this->Badges->getBadges($user['id']) as $badge){ ?>
+                        <img src="<?=$badge['image']?>" class="badge-image" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="badge-tooltip" data-bs-title="<b><?=$badge['name']?></b><hr/><?=$badge['description']?>" data-bs-html="true"/>
+                    <?php }; ?>
+                </div>
+            </div>    
             <div class="card">
                 <div class="card-header text-center">Bemutatkozás</div>
                 <div class="card-body"><?=$user['aboutME']?></div>

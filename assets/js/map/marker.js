@@ -14,6 +14,7 @@ class Marker {
         this.ref = ref;
         this.hasUser = hasUser;
         this.userID = userID;
+        console.log(ref);
     }
 
     create = (_layer) => {

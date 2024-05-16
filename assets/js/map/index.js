@@ -21,18 +21,18 @@ class Map {
             maxZoom: 15,            
             attribution: ''
         });
-        this.dark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
+        /*this.dark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
 	        minZoom: 7,
 	        maxZoom: 15,
 	        attribution: '',
 	        ext: 'png'
-        });
+        });*/
         this.hybrid = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
 	        minZoom: 7,
 	        maxZoom: 15,
 	        attribution: ''
         });
-        this.topo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
+        /*this.topo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
             minZoom: 7,
 	        maxZoom: 15,
 	        attribution: ''
@@ -59,17 +59,17 @@ class Map {
 	        maxZoom: 18,
 	        attribution: '',
 	        ext: 'png'
-        });
+        });*/
 
 
-        this.geoLayer = L.layerGroup([this.geo, this.geoLabels, this.geoRoads, this.geoRoadsSmall])
+        //this.geoLayer = L.layerGroup([this.geo, this.geoLabels, this.geoRoads, this.geoRoadsSmall])
 
         this.baseLayers = {
             "Alap": this.base,
-            "Sötét": this.dark,
+            //"Sötét": this.dark,
             "Hibrid": this.hybrid,
-            "Topo": this.topo,
-            "GEO": this.geoLayer
+            //"Topo": this.topo,
+            //"GEO": this.geoLayer
         };
 
         this.mobileRadioLayer = L.layerGroup();
@@ -116,7 +116,7 @@ class Map {
                 "Papagáj": this.parrotLayer,
                 "Amatőr átjátszó": this.stationLayer
             };
-            this.layers = [this.osmLayer, this.mobileRadioLayer, this.desktopRadioLayer, this.parrotLayer];
+            this.layers = [this.base, this.mobileRadioLayer, this.desktopRadioLayer, this.parrotLayer];
         };
     }
 

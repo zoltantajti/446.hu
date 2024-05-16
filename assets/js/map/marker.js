@@ -34,8 +34,13 @@ class Marker {
             this.marker.bindPopup(popup);
             this.marker.on('contextmenu', (e) => { });
         }else if(this.ref === "public"){
-            this.marker.bindPopup(`<b>${this.title}</b><hr/>Az információk csak<br/> a belső térképen érhetőek el!`);
-            this.marker.on('contextmenu', (e) => { });
+			if(this.type === "parrot"){
+				this.marker.bindPopup(`<b>${this.title}</b><hr/>${this.description}`);
+				this.marker.on('contextmenu', (e) => { });
+			}else{
+				this.marker.bindPopup(`<b>${this.title}</b><hr/>Az információk csak<br/> a belső térképen érhetőek el!`);
+				this.marker.on('contextmenu', (e) => { });
+			};
         }
         _layer.addLayer(this.marker);
         return this.marker;

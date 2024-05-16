@@ -35,7 +35,7 @@
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade <?=($segment == "l2ogin") ? 'show active' : ''?>" id="login-credentials-panel" role="tabpanel" aria-labelledby="login-credentials" tabindex="0">
+                <div class="tab-pane fade <?=($segment == "login") ? 'show active' : ''?>" id="login-credentials-panel" role="tabpanel" aria-labelledby="login-credentials" tabindex="0">
                     <div class="alert alert-info">
                         <b>Figyelem!</b><br/>
                         Amennyiben ezen adatokat szeretnéd módosítani, kérlek írj e-mailt az info@tajtizoltan.hu e-mail címre arról az e-mail címről, amellyel regisztráltál, és írd meg a 

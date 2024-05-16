@@ -1,10 +1,15 @@
 import { Toast } from "./Toast.js"
+import { Attrs } from "./Attrs.js"
 
 class Rest {
-    /*Get base markers from db; Output: Promise<JSON>*/
+	constructor() {
+		let attrs = new Attrs();
+		this.ref = attrs.getAttributes('ref');
+	}
+	/*Get base markers from db; Output: Promise<JSON>*/
     getMarkers = function() {
-        return new Promise(function(resolve, reject){
-            $.getJSON("Rest/getMapMarkers", function(data){
+		return new Promise((resolve, reject) => {
+            $.getJSON("Rest/getMapMarkers/" + this.ref, function(data){
                 resolve(data);
             });
         });

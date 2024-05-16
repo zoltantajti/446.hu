@@ -146,7 +146,7 @@ class Admin extends CI_Controller {
                 'page'=>'logs_list',
                 'sidebar'=>true,
                 'filtered'=>true,
-                'data' => $this->Logs->list(array($filter,$needle))
+                'data' => $this->Logs->getList(array($filter,$needle))
             ));
         }
         $this->load->view($this->thm . '/index', $this->data);

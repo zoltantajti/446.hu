@@ -1,7 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $server = $_SERVER['HTTP_HOST'];
-if($server == "localhost"){ $host = "localhost/446.hu"; }elseif($server == "local.446.hu") { $host = "local.446.hu"; }else{ $host = "www." . $server; };
+if($server == "localhost"){ 
+	$host = "localhost/446.hu"; 
+}elseif($server == "local.446.hu") { 
+	$host = "local.446.hu"; 
+}else{ 
+	$host = $server; 
+};
 $config['base_url'] = ((@$_SERVER['HTTPS'] == "on") ? 'https://' : 'http://') . $host;
 $config['index_page'] = '';
 $config['uri_protocol']	= 'REQUEST_URI';

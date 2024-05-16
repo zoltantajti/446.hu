@@ -7,9 +7,7 @@
                 <img src="<?=$this->Misc->parseImage($v['image'])?>" class="card-img-top card-img-fixed" />
                 <div class="card-body">
                     <h5 class="card-title text-center"><?=$v['title']?></h5>
-                    <p class="card-text">
-                        <?=$v['shortDesc']?>
-                    </p>
+                    <?=(str_starts_with('<p>',$v['shortDesc']) ? $v['shortDesc'] : '<p></p><p>'.$v['shortDesc'].'</p><p></p>')?>
                     <a href="internal/event/<?=$v['seoLink']?>" class="btn d-block btn-primary">Részletek</a>
                 </div>
                 <div class="card-footer text-body-secondary">

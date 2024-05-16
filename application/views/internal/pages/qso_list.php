@@ -22,13 +22,25 @@
                 $dir = ($v['my_callsign'] == $this->Sess->getChain("callsign","user")) ? "out" : "in";
                 $class = "";
                 if($dir == "in" && $v['status'] == "pending"){ $class = "text-bg-warning"; };
+				if($dir == "out"){
+					if($this->db->select('id')->from('users')->where('callsign',$v['rem_callsign'])->count_all_results() == 1){
+						$cs = $this->db->select('id,callsign')->from('users')->where('callsign',$v['rem_callsign'])->get()->result_array()[0];
+						print_r($cs);
+						$user = '<a href="internal/profile/'.$cs['id'].'" target="_blank">'.$cs['callsign'].' <i class="fa-solid fa-arrow-up-right-from-square"></i></a>';
+					}else{
+						$user = $v['rem_callsign'] . ' <i class="fa-solid fa-triangle-exclamation text-danger" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Az ellenállomás nincs regisztrálva!<br/><br/>Kérlek, írj e-mailt az info@446.hu e-mail címre az összeköttetés adataival!"></i>';
+					};					
+				}else{
+					$cs = $this->db->select('id,callsign')->from('users')->where('callsign',$v['my_callsign'])->get()->result_array()[0];
+					$user = '<a href="internal/profile/'.$cs['id'].'" target="_blank">'.$cs['callsign'].' <i class="fa-solid fa-arrow-up-right-from-square"></i></a>';
+				};
             ?>
             <tr >
                 <td class="<?=$class?>"><?=$direction?></td>
                 <td class="<?=$class?>"><?=$this->Qso->formatStatus($v['status'])?></td>
                 <td class="<?=$class?>"><?=str_replace('-','.',$v['date'])?></td>
                 <td class="<?=$class?>"><?=$v['time']?></td>
-                <td class="<?=$class?>"><?=($dir == "out") ? $v['rem_callsign'] : $v['my_callsign']?></td>
+                <td class="<?=$class?>"><?=$user?></td>
                 <td class="<?=$class?>"><?=$v['distance']?></td>
                 <td class="<?=$class?>"><?=$this->Qso->formatSuffix($v['suffix'])?></td>
                 <td class="<?=$class?>"><?=$this->Qso->formatMode($v['mode'])?></td>

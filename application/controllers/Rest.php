@@ -26,29 +26,50 @@ class Rest extends CI_Controller
         $cities = $this->db->select('name')->from('cities')->where('county_code', $county['code'])->get()->result_array();
         echo json_encode($cities);
     }
-    public function getMapMarkers()
+    public function getMapMarkers($state = "public")
     {
         $out = array();
         foreach($this->db->select('*')->from('markers')->where('active',1)->where('type','parrot')->or_where('type','station')->get()->result_array() as $v){
             array_push($out, $v);
         };
-        foreach($this->db->select('callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnInternalMap',1)->get()->result_array() as $v){
-            $referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.$this->Misc->nominatim($v['county']).'&city='.$this->Misc->nominatim($v['city']).'&street=' . urlencode($this->Misc->nominatim($v['address']));
-            $opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
-            $ctx = stream_context_create($opts);
-            $geo = json_decode(file_get_contents($referer, false, $ctx),true);
-            $marker = array(
-                "lat" => $geo[0]['lat'],
-                "lon" => $geo[0]['lon'],
-                "type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
-                "title" => $v['callsign'],
-                "description" => $v['markerDesc'],
-                "active" => 1,
-                "parrotState" => null,
-                "parrotRadios" => null,
-                "authorized" => 1
-            );
-            array_push($out,$marker);
+        if($state == "public"){
+			foreach($this->db->select('callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnPublicMap',1)->get()->result_array() as $v){
+                $referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.$this->Misc->nominatim($v['county']).'&city='.$this->Misc->nominatim($v['city']).'&street=' . urlencode($this->Misc->nominatim($v['address']));
+                $opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
+                $ctx = stream_context_create($opts);
+                $geo = json_decode(file_get_contents($referer, false, $ctx),true);
+                $marker = array(
+                    "lat" => $geo[0]['lat'],
+                    "lon" => $geo[0]['lon'],
+                    "type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
+                    "title" => $v['callsign'],
+                    "description" => $v['markerDesc'],
+                    "active" => 1,
+                    "parrotState" => null,
+                    "parrotRadios" => null,
+                    "authorized" => 1
+                );
+                array_push($out,$marker);
+            };
+        }elseif($state == "internal"){
+            foreach($this->db->select('callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnInternalMap',1)->get()->result_array() as $v){
+                $referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.$this->Misc->nominatim($v['county']).'&city='.$this->Misc->nominatim($v['city']).'&street=' . urlencode($this->Misc->nominatim($v['address']));
+                $opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
+                $ctx = stream_context_create($opts);
+                $geo = json_decode(file_get_contents($referer, false, $ctx),true);
+                $marker = array(
+                    "lat" => $geo[0]['lat'],
+                    "lon" => $geo[0]['lon'],
+                    "type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
+                    "title" => $v['callsign'],
+                    "description" => $v['markerDesc'],
+                    "active" => 1,
+                    "parrotState" => null,
+                    "parrotRadios" => null,
+                    "authorized" => 1
+                );
+                array_push($out,$marker);
+            };
         };
         echo(json_encode($out));
     }

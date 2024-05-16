@@ -22,7 +22,7 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <div class="alert alert-warning mb-3">Megkérek, minden Felhasználót, hogy a marker nevéhez a hívójelét adja meg!
+                    <div class="alert alert-warning mb-3">Megkérek, minden Felhasználót, hogy a marker nevéhez az átjátszóállomás hívójelét adja meg!
                         Ellentkező esetben <b>automatikusan elutasításra kerül!</b>
                     </div>
                     <div class="row mb-3">

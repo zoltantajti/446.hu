@@ -78,10 +78,15 @@ class Markers extends CI_Model
         return $this->db->select('id')->from('markers')->where('type','parrot')->where('active',1)->where('created_user',$id)->count_all_results();
     }
     public function addedRadios($id){
-        return $this->db->select('id')->from('markers')->where('type','mobile_radio')->or_where('type','desktop_radio')->where('active',1)->where('created_user',$id)->count_all_results();
+        $radio = $this->db->select('id')->from('markers')->where('type','mobile_radio')->where('active',1)->where('created_user',$id)->count_all_results();
+        $desktop = $this->db->select('id')->from('markers')->where('type','desktop_radio')->where('active',1)->where('created_user',$id)->count_all_results();
+        return ($radio + $desktop);
     }
     public function addedStations($id){
         return $this->db->select('id')->from('markers')->where('type','station')->where('active',1)->where('created_user',$id)->count_all_results();
+    }
+    public function getActiveExpatriations(){
+        return $this->db->select('lat,lon,title,createdAt,from,to,content,freq,ctcss,dcs')->from('markers_temp')->where('from <= ', date("Y-m-d H:i:s"))->where('to >= ', date("Y-m-d H:i:s"))->get()->result_array();
     }
 }
 

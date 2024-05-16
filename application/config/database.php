@@ -5,7 +5,7 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $acc = array();
-if($_SERVER['HTTP_HOST'] == "localhost"){
+if($_SERVER['HTTP_HOST'] == "localhost" || $_SERVER['HTTP_HOST'] == "local.446.hu"){
 	$acc['host'] = "localhost";
 	$acc['user'] = "root";
 	$acc['pass'] = "";

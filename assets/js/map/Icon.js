@@ -5,6 +5,7 @@ const iconUrls = {
     "parrot_inactive" : "./assets/images/markers/parrot_inactive.png",
     "station" : "./assets/images/markers/station.png",
     "unkown" : "./assets/images/markers/question.png",
+    "temp_location": "./assets/images/markers/temp_marker.png"
 }
 const icons = {
     "mobile_radio": L.icon({
@@ -33,6 +34,12 @@ const icons = {
     }),
     "station": L.icon({
         iconUrl: iconUrls["station"],
+        iconSize: [32,32],
+        iconAnchor: [16,16],
+        popupAnchor: [0,-16]
+    }),
+    "temp_location": L.icon({
+        iconUrl: iconUrls["temp_location"],
         iconSize: [32,32],
         iconAnchor: [16,16],
         popupAnchor: [0,-16]

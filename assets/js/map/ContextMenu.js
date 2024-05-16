@@ -98,6 +98,7 @@ class ContextMenu {
         this.menu.innerHTML = `
             <ul class="list-group list-group-flush">
                 <a href="javascript:;" id="btnAddNewMarker" class="list-group-item list-group-item-success">Új marker</a>
+                <a href="javascript:;" id="btnAddNewTempMarker" class="list-group-item list-group-item-success">Új ideiglenes marker</a>
             </ul>
         `;
         let addNewMarker = document.getElementById("btnAddNewMarker");
@@ -119,6 +120,27 @@ class ContextMenu {
                 marker.removeFrom(this.base.map);
                 $("#addNewMarker").hide();
             });            
+        });
+
+        let addNewTempMarker = document.getElementById("btnAddNewTempMarker");
+        addNewTempMarker.addEventListener('click', (event) => {
+            var latlng = e.latlng;
+            let marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(this.base.map);
+            this.hide();
+            $("#map-modal-title").html('Új ideiglenes marker hozzáadása');
+            $("#temp_lat").val(latlng.lat).attr("readonly","true");
+            $("#temp_lon").val(latlng.lng).attr("readonly","true");
+            $("#addNewMarkerTemp").show();
+            let btnSaveMarker = document.getElementById("btnSaveMarkerTemp");
+            btnSaveMarker.addEventListener('click', (event) => {
+                let rest = new Rest();
+                rest.saveTempMarker();
+            });
+            let btnClearMarker = document.getElementById("btnClearMarkerTemp");
+            btnClearMarker.addEventListener('click', (event) => {
+                marker.removeFrom(this.base.map);
+                $("#addNewMarkerTemp").hide();
+            });  
         });
     };    
 };

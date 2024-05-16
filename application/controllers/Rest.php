@@ -28,26 +28,41 @@ class Rest extends CI_Controller
     }
     public function getMapMarkers()
     {
-        $markers = $this->db->select('*')->from('markers')->where('active',1)->get()->result_array();
-        foreach($markers as $k=>$marker){
-            if($marker['type'] == "mobile_radio" || $marker['type'] == "desktop_radio"){
-                if($this->db->select('id')->from('users')->where('callsign',$marker['title'])->count_all_results() == 1){
-                    $markers[$k]['hasUser'] = true;
-                    $markers[$k]['userID'] = $this->db->select('id')->from('users')->where('callsign',$marker['title'])->get()->result_array()[0]['id'];
-                }else{
-                    $markers[$k]['hasUser'] = false;
-                    $markers[$k]['userID'] = -1;
-                }
-            }
-        }
-        echo(json_encode($markers));
+        $out = array();
+        foreach($this->db->select('*')->from('markers')->where('active',1)->where('type','parrot')->or_where('type','station')->get()->result_array() as $v){
+            array_push($out, $v);
+        };
+        foreach($this->db->select('callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnInternalMap',1)->get()->result_array() as $v){
+            $referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.$this->Misc->nominatim($v['county']).'&city='.$this->Misc->nominatim($v['city']).'&street=' . urlencode($this->Misc->nominatim($v['address']));
+            $opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
+            $ctx = stream_context_create($opts);
+            $geo = json_decode(file_get_contents($referer, false, $ctx),true);
+            $marker = array(
+                "lat" => $geo[0]['lat'],
+                "lon" => $geo[0]['lon'],
+                "type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
+                "title" => $v['callsign'],
+                "description" => $v['markerDesc'],
+                "active" => 1,
+                "parrotState" => null,
+                "parrotRadios" => null,
+                "authorized" => 1
+            );
+            array_push($out,$marker);
+        };
+        echo(json_encode($out));
     }
-
+    public function getMapTempMarkers()
+    {
+        $next = 7;
+        $date = date("Y-m-d H:i:s", strtotime(date("Y-m-d H:i:s") . " + " . $next . " days"));
+        $arr = $this->db->select('title,lat,lon,from,to,content,createdAt,freq,ctcss,dcs')->from('markers_temp')->where('from >=', $date)->or_where('to >= ', date("Y-m-d H:i:s"))->get()->result_array();
+        echo(json_encode($arr));
+    }
     public function getMarkerById($id){
         $marker = $this->db->select('lat,lon,type,title,description')->from('markers')->where('id',$id)->get()->result_array()[0];
         echo json_encode($marker);
     }
-
     public function checkUser($callsign){
         $callsign = base64_decode(str_replace('_','=', $callsign),true);
         if($this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->count_all_results() == 1){
@@ -56,10 +71,9 @@ class Rest extends CI_Controller
             echo "-1";
         }
     }
-
     public function getMapEvents()
     {
-        /*$events = $this->db->select('events.id as id,
+        $events = $this->db->select('events.id as id,
             event_markers.lat as lat,
             event_markers.lon as lon,
             event_markers.icon as icon,
@@ -72,9 +86,11 @@ class Rest extends CI_Controller
 	        events.eventEnd as end')
             ->from('event_markers')
             ->join('events', 'events.id = event_markers.eventID', 'inner')
+            ->where('events.eventStart <= ', date("Y-m-d H:i:s", strtotime(date("Y-m-d H:i:s") . " + 7 day")))
+            ->or_where('events.eventEnd >= ', date("Y-m-d H:i:s"))
             ->get()
             ->result_array();
-        echo(json_encode($events));*/
+        echo(json_encode($events));
     }
     public function setState()
     {
@@ -93,6 +109,13 @@ class Rest extends CI_Controller
         $this->Db->insert("markers", $p);
         echo("200");
     }
+    public function addTempMarker()
+    {
+        $p = $this->input->post();
+        $p['createdAt'] = $_SESSION['user']['id'];
+        $this->Db->insert("markers_temp", $p);
+        echo("200");
+    }
     public function updateMarker()
     {
         $p = $this->input->post();
@@ -101,7 +124,6 @@ class Rest extends CI_Controller
         $this->Db->update("markers", $p, array("id"=>$id));
         echo("200");
     }
-   
     public function getEvents()
     {
         $events = $this->db->select("*")->from('events')->get()->result_array();

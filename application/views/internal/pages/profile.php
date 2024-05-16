@@ -5,32 +5,37 @@
             <ul class="nav nav-tabs" id="my-profile-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link <?=($segment == "login") ? 'active' : ''?>" id="login-credentials" data-bs-toggle="tab" data-bs-target="#login-credentials-panel" aria-controls="login-credentials" aria-selected="true">
-                        Belépési adatok
+                        <i class="fa fa-fw fa-sign-in-alt"></i> Belépési adatok
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link <?=($segment == "password") ? 'active' : ''?>" id="password-credentials" data-bs-toggle="tab" data-bs-target="#password-credentials-panel" aria-controls="password-credentials" aria-selected="true">
-                        Jelszó módosítása
+                        <i class="fa fa-fw fa-key"></i> Jelszó módosítása
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link <?=($segment == "personal") ? 'active' : ''?>" id="personal-infos" data-bs-toggle="tab" data-bs-target="#personal-infos-panel" aria-controls="personal-infos" aria-selected="false">
-                        Személyes adatok
+                        <i class="fa fa-fw fa-user"></i> Személyes adatok
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link <?=($segment == "radio") ? 'active' : ''?>" id="radio-infos" data-bs-toggle="tab" data-bs-target="#radio-infos-panel" aria-controls="radio-infos" aria-selected="false">
-                        Rádió & Antenna adatok
+                        <i class="fa fa-fw fa-walkie-talkie"></i> Rádió & Antenna adatok
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link <?=($segment == "about") ? 'active' : ''?>" id="about-infos" data-bs-toggle="tab" data-bs-target="#about-infos-panel" aria-controls="about-infos" aria-selected="false">
-                        Bemutatkozás
+                        <i class="fa fa-fw fa-info"></i> Bemutatkozás
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link <?=($segment == "marker") ? 'active' : ''?>" id="marker-infos" data-bs-toggle="tab" data-bs-target="#marker-infos-panel" aria-controls="marker-infos" aria-selected="false">
+                        <i class="fa fa-fw fa-map-marker-alt"></i> Marker
                     </button>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade <?=($segment == "login") ? 'show active' : ''?>" id="login-credentials-panel" role="tabpanel" aria-labelledby="login-credentials" tabindex="0">
+                <div class="tab-pane fade <?=($segment == "l2ogin") ? 'show active' : ''?>" id="login-credentials-panel" role="tabpanel" aria-labelledby="login-credentials" tabindex="0">
                     <div class="alert alert-info">
                         <b>Figyelem!</b><br/>
                         Amennyiben ezen adatokat szeretnéd módosítani, kérlek írj e-mailt az info@tajtizoltan.hu e-mail címre arról az e-mail címről, amellyel regisztráltál, és írd meg a 
@@ -140,6 +145,58 @@
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <textarea name="aboutME" id="aboutME" class="form-control"><?=$user['aboutME']?></textarea>
+                            <script src="./assets/js/tinymce/tinymce.min.js"></script>
+                            <script>
+                                tinymce.init({
+                                    selector: "textarea",
+                                    language: 'hu_HU',
+	                                menubar: false,
+                                    plugins: "image link lists",
+                                    toolbar: "bold italic underline | image media | link | numlist bullist",
+                                    image_class_list: [{title: 'Left', value: ''},{title: 'Right', value: 'float-right'}],
+                                    content_css: '../../../assets/css/bootstrap.min.css',
+                                    content_css_cors: true,
+                                })
+                            </script>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" name="submit" value="1" class="btn btn-success">Mentés</button>
+                        </div>
+                    </div>
+                   <?=form_close()?>
+                </div>
+                <div class="tab-pane fade show active <?=($segment == "marker") ? 'show active' : ''?>" id="marker-infos-panel" role="tabpanel" aria-labelledby="marker-infos" tabindex="0">
+                   <?=form_open('internal/updateMarker')?>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text">Látszódjon a publikus térképen</label>
+                                <select class="form-select" name="allowOnPublicMap" id="marker-type">
+                                    <option value="1" <?=($user['allowOnPublicMap'] == 1) ? "selected" : "" ?>>Igen</option>
+                                    <option value="0" <?=($user['allowOnPublicMap'] == 0) ? "selected" : "" ?>>Nem</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text">Látszódjon a belső térképen</label>
+                                <select class="form-select" name="allowOnInternalMap" id="marker-type">
+                                    <option value="1" <?=($user['allowOnInternalMap'] == 1) ? "selected" : "" ?>>Igen</option>
+                                    <option value="0" <?=($user['allowOnInternalMap'] == 0) ? "selected" : "" ?>>Nem</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text">Marker típus:</label>
+                                <select class="form-select" name="markerIcon" id="marker-type">
+                                    <option value="mobile_radio" <?=($user['markerIcon'] == "mobile_radio") ? "selected" : "" ?>>Kézi rádió</option>
+                                    <option value="desktop_radio" <?=($user['markerIcon'] == "desktop_radio") ? "selected" : "" ?>>Fix rádió</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <textarea name="markerDesc" id="markerDesc" class="form-control"><?=$user['markerDesc']?></textarea>
                             <script src="./assets/js/tinymce/tinymce.min.js"></script>
                             <script>
                                 tinymce.init({

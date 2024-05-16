@@ -109,6 +109,9 @@
     display: block;
     text-align: center;
 }
+.tox-tinymce{
+    border: 0px solid transparent !important;
+}
 
 @media(min-width: 576px){
     #cookieModal .modal-dialog{ max-width: 100%; }

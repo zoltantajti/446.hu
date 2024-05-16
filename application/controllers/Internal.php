@@ -4,7 +4,7 @@ class Internal extends CI_Controller {
     private $data = array();
     
     private $errors = array(
-        'requred' => 'A %s mező kitöltése kötelező!',
+        'required' => 'A %s mező kitöltése kötelező!',
         'min_length' => 'A {field} mezőnek legalább {param} karakterből kell állnia!',
         'max_length' => 'A {field} mezőnek legfeljebb {param} karekterből állhat!',
         'valid_email' => 'Kérlek érvényes e-mail címet adj meg!',
@@ -82,7 +82,7 @@ class Internal extends CI_Controller {
         if($step == 1){
             $_SESSION['registration'] = null;
             $this->form_validation->set_rules('callsign', 'Hívójel', 'required|trim|is_unique[users.callsign]|callback_nmhh_check', $this->errors);
-            $this->form_validation->set_rules('opname', 'Operátor név', 'required|trim|is_unique[users.opname]', $this->errors);
+            $this->form_validation->set_rules('opname', 'Operátor név', 'required|trim', $this->errors);
             $this->form_validation->set_rules('email', 'E-mail cím', 'required|trim|is_unique[users.email]|valid_email', $this->errors);
             $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]', $this->errors);
             if($this->form_validation->run() == FALSE){
@@ -180,23 +180,22 @@ class Internal extends CI_Controller {
     }
 
 
-    public function terkep(){
+    public function terkep($attrs = null){
         $this->User->checkLogin();
         $this->data['page'] = $this->thm . 'pages/map';
         $this->data['css'] = '
 <link rel="stylesheet" media="screen" href="./assets/js/leaflet/leaflet.css" />
 <link rel="stylesheet" media="screen" href="./assets/js/leaflet/extra-markers/css/leaflet.extra-markers.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+<link rel="stylesheet" media="screen" href="./assets/js/leaflet/weather/Leaflet.Weather.css" />
         ';
         $this->data['js'] = '
 <script src="./assets/js/leaflet/leaflet.js"></script>
 <script src="./assets/js/leaflet_providers/leaflet-providers.js"></script>
 <script src="./assets/js/map/Maidenhead.js"></script>
 <script src="./assets/js/leaflet/extra-markers/js/leaflet.extra-markers.js"></script>
-<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
-<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+<script src="./assets/js/leaflet/weather/Leaflet.Weather.js"></script>
 <script src="./assets/js/tinymce/tinymce.min.js"></script>
-<script type="module" src="./assets/js/map/index.js?ref=internal"></script>';
+<script type="module" src="./assets/js/map/index.js?ref=internal' . (($attrs != null) ? '&center='.$attrs : '' ) . '"></script>';
         $this->load->view($this->thm . 'frame', $this->data);
     }
 
@@ -237,6 +236,7 @@ class Internal extends CI_Controller {
         $rows = $this->db->select('*')->from('events')->where('seoLink',$alias)->get()->result_array();
 		$this->data['event'] = $rows[0];
 		$this->data['page'] = $this->thm . "pages/event";
+        $this->data['marker'] = ($this->db->select('id')->from('event_markers')->where('eventID', $rows[0]['id'])->count_all_results() == 1) ? $this->db->select('lat,lon')->from('event_markers')->where('eventID', $rows[0]['id'])->get()->result_array()[0] : null;
         $this->load->view($this->thm . 'frame', $this->data);
     }
 
@@ -314,17 +314,17 @@ class Internal extends CI_Controller {
             $this->form_validation->set_rules('ctcs', 'CTCS', 'trim', $this->errors);
             $this->form_validation->set_rules('dcs', 'DCS', 'trim', $this->errors);
             $this->form_validation->set_rules('my_callsign', 'Hívójelem', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('my_country', 'Országom', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('my_county', 'Megyém', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('my_city', 'Városom', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('my_address', 'Címem', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('my_country', 'Országom', 'trim', $this->errors);
+            $this->form_validation->set_rules('my_county', 'Megyém', 'trim', $this->errors);
+            $this->form_validation->set_rules('my_city', 'Városom', 'trim', $this->errors);
+            $this->form_validation->set_rules('my_address', 'Címem', 'trim', $this->errors);
             $this->form_validation->set_rules('my_qth', 'QTH lokátor kódom', 'trim|required', $this->errors);
             $this->form_validation->set_rules('suffix', 'Típus', 'trim|required');
             $this->form_validation->set_rules('rem_callsign', 'Ellenállomás hívójele', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('rem_country', 'Ellenállomás Országa', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('rem_county', 'Ellenállomás Megyéje', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('rem_city', 'Ellenállomás Városa', 'trim|required', $this->errors);
-            $this->form_validation->set_rules('rem_address', 'Ellenállomás Címe', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('rem_country', 'Ellenállomás Országa', 'trim', $this->errors);
+            $this->form_validation->set_rules('rem_county', 'Ellenállomás Megyéje', 'trim', $this->errors);
+            $this->form_validation->set_rules('rem_city', 'Ellenállomás Városa', 'trim', $this->errors);
+            $this->form_validation->set_rules('rem_address', 'Ellenállomás Címe', 'trim', $this->errors);
             $this->form_validation->set_rules('rem_qth', 'Ellenállomás QTH kódja', 'trim|required', $this->errors);
             $this->form_validation->set_rules('rem_opname', 'Ellenállomás Operátora', 'trim|required', $this->errors);
             $this->form_validation->set_rules('mode', 'Hívás módja', 'trim|required', $this->errors);
@@ -371,10 +371,10 @@ class Internal extends CI_Controller {
 
     public function profile($id = null){
         $this->User->checkLogin();
-        if($id == null || $id == "login" || $id == "password" || $id == "personal" || $id == "radio" || $id == "about"){
+        if($id == null || $id == "login" || $id == "password" || $id == "personal" || $id == "radio" || $id == "about" || $id == "marker"){
             if($id == null){ $id = "login"; };
             $this->data['segment'] = $id;
-            $this->data['user'] = $this->db->select('callsign,opName,country,county,city,address,radios,antennas,freqs,aboutME,regDate,loginDate,perm')->from('users')->where('id',$this->Sess->getChain('id','user'))->get()->result_array()[0];
+            $this->data['user'] = $this->db->select('callsign,opName,country,county,city,address,radios,antennas,freqs,aboutME,regDate,loginDate,perm,allowOnInternalMap,allowOnPublicMap,markerDesc,markerIcon')->from('users')->where('id',$this->Sess->getChain('id','user'))->get()->result_array()[0];
             $this->data['page'] = $this->thm . "pages/profile";
         }else{
             if($this->db->select('id')->from('users')->where('id',$id)->count_all_results() == 0){
@@ -409,6 +409,19 @@ class Internal extends CI_Controller {
             }else{
                 $this->Msg->set(validation_errors(), "danger");
                 redirect('internal/profile/personal');
+            }
+        }
+        public function updateMarker(){
+            $this->User->checkLogin();
+            $this->form_validation->set_rules('allowOnInternalMap', 'Látszik a belső térképen', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('allowOnPublicMap', 'Látszik a publikus térképen', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('markerDesc', 'Marker leírás', 'trim|required', $this->errors);
+            $this->form_validation->set_rules('markerIcon', 'Marker ikon', 'trim|required', $this->errors);
+            if($this->form_validation->run()){
+                $this->User->updateMarker();
+            }else{
+                $this->Msg->set(validation_errors(), "danger");
+                redirect('internal/profile/marker');
             }
         }
         public function updateRadios(){$this->User->checkLogin(); $this->User->updateRadios(); }

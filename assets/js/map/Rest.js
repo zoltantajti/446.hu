@@ -9,6 +9,13 @@ class Rest {
             });
         });
     }
+    getTempMarkers = function() {
+        return new Promise(function(resolve,reject){
+            $.getJSON("Rest/getMapTempMarkers", function(data){
+                resolve(data);
+            });
+        });
+    }
     getMarkerById = function(id) {
         return new Promise(function(resolve,reject){
             $.getJSON("Rest/getMarkerById/" + id, function(data){
@@ -57,6 +64,44 @@ class Rest {
 
             let toast = new Toast();
             toast.show("Köszi :)", "Hamarosan megnézzük!");
+        });
+    }
+    saveTempMarker = function() {
+        var lat = $("#temp_lat").val();
+        var lon = $("#temp_lon").val();
+        var from = $("#from").val();
+        var to = $("#to").val();
+        var title = $("#temp_title").val();
+        var freq = $("#freq").val();
+        var ctcss = $("#ctcss").val();
+        var dcs = $("#dcs").val();
+        var content = tinyMCE.get('content').getContent();
+        var fields = {
+            lat: lat,
+            lon: lon,
+            from: from,
+            to: to,
+            title: title,
+            content: content,
+            freq: freq,
+            ctcss: ctcss,
+            dcs: dcs
+        };
+        
+        $.post("Rest/addTempMarker", fields, function(data, status){
+            $("#addNewMarkerTemp").hide();
+            $("#lat").val('');
+            $("#lon").val('');
+            $("#type").val('mobile_radio');
+            $("#title").val('');
+            $("#description").val('');
+
+            let toast = new Toast();
+            toast.show("Köszi :)", "Hamarosan megnézzük!");
+
+            setTimeout((event) => {
+                window.location.reload();
+            }, 3000);
         });
     }
 

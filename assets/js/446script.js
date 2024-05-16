@@ -2,6 +2,44 @@ $(document).ready((event) => {
     const toolTipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     const tooltipList = [...toolTipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
+    /*const openChatBtn = document.getElementById("openChat");
+    const closeChatBtn = document.getElementById("closeChat");
+    const popupContainer = document.getElementById("popupContainer");
+    openChatBtn.addEventListener('click', (event) => {
+        let openAI = new OpenAI();
+        $("#popupContainer").fadeIn();
+    });
+    closeChatBtn.addEventListener('click', (event) => {
+        $("#popupContainer").fadeOut();
+    })*/
+
+    if(window.location.href.includes('qso/add')){
+        $("#my_qth").on('keyup', (event) => {
+            if($("#my_qth").val().length >= 6){
+                let qth = $("#my_qth").val();
+                let coords = qthToCoords(qth);
+                $("#myPos").val(JSON.stringify(coords));
+                $("#my_address_line_1").fadeOut();
+                $("#my_address_line_2").fadeOut();
+            }else{
+                $("#my_address_line_1").fadeIn();
+                $("#my_address_line_2").fadeIn();
+            }
+        })
+        $("#rem_qth").on('keyup', (event) => {
+            if($("#rem_qth").val().length >= 6){
+                let qth = $("#rem_qth").val();
+                let coords = qthToCoords(qth);
+                $("#remPos").val(JSON.stringify(coords));
+                $("#rem_address_line_1").fadeOut();
+                $("#rem_address_line_2").fadeOut();
+            }else{
+                $("#rem_address_line_1").fadeIn();
+                $("#rem_address_line_2").fadeIn();
+            }
+        })
+    }
+
     if(window.location.href.includes('profile')){
         var profileRegExp = /\/profile\/(\d+)/;
         if(profileRegExp.test(window.location.href)){
@@ -80,7 +118,21 @@ const getQTHCode = (object, _precision = 4) => {
             }
         }
     };
-    return locator.replace('AE','JN');
+    return locator.replace('AE','JN').replace('BE','JN');
+}
+function qthToCoords(locator) {
+    var text = String(locator);
+    text = text.toUpperCase();
+    let lon = 20 * (text.charCodeAt(0) - 65);
+    let lat = 10 * (text.charCodeAt(1) - 65);
+    lon = lon + 2 * (text.charCodeAt(2) - 48);
+    lat = lat + (text.charCodeAt(3) - 48);
+    lon = lon + (text.charCodeAt(4) - 65 + 0.5) / 12;
+    lat = lat + (text.charCodeAt(5) - 65 + 0.5) / 24;
+    lon = lon -180;
+    lat = lat -90;
+
+    return {lat: lat.toFixed(6), lon: lon.toFixed(6)};
 }
 const calculateQTH = (prefix) => {
     let address = $(`#${prefix}_country`).val() + ", " + $(`#${prefix}_county`).val() + ", " + $(`#${prefix}_city`).val() + " " + $(`#${prefix}_address`).val();

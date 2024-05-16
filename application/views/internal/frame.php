@@ -67,13 +67,39 @@
     <main class="flex-shrink-0">
         <?php $this->load->view($page); ?>
     </main>
+    <section id="chat">
+        <!--<button id="openChat"></button>-->
+        <div class="popup-container" id="popupContainer">
+            <div class="popup">
+                <div class="popup-header">
+                    Laura <i>(AI asszisztens)</i>
+                    <button id="closeChat">X</button>
+                </div>
+                <div class="popup-body">
+                    <div class="chat-messages">
+                        <div class="message received">
+                            Hello! How are you?
+                        </div>
+                        <div class="message sent">
+                            Hi! I'm good, thanks for asking.
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <textarea placeholder="Type your message..."></textarea>
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer mt-auto py-3 bg-body-tertiary">
         <div class="container">
             <span class="text-body-secondary">Minden jog fenntartva &copy; <a href="https://446.hu">446.hu</a></span>
         </div>
-    </footer>
-    
+    </footer>    
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/openai.gpt.js"></script>
+    <script src="./assets/js/openai.js"></script>
     <script src="./assets/js/446script.js"></script>
     <?=@$js?>
 </body>

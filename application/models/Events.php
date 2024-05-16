@@ -5,6 +5,9 @@ class Events extends CI_Model {
     public function getList(){
         return $this->db->select('id,title,eventStart')->from('events')->order_by('eventStart', 'desc')->get()->result_array();
     }
+    public function hasEventOnMap($id){
+        return $this->db->select('id')->from('event_markers')->where('eventID',$id)->count_all_results();
+    }
 
     public function add()
     {

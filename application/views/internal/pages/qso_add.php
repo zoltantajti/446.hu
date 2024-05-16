@@ -6,9 +6,11 @@
     <?php echo validation_errors(); ?>
     <?php echo $this->Msg->get(); ?>
     <?=form_open('internal/qso/add', 'class="qso-form" id="qso-form"')?>
-    <input type="hidden" name="myPos" id="myPos" />
-    <input type="hidden" name="remPos" id="remPos" />
-    <div class="alert alert-danger">Minden adat kitöltése kötelező!</div>
+    <div class="alert alert-danger">
+        Használat:<br/>
+        A GPS Koordináta elengedhetetlen. Megszerzéséhez 2 opció van. Az egyik, hogy megadod a címet és legenerálod a QTH lokátor kódot és a GPS koordinátát, vagy 
+        megadod kézzel a QTH lokátor kódot, és megkapod a GPS koordinátát. Ha a QTH kódot adod meg, a cím nem szükséges!
+    </div>
     <div class="row">
         <div class="col-md-6 mb-3">
             <fieldset>
@@ -21,20 +23,24 @@
                     <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                     <input type="text" class="form-control" name="my_opName" value="<?=$this->Sess->getChain('opName', 'user')?>" readonly/>
                 </div>
-                <div class="input-group">
+                <div class="input-group" id="my_address_line_1">
                     <span class="input-group-text address-nth-1" id="basic-addon1"><i class="fa fa-fw fa-city"></i></span>
                     <input type="text" class="form-control" name="my_country" list="countries" id="my_country" value="<?=$myQTH['country']?>"/>
                     <input type="text" class="form-control" name="my_county"  list="counties" id="my_county" value="<?=$myQTH['county']?>"/>
                     <input type="text" class="form-control address-nth-4"  list="cities" name="my_city" id="my_city" value="<?=$myQTH['city']?>"/>
                 </div>
-                <div class="input-group">
+                <div class="input-group" id="my_address_line_2">
                     <span class="input-group-text address-nth-5" id="basic-addon1"><i class="fa fa-fw fa-city"></i></span>
                     <input type="text" class="form-control" name="my_address" id="my_address" value="<?=$myQTH['address']?>"/>
                     <button type="button" class="btn btn-outline-secondary address-nth-7" onclick="calculateQTH('my');"><i class="fa fa-fw fa-map-marker-alt"></i></button>
                 </div>
                 <div class="input-group">
+                    <span class="input-group-text address-nth-5" id="basic-addon1"><i class="fa fa-fw fa-map-marker-alt"></i></span>
+                    <input type="text" class="form-control address-nth-7" name="my_qth" id="my_qth" value="<?=set_value('my_qth')?>" placeholder="QTH lokátor kód"/>
+                </div>
+                <div class="input-group">
                     <span class="input-group-text address-nth-8" id="basic-addon1"><i class="fa fa-fw fa-map-marker-alt"></i></span>
-                    <input type="text" class="form-control address-nth-9" name="my_qth" id="my_qth" value="<?=set_value('my_qth')?>" placeholder="QTH lokátor kód"/>
+                    <input type="text" class="form-control address-nth-9 disabled" name="myPos" id="myPos" value="" readonly placeholder="GPS Koordináta"/>
                 </div>
             </fieldset>
         </div>
@@ -49,20 +55,24 @@
                     <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                     <input type="text" class="form-control" name="rem_opname" value="<?=set_value('rem_opname')?>" placeholder="Operátor név"/>
                 </div>
-                <div class="input-group">
+                <div class="input-group" id="rem_address_line_1">
                     <span class="input-group-text address-nth-1" id="basic-addon1"><i class="fa fa-fw fa-city"></i></span>
                     <input type="text" class="form-control" list="countries" name="rem_country" id="rem_country" value="<?=set_value('rem_country')?>" placeholder="Ország"/>
                     <input type="text" class="form-control" list="counties" name="rem_county" id="rem_county" value="<?=set_value('rem_county')?>" placeholder="Megye"/>
                     <input type="text" class="form-control address-nth-4" list="cities" name="rem_city" id="rem_city" value="<?=set_value('rem_city')?>" placeholder="Város"/>
                 </div>
-                <div class="input-group">
+                <div class="input-group" id="rem_address_line_2">
                     <span class="input-group-text address-nth-5" id="basic-addon1"><i class="fa fa-fw fa-city"></i></span>
                     <input type="text" class="form-control" name="rem_address" id="rem_address" value="<?=set_value('rem_address')?>" placeholder="Utca, házszám (ha van)"/>
                     <button type="button" class="btn btn-outline-secondary address-nth-7" onclick="calculateQTH('rem');"><i class="fa fa-fw fa-map-marker-alt"></i></button>
                 </div>
                 <div class="input-group">
+                    <span class="input-group-text address-nth-5" id="basic-addon1"><i class="fa fa-fw fa-map-marker-alt"></i></span>
+                    <input type="text" class="form-control address-nth-7" name="rem_qth" id="rem_qth" value="<?=set_value('rem_qth')?>" placeholder="QTH lokátor kódja"/>
+                </div>
+                <div class="input-group">
                     <span class="input-group-text address-nth-8" id="basic-addon1"><i class="fa fa-fw fa-map-marker-alt"></i></span>
-                    <input type="text" class="form-control address-nth-9" name="rem_qth" id="rem_qth" value="<?=set_value('rem_qth')?>" placeholder="QTH lokátor kódja"/>
+                    <input type="text" class="form-control address-nth-9 disabled" name="remPos" id="remPos" value="" readonly placeholder="GPS Koordináta"/>
                 </div>
             </fieldset>
         </div>

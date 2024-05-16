@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-$config['base_url'] = ((@$_SERVER['HTTPS'] == "on") ? 'https://' : 'http://') . ((@$_SERVER['HTTP_HOST'] == "localhost") ? 'localhost/' : 'www.') . '446.hu';
+$server = $_SERVER['HTTP_HOST'];
+if($server == "localhost"){ $host = "localhost/446.hu"; }elseif($server == "local.446.hu") { $host = "local.446.hu"; }else{ $host = "www." . $server; };
+$config['base_url'] = ((@$_SERVER['HTTPS'] == "on") ? 'https://' : 'http://') . $host;
 $config['index_page'] = '';
 $config['uri_protocol']	= 'REQUEST_URI';
 $config['url_suffix'] = '';
@@ -57,4 +59,7 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 $config['javascript_location'] = './assets/js/';
-$config['csrf_exclude_uris'] = array('Rest/setState','Rest/uploadFile','Rest/removeFile','Rest/addMarker','Rest/updateMarker','Rest/updateFreq');
+$config['csrf_exclude_uris'] = array(
+	'Rest/setState','Rest/uploadFile','Rest/removeFile','Rest/addMarker','Rest/updateMarker','Rest/updateFreq',
+	'Rest/addTempMarker'
+);

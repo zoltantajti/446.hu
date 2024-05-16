@@ -152,21 +152,21 @@ class User extends CI_Model {
     }
     private function userIsExists($user)
     {
-        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('opName',$user)->or_where('email',$user)->count_all_results() == 1 ? true : false;
+        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('email',$user)->count_all_results() == 1 ? true : false;
     }
     private function passwordCheck($user, $password)
     {
-        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('opName',$user)->or_where('email',$user)
+        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('email',$user)
                     ->where('password',$password)->count_all_results() == 1 ? true : false;
     }
     private function userIsActive($user)
     {
-        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('opName',$user)->or_where('email',$user)
+        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('email',$user)
                     ->where('active', 1)->count_all_results() == 1 ? true : false;
     }
     private function checkPerm($user)
     {
-        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('opName',$user)->or_where('email',$user)
+        return $this->db->select('id')->from('users')->where('callsign',$user)->or_where('email',$user)
                     ->where('perm >=', 1)->count_all_results() == 1 ? true : false;
     }
     
@@ -231,7 +231,14 @@ class User extends CI_Model {
         $this->Msg->set("Sikeres adatmódosítás!", "success");
         redirect('internal/profile/about');
     }
-
+    public function updateMarker()
+    {
+        $p = $this->input->post();
+        unset($p['submit']);
+        $this->Db->update("users", $p, array("id" => $this->Sess->getChain("id","user")));
+        $this->Msg->set("Sikeres adatmódosítás!", "success");
+        redirect('internal/profile/marker');
+    }
     /*Admin*/
     public function getOwner(){
         return ($this->Sess->getChain("callsign", "user") == "92-es Zotya") ? true : false;

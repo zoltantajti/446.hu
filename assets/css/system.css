@@ -2,7 +2,7 @@
 main > .container, main > .container-fluid {
     padding: 60px 0 0;
 }
-#map{
+#map, #windy{
     height: calc(100vh - (60px * 2) + 4px);
 }
 #customContextMenu {
@@ -187,7 +187,126 @@ main > .container, main > .container-fluid {
     margin-right: 5px;
     margin-bottom: 5px;
     float:left;
+    z-index: 999;
 }
 .profile-pub .badge-image{
     max-width: 126px;
+}
+
+/*WX map*/
+.wx-icon{
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    z-index:999 !important;
+}
+
+/*Chat*/
+#chat #openChat{
+    position: absolute;
+    bottom: 65px;
+    right: 15px;
+    padding: 0;
+    border: 0px solid transparent;
+    border-radius: 30px !important;
+    background-image: url('../images/reporter.jpeg');
+    background-size: 200%;
+    background-position: -40px -20px;
+    width: 64px;
+    height: 64px;
+}
+#chat .popup-container {
+    display: none;
+    position: absolute;
+    bottom: 65px;
+    right: 15px;
+    z-index: 1000;
+}
+  
+#chat .popup {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+#chat .popup-header {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+#chat .popup-header button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+#chat .popup-body {
+    padding: 10px;
+  }
+  
+#chat .chat-messages {
+    height: 200px;
+    overflow-y: auto;
+  }
+  
+#chat .message {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+#chat .received {
+    background-color: #7C7C7B;
+}
+#chat .received::before {
+    content: "Laura: ";
+    font-weight: bold;
+}
+  
+#chat .sent {
+    background-color: #424242;
+}
+#chat .sent::before {
+    content: "Te: ";
+    font-weight: bold;
+}
+  
+#chat .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+#chat .chat-input textarea {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+#chat .chat-input button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4267B2;
+    color: white;
+    cursor: pointer;
+  }
+  
+#chat .chat-input button:hover {
+    background-color: #405D9B;
+  }
+
+.disabled{
+    cursor:not-allowed !important;
 }

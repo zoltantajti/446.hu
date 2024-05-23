@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-3">
+        <div class="col-md-3 col-12 mb-3">
             <?php $news = $this->db->select('title,alias,short,image,createdAt')->from('news')->order_by('createdAt','desc')->limit(1,0)->get()->result_array()[0]; ?>
             <div class="card">
                 <div class="card-header text-center">Legfrisebb hír</div>
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-12 mb-3">
             <div class="card mb-3">
                 <div class="card-header text-center">Jelvényeim</div>
                 <div class="card-body text-center">
@@ -45,9 +45,8 @@
                     <?php }; ?>
                 </ul>
             </div>
-        </div>
-        
-        <div class="col-5">
+        </div>        
+        <div class="col-md-5 col-12 mb-3">
             <div class="card">
                 <div class="card-header text-center">Eseménynaptár</div>
                 <div class="card-body mb-5" id="calendar"></div>

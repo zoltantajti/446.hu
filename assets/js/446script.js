@@ -2,17 +2,6 @@ $(document).ready((event) => {
     const toolTipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     const tooltipList = [...toolTipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-    /*const openChatBtn = document.getElementById("openChat");
-    const closeChatBtn = document.getElementById("closeChat");
-    const popupContainer = document.getElementById("popupContainer");
-    openChatBtn.addEventListener('click', (event) => {
-        let openAI = new OpenAI();
-        $("#popupContainer").fadeIn();
-    });
-    closeChatBtn.addEventListener('click', (event) => {
-        $("#popupContainer").fadeOut();
-    })*/
-
     if(window.location.href.includes('qso/add')){
         $("#my_qth").on('keyup', (event) => {
             if($("#my_qth").val().length >= 6){

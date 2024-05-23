@@ -35,7 +35,8 @@ class Visitor extends CI_Model {
             'visits' => 1,
             'lastSessionID' => $sID,
             'lastVisit' => $now,
-            'visitsDate' => json_encode(array($now))
+            'visitsDate' => json_encode(array($now)),
+            'geo' => $this->getGeo($ip)
         );
         $this->db->insert('visitors', $data);
     }
@@ -56,32 +57,39 @@ class Visitor extends CI_Model {
     }
 
     /*ADMIN*/
-    public function getList(){
-        return $this->db->select('ipaddr,visits,lastVisit')->from('visitors')->order_by('lastVisit','DESC')->get()->result_array();
+    public function getList($config, $offset){
+        return $this->db->select('ipaddr,visits,lastVisit,geo')->from('visitors')->order_by('lastVisit', "DESC")->limit($config['per_page'],$offset)->get()->result_array();
     }
     public function get($ip){
         return $this->db->select('*')->from('visitors')->where('ipaddr',$ip)->get()->result_array()[0];
     }
-    public function getLocation($ip){
-        $url = str_replace(array("{apikey}","{ip}"),array($this->key, $ip), $this->api);
-        @$string = file_get_contents($url);
-        @$geo = json_decode($string,true);
-        if(isset($geo) && !isset($geo['message'])){
-            return $geo;
-        }else{
-            return array("message" => "Hiba történt az API hívása során! Kérlek tájékoztasd a rendszergazdát!");
+    public function getLocation($geo){
+        return ($geo != null) ? json_decode($geo,true) : null;
+    }
+    public function getGeo($ip){
+        try{
+            if($ip != '::1' && $ip != '127.0.0.1'){
+                $url = str_replace(array("{apikey}","{ip}"),array($this->key, $ip), $this->api);
+                @$string = file_get_contents($url);
+                @$geo = json_decode($string,true);
+                if(isset($geo) && !isset($geo['message'])){
+                    return $geo;
+                }else{
+                    return null;
+                }
+            }else{
+                return null;
+            }
+        }catch(Exception $e){
+            return null;
         }
     }
-    public function getFlag($ip){
-        try{
-            $url = str_replace(array("{apikey}","{ip}"),array($this->key, $ip), $this->api);
-            @$string = file_get_contents($url);
-            @$geo = json_decode($string,true);
-            if(isset($geo) && !isset($geo['message'])){
-                return '<img src="'.$geo["country_flag"].'" width="32" data-bs-toggle="tooltip" data-bs-title="'.$geo['city'].', '.$geo['country_name_official'] . '"/>';
-            }else{
-                return '';
-            }
-        }catch(Exception $e){ return ''; };
+    public function getFlag($geo){
+        if($geo != null){
+            $geo = json_decode($geo, true);
+            return '<img src="'.$geo["country_flag"].'" width="32" data-bs-toggle="tooltip" title="'.$geo['city'].', '.$geo['country_name_official'] . '" data-bs-title="'.$geo['city'].', '.$geo['country_name_official'] . '"/>';
+        }else{
+            return null;
+        };
     }
 }

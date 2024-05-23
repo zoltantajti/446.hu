@@ -168,6 +168,8 @@ class Rest extends CI_Controller
             event_markers.icon as icon,
 	        event_markers.iconType as iType,
 	        event_markers.color as iColor,
+            event_markers.zone as zone,
+            event_markers.zoneColor as zoneColor,
             events.title as title,
             events.seoLink as seoLink,
             events.shortDesc as description,
@@ -175,7 +177,7 @@ class Rest extends CI_Controller
 	        events.eventEnd as end')
             ->from('event_markers')
             ->join('events', 'events.id = event_markers.eventID', 'inner')
-            ->where('events.eventStart <= ', date("Y-m-d H:i:s", strtotime(date("Y-m-d H:i:s") . " + 7 day")))
+            ->where('events.eventStart <= ', date("Y-m-d H:i:s", strtotime(date("Y-m-d H:i:s") . " + 21 day")))
             ->or_where('events.eventEnd >= ', date("Y-m-d H:i:s"))
             ->get()
             ->result_array();
@@ -236,8 +238,18 @@ class Rest extends CI_Controller
         $p = $this->input->post();
         $id = $p['id'];
         $tbl = $p['tbl'];
-        unset($p['id'],$p['tbl']);
-        $this->Db->update($tbl, $p, array("id" => $id));
+        $p['ctcs'] = $p['ctcss'];
+        unset($p['id'],$p['tbl'],$p['ctcss']);
+        $this->db->set('name', $p['name']);
+        $this->db->set('freq', $p['freq']);
+        $this->db->set('ctcs', ($p['ctcss'] == null) ? null : $p['ctcss']);
+        $this->db->set('dcs', ($p['dcs'] == null) ? null : $p['dcs']);
+        $this->db->set('duplex', ($p['duplex'] == null) ? "off" : $p['duplex']);
+        $this->db->set('offset', ($p['offset'] == null) ? null : $p['offset']);
+        $this->db->set('comment', ($p['comment'] == null) ? null : $p['comment']);
+        $this->db->where('id', $id);
+        $this->db->update($tbl);
+        $this->Logs->make("FREQ:update", $this->Sess->getChain("callsign","user") . " módosította a " . $id . " <i>(" . $p['name'] . ")</i> gumifül frekvenciát!" );
         echo("200");
     }
     /*Imagemanager*/
@@ -309,5 +321,24 @@ class Rest extends CI_Controller
     /*Profile*/
     public function getUserAddressByID($id){
         echo json_encode($this->db->select('country,county,city,address')->from('users')->where('id',$id)->get()->result_array()[0]);
+    }
+
+
+    /*Temp*/
+    public function updateGEO(){
+        if($_SERVER['SERVER_NAME'] == "local.446.hu" && $_SERVER['REMOTE_ADDR'] == '127.0.0.1'){
+            foreach($this->db->select('ipaddr')->from('visitors')->limit(120,822)->get()->result_array() as $row){
+                $ip = $row['ipaddr'];
+                if($ip != '::1' && $ip != '127.0.0.1'){
+                    $geo = $this->Visitor->getGeo($ip);
+                    $this->db->set('geo', json_encode($geo));
+                    $this->db->where('ipaddr', $ip);
+                    $this->db->update('visitors');
+                };                
+            }
+        }else{
+            die('remote host not allowed!');
+        };
+        
     }
 }

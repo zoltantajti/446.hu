@@ -38,7 +38,10 @@
                             <td><?=$item['name']?></td>
                             <td><?=$this->User->getPermById($item['perm'])?></td>
                             <td><?=($item['active'] == 1) ? "igen" : "nem"?></td>
-                            <td>
+                            <td class="text-right">
+                                <?php if(file_exists('./assets/map/' . md5($item['callsign']) . '.bin')){ ?>
+                                <a href="admin/users/location/<?=md5($item['callsign'])?>"><i class="fa fa-fw fa-globe"></i></a>
+                                <?php }; ?>
                                 <?php if($item['active'] == 1){ ?>    
                                 <a href="admin/users/inactivate/<?=$item['id']?>"><i class="fa-solid fa-ban"></i></a>
                                 <?php }else{ ?>

@@ -28,9 +28,17 @@ main > .container, main > .container-fluid {
 }
 
 .card-img-fixed{
-    width: 310px;
+    width: 100%;
+    max-width: 310px;
     height: 293px;
 }
+@media screen and (max-width: 768px) {
+    .card-img-fixed{
+        width:100%;
+        max-width: 100%;
+    }
+}
+
 .card-title{
     height: 48px;
 }

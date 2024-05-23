@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <?=$this->Msg->get(); ?>
+                <?=$pagi?>
                 <table class="table">
                     <thead>
                         <tr>
@@ -19,7 +20,7 @@
                     <?php foreach($data as $key=>$item){ ?>
                         <tr class="<?=($this->Banns->check($item['ipaddr'])) ? "table-danger" : ""?>">
                             <td>
-                                <?=$this->Visitor->getFlag($item['ipaddr']) . " " . $item['ipaddr']?>
+                                <?=$this->Visitor->getFlag($item['geo']) . " " . $item['ipaddr']?>
                                 <?=($this->Banns->check($item['ipaddr'])) ? "KITILTVA" : ""?>
                             </td>
                             <td><?=$item['visits']?></td>
@@ -42,6 +43,7 @@
                     <?php }; ?>
                     </tbody>
                 </table>
+                <?=$pagi?>
             </div>
         </div>
     </div>

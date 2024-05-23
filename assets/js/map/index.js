@@ -188,6 +188,17 @@ class Map {
                         image: _marker.icon,
                         color: _marker.iColor
                     }
+                    console.log(_marker);
+                    if(_marker.lat === null || _marker.lon === null){
+                        let _coords = JSON.parse(_marker.zone);
+                        let coords = []; _coords.forEach((point) => {coords.push([point.lat, point.lng]); });
+                        let popup = `<b>${_marker.title}</b><br/>${_marker.description}`;
+                        let zoneObject = new Polygon(coords, _marker.zoneColor, popup, this.cms);
+                        zoneObject.create(this.eventLayer);
+
+                        _marker.lat = 47.1628;
+                        _marker.lon = 19.5036;
+                    };
                     let markerObject = new Marker(_marker.id, _marker.lat, _marker.lon, 1, _marker.title, _marker.description, 'event', icon, null, false, null, this.ref);
                     markerObject.create(this.eventLayer);
                 });
@@ -203,7 +214,7 @@ class Map {
                     let _coords = JSON.parse(_zone.coords);
                     let coords = [];
                     _coords.forEach((point) => {coords.push([point.lat, point.lng]);});
-                    let zoneObject = new Polygon(coords, _zone.color, _zone.description);
+                    let zoneObject = new Polygon(coords, _zone.color, _zone.description, this.cms);
                     zoneObject.create(this.restAreas);
                 })
             })

@@ -10,11 +10,11 @@ class Logs extends CI_Model {
         $this->db->insert('logs', $data);
     }
 
-    public function getList($cond){
+    public function getList($cond, $limit = 25, $offset = 0){
         if($cond[0] == "all"){
-            return $this->db->select('*')->from('logs')->order_by('date','DESC')->get()->result_array();
+            return $this->db->select('*')->from('logs')->order_by('date','DESC')->limit($limit,$offset)->get()->result_array();
         }else{
-            return $this->db->select('*')->from('logs')->order_by('date','DESC')->where($cond[0],$cond[1])->get()->result_array();
+            return $this->db->select('*')->from('logs')->order_by('date','DESC')->where($cond[0],$cond[1])->limit($limit,$offset)->get()->result_array();
         }
     }
     public function count(){

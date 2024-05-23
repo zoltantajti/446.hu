@@ -8,7 +8,7 @@
                 <a href="admin/visitors" class="btn btn-info mb-3">Vissza</a>
                 <div class="row mb-3">
                     <div class="col-md-4">
-                        IP cím: <b><?=$this->Visitor->getFlag($data['ipaddr']) . " " . $data['ipaddr']?></b>
+                        IP cím: <b><?=$this->Visitor->getFlag($data['geo']) . " " . $data['ipaddr']?></b>
                     </div>
                     <div class="col-md-4">
                         Látogatások száma: <b><?=$data['visits']?></b>
@@ -37,7 +37,7 @@
                         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
                         
                         <ul class="list-group">
-                            <?php $geo = $this->Visitor->getLocation($data['ipaddr']); if(!isset($geo['message'])){ ?>                            
+                            <?php $geo = $this->Visitor->getLocation($data['geo']); if(!isset($geo['message'])){ ?>                            
                             <li class="list-group-item">Helyszín: <b><?=$geo['zipcode'] . ", " . $geo['city'] . ", " . $geo['country_name_official']?></b></li>
                             <li class="list-group-item">ISP: <b><?=$geo['isp']?></b></li>
                             <li class="list-group-item">Cég: <b><?=$geo['organization']?></b></li>

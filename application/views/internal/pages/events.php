@@ -2,7 +2,7 @@
     <?=$pagi?>
     <div class="row">
         <?php foreach($events as $k=>$v){ ?>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-3 col-12 mb-3">
             <div class="card">
                 <img src="<?=$this->Misc->parseImage($v['image'])?>" class="card-img-top card-img-fixed" />
                 <div class="card-body">

@@ -5,6 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <?=$pagi?>
                 <?=($filtered) ? '<a href="admin/logs" class="btn btn-info">Vissza</a>' : ''?>
                 <table class="table">
                     <thead>

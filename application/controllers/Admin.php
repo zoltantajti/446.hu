@@ -125,14 +125,41 @@ class Admin extends CI_Controller {
     }
 
     /*Logs*/
-    public function Logs($filter = "all", $needle = ""){
+    public function Logs($filter = "all", $needle = "", $page = 0){
         $this->User->checkLogin();
-        if($filter == "list"){
+        
+        $this->load->library('pagination');
+        $config['use_page_numbers'] = true;
+        $config['base_url'] = base_url() . 'admin/logs/'.$filter.'/'.$needle.'';
+        $config['total_rows'] = $this->db->select('id')->from('logs')->count_all_results();
+        $config['per_page'] = 25;
+        $config['full_tag_open'] = '<nav><ul class="pagination">';
+        $config['full_tag_close'] = '</ul></nav>';
+        $config['first_tag_open'] = '<li class="page-item">';
+        $config['first_link'] = 'Első';
+        $config['first_tag_close'] = '</li>';		
+        $config['last_tag_open'] = '<li class="page-item">';
+        $config['last_link'] = 'Utolsó';
+        $config['last_tag_close'] = '</li>';		
+        $config['prev_tag_open'] = '<li class="page-item">';
+        $config['prev_tag_close'] = '</li>';		
+        $config['next_tag_open'] = '<li class="page-item">';
+        $config['next_tag_close'] = '</li>';		
+        $config['cur_tag_open'] = '<li class="page-item active" aria-current="page">';
+        $config['curr_tag_close'] = '</li>';		
+        $config['num_tag_open'] = '<li class="page-item">';
+        $config['num_tag_close'] = '</li>';
+        
+        $offset = ($page == 0) ? 0 : (($page - 1) * $config['per_page']);  
+
+        
+        if($filter == "all"){
+            $config['total_rows'] = $this->db->select('id')->from('logs')->count_all_results();
             $this->data = array_merge($this->data, array(
                 'page'=>'logs_list',
                 'sidebar'=>true,
                 'filtered'=>false,
-                'data' => $this->Logs->getList(array("all",""))
+                'data' => $this->Logs->getList(array("all",""), $config['per_page'], $offset)
             ));
         }elseif($filter == "id"){
             $this->data = array_merge($this->data, array(
@@ -142,13 +169,16 @@ class Admin extends CI_Controller {
                 'data' => $this->Logs->get($needle)
             ));
         }else{
+            $config['total_rows'] = $this->db->select('id')->where($filter,$needle)->from('logs')->count_all_results();
             $this->data = array_merge($this->data, array(
                 'page'=>'logs_list',
                 'sidebar'=>true,
                 'filtered'=>true,
-                'data' => $this->Logs->getList(array($filter,$needle))
+                'data' => $this->Logs->getList(array($filter,$needle),$config['per_page'], $offset)
             ));
-        }
+        };
+        $this->pagination->initialize($config);
+        $this->data['pagi'] = $this->pagination->create_links();
         $this->load->view($this->thm . '/index', $this->data);
     }
 
@@ -196,6 +226,36 @@ class Admin extends CI_Controller {
             redirect('admin/users');
         }elseif($f == "delete" && $id != -1){
             $this->User->delete($id);
+            redirect('admin/users');
+        }elseif($f == "location" && $id != -1){
+            $geo = json_decode(file_get_contents('./assets/map/' . $id . '.bin'), true);
+            $this->form_validation->set_rules('lat', 'GPS LAT', 'trim|required');
+            $this->form_validation->set_rules('lon', 'GPS LON', 'trim|required');
+            if(!$this->form_validation->run()){
+                $this->data['geo'] = $geo;
+                $this->data['page'] = 'user_geo';
+                $this->load->view($this->thm . '/index', $this->data);
+            }else{
+                $p = $this->input->post();
+                $p['description'] = $geo['description'];
+                $p['active'] = $geo['active'];
+                $p['parrotState'] = null;
+                $p['parrotRadios'] = null;
+                $p['authorized'] = 1;
+                $p['hasUser'] = true;
+                $p['userID'] = $geo['userID'];
+                $p['address'] = array(
+                    "country" => $p['country'],
+                    "county" => $p['county'],
+                    "city" => $p['city'],
+                    "addr" => $p['addr']
+                );
+                unset($p['country'],$p['county'],$p['city'],$p['addr']);
+                file_put_contents('./assets/map/' . $id . '.bin', json_encode($p));
+                $this->Logs->make("USER::GEOLOCATING_MANUAL",$this->Sess->getChain('user','name') . " módosította #" . $p['userID'] . " felhasználó geolokációját!");
+                $this->Msg->set("Sikeres módosítás!");
+                redirect('admin/users');
+            }
         }
     }
 
@@ -383,14 +443,38 @@ class Admin extends CI_Controller {
     }
 
     /*Visitors*/
-    public function visitors($f = "list", $id = -1)
+    public function visitors($f = "list", $id = -1, $page = 0)
     {
         $this->User->checkLogin();
         if($f == "list" && $id == -1){
+            $this->load->library('pagination');
+            $config['use_page_numbers'] = true;
+            $config['base_url'] = base_url() . 'admin/visitors/list/-1';
+            $config['total_rows'] = $this->db->select('ipaddr')->from('visitors')->count_all_results();
+            $config['per_page'] = 25;
+            $config['full_tag_open'] = '<nav><ul class="pagination">';
+            $config['full_tag_close'] = '</ul></nav>';
+            $config['first_tag_open'] = '<li class="page-item">';
+            $config['first_link'] = 'Első';
+            $config['first_tag_close'] = '</li>';		
+            $config['last_tag_open'] = '<li class="page-item">';
+            $config['last_link'] = 'Utolsó';
+            $config['last_tag_close'] = '</li>';		
+            $config['prev_tag_open'] = '<li class="page-item">';
+            $config['prev_tag_close'] = '</li>';		
+            $config['next_tag_open'] = '<li class="page-item">';
+            $config['next_tag_close'] = '</li>';		
+            $config['cur_tag_open'] = '<li class="page-item active" aria-current="page">';
+            $config['curr_tag_close'] = '</li>';		
+            $config['num_tag_open'] = '<li class="page-item">';
+            $config['num_tag_close'] = '</li>';
+            $this->pagination->initialize($config);
+            $this->data['pagi'] = $this->pagination->create_links();
+            $offset = ($page == 0) ? 0 : (($page - 1) * $config['per_page']);
             $this->data = array_merge($this->data, array(
                 'page'=>'visitor_list',
                 'sidebar'=>true,
-                'data' => $this->Visitor->getList()
+                'data' => $this->Visitor->getList($config, $offset)
             ));
             $this->load->view($this->thm . '/index', $this->data);
         }elseif($f == "open" && $id != -1){

@@ -28,8 +28,8 @@ main > .container, main > .container-fluid {
 }
 
 .card-img-fixed{
-    width: 265px;
-    height: 248px;
+    width: 310px;
+    height: 293px;
 }
 .card-title{
     height: 48px;
@@ -309,4 +309,60 @@ main > .container, main > .container-fluid {
 
 .disabled{
     cursor:not-allowed !important;
+}
+
+.dl_container{
+    display: flex;
+}
+
+.dl_aside{
+    width: 22%;
+    box-shadow: 1px -1px 0px 0px rgba(0,0,0,0.75);
+    padding-top:15px;
+    padding-right: 15px;
+    height: calc(100vh - 116px);
+}
+.dl_main{
+    box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.75);
+    padding-left:20px;
+    padding-top: 15px;
+    width:100%;
+}
+
+.breadcrumb-item a{
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+.breadcrumb-item:hover a{
+    color: #198754;
+}
+
+main.flex-shrink-0 a:not(.btn){
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+main.flex-shrink-0 a:not(.btn):hover{
+    color:#198754;
+}
+.leaflet-link{
+	color:#07A75D !important;
+	transition: all ease-in-out 0.2s;
+}
+.leaflet-link:hover{
+	color:#157347;
+}
+
+/*DrawMap*/
+.leaflet-bar a, .leaflet-bar button.drawing-button{
+    color:#198754 !important;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    border: 0px solid transparent;
+    width:30px;
+    height:30px;
+    display: block;
 }

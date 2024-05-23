@@ -114,3 +114,41 @@
         </div>
     </div>
 </div>
+<div class="modal" id="addRestrictedArea" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="map-modal-title">Új "Tiltott" zóna hozzáadása</h5>
+                <button type="button" class="btn-close" id="closeRestrictedArea" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-paintbrush"></i></span>
+                                <input type="color" class="form-control form-control-color" id="restColor" value="#FF0000" title="Válaszd ki a színt!">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-wave-sine"></i></span>
+                                <input type="text" class="form-control" id="restFreq" placeholder="Frekvencia" />
+                                <span class="input-group-text" id="basic-addon1">MHz</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <textarea name="content" id="restrictionDescription"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelRestrictedArea" data-bs-dismiss="modal">Mégse</button>
+                <button type="button" class="btn btn-primary" id="saveRestrictedArea">Mentés</button>
+            </div>
+        </div>
+    </div>
+</div>

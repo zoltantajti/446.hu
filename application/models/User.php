@@ -281,6 +281,8 @@ class User extends CI_Model {
             case "99": return "Rendszergazda"; break;
         }
     }
-
+    public function getNameById($id){
+        return $this->db->select('callsign')->from('users')->where('id',$id)->get()->result_array()[0]['callsign'];
+    }
    
 }

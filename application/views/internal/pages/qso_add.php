@@ -83,8 +83,8 @@
                     <div class="col-md-4">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-calendar"></i></span>
-                            <input type="date" class="form-control" name="date" placeholder="Dátum" value="<?=(set_value('date') ? set_value('date') : date("Y-m-d"))?>"/>
-                            <input type="time" class="form-control" name="time" placeholder="Idő" value="<?=(set_value('time') ? set_value('time') : date("H:i:s"))?>"/>
+                            <input type="date" class="form-control" name="date" max="<?=date("Y-m-d")?>" placeholder="Dátum" value="<?=(set_value('date') ? set_value('date') : date("Y-m-d"))?>"/>
+                            <input type="time" class="form-control" name="time" max="<?=date("H:i:s")?>" placeholder="Idő" value="<?=(set_value('time') ? set_value('time') : date("H:i:s"))?>"/>
                         </div>
                     </div>
                     <div class="col-md-3">

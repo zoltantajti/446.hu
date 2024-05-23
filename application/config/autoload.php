@@ -16,4 +16,5 @@ $autoload['config'] = array();
 $autoload['language'] = array();
 
 $autoload['model'] = array('Misc','Sess','Cookie','Db','Banns','Logs','Seo','Navbar','User','Registration','GeoCoding','Encryption','Email',
-'Msg','Visitor','Page','AdminForm', 'Markers','Events','News','Qso','Nmhh','Notifications','Freqs','Contact','ImapReader', 'Badges');
+'Msg','Visitor','Page','AdminForm', 'Markers','Events','News','Qso','Nmhh','Notifications','Freqs','Contact','ImapReader', 'Badges', 'Downloads', 
+'Breadcrumb');

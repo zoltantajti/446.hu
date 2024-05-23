@@ -33,42 +33,110 @@ class Rest extends CI_Controller
             array_push($out, $v);
         };
         if($state == "public"){
-			foreach($this->db->select('callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnPublicMap',1)->get()->result_array() as $v){
-                $referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.$this->Misc->nominatim($v['county']).'&city='.$this->Misc->nominatim($v['city']).'&street=' . urlencode($this->Misc->nominatim($v['address']));
-                $opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
-                $ctx = stream_context_create($opts);
-                $geo = json_decode(file_get_contents($referer, false, $ctx),true);
-                $marker = array(
-                    "lat" => $geo[0]['lat'],
-                    "lon" => $geo[0]['lon'],
-                    "type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
-                    "title" => $v['callsign'],
-                    "description" => $v['markerDesc'],
-                    "active" => 1,
-                    "parrotState" => null,
-                    "parrotRadios" => null,
-                    "authorized" => 1
-                );
-                array_push($out,$marker);
+			foreach($this->db->select('id,callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnPublicMap',1)->get()->result_array() as $v){
+				if($v['county'] == 'Budapest'){ $city = "Budapest"; }else{ $city = $v['city']; };
+                if(file_exists('./assets/map/' . md5($v['callsign']) . '.bin')){
+					$marker = json_decode(file_get_contents('./assets/map/' . md5($v['callsign']) . '.bin'),true);
+					if($marker['address']['city'] != $v['city'] || $marker['address']['addr'] != $v['address']){
+						$referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.urlencode($this->Misc->nominatim($v['county'])).'&city='.urlencode($city).'&street=' . urlencode($this->Misc->nominatim($v['address']));
+						$opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
+						$ctx = stream_context_create($opts);
+						$geo = json_decode(file_get_contents($referer, false, $ctx),true);
+						$marker['lat'] = $geo[0]['lat'];
+						$marker['lon'] = $geo[0]['lon'];
+						$marker['address'] = array(
+							"country" => $v['country'],
+							"county" => $v['county'],
+							"city" => $v['city'],
+							"addr" => $v['address']
+						);
+						$f = fopen('./assets/map/' . md5($v['callsign']) . '.bin', "w+");
+						fwrite($f, json_encode($marker));
+						fclose($f);
+					}
+					array_push($out, $marker);
+				}else{
+					$referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.urlencode($this->Misc->nominatim($v['county'])).'&city='.urlencode($city).'&street=' . urlencode($this->Misc->nominatim($v['address']));
+					$opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
+					$ctx = stream_context_create($opts);
+					$geo = json_decode(file_get_contents($referer, false, $ctx),true);
+					$marker = array(
+						"lat" => $geo[0]['lat'],
+						"lon" => $geo[0]['lon'],
+						"address" => array(
+							"country" => $v['country'],
+							"county" => $v['county'],
+							"city" => $v['city'],
+							"addr" => $v['address']
+						),
+						"type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
+						"title" => $v['callsign'],
+						"description" => $v['markerDesc'],
+						"active" => 1,
+						"parrotState" => null,
+						"parrotRadios" => null,
+						"authorized" => 1,
+						"hasUser" => true,
+						"userID" => $v['id']
+					);
+					array_push($out,$marker);
+					$f = fopen('./assets/map/' . md5($v['callsign']) . '.bin', "w+");
+					fwrite($f, json_encode($marker));
+					fclose($f);
+				};				
             };
         }elseif($state == "internal"){
-            foreach($this->db->select('callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnInternalMap',1)->get()->result_array() as $v){
-                $referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.$this->Misc->nominatim($v['county']).'&city='.$this->Misc->nominatim($v['city']).'&street=' . urlencode($this->Misc->nominatim($v['address']));
-                $opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
-                $ctx = stream_context_create($opts);
-                $geo = json_decode(file_get_contents($referer, false, $ctx),true);
-                $marker = array(
-                    "lat" => $geo[0]['lat'],
-                    "lon" => $geo[0]['lon'],
-                    "type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
-                    "title" => $v['callsign'],
-                    "description" => $v['markerDesc'],
-                    "active" => 1,
-                    "parrotState" => null,
-                    "parrotRadios" => null,
-                    "authorized" => 1
-                );
-                array_push($out,$marker);
+            foreach($this->db->select('id,callsign,country,county,city,address,markerDesc,markerIcon')->from('users')->where('allowOnInternalMap',1)->get()->result_array() as $v){
+				if($v['county'] == 'Budapest'){ $city = "Budapest"; }else{ $city = $v['city']; };
+                if(file_exists('./assets/map/' . md5($v['callsign']) . '.bin')){
+					$marker = json_decode(file_get_contents('./assets/map/' . md5($v['callsign']) . '.bin'),true);
+					if($marker['address']['city'] != $v['city'] || $marker['address']['addr'] != $v['address']){
+						$referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.urlencode($this->Misc->nominatim($v['county'])).'&city='.urlencode($city).'&street=' . urlencode($this->Misc->nominatim($v['address']));
+						$opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
+						$ctx = stream_context_create($opts);
+						$geo = json_decode(file_get_contents($referer, false, $ctx),true);
+						$marker['lat'] = $geo[0]['lat'];
+						$marker['lon'] = $geo[0]['lon'];
+						$marker['address'] = array(
+							"country" => $v['country'],
+							"county" => $v['county'],
+							"city" => $v['city'],
+							"addr" => $v['address']
+						);
+						$f = fopen('./assets/map/' . md5($v['callsign']) . '.bin', "w+");
+						fwrite($f, json_encode($marker));
+						fclose($f);
+					}
+					array_push($out, $marker);
+				}else{
+					$referer = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&country='.$this->Misc->getCountryName($v['country']).'&county='.urlencode($this->Misc->nominatim($v['county'])).'&city='.urlencode($city).'&street=' . urlencode($this->Misc->nominatim($v['address']));
+					$opts = array('http' => array('header' => array('Referer: ' . $referer . "\r\n")));
+					$ctx = stream_context_create($opts);
+					$geo = json_decode(file_get_contents($referer, false, $ctx),true);
+					$marker = array(
+						"lat" => $geo[0]['lat'],
+						"lon" => $geo[0]['lon'],
+						"address" => array(
+							"country" => $v['country'],
+							"county" => $v['county'],
+							"city" => $v['city'],
+							"addr" => $v['address']
+						),
+						"type" => ($v['markerIcon'] == null) ? "mobile_radio" : $v['markerIcon'],
+						"title" => $v['callsign'],
+						"description" => $v['markerDesc'],
+						"active" => 1,
+						"parrotState" => null,
+						"parrotRadios" => null,
+						"authorized" => 1,
+						"hasUser" => true,
+						"userID" => $v['id']
+					);
+					array_push($out,$marker);
+					$f = fopen('./assets/map/' . md5($v['callsign']) . '.bin', "w+");
+					fwrite($f, json_encode($marker));
+					fclose($f);
+				};				
             };
         };
         echo(json_encode($out));
@@ -149,6 +217,18 @@ class Rest extends CI_Controller
     {
         $events = $this->db->select("*")->from('events')->get()->result_array();
         echo(json_encode($events));
+    }
+
+    public function addRestZone()
+    {
+        $p = $this->input->post();
+        $this->Db->insert("markers_restareas", $p);
+        echo("200");
+    }
+    public function getRestZones()
+    {
+        $arr = $this->db->select('*')->from('markers_restareas')->where('active',1)->get()->result_array();
+        echo(json_encode($arr));
     }
     
     /*Frekvenciák*/

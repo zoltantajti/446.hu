@@ -14,6 +14,7 @@ class Internal extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
+        $this->data['thm'] = $this->thm;
     }
 
     public function index() {
@@ -178,8 +179,6 @@ class Internal extends CI_Controller {
             return true;
         }
     }
-
-
     public function terkep($attrs = null){
         $this->User->checkLogin();
         $this->data['page'] = $this->thm . 'pages/map';
@@ -187,6 +186,7 @@ class Internal extends CI_Controller {
 <link rel="stylesheet" media="screen" href="./assets/js/leaflet/leaflet.css" />
 <link rel="stylesheet" media="screen" href="./assets/js/leaflet/extra-markers/css/leaflet.extra-markers.min.css" />
 <link rel="stylesheet" media="screen" href="./assets/js/leaflet/weather/Leaflet.Weather.css" />
+<link rel="stylesheet" media="screen" href="./assets/js/leaflet/draw/leaflet.draw.css" />
         ';
         $this->data['js'] = '
 <script src="./assets/js/leaflet/leaflet.js"></script>
@@ -198,7 +198,6 @@ class Internal extends CI_Controller {
 <script type="module" src="./assets/js/map/index.js?ref=internal' . (($attrs != null) ? '&center='.$attrs : '' ) . '"></script>';
         $this->load->view($this->thm . 'frame', $this->data);
     }
-
     public function events($page = 0)
     {
         $this->User->checkLogin();
@@ -366,7 +365,40 @@ class Internal extends CI_Controller {
 		<script src="./assets/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
 		<script type="module" src="./assets/js/map/qso.js"></script>';
             $this->load->view($this->thm . "frame", $this->data);
-        }        
+        }elseif($f == "upload" && $id == -1){
+            $this->data['page'] = $this->thm . "pages/qso_upload";
+            
+            if(empty($_FILES['file']['name'])){
+                $this->form_validation->set_rules('file', 'Fájl', 'required', $this->errors);
+                $this->load->view($this->thm . 'frame', $this->data);
+            }else{
+                $uploadPath = './uploads/qso/';
+                $allowedTypes = ['jpg','jpeg','png','pdf','xls','xlsx'];
+                $maxSize = 10 * 1024 * 1024;
+                $fileTmpPath = $_FILES['file']['tmp_name'];
+                $fileName = $_FILES['file']['name'];
+                $fileSize = $_FILES['file']['size'];
+                $fileType = $_FILES['file']['type'];
+                $fileExtension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+                if ($fileSize > $maxSize) {
+                    $this->Msg->set("A fájl mérete túl nagy. A maximális méret 10 MB.",'danger');
+                    redirect('internal/qso/upload');
+                };
+                if (!in_array($fileExtension, $allowedTypes)) {
+                    $this->Msg->set("Nem engedélyezett fájlformátum",'danger');
+                    redirect('internal/qso/upload');
+                };
+                $newFileName = $this->Sess->getChain('callsign','user') . '-' . date('Y-m-d') . '.' . $fileExtension;
+                $destPath = $uploadPath . $newFileName;
+                if (move_uploaded_file($fileTmpPath, $destPath)) {
+                    $this->Msg->set("A fájl sikeresen feltöltve",'success');
+                    redirect('internal/qso/upload');
+                }else{
+                    $this->Msg->set("Hiba történt a file feltöltése során",'danger');
+                    redirect('internal/qso/upload');
+                }
+            }
+        }    
     }
 
     public function profile($id = null){
@@ -427,4 +459,57 @@ class Internal extends CI_Controller {
         public function updateRadios(){$this->User->checkLogin(); $this->User->updateRadios(); }
         public function updateAbout(){$this->User->checkLogin(); $this->User->updateAbout(); }
 
+    public function downloads($cat = null, $subcat = null, $file = null){        
+        $this->data['page'] = $this->thm . "pages/dl_index";
+        if(!isset($_GET['search'])){
+            if($cat == null){
+                $this->data['segment'] = "catlist";
+                $this->data['level'] = 0;
+                $this->data['current'] = 'main';
+                $this->data['parent'] = null;
+                $this->data['childrens'] = $this->Downloads->listCategory(0);
+            }elseif($cat != null && $subcat == null && $file == null){
+                $this->data['segment'] = "catlist";
+                $this->data['level'] = 1;
+                $this->data['current'] = $this->Downloads->getCurrentCategory($cat);
+                $this->data['childrens'] = $this->Downloads->listCategory($this->data['current']['id']);
+                $this->data['files'] = $this->Downloads->listFiles($this->data['current']['id']);
+            }elseif($cat != null && $subcat != null && $file == null){
+                if($this->Downloads->checkCategoryIfExists($subcat)){
+                    $this->data['segment'] = "catlist";
+                    $this->data['level'] = 2;
+                    $this->data['current'] = $this->Downloads->getCurrentCategory($subcat);
+                    $this->data['parent'] = $this->Downloads->getCurrentCategory($cat);
+                    $this->data['childrens'] = $this->Downloads->listCategory($this->data['current']['id']);
+                    $this->data['files'] = $this->Downloads->listFiles($this->data['current']['id']);
+                }else{
+                    $this->data['segment'] = "fileDetails";
+                    $this->data['cat'] = $this->Downloads->getCurrentCategory($cat);
+                    $this->data['file'] = $this->Downloads->getFile($subcat);
+                    $_SESSION['file'] = base64_encode($this->uri->uri_string());
+                }
+            }elseif($cat != null && $subcat != null && $file != null){
+                $this->data['segment'] = "fileDetails";
+                $this->data['cat'] = $this->Downloads->getCurrentCategory($cat);
+                $this->data['subcat'] = $this->Downloads->getCurrentCategory($subcat);
+                $this->data['file'] = $this->Downloads->getFile($file);
+                $_SESSION['file'] = base64_encode($this->uri->uri_string());
+            };
+        }else{
+            $this->data['segment'] = "search";
+            $this->data['files'] = $this->Downloads->search(htmlentities($_GET['search']));
+        }
+        $this->load->view($this->thm . "frame", $this->data);
+    }
+    public function getFile($url){
+        if(isset($_SESSION['file'])){
+            $file = $this->Downloads->getFile($url);
+            $dlC = $file['dl_counter'] + 1;
+            $this->Db->update("dl_files",array("dl_counter"=>$dlC),array("url"=>$url));
+            unset($_SESSION['file']);
+            header('Location: ' . base_url() . str_replace('./','',$file['dlURL']));            
+        }else{
+            redirect('internal/downloads');
+        };
+    }
 }

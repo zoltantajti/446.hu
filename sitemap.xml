@@ -1,7 +1,46 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>http://446.hu/</loc>
-<lastmod>2024-05-02T08:23:55+00:00</lastmod>
+  <loc>https://www.446.hu/</loc>
+  <lastmod>2024-05-05T22:32:25+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
+<url>
+  <loc>https://www.446.hu/public/terkep</loc>
+  <lastmod>2024-05-05T22:32:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.446.hu/public/hir/elindultunk</loc>
+  <lastmod>2024-05-05T22:32:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.446.hu/public/esemeny/zombivadasz-majus-18</loc>
+  <lastmod>2024-05-05T22:32:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.446.hu/public/esemeny/preseidak-meteorles-augusztus-22</loc>
+  <lastmod>2024-05-05T22:32:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.446.hu/public/esemeny/siklorepulos-celraszallo-szeptember-07</loc>
+  <lastmod>2024-05-05T22:32:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.446.hu/public/hir/azok-a-franya-q-kodok</loc>
+  <lastmod>2024-05-14T00:16:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
 </urlset>

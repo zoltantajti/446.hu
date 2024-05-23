@@ -1,13 +1,20 @@
 import { iconUrls } from "./Icon.js";
 import { Toast } from "./Toast.js";
 import { Rest } from "./Rest.js";
+import { MCEditor } from "./MCEditor.js"
+import { Draw } from "./Draw.js";
 
 class ContextMenu {
     constructor() { 
         this.menu = L.DomUtil.create('div', 'custom-context-menu', document.body); 
         this.toast = new Toast();
+        this.draw = new Draw();
+        this.mce = new MCEditor();
     }
-    initFromMap = (base) => { this.base = base; }
+    initFromMap = (base) => { 
+        this.base = base; 
+        this.draw.init(this.base.map);
+    }
 
     show = (e, markerID = null) => {
         if(e.target.options.type == "parrot" && markerID != null){
@@ -69,6 +76,7 @@ class ContextMenu {
             let rest = new Rest();
             rest.getMarkerById(id).then((marker) => {
                 this.hide();
+                this.mce.init('description','link','bold italic underline numlist bullist link');
                 $("#map-modal-title").html('Marker módosítása');
                 $("#lat").val(marker.lat).attr("readonly","true");
                 $("#lon").val(marker.lon).attr("readonly","true");
@@ -97,8 +105,9 @@ class ContextMenu {
         this.menu.id = 'customContextMenu';
         this.menu.innerHTML = `
             <ul class="list-group list-group-flush">
-                <a href="javascript:;" id="btnAddNewMarker" class="list-group-item list-group-item-success">Új marker</a>
-                <a href="javascript:;" id="btnAddNewTempMarker" class="list-group-item list-group-item-success">Új ideiglenes marker</a>
+                <a href="javascript:;" id="btnAddNewMarker" class="list-group-item list-group-item-success">Új átjátszó/papagáj</a>
+                <a href="javascript:;" id="btnAddNewTempMarker" class="list-group-item list-group-item-success">Új kitelepüölés</a>
+                <a href="javascript:;" id="btnAddRestrictedArea" class="list-group-item list-group-item-danger">Új tiltott zóna</a>
             </ul>
         `;
         let addNewMarker = document.getElementById("btnAddNewMarker");
@@ -106,6 +115,7 @@ class ContextMenu {
             var latlng = e.latlng;
             let marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(this.base.map);
             this.hide();
+            this.mce.init('description','link','bold italic underline numlist bullist link');
             $("#map-modal-title").html('Új marker hozzáadása');
             $("#lat").val(latlng.lat).attr("readonly","true");
             $("#lon").val(latlng.lng).attr("readonly","true");
@@ -124,6 +134,7 @@ class ContextMenu {
 
         let addNewTempMarker = document.getElementById("btnAddNewTempMarker");
         addNewTempMarker.addEventListener('click', (event) => {
+            this.mce.init('content','link','bold italic underline numlist bullist link');
             var latlng = e.latlng;
             let marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(this.base.map);
             this.hide();
@@ -142,6 +153,12 @@ class ContextMenu {
                 $("#addNewMarkerTemp").hide();
             });  
         });
+
+        let addNewRestrictedArea = document.getElementById("btnAddRestrictedArea");
+        addNewRestrictedArea.addEventListener('click', (event) => {
+            this.draw.enableDraw();
+            this.hide();
+        })
     };    
 };
 export { ContextMenu }

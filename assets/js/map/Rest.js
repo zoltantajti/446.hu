@@ -136,6 +136,21 @@ class Rest {
             toast.show("Köszi :)", "Hamarosan megnézzük!");
         });
     }
+
+    saveRestZone = function(data){
+        return new Promise((resolve,reject) => {
+            $.post("Rest/addRestZone", data, (result,status) => {
+                resolve(status);
+            });
+        });
+    }
+    getRestZones = function(){
+        return new Promise((resolve,reject) => {
+            $.getJSON("Rest/getRestZones", function(data){
+                resolve(data);
+            })
+        });
+    }
 };
 
 export { Rest };

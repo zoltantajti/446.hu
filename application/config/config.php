@@ -67,5 +67,5 @@ $config['proxy_ips'] = '';
 $config['javascript_location'] = './assets/js/';
 $config['csrf_exclude_uris'] = array(
 	'Rest/setState','Rest/uploadFile','Rest/removeFile','Rest/addMarker','Rest/updateMarker','Rest/updateFreq',
-	'Rest/addTempMarker'
+	'Rest/addTempMarker','Rest/addRestZone'
 );

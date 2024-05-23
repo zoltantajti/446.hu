@@ -3,7 +3,7 @@
 	define('ENVIRONMENT', 'development');
 	define('MAINTENANCE', false);
 	
-if(MAINTENANCE && $_SERVER['REMOTE_ADDR'] != "81.183.18.87"){
+if(MAINTENANCE && $_SERVER['REMOTE_ADDR'] != "81.183.23.138"){
 	include('maintenance.php');
 	exit();
 }

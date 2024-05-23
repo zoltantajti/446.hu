@@ -165,7 +165,7 @@
                     </div>
                    <?=form_close()?>
                 </div>
-                <div class="tab-pane fade show active <?=($segment == "marker") ? 'show active' : ''?>" id="marker-infos-panel" role="tabpanel" aria-labelledby="marker-infos" tabindex="0">
+                <div class="tab-pane fade <?=($segment == "marker") ? 'show active' : ''?>" id="marker-infos-panel" role="tabpanel" aria-labelledby="marker-infos" tabindex="0">
                    <?=form_open('internal/updateMarker')?>
                     <div class="row">
                         <div class="col-md-6 mb-3">

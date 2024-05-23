@@ -26,8 +26,9 @@ class Marker {
         });
         if(this.ref === "internal"){
             let link = "";
+			//console.log(this.hasUser);
             if(this.hasUser){
-                link = `<br/><hr/><a title="Profil megnyitása" href="internal/profile/${this.userID}" target="_balnk"><i class="fa fa-fw fa-user"></i></a>`;
+                link = `<br/><hr/><a class="leaflet-link" title="Profil megnyitása" href="internal/profile/${this.userID}" target="_balnk"><i class="fa fa-fw fa-user"></i></a>`;
             };
             let popup = `<b>${this.title}</b><hr/>${this.description}${link}`;
 
@@ -54,11 +55,11 @@ class Marker {
             status: this.parrotState
         });
         if(this.ref === "internal"){
-            let link = `<br/><hr/><a title="Profil megnyitása" href="internal/profile/${this.userID}" target="_balnk"><i class="fa fa-fw fa-user"></i></a>`;
-            let popup = `<b>${this.title}</b><hr/>Frekvencia: <b>${this.attrs.freq} MHz</b><br/>CTCS: <b>${this.attrs.ctcss} Hz</b>, DCS: <b>${this.attrs.dcs}</b>${this.description}${link}`;
+			let link = `<br/><hr/><a class="leaflet-link" title="Profil megnyitása" href="internal/profile/${this.userID}" target="_balnk"><i class="fa fa-fw fa-user"></i></a>`;
+			let popup = `<b>${this.title}</b><hr/>Kezdete: <b>${this.attrs.from}</b><br/>Vége: <b>${this.attrs.to}</b><br/><hr/>Frekvencia: <b>${this.attrs.freq} MHz</b><br/>CTCS: <b>${this.attrs.ctcss} Hz</b><br/>DCS: <b>${this.attrs.dcs}</b><hr/>${this.description}${link}`;
             this.marker.bindPopup(popup);
             this.marker.on('contextmenu', (e) => { });
-            this.marker.bindTooltip(`${this.title} kitelepülés`);
+            this.marker.bindTooltip(`${this.title} kitelepülése`);
             _layer.addLayer(this.marker);
             return this.marker;
         }

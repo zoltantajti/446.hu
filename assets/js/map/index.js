@@ -6,6 +6,7 @@ import { Search } from "./Search.js";
 import { Reference } from "./Reference.js";
 import { Attrs } from "./Attrs.js";
 import { Weather } from "./Weather/Weather.js";
+import { Polygon } from "./Polygon.js";
 
 class Map {
     constructor() {
@@ -18,58 +19,18 @@ class Map {
     init = function() {
         this.base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             minZoom: 7,    
-            maxZoom: 15,            
+            maxZoom: 18,            
             attribution: ''
         });
-        /*this.dark = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.{ext}', {
-	        minZoom: 7,
-	        maxZoom: 15,
-	        attribution: '',
-	        ext: 'png'
-        });*/
         this.hybrid = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
 	        minZoom: 7,
-	        maxZoom: 15,
-	        attribution: ''
-        });
-        /*this.topo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
-            minZoom: 7,
-	        maxZoom: 15,
-	        attribution: ''
-        });
-        this.geo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            minZoom: 7,
-	        maxZoom: 15,
-            attribution: ''
-        });
-        this.geoLabels = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_labels/{z}/{x}/{y}{r}.{ext}', {
-	        minZoom: 7,
-	        maxZoom: 15,
-	        attribution: '',
-	        ext: 'png'
-        });
-        this.geoRoads = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_labels/{z}/{x}/{y}{r}.{ext}', {
-	        minZoom: 7,
-	        maxZoom: 15,
-	        attribution: '',
-	        ext: 'png'
-        });
-        this.geoRoadsSmall = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain_lines/{z}/{x}/{y}{r}.{ext}', {
-	        minZoom: 0,
 	        maxZoom: 18,
-	        attribution: '',
-	        ext: 'png'
-        });*/
-
-
-        //this.geoLayer = L.layerGroup([this.geo, this.geoLabels, this.geoRoads, this.geoRoadsSmall])
+	        attribution: ''
+        });
 
         this.baseLayers = {
             "Alap": this.base,
-            //"Sötét": this.dark,
             "Hibrid": this.hybrid,
-            //"Topo": this.topo,
-            //"GEO": this.geoLayer
         };
 
         this.mobileRadioLayer = L.layerGroup();
@@ -83,6 +44,7 @@ class Map {
         this.eventLayer = L.layerGroup();
         this.weatherLayer = L.layerGroup();
         this.weatherMLayer = L.layerGroup();
+        this.restAreas = L.layerGroup();
 
         if(this.ref === "internal"){
             this.markerCategories = {
@@ -96,7 +58,8 @@ class Map {
                 "Kitelepülések": this.TempLocations,
                 "Események": this.eventLayer,
                 "Időjárástérkép": this.weatherLayer,
-                "Időjárás markerek": this.weatherMLayer
+                "Időjárás markerek": this.weatherMLayer,
+                "Tiltott területek": this.restAreas
             }
             this.layers = [
                 this.base,
@@ -106,6 +69,7 @@ class Map {
                 this.parrotLayer, 
                 this.stationLayer, 
                 this.eventLayer,
+                this.restAreas,
                 //this.weatherLayer,
                 //this.weatherMLayer
             ];
@@ -156,12 +120,7 @@ class Map {
             apiKey: '89fcf7a64197f34ff0c3f596521057db',
             lang: 'hu',
             units: 'metric',
-            template: `
-<div class="weatherIcon"><img src=":iconurl"></div>
-<div>Hőmérséklet: <b>:temperature°C</b></div>
-<div>Pára: <b>:humidity%</b></div>
-<div>Szél: <b>:winddirection :windspeed m/s</b></div>`,
-        }
+            template: `<div class="weatherIcon"><img src=":iconurl"></div><div>Hőmérséklet: <b>:temperature°C</b></div><div>Pára: <b>:humidity%</b></div><div>Szél: <b>:winddirection :windspeed m/s</b></div>`,}
         let wControl = new L.Control.Weather(options);
         this.map.addControl(wControl);
 
@@ -174,6 +133,7 @@ class Map {
         let rest = new Rest();
         rest.getMarkers().then((data) => { 
             data.forEach((_marker) => {
+				//console.log(_marker.title, _marker.lat, _marker.lon);
                 let markerObject = new Marker(_marker.id, _marker.lat, _marker.lon, _marker.active, _marker.title, _marker.description, _marker.type, _marker.parrotState, _marker.parrotRadius, _marker.hasUser, _marker.userID, this.ref);
                 switch(_marker.type){
                     case "mobile_radio": 
@@ -207,8 +167,10 @@ class Map {
                 let attrs = {
                     "freq": _marker.freq,
                     "ctcss": _marker.ctcss,
-                    "dcs": _marker.dcs
-                };
+                    "dcs": _marker.dcs,
+					"from": _marker.from,
+					"to": _marker.to
+                };				
                 let markerObject = new Marker(_marker.id, _marker.lat, _marker.lon, 1, _marker.title, _marker.content, "temp_location", null, null, true, _marker.createdAt, this.ref, attrs);
                 markerObject.create_temp(this.TempLocations);
             });
@@ -232,6 +194,21 @@ class Map {
             });
         };
     }
+
+    getRestAreas = function() {
+        if(this.ref === "internal"){
+            let rest = new Rest();
+            rest.getRestZones().then((data) => {
+                data.forEach((_zone) => {
+                    let _coords = JSON.parse(_zone.coords);
+                    let coords = [];
+                    _coords.forEach((point) => {coords.push([point.lat, point.lng]);});
+                    let zoneObject = new Polygon(coords, _zone.color, _zone.description);
+                    zoneObject.create(this.restAreas);
+                })
+            })
+        }
+    }
 };
 
 var map = new Map;
@@ -239,14 +216,4 @@ map.show();
 map.getMarkers();
 map.getEvents();
 map.getTempMarkers();
-
-tinymce.init({
-    selector: 'textarea#description',
-    plugins: 'link',
-    toolbar: 'bold italic underline numlist bullist link'
-});
-tinymce.init({
-    selector: 'textarea#content',
-    plugins: 'link',
-    toolbar: 'bold italic underline numlist bullist link'
-})
+map.getRestAreas();

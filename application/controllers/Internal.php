@@ -14,6 +14,21 @@ class Internal extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
+        
+        if($this->Banns->check($_SERVER['REMOTE_ADDR'])){
+            $id = $this->Banns->makeTrace($_SERVER['REMOTE_ADDR']);
+            $this->load->view('errors/html/error_403', array(
+                'heading' => 'Nem tekintheted meg az oldalt!',
+                'message' => 'A biztonsági házirent tiltja, hogy megtekintsd az oldalt!<br/><br/>
+                Ha úgy gondolod, hiba történt, kélrek jelezd felénk az alábbi hivatkozási számmal: 
+                <center><b>' . $id . '</b></center>',
+            ));
+        };
+
+        /*if(!$this->ClientAnalyser->isAllowedOS() && !$this->ClientAnalyser->clientAuthorize()){
+            die($this->ClientAnalyser->getMessage());
+        }*/
+
         $this->data['thm'] = $this->thm;
     }
 

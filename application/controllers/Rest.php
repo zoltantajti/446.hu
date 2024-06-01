@@ -234,19 +234,40 @@ class Rest extends CI_Controller
     }
     
     /*Frekvenciák*/
-    public function updateFreq() {
+    public function addFreq()
+    {
         $p = $this->input->post();
-        $id = $p['id'];
         $tbl = $p['tbl'];
         $p['ctcs'] = $p['ctcss'];
         unset($p['id'],$p['tbl'],$p['ctcss']);
         $this->db->set('name', $p['name']);
         $this->db->set('freq', $p['freq']);
-        $this->db->set('ctcs', ($p['ctcss'] == null) ? null : $p['ctcss']);
+        $this->db->set('ctcs', ($p['ctcs'] == null) ? null : $p['ctcs']);
         $this->db->set('dcs', ($p['dcs'] == null) ? null : $p['dcs']);
         $this->db->set('duplex', ($p['duplex'] == null) ? "off" : $p['duplex']);
         $this->db->set('offset', ($p['offset'] == null) ? null : $p['offset']);
         $this->db->set('comment', ($p['comment'] == null) ? null : $p['comment']);
+        $this->db->set('place', $p['place']);
+        $this->db->set('type', $p['type']);
+        $this->db->insert($tbl);
+        $this->Logs->make("FREQ:update", $this->Sess->getChain("callsign","user") . " létrehozta a " . $p['freq'] . " <i>(" . $p['name'] . ")</i> gumifül frekvenciát!" );
+        echo("200");
+    }
+    public function updateFreq() {
+        $p = $this->input->post();
+        $id = $p['id'];
+        $tbl = $p['tbl'];
+        $p['ctcs'] = $p['ctcss'];
+        unset($p['tbl'],$p['ctcss']);
+        $this->db->set('name', $p['name']);
+        $this->db->set('freq', $p['freq']);
+        $this->db->set('ctcs', ($p['ctcs'] == null) ? null : $p['ctcs']);
+        $this->db->set('dcs', ($p['dcs'] == null) ? null : $p['dcs']);
+        $this->db->set('duplex', ($p['duplex'] == null) ? "off" : $p['duplex']);
+        $this->db->set('offset', ($p['offset'] == null) ? null : $p['offset']);
+        $this->db->set('comment', ($p['comment'] == null) ? null : $p['comment']);
+        $this->db->set('place', $p['place']);
+        $this->db->set('type', $p['type']);
         $this->db->where('id', $id);
         $this->db->update($tbl);
         $this->Logs->make("FREQ:update", $this->Sess->getChain("callsign","user") . " módosította a " . $id . " <i>(" . $p['name'] . ")</i> gumifül frekvenciát!" );
@@ -325,7 +346,7 @@ class Rest extends CI_Controller
 
 
     /*Temp*/
-    public function updateGEO(){
+    /*public function updateGEO(){
         if($_SERVER['SERVER_NAME'] == "local.446.hu" && $_SERVER['REMOTE_ADDR'] == '127.0.0.1'){
             foreach($this->db->select('ipaddr')->from('visitors')->limit(120,822)->get()->result_array() as $row){
                 $ip = $row['ipaddr'];
@@ -340,5 +361,5 @@ class Rest extends CI_Controller
             die('remote host not allowed!');
         };
         
-    }
+    }*/
 }

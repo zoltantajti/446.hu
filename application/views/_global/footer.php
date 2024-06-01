@@ -35,7 +35,6 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/jquery.cookie.js"></script>
     <script src="./assets/js/waypoints.min.js"></script>
-    <script src="https://www.jqueryscript.net/demo/Animating-Numbers-Counting-Up-with-jQuery-Counter-Up-Plugin/jquery.counterup.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/446script.js"></script>
     <script>eval(atob("JChkb2N1bWVudCkucmVhZHkoKGV2ZW50KSA9PiB7CiAgICAgICAgICAgIGlmKCQuY29va2llKCc0NDZhY2NlcHRjb29raWVzJykgIT09ICJ0cnVlIil7CiAgICAgICAgICAgICAgICBjb25zdCBtb2RhbCA9IG5ldyBib290c3RyYXAuTW9kYWwoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2Nvb2tpZU1vZGFsJykpOwogICAgICAgICAgICAgICAgbW9kYWwuc2hvdygpOwogICAgICAgICAgICB9OwogICAgICAgICAgICAkKCIjYWNjZXB0Q29va2llcyIpLm9uKCdjbGljaycsIChlKSA9PiB7CiAgICAgICAgICAgICAgICAkLmNvb2tpZSgnNDQ2YWNjZXB0Y29va2llcycsIHRydWUsIHtleHBpcmVzOiAxLCBwYXRoOiAnLycgfSk7CiAgICAgICAgICAgIH0pCiAgICAgICAgfSk="));</script>

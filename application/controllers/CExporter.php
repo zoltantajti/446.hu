@@ -8,6 +8,8 @@ class CExporter extends CI_Controller {
     public function csv($mit){
         if($mit == "cottonEar"){
             $this->Exporter->exportCottonEarToCSV();
+        }elseif($mit == "pmr"){
+            $this->Exporter->exportPMRToCSV();
         }
     }
 }

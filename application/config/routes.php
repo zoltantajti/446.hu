@@ -30,7 +30,7 @@ $route['public/esemeny/(:any)'] = 'Pub/eventItem/$1';
 $route['default_controller'] = 'Pub';
 
 /*Exporter*/
-$route['export/(csv)/(cottonEar)'] = 'CExporter/$1/$2';
+$route['export/(csv)/(cottonEar|pmr)'] = 'CExporter/$1/$2';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

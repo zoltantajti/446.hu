@@ -53,7 +53,8 @@ class Internal extends CI_Controller {
     }
 
     public function login() {
-        $this->User->isLoggedIn();
+        
+		$this->User->isLoggedIn();
         if($this->Cookie->has('remember_user') && $this->Cookie->has('remember_id')){ $this->User->autoLogin(); };        
         $this->form_validation->set_rules('username', 'Felhasználónév vagy hívójel', 'required|trim', $this->errors);
         $this->form_validation->set_rules('password', 'Jelszó', 'required|trim|min_length[8]|max_length[32]', $this->errors);
@@ -62,6 +63,8 @@ class Internal extends CI_Controller {
         }else{
             $this->User->doLogin($this->input->post());
         }
+		
+		/*redirect('http://local.auth.446.hu/?targetURL=' . base64_encode(base_url()) . '&authRequestToken=' . $_SESSION['__id'] . '&type=webAuthRequest');*/
     }
     public function logout(){
         $this->User->checkLogin();

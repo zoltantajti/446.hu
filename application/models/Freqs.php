@@ -6,13 +6,13 @@ class Freqs extends CI_Model {
         $table = "freq_" . $mit;
         $pmrHidden = null;
 
-        if($mit == "pmr") {
+        if($mit == "pmr" || $mit == "air") {
           $pmrHidden = "d-none";
         };
 
         $rows = $this->db->select('id,name,freq,ctcs,dcs,duplex,offset,comment,place,type')->from($table)->get()->result_array();
-        $html = '<div class="alert alert-warning">Kérlek, amennyiben van infód a frekvenciáról, írd be!</div>';
-        if($mit != "pmr"){
+        $html = ($mit == "cottonear") ? '<div class="alert alert-warning">Kérlek, amennyiben van infód a frekvenciáról, írd be!</div>' : '';
+        if($mit != "pmr" && $mit != "air"){
           $html.= '<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#freqModalNew" onClick="createNewModal(\''.$table.'\');" class="btn btn-outline-success"><i class="fa fa-fw fa-plus"></i> Új gumifül hozzáadása</a>';
         }
         $html .= '<div class="table-responsive"><table class="table table-hover table-sm mb-3"><thead><tr>';

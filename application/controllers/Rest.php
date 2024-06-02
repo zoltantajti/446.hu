@@ -25,7 +25,16 @@ class Rest extends CI_Controller
         $county = $this->db->select('code')->from('counties')->where('name',$_county)->get()->result_array()[0];
         $cities = $this->db->select('name')->from('cities')->where('county_code', $county['code'])->get()->result_array();
         echo json_encode($cities);
+    }    
+    public function checkUser($callsign){
+        $callsign = base64_decode(str_replace('_','=', $callsign),true);
+        if($this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->count_all_results() == 1){
+            echo $this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->get()->result_array()[0]['id'];
+        }else{
+            echo "-1";
+        }
     }
+    /*Térkép*/
     public function getMapMarkers($state = "public")
     {
         $out = array();
@@ -152,14 +161,6 @@ class Rest extends CI_Controller
         $marker = $this->db->select('lat,lon,type,title,description')->from('markers')->where('id',$id)->get()->result_array()[0];
         echo json_encode($marker);
     }
-    public function checkUser($callsign){
-        $callsign = base64_decode(str_replace('_','=', $callsign),true);
-        if($this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->count_all_results() == 1){
-            echo $this->db->select('id')->from('users')->where('callsign',urldecode($callsign))->get()->result_array()[0]['id'];
-        }else{
-            echo "-1";
-        }
-    }
     public function getMapEvents()
     {
         $events = $this->db->select('events.id as id,
@@ -220,7 +221,6 @@ class Rest extends CI_Controller
         $events = $this->db->select("*")->from('events')->get()->result_array();
         echo(json_encode($events));
     }
-
     public function addRestZone()
     {
         $p = $this->input->post();
@@ -231,6 +231,15 @@ class Rest extends CI_Controller
     {
         $arr = $this->db->select('*')->from('markers_restareas')->where('active',1)->get()->result_array();
         echo(json_encode($arr));
+    }
+    public function saveError()
+    {
+        $p = $this->input->post();
+        if($this->db->select('id')->from('markers_errors')->where('resolved', 0)->where('callsign',$p['callsign'])->count_all_results() == 0){
+            $p['createdAt'] = date("Y-m-d H:i:s");
+            $p['resolved'] = 0;
+            $this->Db->insert("markers_errors", $p);
+        };
     }
     
     /*Frekvenciák*/

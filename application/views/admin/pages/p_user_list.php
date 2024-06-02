@@ -7,6 +7,7 @@
             <div class="col-md-12">
                 <?=$this->Msg->get(); ?>
                 <div class="input-group mb-3">
+                    <a href="admin/users/updateGeo/-1" class="btn btn-info">GEO frissítése</a>
                     <input type="text" name="filter" id="filter" class="form-control" value="<?=$filter?>">
                     <button type="button" id="UserFilterButton" class="btn btn-info"><i class="fa fa-fw fa-search"></i></button>
                     <?php if($filter != null){ ?>

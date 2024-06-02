@@ -216,12 +216,12 @@ class Admin extends CI_Controller {
             };
         }elseif($f == "inactivate" && $id != -1){
             $this->Db->update("users",array("active" => 0),array("id" => $id));
-            $this->Logs->make("USER::Inactivate",$this->Sess->getChain('user','name') . " inaktiválta #" . $id . " felhasználót");
+            $this->Logs->make("USER::Inactivate", $this->User->getName() . " inaktiválta #" . $id . " felhasználót");
             $this->Msg->set("Sikeres inaktiválás!");
             redirect('admin/users');
         }elseif($f == "activate" && $id != -1){
             $this->Db->update("users",array("active" => 1),array("id" => $id));
-            $this->Logs->make("USER::Activate",$this->Sess->getChain('user','name') . " aktiválta #" . $id . " felhasználót");
+            $this->Logs->make("USER::Activate", $this->User->getName() . " aktiválta #" . $id . " felhasználót");
             $this->Msg->set("Sikeres aktiválás!");
             redirect('admin/users');
         }elseif($f == "delete" && $id != -1){
@@ -252,10 +252,21 @@ class Admin extends CI_Controller {
                 );
                 unset($p['country'],$p['county'],$p['city'],$p['addr']);
                 file_put_contents('./assets/map/' . $id . '.bin', json_encode($p));
-                $this->Logs->make("USER::GEOLOCATING_MANUAL",$this->Sess->getChain('user','name') . " módosította #" . $p['userID'] . " felhasználó geolokációját!");
+                
+                $callsign = $this->User->getNameById($p['userID']);
+                if($this->db->select('id')->from('markers_errors')->where('callsign', $callsign)->where('resolved',0)->count_all_results() == 1){
+                    $this->Db->update("markers_errors", array("resolved"=>1), array("callsign"=>$callsign,"resolved"=>0));
+                };
+
+                $this->Logs->make("USER::GEOLOCATING_MANUAL", $this->User->getName() . " módosította #" . $p['userID'] . " felhasználó geolokációját!");
                 $this->Msg->set("Sikeres módosítás!");
                 redirect('admin/users');
             }
+        }elseif($f == "updateGeo" && $id == -1){
+            $this->User->updateGeo();
+            $this->Logs->make("USER::UPDATE_GEO_DESCRIPTION", $this->User->getName() . " frissítette a térképet!");
+            $this->Msg->set("Sikeres frissítés!");
+            redirect('admin/users');
         }
     }
 
@@ -328,6 +339,14 @@ class Admin extends CI_Controller {
         }elseif($f == "delete" && $id != -1){
             $this->Markers->delete($id);
         }
+    }
+    public function markerErrors(){
+        $this->User->checkLogin();
+        $this->data = array_merge($this->data, array(
+            'page'=>'marker_error',
+            'data' => $this->Markers->getErrorList()
+        ));
+        $this->load->view($this->thm . '/index', $this->data);
     }
 
     /*Events*/
@@ -488,6 +507,51 @@ class Admin extends CI_Controller {
             $this->Banns->add($id);
         }elseif($f == "unbann" && $id != -1){
             $this->Banns->remove($id);
+        }
+    }
+
+    /*QSO*/
+    public function qso($f = "list", $id =-1, $page = 0){
+        $this->User->checkLogin();
+        if($f == "list" && $id == -1){
+            $this->load->library('pagination');
+            $config['use_page_numbers'] = true;
+            $config['base_url'] = base_url() . 'admin/qso/list/-1';
+            $config['total_rows'] = $this->db->select('ipaddr')->from('qso')->count_all_results();
+            $config['per_page'] = 25;
+            $config['full_tag_open'] = '<nav><ul class="pagination">';
+            $config['full_tag_close'] = '</ul></nav>';
+            $config['first_tag_open'] = '<li class="page-item">';
+            $config['first_link'] = 'Első';
+            $config['first_tag_close'] = '</li>';		
+            $config['last_tag_open'] = '<li class="page-item">';
+            $config['last_link'] = 'Utolsó';
+            $config['last_tag_close'] = '</li>';		
+            $config['prev_tag_open'] = '<li class="page-item">';
+            $config['prev_tag_close'] = '</li>';		
+            $config['next_tag_open'] = '<li class="page-item">';
+            $config['next_tag_close'] = '</li>';		
+            $config['cur_tag_open'] = '<li class="page-item active" aria-current="page">';
+            $config['curr_tag_close'] = '</li>';		
+            $config['num_tag_open'] = '<li class="page-item">';
+            $config['num_tag_close'] = '</li>';
+            $this->pagination->initialize($config);
+            $this->data['pagi'] = $this->pagination->create_links();
+            $offset = ($page == 0) ? 0 : (($page - 1) * $config['per_page']);
+            $this->data = array_merge($this->data, array(
+                'page'=>'qso_list',
+                'sidebar'=>true,
+                'data' => $this->Qso->aList($config, $offset)
+            ));
+            $this->load->view($this->thm . '/index', $this->data);
+        }elseif($f == "approve" && $id != -1){
+            $this->Db->update('qso', array('status'=>'approved', 'verified' => 1, 'verifiedAt' => date("Y-m-d H:i:s")), array('id'=>$id));
+            $this->Msg->set('Sikeres művelet', 'success');
+            redirect('admin/qso/list');
+        }elseif($f == "deny" && $id != -1){
+            $this->Db->update('qso', array('status'=>'denied', 'verified' => 1, 'verifiedAt' => date("Y-m-d H:i:s")), array('id'=>$id));
+            $this->Msg->set('Sikeres művelet', 'success');
+            redirect('admin/qso/list');
         }
     }
 

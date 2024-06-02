@@ -88,6 +88,12 @@ class Markers extends CI_Model
     public function getActiveExpatriations(){
         return $this->db->select('lat,lon,title,createdAt,from,to,content,freq,ctcss,dcs')->from('markers_temp')->where('from <= ', date("Y-m-d H:i:s"))->where('to >= ', date("Y-m-d H:i:s"))->get()->result_array();
     }
+
+    /*Admin*/
+    public function getErrorList()
+    {
+        return $this->db->select('*')->from('markers_errors')->order_by('resolved','ASC')->order_by('createdAt','DESC')->get()->result_array();
+    }
 }
 
 class Types {

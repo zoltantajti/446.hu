@@ -18,7 +18,7 @@ $route['Rest/(:any)'] = 'Rest/$1';
 
 /*Admin*/
 $route['admin/users/list'] = 'Admin/users/list/-1';
-$route['admin/users/(inactivate|activate|delete)/(:num)'] = 'Admin/users/$1/$2';
+$route['admin/users/(inactivate|activate|delete|updateGeo)/(:num)'] = 'Admin/users/$1/$2';
 $route['admin/users/(:any)'] = 'Admin/users/list/-1/$1';
 $route['admin/markers/list'] = 'Admin/markers/list/-1';
 $route['admin/markers/(:any)'] = 'Admin/markers/list/-1/$1';

@@ -236,6 +236,7 @@ class User extends CI_Model {
         $p = $this->input->post();
         unset($p['submit']);
         $this->Db->update("users", $p, array("id" => $this->Sess->getChain("id","user")));
+        $this->updateGeo();
         $this->Msg->set("Sikeres adatmódosítás!", "success");
         redirect('internal/profile/marker');
     }
@@ -284,5 +285,14 @@ class User extends CI_Model {
     public function getNameById($id){
         return $this->db->select('callsign')->from('users')->where('id',$id)->get()->result_array()[0]['callsign'];
     }
-   
+    public function updateGeo(){
+        foreach($this->db->select('callsign,markerDesc')->from('users')->where('allowOnInternalMap',1)->or_where('allowOnPublicMap',1)->get()->result_array() as $user){
+            $file = './assets/map/' . md5($user['callsign']) . '.bin';
+            if(file_exists($file)){
+                $f = json_decode(file_get_contents($file), true);
+                $f['description'] = $user['markerDesc'];
+                file_put_contents($file, json_encode($f));
+            };
+        };
+    }
 }

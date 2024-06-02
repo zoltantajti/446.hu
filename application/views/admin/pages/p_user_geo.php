@@ -38,6 +38,15 @@
                     <input type="text" class="form-control" name="type" value="<?=$geo['type']?>" aria-describedby="basic-addon1">
                 </div>
             </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <textarea name="description" class="form-control"><?=$geo['description']?></textarea>
+                <script src="./assets/js/tinymce/tinymce.min.js"></script>
+                <script src="./assets/js/tinymce/index.js"></script>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-6">
                 <button type="submit" class="btn d-block btn-success">Mentés</button>
             </div>

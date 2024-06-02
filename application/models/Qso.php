@@ -79,4 +79,15 @@ class Qso extends CI_Model
             case "/A": return "Amatőr állomáson át"; break;
         }
     }
+
+
+    /*ADMIN*/
+    public function aList($config, $offset){
+        $ret = array();
+        foreach($this->db->select("id,date,time,freq,my_callsign,rem_callsign,status")->from("qso")->order_by('verified', 'ASC')->order_by('createdAt', 'desc')->limit($config['per_page'],$offset)->get()->result_array() as $k=>$v){
+            $v['type'] = ($this->db->select('id')->from('users')->where('callsign', $v['rem_callsign'])->count_all_results() == 1) ? "internal" : "external";
+            array_push($ret, $v);
+        };
+        return $ret;
+    }
 }

@@ -40,9 +40,25 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="admin/qso/list" class="nav-link" aria-current="page">
+                    <i class="fa-solid fa-share-from-square"></i>
+                    <span class="nav-item-name">Összeköttetések</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="admin/markers/list" class="nav-link" aria-current="page">
                     <i class="fa-solid fa-map-marker-alt"></i>
                     <span class="nav-item-name">Markerek</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <?php 
+                    $markerErrors = $this->db->select("id")->from('markers_errors')->where('resolved',0)->count_all_results();
+                ?>
+                <a href="admin/markerErrors" class="nav-link" aria-current="page">
+                    <i class="fa-solid fa-location-xmark"></i>
+                    <span class="nav-item-name">Térképhibák</span>
+                    <span id="msgBadge" class="badge text-bg-<?=($markerErrors==0) ? "success" : "danger"?>"><?=($markerErrors==0) ? "0" : "+" . $markerErrors?></span>
                 </a>
             </li>
             <li><hr class="nav-item"><div class="dropdown-divider"></div></li>

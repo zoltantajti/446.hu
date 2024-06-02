@@ -28,7 +28,6 @@ class Rest {
             })
         })
     }
-
     getQSOs = function() {
         return new Promise(function(resolve,reject){
             $.getJSON("Rest/getQSOs", function(data){
@@ -36,7 +35,6 @@ class Rest {
             });
         });
     }
-
     getEvents = function() {
         return new Promise(function(resolve, reject){
             $.getJSON("Rest/getMapEvents", function(data){
@@ -109,7 +107,6 @@ class Rest {
             }, 3000);
         });
     }
-
     updateMarker = function(id) {
         var lat = $("#lat").val();
         var lon = $("#lon").val();
@@ -149,6 +146,15 @@ class Rest {
             $.getJSON("Rest/getRestZones", function(data){
                 resolve(data);
             })
+        });
+    }
+
+    createErrorTicket = function(marker)
+    {
+        return new Promise((resolve, reject) => {
+            $.post("Rest/saveError", marker, (result,status) => {
+                resolve(result);
+            });
         });
     }
 };

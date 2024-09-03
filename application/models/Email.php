@@ -1,10 +1,10 @@
 <?php
 class Email extends CI_Model {
-    protected $fa = "info@446.hu";
+    protected $fa = "***censored***";
     protected $faName = "446PMR | Amatőr Rádió";
-    protected $user = "info@446.hu";
-    protected $pass = "Kyocera1995#%";
-    protected $host = "mail.446.hu";
+    protected $user = "***censored***";
+    protected $pass = "***censored***";
+    protected $host = "***censored***";
     protected $port = 587;
     protected $cfg = array();
 
